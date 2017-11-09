@@ -41,15 +41,15 @@ Die aktuelle Karte kann über die Funktion *Drucken* auf den Drucker ausgegeben 
 
 -   **Grid**: Wird der Abschnitt **Grid** aufgeklappt, wird im Ausdruck ein Gitternetz hinterlegt.
 
-    > -   **Coordinate System**: Wahl des Gitter-Koordinatensystems
-    >
-    > -   **Interval X**: Abstand der Gitternetzlinien in X-Richtung
-    >
-    > -   **Interval Y**: Abstand der Gitternetzlinien in Y-Richtung
-    >
-    > -   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> **Coordinate labels**: Ein-/Ausschalten der Gitternetzbeschriftungen
-    >
--   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> **Map cartouche**: Ein-/Ausschalten der Kartusche
+    -   **Coordinate System**: Wahl des Gitter-Koordinatensystems
+
+    -   **Interval X**: Abstand der Gitternetzlinien in X-Richtung
+
+    -   **Interval Y**: Abstand der Gitternetzlinien in Y-Richtung
+
+    -   <img src="../../images/checkbox.png" alt="checkbox" /> **Coordinate labels**: Ein-/Ausschalten der Gitternetzbeschriftungen
+
+-   <img src="../../images/checkbox.png" alt="checkbox" /> **Map cartouche**: Ein-/Ausschalten der Kartusche
 
 -   **\[Edit map cartouche\]**: Konfiguration der Kartusche
 
@@ -84,9 +84,3 @@ Der Karteninhalt kann in weiteren Formen exportiert werden.:
 -   *Save as Image* opens a file dialog where you select the name, path and type of image (PNG,JPG and many other formats). A world file with extension PNGW or JPGW saved in the same folder georeferences the image.
 
 -   *KML/KMZ Export* exportiert den Karteninhalt soweit möglich in einer KML- oder KMZ-Datei. Im Dialog kann ausgewählt werden, welche Layer in der Export-Datei enthalten sein sollen.
-
--   [weiter](view.html "Ansicht")
--   [zurück](../introduction/qgis_gui.html "KADAS GUI") |
-
-
-

@@ -7,9 +7,3 @@ La fonction *Aide* ouvre une fenêtre avec le manuel de l’utilisateur de KADAS
 ## A propos {#about}
 
 La fonction *A propos* ouvre une fenêtre d’affichage avec des informations au sujet de la version du programme, les licences et les conditions d’utilisation.
-
--   [suivant](../appendices/appendices.html "Annexe")
--   [précédent](settings.html "Réglages") |
-
-
-

@@ -25,9 +25,3 @@ Individuelle Objekte können via Kontextmenu oder DEL Taste gelöscht werden.
 Das Objekte löschen Werkzeug erlaubt es, mehrere Objekte auf einmal zu löschen. Nach dem Aufziehen eines Reckteckes über einen Kartenbereich werden die Objekte aufgelistet, die sich vollständig in diesem Bereich befinden, wobei der Benutzer auswählen kann, welche Objekttype gelöscht werden sollen.
 
 Diese Funktionalität kann auch direkt im Pan-Modus via CTRL+Reckteckaufziehen aufgerufen werden.
-
--   [weiter](gps.html "GPS")
--   [zurück](analysis.html "Analyse") |
-
-
-

@@ -7,9 +7,3 @@ La funzione:guilabel:Aiuto apre una finestra contenente la guida utente all’in
 ## Informazioni {#about}
 
 La funzione *Informazioni* apre una finestra con le informazioni sulla versione del programma, sulle licenze e sulle condizioni di utilizzo.
-
--   [successivo](../appendices/appendices.html "Appendice")
--   [precedente](settings.html "Impostazioni") |
-
-
-

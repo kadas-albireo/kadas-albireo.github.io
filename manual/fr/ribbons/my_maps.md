@@ -55,14 +55,14 @@ La carte actuelle peut être imprimée avec la fonction *Imprimer* ou sauvegard�
 
 -   **Grid**: Si la section **Grid** est ouverte, une grille quadrillée apparaîtra en fond sur le document imprimé.
 
-    > -   **Coordinate System** : choix du système de coordination de la grille
-    >
-    > -   **Interval X**: écart des lignes de la grille dans le sens X
-    >
-    > -   **Interval Y**: écart des lignes de la grille dans le sens Y
-    >
-    > -   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> **Coordinate labels**: activation/désactivation des annotations sur la grille quadrillée
-    >
+    -   **Coordinate System** : choix du système de coordination de la grille
+
+    -   **Interval X**: écart des lignes de la grille dans le sens X
+
+    -   **Interval Y**: écart des lignes de la grille dans le sens Y
+
+    -   <img src="../../images/checkbox.png" alt="checkbox" /> **Coordinate labels**: activation/désactivation des annotations sur la grille quadrillée
+
 -   **Map cartouche**:activation/désactivation du cartouche
 
 -   **\[Edit map cartouche\]**: configuration du cartouche
@@ -98,9 +98,3 @@ Le contenu des cartes peut être exporté sous d’autres formes :
 -   *Enregistrer une image* ouvre une boîte de dialogue fichier où vous sélectionnez le nom, le chemin et le type d’image (PNG, JPG et bien d’autres formats). Un fichier world portant l’extension PNGW ou JPGW sauvegardé dans le même dossier géoréférence l’image.
 
 -   :guilabel:[<span id="id2" class="problematic">\`</span>](#id1)KML/KMZ Export exporte le contenu de la carte, dans la mesure du possible, dans un fichier KML ou KMZ. Dans la boîte de dialogue, on peut choisir quels niveaux le fichier d’exportation doit contenir.
-
--   [suivant](view.html "Vue")
--   [précédent](../introduction/qgis_gui.html "Interface de KADAS") |
-
-
-

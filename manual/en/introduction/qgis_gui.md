@@ -37,15 +37,15 @@ This is the “business end” of KADAS — maps are displayed in this area! The
 
 Tip
 
-**Zooming the Map with the Mouse Wheel**
-
-You can use the mouse wheel to zoom in and out on the map. Place the mouse cursor inside the map area and roll the wheel forward (away from you) to zoom in and backwards (towards you) to zoom out. The zoom is centered on the mouse cursor position. You can customize the behavior of the mouse wheel zoom using the *Map tools* tab under the *Settings ‣ Options* menu.
+> **Zooming the Map with the Mouse Wheel**
+> 
+> You can use the mouse wheel to zoom in and out on the map. Place the mouse cursor inside the map area and roll the wheel forward (away from you) to zoom in and backwards (towards you) to zoom out. The zoom is centered on the mouse cursor position. You can customize the behavior of the mouse wheel zoom using the *Map tools* tab under the *Settings ‣ Options* menu.
 
 Tip
 
-**Panning the Map with the Arrow Keys and Space Bar**
-
-You can use the arrow keys to pan the map. Place the mouse cursor inside the map area and click on the right arrow key to pan east, left arrow key to pan west, up arrow key to pan north and down arrow key to pan south. You can also pan the map using the space bar or the click on mouse wheel: just move the mouse while holding down space bar or click on mouse wheel.
+> **Panning the Map with the Arrow Keys and Space Bar**
+> 
+> You can use the arrow keys to pan the map. Place the mouse cursor inside the map area and click on the right arrow key to pan east, left arrow key to pan west, up arrow key to pan north and down arrow key to pan south. You can also pan the map using the space bar or the click on mouse wheel: just move the mouse while holding down space bar or click on mouse wheel.
 
 ## Layers and geodata catalog {#layers-and-geodata-catalog}
 
@@ -118,9 +118,3 @@ The current mouse position on the map can be displayed with respect to multiple 
 Next to the coordinate display you will find the scale display. It shows the scale of the map view. If you zoom in or out, KADAS shows you the current scale. There is a scale selector, which allows you to choose between predefined scales from 1:500 to 1:1000000.
 
 The *coordinate reference system* selection button allows the user to choose which projection to use for the map. This selection may differ from the native projection of the datasets, in which case the data is reprojected. See also <a href="../working_with_projections/working_with_projections.html#label-projections" class="reference internal"><em>Working with Projections</em></a>
-
--   [next](../ribbons/my_maps.html "My maps")
--   [previous](../preamble/conventions.html "Conventions") |
-
-
-

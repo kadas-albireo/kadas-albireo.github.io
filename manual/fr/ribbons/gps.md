@@ -9,18 +9,18 @@ Pour pouvoir utiliser un GPS avec KADAS, il faut installer l’application GpsGa
 
 Le statut de la connexion GPS est indiqué dans la partie inférieure du programme. Le bouton statut GPS peut être activé ou désactivé pour établir ou couper la connexion. La couleur du bouton statut change en fonction de l’état de connexion.
 
-> -   Noir : GPS non activé
->
-> -   Bleu : la connexion est initialisée
->
-> -   Blanc : la connexion est initialisée mais aucune donnée n’a été reçue
->
-> -   Rouge : la connexion est initialisée mais aucune information sur la position n’est disponible
->
-> -   Jaune : connexion initialisée, seulement 2D Fix
->
-> -   Vert : connexion initialisée, 3D Fix
->
+-   Noir : GPS non activé
+
+-   Bleu : la connexion est initialisée
+
+-   Blanc : la connexion est initialisée mais aucune donnée n’a été reçue
+
+-   Rouge : la connexion est initialisée mais aucune information sur la position n’est disponible
+
+-   Jaune : connexion initialisée, seulement 2D Fix
+
+-   Vert : connexion initialisée, 3D Fix
+
 Dès que KADAS reçoit des données sur la position GPS, un marqueur de position apparaît sur la carte.
 
 ## Se déplacer avec un GPS {#moving-with-gps}
@@ -40,9 +40,3 @@ Les points de parcours et les routes ont leur propre niveau dans l’arborescenc
 ## Exportation et importation GPX {#gpx-export-und-import}
 
 Ces fonctions permettent d’exporter des routes et points de parcours dessinés dans un fichier GPX, ainsi que d’importer un fichier GPX existant dans le niveau “Routes GPS”.
-
--   [suivant](mss.html "MSS")
--   [précédent](draw.html "Dessiner") |
-
-
-

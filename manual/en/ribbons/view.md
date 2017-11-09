@@ -33,19 +33,12 @@ The displayed layers can be toggled from the secondary view window title bar.
 
 <a href="../../images/transformed.png" class="reference internal"><img src="../../images/transformed.png" alt="transformed" /></a> <sup>Grid</sup> allows you to add a coordinate grid and coordinate annotations to the map canvas.
 
-**Figure Decorations 1:**
+**The Grid Dialog:**
 
 ![](../../images/grid_dialog.png)
-The Grid Dialog 
 
-1.  Select from menu *View ‣ Decorations ‣ Grid*. The dialog starts (see <a href="#figure-decorations-1" class="reference internal">figure_decorations_1</a>).
+1.  Select from menu *View ‣ Decorations ‣ Grid*. The dialog starts.
 2.  Activate the <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Enable grid* checkbox and set grid definitions according to the layers loaded in the map canvas.
 3.  Activate the <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Draw annotations* checkbox and set annotation definitions according to the layers loaded in the map canvas.
 4.  Click **\[Apply\]** to verify that it looks as expected.
 5.  Click **\[OK\]** to close the dialog.
-
--   [next](analysis.html "Analysis")
--   [previous](my_maps.html "My maps") |
-
-
-

@@ -55,14 +55,14 @@ La mappa attuale può essere inviata alla stampante tramite la funzione *Stampa*
 
 -   **Griglia**: se la sezione **Griglia** è aperta, nello stampato viene posizionato un reticolo.
 
-    > -   **Sistema di coordinate**: scelta del sistema di coordinate della griglia
-    >
-    > -   **Intervallo X**: distanza delle linee del reticolo in direzione X
-    >
-    > -   **Intervallo Y**: distanza delle linee del reticolo in direzione Y
-    >
-    > -   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> **Etichette coordinate**: attivazione/disattivazione delle diciture del reticolo
-    >
+    -   **Sistema di coordinate**: scelta del sistema di coordinate della griglia
+
+    -   **Intervallo X**: distanza delle linee del reticolo in direzione X
+
+    -   **Intervallo Y**: distanza delle linee del reticolo in direzione Y
+
+    -   <img src="../../images/checkbox.png" alt="checkbox" /> **Etichette coordinate**: attivazione/disattivazione delle diciture del reticolo
+
 -   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> **Cartuccia mappa**: attivazione/disattivazione della cartuccia
 
 -   **\[Modifica cartuccia mappa\]**: configurazione della cartuccia
@@ -98,9 +98,3 @@ Il contenuto della mappa può essere esportato in altre forme:
 -   *Salva come immagine* apre una finestra per i file in cui selezionare nome, percorso e tipo di immagine (PNG, JPG e molti altri formati). Un file mondiale con estensione PNGW o JPGW salvato nella stessa cartella georeferenzia l’immagine.
 
 -   *Esportazione KML/KMZ* esporta il contenuto della mappa in un file KML o KMZ, se possibile. Nella finestra è possibile scegliere quali livelli debbano essere contenuti nel file di esportazione.
-
--   [successivo](view.html "Vista")
--   [precedente](../introduction/qgis_gui.html "GUI KADAS") |
-
-
-

@@ -261,8 +261,3 @@ Si vous avez des Sections Invariantes, des Textes De Première de Couverture et 
 Si vous avez des Sections Invariantes mais pas de Texte De Couverture, ou une autre combinaison des trois, fusionner les deux possibilités pour que cela convienne à la situation.
 
 Si votre document contient des exemples non triviaux de code source de logiciel, nous recommandons de publier ces exemples en parallèle sous une licence de logiciel libre de votre choix, telle que la licence publique générale GNU, pour permettre leur utilisation dans des logiciels libres.
-
--   [précédent](../ribbons/help.html "Aide")
-
-
-

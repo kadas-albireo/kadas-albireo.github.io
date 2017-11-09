@@ -38,12 +38,12 @@ Les niveaux affichés peuvent être choisis indépendamment de la fenêtre princ
 
 <a href="../../images/transformed.png" class="reference internal"><img src="../../images/transformed.png" alt="transformed" /></a> <sup>grille</sup> vous permet d’ajouter une grille et des annotations de grille à la carte.
 
-**Figure Decorations 1:**
+**Le dialogue de grille:**
 
 ![](../../images/grid_dialog.png)
-Le dialogue de grille 
 
-1.  Sélectionnez dans le menu *Vue ‣ Décorations ‣ Grille*. Le dialogue commence (cf. <a href="#figure-decorations-1" class="reference internal">figure_décorations_1</a>).
+
+1.  Sélectionnez dans le menu *Vue ‣ Décorations ‣ Grille*. Le dialogue commence.
 
 2.  Activez la case à cocher [<span id="id2" class="problematic">|case à cocher|</span>](#id1) *Autoriser grille* et fixer les définitions de la grille selon les couches chargées dans la carte.
 
@@ -52,9 +52,3 @@ Le dialogue de grille
 4.  Cliquez **\[Appliquer\]** pour vérifier que l’aspect est celui que vous attendiez.
 
 5.  Cliquez **\[OK\]** pour fermer le dialogue.
-
--   [suivant](analysis.html "Analyse")
--   [précédent](my_maps.html "Mes cartes") |
-
-
-

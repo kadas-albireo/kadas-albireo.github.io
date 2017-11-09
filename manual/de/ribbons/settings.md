@@ -12,8 +12,3 @@ Die Sprache von KADAS kann über die Auswahlliste *Sprache* angepasst werden. Na
 
 Durch die Auswahl von <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> Numerische Eingabefelder während des Zeichnens anzeigen wird im Zeichnungsmodus bei der Maus ein Eingabefeld angezeigt, in dem die Koordinaten des nächsten Punktes numerisch festgelegt werden können.
 
--   [weiter](help.html "Hilfe")
--   [zurück](mss.html "MSS") |
-
-
-

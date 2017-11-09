@@ -7,9 +7,3 @@ The *help* button opens the KADAS user manual in a separate window, which can be
 ## About {#about}
 
 The *about* buttons opens the application about dialog, containing program version license and terms of use.
-
--   [next](../appendices/appendices.html "Appendix")
--   [previous](settings.html "Settings") |
-
-
-

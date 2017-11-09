@@ -16,8 +16,6 @@ Um ein Höhenprofil zu erstellen, kann der Benutzer auf der Karte eine Liniengeo
 
 Besteht die Liniengeometrie aus nur einem Segment, kann entlang dieser Linie eine Sichtbarkeitsanalyse durchgeführt werden. Dazu muss im Höhenprofildialog die Sichtbarkeit Checkbox aktiv sein. Konfigurationsmöglichkeiten der Sichtbarkeitsanalyse sind die Beobachterhöhe, die Zielhöhe sowie ob diese Höhen relativ zum Terrain oder dem Meeresspiegel interpretiert werden sollen.
 
-.
-
 Die Höhenprofilgraphik lässt sich zusätzlich in die Zwischenablage kopieren, oder als Bild in die Karte einbetten.
 
 ## Neigung und Schummerung {#slope-and-hillshade}
@@ -39,9 +37,3 @@ Um diese Geländeanalysefunktionen verwenden zu können muss im Projekt ein Höh
 Die Einsehbarkeitsanalyse wird innerhalb eines Kreissektors oder einem Vollkreis berechnet. Beim ersten Mouseclick auf die Karte wird der Beobachterstandort definiert, der zweite definiert den Radius, und der dritte den Sektoröffungswinkel. Falls die numerische Eingabe aktiv ist, können diese Parameter auch numerisch eingegeben werden. Nach dem erfassen der Analysefläche können die Berechnungsparameter angepasst werden, nämlich die Beobachterhöhe, die Zielhöhe, ob diese Höhen relativ zum Terrain oder dem Meeresspiegel interpretiert werden sollen, und ob den sichtbaren oder den unsichtbaren Berich angezeigt werden soll.
 
 Das Ergebniss wird als Rasterebene der Karte hinzugefügt. Beim Speichern des Projektes wird diese Ebene in den &lt;projektname&gt;\_files Ordner abgelegt.
-
--   [weiter](draw.html "Zeichnen")
--   [zurück](view.html "Ansicht") |
-
-
-

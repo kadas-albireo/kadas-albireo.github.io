@@ -9,18 +9,18 @@ Per poter usare un GPS con KADAS, sul sistema deve essere installata l’applica
 
 Lo stato del collegamento GPS viene visualizzato nella riga di stato nell’area di programma inferiore. Questo pulsante di stato del GPS puĂ˛ essere attivato o disattivato per realizzare o interrompere la connessione. Il colore di riempimento del pulsante di stato cambia in base allo stato di connessione attuale:
 
-> -   Nero: GPS non attivato
->
-> -   Blu: connessione in fase di inizializzazione
->
-> -   Bianco: connessione inizializzata, nessun dato ricevuto
->
-> -   Rosso: connessione inizializzata, nessuna informazione sulla posizione disponibile
->
-> -   Giallo: connessione inizializzata, solo 2D Fix
->
-> -   Verde: connessione inizializzata, 3D Fix
->
+-   Nero: GPS non attivato
+
+-   Blu: connessione in fase di inizializzazione
+
+-   Bianco: connessione inizializzata, nessun dato ricevuto
+
+-   Rosso: connessione inizializzata, nessuna informazione sulla posizione disponibile
+
+-   Giallo: connessione inizializzata, solo 2D Fix
+
+-   Verde: connessione inizializzata, 3D Fix
+
 Non appena KADAS riceve dei dati sulla posizione dal GPS, sulla mappa viene disegnato un marcatore di posizione corrispondente.
 
 ## Movimento con GPS {#moving-with-gps}
@@ -40,9 +40,3 @@ Waypoint e percorsi vengono salvati nell’albero dei livelli in un proprio live
 ## Esportazione e importazione GPX {#gpx-export-und-import}
 
 Queste funzioni permettono l’esportazione dei waypoint e dei percorsi disegnati in un file GPX e l’importazione di un file GPX esistente nel livello “Percorsi GPS”.
-
--   [successivo](mss.html "MSS")
--   [precedente](draw.html "Disegno") |
-
-
-

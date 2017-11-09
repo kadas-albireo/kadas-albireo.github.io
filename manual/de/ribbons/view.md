@@ -36,21 +36,13 @@ Die angezeigten Ebenen können unabhängig vom Hauptfenster im Menu *Fenster* au
 
 ## Gitter {#grid}
 
-<a href="../../images/transformed.png" class="reference internal"><img src="../../images/transformed.png" alt="transformed" /></a> <sup>Grid</sup> allows you to add a coordinate grid and coordinate annotations to the map canvas.
+<a href="../../images/transformed.png" class="reference internal"><img src="../../images/transformed.png" alt="transformed" /></a> <sup>Gitter</sup> ermöglicht es Ihnen ein Koordinatengitter und Koordinatenbeschriftungen der Karte hinzuzufügen.
 
-**Figure Decorations 1:**
+**Gitter Dialog:**
 
 ![](../../images/grid_dialog.png)
-The Grid Dialog 
 
-1.  Select from menu *View ‣ Decorations ‣ Grid*. The dialog starts (see <a href="#figure-decorations-1" class="reference internal">figure_decorations_1</a>).
-2.  Activate the <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Enable grid* checkbox and set grid definitions according to the layers loaded in the map canvas.
-3.  Activate the <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Draw annotations* checkbox and set annotation definitions according to the layers loaded in the map canvas.
-4.  Click **\[Apply\]** to verify that it looks as expected.
-5.  Click **\[OK\]** to close the dialog.
-
--   [weiter](analysis.html "Analyse")
--   [zurück](my_maps.html "Meine Karten") |
-
-
-
+1.  Wählen Sie das Menü *Ansicht‣ Dekorationen ‣ Gitter*. Der Dialog öffnet sich.
+2.  Aktivieren Sie das Kontrollkästchen <img src="../../images/checkbox.png" alt="checkbox" /> Aktiviere Gitter und machen Sie Definitionen gemäß den Layern die Sie ins Kartenfenster geladen haben.
+3.  Aktivieren Sie das Kontrollkästchen <img src="../../images/checkbox.png" alt="checkbox" /> Beschriftungen zeichnen und machen Sie Beschriftungsdefinitionen gemäß den im Kartenfenster geladenen Layern.
+4.  Klicken Sie [Anwenden] um sicherzugehen, dass es so aussieht wie sie es erwarten oder [OK], wenn Sie zufrieden sind.

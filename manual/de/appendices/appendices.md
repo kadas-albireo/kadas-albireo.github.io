@@ -261,8 +261,3 @@ Wenn Sie unveränderliche Abschnitte, vordere Umschlagtexte und hintere Umschlag
 Wenn Sie unveränderliche Abschnitte ohne Umschlagtexte haben oder eine andere Kombination der drei, vermischen Sie jene zwei Alternativen zu einer übereinstimmenden Situation.
 
 Wenn Ihr Dokument nicht-triviale Beispiele eines Programmcodes enthält, empfehlen wir, diese Beispiele entsprechend unter einer freien Software-Lizenz ihrer Wahl, wie der GNU General Public License freizugeben, um deren Verwendung in freier Software zu gestatten.
-
--   [zurück](../ribbons/help.html "Hilfe")
-
-
-

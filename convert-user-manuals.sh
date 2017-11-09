@@ -3,7 +3,7 @@
 for LNG in de en fr it; do
     BASE=$HOME/code/gis/kadas-help-plugin/kadas_help/html/$LNG/docs/user_manual
     mkdir -p $LNG
-    echo >$LNG/SUMMARY.md
+    echo >$LNG/SUMMARY-generated.md
     for chapt in $(ls $BASE); do
         mkdir -p $LNG/$chapt
         for HTML in $(ls $BASE/$chapt); do
@@ -18,7 +18,7 @@ for LNG in de en fr it; do
                    -e 's!^.span id=".\+"../span.$!!g' \
                    -e 's!-   \[\](../index.html) »!!g' \
                    $LNG/$chapt/$MD
-            echo "* [$MD]($chapt/$MD)" >>$LNG/SUMMARY.md
+            echo "* [$MD]($chapt/$MD)" >>$LNG/SUMMARY-generated.md
         done
     done
     touch $LNG/README.md

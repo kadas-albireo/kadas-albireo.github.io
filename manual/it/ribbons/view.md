@@ -38,12 +38,12 @@ I livelli visualizzati possono essere scelti dal menu *Finestra* indipendentemen
 
 <a href="../../images/transformed.png" class="reference internal"><img src="../../images/transformed.png" alt="transformed" /></a> <sup>Griglia</sup> consente di aggiungere alla mappa una griglia e annotazioni delle coordinate.
 
-**Figure Decorations 1:**
+**Finestra di dialogo Griglia:**
 
 ![](../../images/grid_dialog.png)
-Finestra di dialogo Griglia 
 
-1.  Selezionare dal menu *Vista ‣ Decorazioni ‣ Griglia*. Si aprirà una finestra di dialogo (cfr. <a href="#figure-decorations-1" class="reference internal">figure_decorations_1</a>).
+
+1.  Selezionare dal menu *Vista ‣ Decorazioni ‣ Griglia*. Si aprirà una finestra di dialogo.
 
 2.  Selezionare la casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Abilita griglia* e impostare i parametri della griglia in base ai livelli caricati sulla mappa.
 
@@ -52,9 +52,3 @@ Finestra di dialogo Griglia
 4.  Fare clic su **\[Applica\]** per verificare che la visualizzazione corrisponda alle impostazioni scelte.
 
 5.  Fare clic su **\[OK\]** per chiudere la finestra di dialogo.
-
--   [successivo](analysis.html "Analisi")
--   [precedente](my_maps.html "Le mie mappe") |
-
-
-

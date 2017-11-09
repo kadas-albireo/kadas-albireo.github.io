@@ -25,9 +25,3 @@ Le immagini della fotocamera georeferenziate possono essere aggiunte alla mappa.
 Lo strumento Cancella oggetti permette di cancellare più oggetti in una volta. Dopo la tracciatura di un rettangolo su un’area della mappa vengono elencati gli oggetti che si trovano completamente in quest’area, ove l’utente può scegliere quali tipi di oggetti debbano essere cancellati.
 
 Questa funzionalità è richiamabile anche direttamente in modalità di spostamento tramite CTRL+Apri rettangolo.
-
--   [successivo](gps.html "GPS")
--   [precedente](analysis.html "Analisi") |
-
-
-

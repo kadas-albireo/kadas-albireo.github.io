@@ -41,15 +41,15 @@ Dies ist der Ergebnisbereich von QGIS - hier werden die Daten visualisiert. Die 
 
 Tipp
 
-**Mit dem Mausrad in der Karte zoomen**
-
-Sie können das Mausrad benutzen, um im Kartenfenster in Layer hinein- bzw. hinauszuzoomen. Platzieren Sie dazu den Mauszeiger im Kartenfenster und drehen Sie das Mausrad nach vorne (Hinauszoomen) oder nach hinten zum Hineinzoomen. Der Mauszeiger bildet dabei das Zentrum. Sie können das Verhalten des Mausrades in der Menüleiste *Einstellungen ‣Optionen* unter dem Menü *Kartenwerkzeuge* einstellen.
+> **Mit dem Mausrad in der Karte zoomen**
+> 
+> Sie können das Mausrad benutzen, um im Kartenfenster in Layer hinein- bzw. hinauszuzoomen. Platzieren Sie dazu den Mauszeiger im Kartenfenster und drehen Sie das Mausrad nach vorne (Hinauszoomen) oder nach hinten zum Hineinzoomen. Der Mauszeiger bildet dabei das Zentrum. Sie können das Verhalten des Mausrades in der Menüleiste *Einstellungen ‣Optionen* unter dem Menü *Kartenwerkzeuge* einstellen.
 
 Tipp
 
-**Den Kartenausschnitt mit den Pfeiltasten und der Leertaste verschieben**
-
-Sie können die Pfeiltasten verwenden, um den Layer zu verschieben. Platzieren Sie dazu den Mauszeiger im Kartenfenster und drücken Sie auf die rechte Pfeiltaste um nach Osten zu verschieben, die linke Pfeiltasten für Westen, die Hoch-Pfeiltasten für Norden und die Unten-Pfeiltasten für Süden. Sie können einen Layer auch mit der Space-Taste verschieben. Bewegen Sie dazu einfach die Maus während Sie die Space-Taste gedrückt halten.
+> **Den Kartenausschnitt mit den Pfeiltasten und der Leertaste verschieben**
+> 
+> Sie können die Pfeiltasten verwenden, um den Layer zu verschieben. Platzieren Sie dazu den Mauszeiger im Kartenfenster und drücken Sie auf die rechte Pfeiltaste um nach Osten zu verschieben, die linke Pfeiltasten für Westen, die Hoch-Pfeiltasten für Norden und die Unten-Pfeiltasten für Süden. Sie können einen Layer auch mit der Space-Taste verschieben. Bewegen Sie dazu einfach die Maus während Sie die Space-Taste gedrückt halten.
 
 ## Ebenen und Geodatenkatalog {#layers-and-geodata-catalog}
 
@@ -131,9 +131,3 @@ Die aktuelle Mausposition kann in verschiedenen Koordinatensystemen angezeigt we
 Neben der Koordinatenanzeige finden Sie die Maßstabsanzeige. Es zeigt den Maßstab des Kartenfensters. Wenn Sie herein- oder hinauszoomen zeigt QGIS ihnen den aktuellen Maßstab. Seit QGIS 1.8 gibt es eine Maßstabsauswahl mit der Sie zwischen vordefinierten Maßstäben von 1:500 bis 1:1000000 wählen können.
 
 Im Auswahlfeld *Koordinatensystem* kann das Referenzsystem ausgewählt werden, in dem die aktuelle Karte dargestellt werden soll. Das angzeigte Referensystem kann vom Referenzsystem, in dem die Daten vorliegen, abweichen. In diesem Fall werden die Daten zur Darstellung umprojiziert. See also <a href="../working_with_projections/working_with_projections.html#label-projections" class="reference internal"><em>Arbeiten mit Projektionen</em></a>
-
--   [weiter](../ribbons/my_maps.html "Meine Karten")
--   [zurück](../preamble/conventions.html "Gebrauch der Dokumentation") |
-
-
-

@@ -48,15 +48,15 @@ C’est la partie centrale de KADAS puisque les cartes y sont affichées ! Le co
 
 Astuce
 
-**Zoomer sur la carte avec la molette de la souris**
-
-Vous pouvez utiliser la molette de la souris pour changer le niveau de zoom de la carte. Placez votre curseur dans la zone d’affichage de la carte et faites rouler la molette vers l’avant pour augmenter l’échelle, vers vous pour la réduire. La vue sera recentrée sur la position du curseur de la souris. Vous pouvez modifier le comportement de la molette de la souris en utilisant l’onglet *Outils cartographiques* dans le menu *Préférences ‣ Options*.
+> **Zoomer sur la carte avec la molette de la souris**
+> 
+> Vous pouvez utiliser la molette de la souris pour changer le niveau de zoom de la carte. Placez votre curseur dans la zone d’affichage de la carte et faites rouler la molette vers l’avant pour augmenter l’échelle, vers vous pour la réduire. La vue sera recentrée sur la position du curseur de la souris. Vous pouvez modifier le comportement de la molette de la souris en utilisant l’onglet *Outils cartographiques* dans le menu *Préférences ‣ Options*.
 
 Astuce
 
-**Se déplacer sur la carte avec les flèches et la barre espace**
-
-Vous pouvez utiliser les flèches du clavier pour vous déplacer sur la carte. Placez le curseur sur la carte et appuyez sur la flèche droite pour décaler la vue vers l’Est, la flèche gauche pour la décaler vers l’Ouest, la flèche supérieure vers le Nord et la flèche inférieure vers le Sud. Vous pouvez aussi déplacer la carte en gardant la touche espace appuyée et en bougeant la souris ou encore simplement en gardant la molette de la souris appuyée.
+> **Se déplacer sur la carte avec les flèches et la barre espace**
+> 
+> Vous pouvez utiliser les flèches du clavier pour vous déplacer sur la carte. Placez le curseur sur la carte et appuyez sur la flèche droite pour décaler la vue vers l’Est, la flèche gauche pour la décaler vers l’Ouest, la flèche supérieure vers le Nord et la flèche inférieure vers le Sud. Vous pouvez aussi déplacer la carte en gardant la touche espace appuyée et en bougeant la souris ou encore simplement en gardant la molette de la souris appuyée.
 
 ## Niveaux et catalogue de géodonnées {#layers-and-geodata-catalog}
 
@@ -140,9 +140,3 @@ La position actuelle de la souris peut être affichée dans différents système
 À droite de ces coordonnées se trouve l’échelle de la carte. Si vous zoomez ou dé-zoomez, l’échelle se met à jour automatiquement. Une liste déroulante vous permet de choisir une échelle prédéterminée allant du 1:500ème au 1:1‘000‘000ème.
 
 Le système de référence où la carte actuelle doit être représentée peut être choisi dans le champ de sélection *système de coordonnées*. Le système de référence affiché peut différer du système de référence dans lequel les données existent. Dans ce cas, les données sont converties pour la représentation. Cf. aussi *projections\_labels*
-
--   [suivant](../ribbons/my_maps.html "Mes cartes")
--   [précédent](../preamble/conventions.html "Conventions") |
-
-
-

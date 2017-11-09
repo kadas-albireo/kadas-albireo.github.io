@@ -39,9 +39,3 @@ To utilize these functions, a heightmap must be defined in the project, see chap
 The viewhsed analysis is computed within a circular sector or a full circle as specified by the user. The first click sets the observer position, the second one the radius and the third click the the aperture angle. These parameters can also be entered numerically if numeric input is enabled in the settings tab. After drawing the analysis area geometry, the user is required to specify the computation parameters, which include the observer height, the target height, whether these heights are relative to the ground or the sea level, and whether the visible or invisible area should be shown in the result.
 
 The analysis output is added as a raster layer to the map. When the project is saved, the raster is saved in the &lt;projectname&gt;\_files folder.
-
--   [next](draw.html "Drawing")
--   [previous](view.html "View") |
-
-
-

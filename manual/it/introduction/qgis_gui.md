@@ -38,15 +38,15 @@ Questa è la “parte commerciale” di KADAS: è in quest’area che vengono vi
 
 Suggerimento
 
-**Aumentare o diminuire lo zoom con la rotella del mouse**
-
-Per le operazioni di zoom è anche possibile utilizzare la rotella del mouse. Posizionando il puntatore del mouse nell’area di visualizzazione delle mappe, si aumenterà lo zoom girando la rotella verso lo schermo (lontano dall’utente) e lo si ridurrà girandola nel verso contrario (verso l’utente). La posizione del puntatore costituisce il centro dell’ingrandimento. È inoltre possibile personalizzare il comportamento della funzione di zoom con la rotella del mouse nella scheda *Strumenti mappa* del menu *Impostazioni ‣ Opzioni*.
+> **Aumentare o diminuire lo zoom con la rotella del mouse**
+> 
+> Per le operazioni di zoom è anche possibile utilizzare la rotella del mouse. Posizionando il puntatore del mouse nell’area di visualizzazione delle mappe, si aumenterà lo zoom girando la rotella verso lo schermo (lontano dall’utente) e lo si ridurrà girandola nel verso contrario (verso l’utente). La posizione del puntatore costituisce il centro dell’ingrandimento. È inoltre possibile personalizzare il comportamento della funzione di zoom con la rotella del mouse nella scheda *Strumenti mappa* del menu *Impostazioni ‣ Opzioni*.
 
 Suggerimento
 
-**Spostare la mappa con i tasti freccia e la barra spaziatrice**
-
-È possibile spostare la mappa anche con i tasti direzionali. Posizionare il cursore del mouse sulla mappa e premere la freccia destra per spostarsi verso est, la freccia sinistra per spostarsi verso ovest, la freccia su per spostarsi verso nord e la freccia giù per spostarsi verso sud. È anche possibile spostare la mappa con la barra spaziatrice oppure premendo la rotella del mouse: nel primo caso si terrà premuta la barra spaziatrice e si muoverà il mouse, mentre nel secondo caso si terrà premuto il tasto della rotella mentre si muove il mouse.
+> **Spostare la mappa con i tasti freccia e la barra spaziatrice**
+>
+> È possibile spostare la mappa anche con i tasti direzionali. Posizionare il cursore del mouse sulla mappa e premere la freccia destra per spostarsi verso est, la freccia sinistra per spostarsi verso ovest, la freccia su per spostarsi verso nord e la freccia giù per spostarsi verso sud. È anche possibile spostare la mappa con la barra spaziatrice oppure premendo la rotella del mouse: nel primo caso si terrà premuta la barra spaziatrice e si muoverà il mouse, mentre nel secondo caso si terrà premuto il tasto della rotella mentre si muove il mouse.
 
 ## Layers and geodata catalog {#layers-and-geodata-catalog}
 
@@ -126,9 +126,3 @@ The current mouse position on the map can be displayed with respect to multiple 
 Accanto alla visualizzazione delle coordinate si trova la finestra della scala, che indica la scala della mappa attuale. Sia ingrandendo che rimpicciolendo la scala, KADAS mostrerà la scala corrente. L’apposito selettore consente di selezionare alcune scale predefinite da 1:500 a 1:1000000.
 
 The *coordinate reference system* selection button allows the user to choose which projection to use for the map. This selection may differ from the native projection of the datasets, in which case the data is reprojected. See also <a href="../working_with_projections/working_with_projections.html#label-projections" class="reference internal"><em>Lavorare con le proiezioni</em></a>
-
--   [successivo](../ribbons/my_maps.html "Le mie mappe")
--   [precedente](../preamble/conventions.html "Convenzioni") |
-
-
-

@@ -242,8 +242,3 @@ If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts, replace 
 If you have Invariant Sections without Cover Texts, or some other combination of the three, merge those two alternatives to suit the situation.
 
 If your document contains nontrivial examples of program code, we recommend releasing these examples in parallel under your choice of free software license, such as the GNU General Public License, to permit their use in free software.
-
--   [previous](../ribbons/help.html "Help")
-
-
-

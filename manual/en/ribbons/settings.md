@@ -11,9 +11,3 @@ The *Height unit* combobox allows the user to choose which unit to use when disp
 ## Numeric input box {#numeric-input-box}
 
 If the Show numeric input box when drawing <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> is checked, an input box will be displayed next to the mouse when drawing shapes on the map. This box contains follow the mouse when drawing shapes on the map. It allows the user to numerically specify the coordinates while drawing a geometry.
-
--   [next](help.html "Help")
--   [previous](mss.html "MSS") |
-
-
-

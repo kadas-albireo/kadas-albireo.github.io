@@ -16,8 +16,6 @@ Per creare un profilo altimetrico, l’utente può disegnare sulla mappa una fig
 
 Se la figura geometrica lineare è costituita da un solo segmento, lungo questa linea è possibile eseguire un’analisi della visibilità. A tal fine, la casella di controllo Visibilità dev’essere attiva nella schermata del profilo altimetrico. Le possibilità di configurazione dell’analisi di visibilità sono rappresentate dall’altezza di osservazione, dall’altezza di arrivo e dal fatto che queste altezze debbano essere interpretate relativamente al terreno o al livello del mare.
 
-.
-
 Il grafico del profilo altimetrico può inoltre essere copiato negli appunti o inserito nella mappa quale immagine.
 
 ## Inclinazione e tonalità del rilievo {#slope-and-hillshade}
@@ -39,9 +37,3 @@ Per poter utilizzare queste funzioni di analisi del terreno, deve essere definit
 L’analisi della visibilità viene calcolata all’interno di un settore circolare o di un cerchio completo. Al primo clic del mouse sulla mappa viene definito il luogo d’osservazione; il secondo clic definisce il raggio; il terzo clic definisce l’apertura angolare del settore. Questi parametri possono essere immessi anche numericamente se l’immissione numerica è attiva. Dopo il rilevamento della superficie di analisi, possono essere adeguati i parametri di calcolo – ovvero l’altezza d’osservazione, l’altezza di arrivo, se queste altezze debbano essere interpretate relativamente al terreno o al livello del mare e se debba essere visualizzata l’area visibile o quella non visibile.
 
 Il risultato viene aggiunto quale livello della griglia della mappa. Al salvataggio del progetto, questo livello viene salvato nella cartella &lt;nome progetto&gt;\_files.
-
--   [successivo](draw.html "Disegno")
--   [precedente](view.html "Vista") |
-
-
-

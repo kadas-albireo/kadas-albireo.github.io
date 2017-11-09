@@ -41,12 +41,11 @@ The *Print* functionality allows printing the current map or exporting it to a f
 
 -   **Grid**: If the **Grid** secion is expanded, a grid is overlayed on the map.
 
-    > -   **Coordinate System**: Choice of the coordinate system to use for the grid
-    > -   **Interval X**: Grid line spacing in X direction
-    > -   **Interval Y**: Grid line spacing in Y direction
-    > -   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> **Coordinate labels**: Toggling of the coordinate labels
-    >
--   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> **Map cartouche**: Toggling of the map cartouche
+    -   **Coordinate System**: Choice of the coordinate system to use for the grid
+    -   **Interval X**: Grid line spacing in X direction
+    -   **Interval Y**: Grid line spacing in Y direction
+    -   <img src="../../images/checkbox.png" alt="checkbox" /> **Coordinate labels**: Toggling of the coordinate labels
+-   <img src="../../images/checkbox.png" alt="checkbox" /> **Map cartouche**: Toggling of the map cartouche
 
 -   **\[Edit map cartouche\]**: Setup of the map cartouche
 
@@ -76,9 +75,3 @@ Other export possibilities are:
 -   *Copy Map* copies the currently visible map extent is copied to clipboard.
 -   *Save Map* opens a file save dialog for saving the currently visible map extent to an image file. A world file (PNGW for PNG, JPGW for JPG, and so on) saved along with image contains its georeferencing parameters.
 -   *KML/KMZ Export* exports the map contents to a KML or KMZ file. A layer selection dialog allows the user to choose which layers to export.
-
--   [next](view.html "View")
--   [previous](../introduction/qgis_gui.html "KADAS GUI") |
-
-
-

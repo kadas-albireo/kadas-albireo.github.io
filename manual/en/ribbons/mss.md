@@ -37,9 +37,3 @@ When importing a MILXLY(Z) file, all contained layers are automatically imported
 ## OVL import {#ovl-import}
 
 OVL is the project format for the PCMAP Swissline software. The OVL importer reads objects from such project files and converts them into the corresponding MSS symbols and redlining objects. Any conversion errors are reported to the user. Slight display variations compared to the PCMAP Swissline software may occur even for successfully converted objects. The user is therefore advised to check the imported data..
-
--   [next](settings.html "Settings")
--   [previous](gps.html "GPS") |
-
-
-

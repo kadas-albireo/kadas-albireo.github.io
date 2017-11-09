@@ -7,9 +7,3 @@
 ## Über {#about}
 
 Die Funktion *Über* öffnet ein Anzeigefenster mit Informationen zur Programmversion, Lizenzen und Nutzungsbedinungen.
-
--   [weiter](../appendices/appendices.html "Anhang")
--   [zurück](settings.html "Einstellungen") |
-
-
-

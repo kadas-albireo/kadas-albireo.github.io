@@ -25,9 +25,3 @@ Individual objects can be deleted via context menu or DEL key.
 The delete objects tool allows the user to delete multiple objects at once. The user can drag a rectangle over the area within which objects should be deleted, after which a confirmation prompt will appear, listing objects which are completely within the specified area, grouped by layer. The user can exclude certain objects type from getting removed by toggling the corresponding checkbox in the confirmation dialog.
 
 This functionality can also be invoked directly from the pan mode by keeping CTRL pressed while selecting a desired map region.
-
--   [next](gps.html "GPS")
--   [previous](analysis.html "Analysis") |
-
-
-
