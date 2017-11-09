@@ -11,7 +11,7 @@ for LNG in de fr it; do
            -e 's/^\\_.\+//g' \
            -e 's/^ *1. \+#/#/g' \
            $MD
-    echo "* [Training Manual]($MD)" >SUMMARY.md
+    #echo "* [Training Manual]($MD)" >SUMMARY.md
     touch README.md
     popd
 done

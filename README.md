@@ -8,13 +8,19 @@ Requirements
 ------------
 
 The manuals are built with [GitBook](https://github.com/GitbookIO/gitbook).
-See [Setup and Installation of GitBook](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md#local-installation)
+See [Setup and Installation of GitBook](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md#local-installation).
 
 
 HTML generation
 ---------------
 
+User manual:
+
     cd manual
+
+Training manual:
+
+    cd training
 
 Preview and serve your book using:
 
