@@ -22,6 +22,10 @@ Training manual:
 
     cd training
 
+Install plugins:
+
+    gitbook install
+
 Preview and serve your book using:
 
     gitbook serve
