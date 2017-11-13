@@ -10,11 +10,19 @@ Es soll beachtet werden, dass die Vorlagen Projektspezifisch sind, somit können
 
 Bei ausgewählter Vorlage wird im Hauptkartenfenster ein blaues halb-transparentes Rechteck angezeigt, welches dem zu druckenden Ausschnitt entspricht. Bei den Vorlagen mit fixem Papierformat kann dieses Rechteck in der Hauptkarte verschoben werden, um den Druckbereich anzupassen. Die Grösse des Ausschnitts wird vom Papierformat und dem im Druckdialog angegebenen Massstab abgeleitet. Bei der *Custom* Vorlage wird der Ausschnitt zusammen mit dem Massstab im Druckdialog numerisch definiert, und das resultierende Papierformat wird diesen Angaben entsprechend dynamisch berechnet.
 
-Beim Drucken können zusätzliche Elemente, zwar Koordinatengitter, Kartenkartusche, Legende, und Massstabbalken je nach Wunsch ein- oder ausgeblendet werden. Die Position dieser Elemente ist in der Vorlage definiert. Der fortgeschrittene Modus bietet zusätzliche Konfigurationsmöglichkeiten an, darunter kann auch die Anordnung der Elemente angepasst werden.
+Beim Drucken können zusätzliche Elemente, zwar Koordinatengitter, Kartenkartusche, Legende, und Massstabbalken je nach Wunsch ein- oder ausgeblendet werden. Die Position dieser Elemente ist in der Vorlage definiert.
+
+Der fortgeschrittene Modus bietet zusätzliche Konfigurationsmöglichkeiten an, darunter kann auch die Anordnung der Elemente angepasst werden.
 
 Die Druckzusammenstellung kann als Datei exportiert werden oder einem Drucker geschickt werden.
 
-<img src="../media/image12.png" width="593" height="311" />
+<img src="../media/image12.png" />
+
+Die Druckvorlagen die im Projekt enthalten sind können im Druckzusammenstellungsdialog verwaltet werden, der durch die Schaltfläche rechts vom der Druckvorlageselektion geöffnet werden kann. Dort können einzelne Vorlagen importiert, exportiert sowie aus dem Projekt entfernt werden.
+
+<img src="../media/image12.1.png" />
+
+Des weiteren kann im Kartuschen-Dialog der Kartuscheninhalt als einzelständige XML Datei importiert und exportiert werden.
 
 ## Kartenbildschirmfoto
 

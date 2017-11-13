@@ -1,6 +1,6 @@
 # Programmoberfläche und Projektverwaltung
 
-<img src="../media/image1.png" width="599" height="466" />
+<img src="../media/image1.png" />
 
 ## Das Applikationsfenster
 
@@ -30,7 +30,7 @@ Das Applikationsfenster ist in folgende Bereiche unterteilt:
 
 Die Navigation in der Karte erfolgt mit der linken oder mittleren Maustaste, das Zoomen mit dem Scrollrad oder mit den Zoom-Buttons rechts oben im Kartenfenster. Die rechte Maustaste öffnet das Kontextmenü. Bei Touch-fähigen Monitore werden die Pan und Rotationsgesten erkannt. Zusätzlich kann auf ein bestimmter Ausschnitt gezoomt werden, indem mit gedrückter Shift-Taste ein Rechteck aufgezogen wird.
 
-Wenn kein Kartenwerkzeug aktiv ist, befindet man sich automatisch im Navigationsmodus. Ist ein Werkzeug (z.B. Messen oder Zeichnen) aktiv, ist die Schaltfläche in der entsprechenden Registerkarte das Werkzeug farblich hervorgehoben. Ein Werkzeug kann durch erneutes Drücken auf die entsprechende Schaltfläche wieder deaktiviert werden, oder alternativ durch drücken der ESC Taste.
+Wenn kein Kartenwerkzeug aktiv ist, befindet man sich automatisch im Navigationsmodus. Ist ein Werkzeug (z.B. Messen oder Zeichnen) aktiv, ist die Schaltfläche in der entsprechenden Registerkarte das Werkzeug farblich hervorgehoben. Ein Werkzeug kann durch erneutes Drücken auf die entsprechende Schaltfläche wieder deaktiviert werden, oder alternativ durch Drücken der ESC Taste.
 
 Unabhängig vom aktiven Kartenwerkzeug dienen die mittlere Maustaste und das Scrollrad immer zur Kartennavigation. Die Funktion der linken Maustaste hängt vom aktiven Werkzeug ab.
 
