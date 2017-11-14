@@ -16,11 +16,11 @@ Le mode avancé offre des options de configuration supplémentaires, y compris l
 
 La représentation d’impression peut être exportée comme fichier ou envoyée à une imprimante.
 
-<img src="../media/image18.png"/>
+<img src="../media/image12.png"/>
 
 Les modèles d'impression contenus dans le projet peuvent être gérés dans la boîte de dialogue Imprimer composition, qui peut être ouverte à l'aide du bouton situé à droite de la sélection du modèle d'impression. Là, des modèles individuels peuvent être importés, exportés et supprimés du projet.
 
-<img src = "../ media / image12.1.png" />
+<img src="../media/image12.1.png"/>
 
 De plus, le contenu du cartouche peut être importé et exporté en tant que fichier XML distinct dans la boîte de dialogue du cartouche.
 
