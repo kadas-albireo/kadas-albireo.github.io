@@ -1,0 +1,1 @@
+../../training/fr/analysis.md

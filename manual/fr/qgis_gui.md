@@ -1,0 +1,1 @@
+../../training/fr/qgis_gui.md
