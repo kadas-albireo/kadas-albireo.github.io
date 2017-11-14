@@ -1,8 +1,10 @@
 # Dessiner
 
-Les outils de dessin se trouvent dans l’onglet *Dessiner*. On peut ajouter divers textes, géométries, punaises (cf. chapitre 3.2) ainsi que des photos géoréférencées à la carte.
+Les outils de dessin se trouvent dans l’onglet *Dessiner*. On peut ajouter divers textes, géométries, punaises ainsi que des photos géoréférencées à la carte.
 
 Comme pour la mesure, les points de coordonnées peuvent être saisis numériquement quand on dessine, lorsque le bouton *Afficher les champs de saisie numériques pendant le dessin* est actif dans l’onglet *Réglages*.
+
+Sous l'onglet * Paramètres *, l'accrochage peut être activé pendant le dessin. Celui-ci accède à tous les nœuds des géométries vectorielles présentes sur la carte.
 
 ## Géométries et textes
 
@@ -14,17 +16,38 @@ Les géométries dessinées et les textes sont placés sous le niveau *Redlining
 
 On peut éditer a posteriori les géométries déjà dessinées ou les textes en les sélectionnant sur la carte. Les objets sélectionnés peuvent être déplacés et, en fonction du type de géométrie, les nœuds peuvent être déplacés individuellement, créées ou éliminés via le menu contextuel. Les textes peuvent être édités par double clic ou via le menu contextuel.
 
-Les mesures pertinentes sont indiquées simultanément lors de la création et de l’édition des géométries.
+Les géométries de lignes et de polygones existantes peuvent être continuées via le menu contextuel sur le premier ou le dernier nœud.
+les opérations d'édition sur une couche de Redlining peuvent se faire par CTRL + Z et CTRL + Y ou avec les touches correspondantes du bord inférieur de la carte.
 
-<img src="../media/image9.png" width="471" height="352" />
+Lors de la création et de l'édition de géométries, les valeurs mesurées pertinentes sont affichées en même temps.
+ 
+<img src = "../ media / image6.png" />
 
-## Photos
+Les dessins de Redlining peuvent être copiés / coupé et collé + C, CTRL + X et CTRL + V via le menu contextuel ou les raccourcis habituels CTRL.
 
-Les photos avec géoréférencement comme tag EXIF sont supportées. Ces photos sont ajoutées à la carte à l’endroit correspondant dans une bulle de discussion. Un double clic sur la bulle de discussion ouvre la photo avec le programme de traitement de photo standard du système d<img src="../media/image10.png" width="283" height="194" />’exploitation.
+Plusieurs objets de Redlining peuvent être sélectionnés avec la touche CTRL et déplacés, copiés, coupés et collés en tant que groupe.
+
+## images raster
+ 
+Les images raster dans les formats habituels (JPG, PNG, BMP) peuvent être ajoutées en tant qu'annotations à la carte. Ceux-ci sont affichés dans une bulle de dialogue. Si l'image est géoréférencée (balises EXIF), l'ancre est placée à l'emplacement approprié et l'emplacement est bloqué. Le verrouillage de position peut être activé ou désactivé via le menu contextuel. Un double-clic sur l'ancre ouvre l'image avec la visionneuse d'images par défaut du système d'exploitation. La taille de la bulle peut être modifiée à ses sommets.
+
+Les images raster sont stockées dans la couche * images *.
+ 
+## Graphiques vectoriels
+
+Avec la fonction * ajouter image * il est possible d'ajouter des graphiques SVG à la carte. Ceux-ci peuvent être augmentés ou réduits avec la souris en faisant glisser les points de contrôle correspondants et en les faisant pivoter.
+
+Les graphiques vectoriels sont stockés dans la couche * SVG graphics *.
+ 
++ <img src = "../ media / image7.png" />
+
+## SymTaZ Symbole 
+
+SymTaZ est un programme externe qui peut être utilisé pour créer des symboles, des signes tactiques et des signatures civiles pour des documents militaires conformément au règlement 52.002.03 de l'armée suisse. Ces icônes peuvent être importées dans KADAS, soit par la fonction * Copier dans le Presse-papiers (Formulaire Texte) * dans SymTaZ suivie de * Coller * dans KADAS, ou en enregistrant en format SVG dans SymTaZ puis en ouvrant via * Ajouter Image * dans KADAS.
 
 ## Supprimer des objets
 
-Les objets peuvent être supprimés via le menu contextuel ou la touche Delete. L’outil *Supprimer des objets*<img src="../media/image11.png" width="464" height="306" /> permet de supprimer plusieurs objets à la fois dans un extrait choisi. Cette fonction est aussi accessible en mode Pan par Ctrl+tirer un rectangle.
+<img src = "../ media / image8.png" /> Les objets individuels peuvent être supprimés via le menu contextuel ou la touche SUPPR. L'outil * Supprimer les objets * vous permet de supprimer plusieurs objets à la fois dans une section sélectionnée. Cette fonction peut également être appelée via Ctrl + Rectangle en mode panoramique.
 
 ## Exercices
 
