@@ -1,4 +1,4 @@
-# Généralité
+# Généralités
 
 ## Création
 
@@ -24,29 +24,29 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
  
 ### Version 1.1 (novembre 2017)
 
-* * Général *:
-    - Curseur librement positionnable dans le champ de recherche
-    - Affichage de la hauteur dans la barre d'état
-    - Amélioration de la vitesse dans l'affichage de la carte
-    - Table d'attributs pour les couches vectorielles
+* * Général:
+    - Curseur librement positionnable dans le champ de recherche
+    - Affichage de la hauteur dans la barre d'état
+    - Amélioration de la vitesse dans l'affichage de la carte
+    - Table d'attributs pour les couches vectorielles
     - Chargement des graphiques SVG (y compris les graphiques SymTaZ)
 
-* * Analyse *:
+* * Analyse:
     - Mesure géodésique de la distance et de la superficie
     - Azimut sélectionnable par rapport au nord de la carte ou géographique
 
-* * Draw *:
+* * Draw:
     - Accrochage aux objets commutable lors du dessin
     - Annuler / refaire pendant le dessin
     - Les géométries existantes peuvent être continuées
 
-* * MSS *:
+* * MSS:
     - Mise à niveau vers MSS-2018
     - Corriger le format des symboles MSS lors de l'impression
     - Le contenu du cartouche peut être importé ou exporté depuis et vers des fichiers MilX
     - Entrée numérique d'attributs lors du dessin de symboles MSS
 
-* * 3D *:
+* * 3D:
     - support pour les géométries 3D en vue 3D
 
 ### Version 1.0 (septembre 2016)
