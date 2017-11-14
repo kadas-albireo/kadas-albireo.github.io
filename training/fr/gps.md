@@ -14,9 +14,9 @@ Le GPX (GPX Exchange Format) est un format standard pour l’échange de donnée
 
 KADAS offre des fonctions pour créer, traiter, importer et exporter les itinéraires GPS.
 
-Les nouveaux itinéraires GPS importés ou créés via *Dessiner des waypoints* et *Dessiner des itinéraires* sont placés au niveau *Itinéraires GPS*. Les waypoints sont représentés comme géométries de points, les itinéraires et les tracks comme géométries de lignes. Elles peuvent être traitées comme les géométries redlining (cf. chapitre 5.1), ce qui offre aussi la possibilité de spécifier des attributs GPX, soit par le menu contextuel, soit par double clic.
+Les nouveaux itinéraires GPS importés ou créés via *Dessiner des waypoints* et *Dessiner des itinéraires* sont placés au niveau *Itinéraires GPS*. Les waypoints sont représentés comme géométries de points, les itinéraires et les tracks comme géométries de lignes. Elles peuvent être traitées comme les géométries redlining, ce qui offre aussi la possibilité de spécifier des attributs GPX, soit par le menu contextuel, soit par double clic.
 
-<img src="../media/image13.png" width="463" height="234" />
+<img src="../media/image13.png"/>
 
 ## Exercices
 
