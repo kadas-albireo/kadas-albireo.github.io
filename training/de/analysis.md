@@ -22,6 +22,6 @@ Die Neigungs- und Schummerung-Werkzeug berechnen Neigungsprofil bzw. die Schatti
 
 Das Einsehbarkeitswerkzeug berechnet den sichtbaren bzw. unsichtbaren Geländebereich in einem Kreissektor, ausgehend vom Kreismittelpunkt – dem Beobachterstandort. Die Einsehbarkeitsanalyse berücksichtigt die Erdkrümmung.
 
-Die Ergebnisse der Neigungs-, Schummerungs- und Einsehbarkeitsanalysen werden als Raster-Ebenen der Karte hinzugefügt, und erscheinen dementsprechend im Karteninhaltsverzeichnis. Beim Speichern des Projektes werden diese Datensätze im Ordner &lt;Projektname&gt;\_files abgelegt.
+Die Ergebnisse der Neigungs-, Schummerungs- und Einsehbarkeitsanalysen werden als Raster-Ebenen der Karte hinzugefügt, und erscheinen dementsprechend im Karteninhaltsverzeichnis. Beim Speichern des Projektes werden diese Datensätze im Ordner *&lt;Projektname&gt;\_files* abgelegt.
 
 <img src="../media/image5.png" />
