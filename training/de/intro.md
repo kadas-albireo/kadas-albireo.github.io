@@ -28,21 +28,26 @@ Die Nutzungsbedingungen für die Daten sind in der Anwendung unter Hilfe → Üb
     - Höhenanzeige in der Statusleiste
     - Geschwindigkeitsverbesserungen bei der Kartendarstellung
     - Attributtabelle für Vektorebenen
-    - Laden von SVG Graphiken (u.a. SymTaZ Graphiken)
 * *Analyse*:
     - Geodätische Distanz- und Flächenmessung
     - Azimut wählbar relativ zum Kartennorden oder geographischen Norden
 * *Zeichnen*:
     - Einschaltbares Snapping beim Zeichnen
     - Undo/Redo beim Zeichnen
+    - Zeichnung können verschoben, kopiert, ausgschnitten und eingefügt werden, einzeln oder als Gruppe
     - Bestehende Geometrien können fortgesetzt werden
+    - Laden von SVG Graphiken (u.a. SymTaZ Graphiken)
+    - Laden von nicht georeferenzierte Bilder
+    - Bilder und Stecknadeln werden nun in entsprechende Ebenen abgelegt
 * *MSS*:
     - Upgrade auf MSS-2018
     - Korrektes Grössenverhältnis von MSS Symbole beim Drucken
-    - Kartuscheinhalt kann von und nach MilX Dateien importiert bzw. exportiert werden
+    - Kartuscheinhalt kann von und nach MilX oder XML Dateien importiert bzw. exportiert werden
     - Numerische Eingabe von numerischen Attributen beim Zeichnen von MSS Symbole
 * *3D*:
     - Unterstützung für 3D Geometrien in der 3D-Ansicht
+* *Drucken*:
+    - Im Projekt enthaltene Druckvorlagen können verwaltet werden
 
 ### Version 1.0 (September 2016)
 - Initiale Version

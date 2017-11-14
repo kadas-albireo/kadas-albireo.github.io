@@ -1,6 +1,6 @@
 # Zeichnen
 
-Die Zeichnungswerkzeuge befinden sich in der Registerkarte *Zeichnen*. Es können verschiedene Geometrien, Texte, Stecknadeln sowie georeferenzierte Kamerabilder der Karte hinzugefügt werden.
+Die Zeichnungswerkzeuge befinden sich in der Registerkarte *Zeichnen*. Es können verschiedene Geometrien, Texte, Stecknadeln sowie Bilder der Karte hinzugefügt werden.
 
 Wie beim Messen können auch beim Zeichnen die Koordinatenpunkte numerisch eingegeben, wenn unter der Registerkarte *Einstellungen* die Schaltfläche *Numerische Eingabefelder während des Zeichnens anzeigen* aktiv ist.
 
@@ -14,9 +14,9 @@ Für Texte können Schriftart und Grösse sowie Füllfarbe angepasst werden.
 
 Gezeichnete Geometrien und Texte werden in der *Redlining* Ebene im Karteninhaltsverzeichnis abgelegt.
 
-Bereits gezeichnete Geometrien oder Texte können nachträglich editiert werden, indem sie auf der Karte selektiert werden. Selektierte Objekte lassen sich verschieben, und, abhängig vom Geometrietyp, können Knotenpunkte individuell verschoben werden sowie per Kontextmenü erstellt oder entfernt werden. Texte lassen sich per Doppelklick oder Kontextmenü editieren.
+Bereits gezeichnete Geometrien oder Texte können nachträglich editiert werden, indem sie auf der Karte selektiert werden. Selektierte Objekte lassen sich verschieben, und, abhängig vom Geometrietyp, können Knotenpunkte individuell verschoben werden sowie per Kontextmenü erstellt oder entfernt werden.
 
-Bestehende Linien- und Polygongeometrien lassen sich per Kontextmenü auf dem ersten oder letzten Knoten fortführen.
+Bestehende Linien- und Polygongeometrien lassen sich per Kontextmenü auf den Knoten fortführen.
 
 Editieroperationen an einer Redlining-Zeichnung können via CTRL+Z und CTRL+Y oder mit den entsprechenden Schaltflächen am unteren Kartenrand rückgängig gemacht bzw. wiederholt werden
 
@@ -50,4 +50,7 @@ SymTaZ ist ein externes Programm mit dem sich Symbole, taktische Zeichen und ziv
 
 ## Objekte löschen
 
-<img src="../media/image8.png" />Einzelne Objekte lassen sich per Kontextmenü oder DEL Taste löschen. Das *Objekte löschen* Werkzeug erlaubt es, mehrere Objekte auf einmal in einem ausgewählten Ausschnitt zu löschen. Diese Funktion ist im Pan-Modus auch per Ctrl+Rechteck aufziehen aufrufbar.
+Einzelne Objekte lassen sich per Kontextmenü oder DEL Taste löschen. Das *Objekte löschen* Werkzeug erlaubt es, mehrere Objekte auf einmal in einem ausgewählten Ausschnitt zu löschen. Diese Funktion ist im Pan-Modus auch per Ctrl+Rechteck aufziehen aufrufbar.
+
+<img src="../media/image8.png" />
+

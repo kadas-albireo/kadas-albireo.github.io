@@ -4,7 +4,7 @@
 
 Die Druckfunktion ist von der Registerkarte *Meine Karten* aufrufbar.
 
-Das Drucken basiert auf Vorlagen. Standardmässig werden Vorlagen für A3 und A4 sowohl Quer- als Hochformat angeboten, sowie eine *Custom* Vorlage.
+Das Drucken basiert auf Vorlagen. Standardmässig werden Vorlagen für A0 bis A6 sowohl Quer- als Hochformat angeboten, sowie eine *Custom* Vorlage.
 
 Es soll beachtet werden, dass die Vorlagen Projektspezifisch sind, somit können sich die angebotenen Vorlagen von Projekt zu Projekt unterscheiden.
 
@@ -30,6 +30,6 @@ Eine druck-ähnliche Funktion bietet die Kartenbildschirmfoto Funktion an, die a
 
 ## KML/KMZ Export
 
-Der Karteninhalt kann zudem als KML oder KMZ exportiert werden. Kamerabilder sowie MilX Ebenen der Lagedarstellung werden im KMZ Format exportiert.
+Der Karteninhalt kann zudem als KML oder KMZ exportiert werden. Bilder sowie MSS-Symbole der Lagedarstellung werden nur im KMZ Format exportiert.
 
 Es soll beachtet werden, dass KMZ und KML verlustbehaftete Export-Formate sind, und daher nicht geeignet für den Austausch zwischen KADAS Anwender ist. Dazu sollte das native \*.qgs Projektformat verwendet werden.
