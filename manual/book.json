@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "hide-element"
+        "hide-element",
+        "offline"
     ],
     "pluginsConfig": {
         "hide-element": {
