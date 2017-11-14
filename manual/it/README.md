@@ -1,1 +1,1 @@
-# Manuale utente di KADAS
+../../training/it/intro.md
