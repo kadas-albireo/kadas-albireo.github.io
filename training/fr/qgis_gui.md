@@ -1,6 +1,6 @@
 # Interface de programme et gestion de projet
 
-<img src="../media/image1.png" width="599" height="466" />
+<img src="../media/image1.png"/>
 
 ## La fenêtre de l’application
 

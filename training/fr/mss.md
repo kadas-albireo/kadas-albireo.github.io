@@ -8,23 +8,23 @@ Le bouton *Ajouter un symbole* ouvre une galerie de symboles MSS où l’on peut
 
 Les symboles sont placés au niveau MilX. Ils sont visibles dans le répertoire de la carte. On peut créer de nouveaux niveaux MilX et on peut également choisir à quel niveau les symboles que l’on vient de dessiner doivent être ajoutés.
 
-<img src="../media/image15.png" width="617" height="465" />
+<img src="../media/image10.png"/>
 
 On peut éditer les symboles déjà dessinés a posteriori en les sélectionnant sur la carte. Les objets sélectionnés peuvent être déplacés et, selon le type de symbole, les nœuds peuvent être déplacés individuellement, créés ou supprimés via le menu contextuel. L’éditeur de symbole MilX peut être ouvert par double clic ou par Editer dans le menu contextuel.
 
-Remarque : il peut arriver que l’éditeur de symbole MSS/MilX soit recouvert par la fenêtre du programme de KADAS Albireo. La fenêtre peut être remise au premier plan par la barre des tâches Windows.
+De la même manière que pour les objets redlining, les symboles MSS peuvent être déplacés, copiés, coupés et collés individuellement ou en groupe. En plus des entrées du menu contextuel et des raccourcis clavier habituels, il y a aussi les boutons * Copier vers ... * et * Déplacer vers ... * en bas de la carte. Ces derniers permettent explicitement de spécifier une couche cible, par défaut la couche MilX actuellement sélectionnée est prise comme cible. Si aucune couche MilX n'est sélectionnée, la couche de destination sera demandée.
 
-<img src="../media/image16.png" width="381" height="258" />
+<img src="../media/image11.png"/>
 
-Les niveaux MilX peuvent être marqués comme acceptés dans le menu contextuel du répertoire de la carte. Les niveaux acceptés ne peuvent pas être édités.
+Les couches MilX peuvent être marquées comme acceptées dans le menu contextuel du répertoire de la carte. Les couches acceptées ne peuvent pas être éditées.
 
-## Changer de niveaux MilX
+## Echanges de couches MilX
 
-Les niveaux MilX peuvent être importés et exportés depuis les fichiers MILXLY. MILXLY (et la variante comprimée MILXLYZ) est un format d’échange de représentations de situation. Il comprend uniquement des symboles MSS de représentation de situation, et aucun autre objet tel que les redlinings, punaises ou photos.
+Les couches MilX peuvent être importées et exportées depuis les fichiers MILXLY. MILXLY (et la variante comprimée MILXLYZ) est un format d’échange de représentations de situation. Il comprend uniquement des symboles MSS de représentation de situation, et aucun autre objet tel que les redlinings, punaises ou photos.
 
-Lors de l’exportation vers MILXLY(Z), on peut sélectionner quels niveaux MilX doivent être exportés et dans quelle version les fichiers doivent être créés.
+Lors de l'exportation vers MILXLY (Z), vous pouvez choisir les couches MilX à exporter et dans quelle version le fichier doit être créé. De plus, vous pouvez choisir d'exporter le cartouche de carte défini dans la boîte de dialogue d'impression.
 
-Lors de l’importation de fichiers MILXLY(Z), tous les niveaux qu’ils contiennent seront importés. Si les fichiers comprennent des définitions de symboles MSS aux normes anciennes, elles seront converties automatiquement. L’utilisateur est informé des potentielles pertes de conversion ou erreurs.
+L'importation d'un fichier MILXLY (Z) parcourt toutes les couches qu'il contient. Si le fichier MSS contient des définitions de symboles conformes à un ancien standard, ceux-ci sont automatiquement convertis. Les pertes de conversion possibles ou les erreurs sont communiquées à l'utilisateur. Si l'une des couches importées contient un cartouche, l'utilisateur sera invité à l'importer dans KADAS.
 
 ## Importation OVL
 
