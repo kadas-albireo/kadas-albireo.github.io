@@ -10,11 +10,19 @@ Il faut savoir que les modèles sont spécifiques au projet, donc les modèles p
 
 Une fois le modèle choisi, un rectangle bleu semi-transparent apparaît dans la fenêtre principale de la carte, qui correspond à l’extrait à imprimer. Pour les modèles avec un format de papier fixe, ce rectangle peut être déplacé sur la carte principale afin d’adapter la zone à imprimer. La taille de l’extrait dépend du format du papier ainsi que des mesures indiquées dans la boîte de dialogue d’impression. Avec le modèle *Custom,* l’extrait est défini numériquement avec l’échelle dans la boîte de dialogue d’impression, et le format de papier en résultant est calculé de manière dynamique selon ces indications.
 
-Lors de l’impression, des éléments supplémentaires, soit des grilles de coordonnées, des cartouches de carte, des légendes et des barres d’échelle peuvent être ajoutés ou supprimés à souhait. La position de ces éléments est définie dans le modèle. Le mode avancé offre d’autres possibilités de configuration, notamment l’adaptation de l’agencement des éléments.
+Lors de l'impression d'éléments supplémentaires, la grille de coordonnées, la cartouche de cartes, la légende et la barre d'échelle peuvent être affichées ou masquées comme vous le souhaitez. La position de ces éléments est définie dans le modèle.
+
+Le mode avancé offre des options de configuration supplémentaires, y compris la disposition des éléments peut être ajustée.
 
 La représentation d’impression peut être exportée comme fichier ou envoyée à une imprimante.
 
-<img src="../media/image18.png" width="593" height="311" />
+<img src="../media/image18.png"/>
+
+Les modèles d'impression contenus dans le projet peuvent être gérés dans la boîte de dialogue Imprimer composition, qui peut être ouverte à l'aide du bouton situé à droite de la sélection du modèle d'impression. Là, des modèles individuels peuvent être importés, exportés et supprimés du projet.
+
+<img src = "../ media / image12.1.png" />
+
+De plus, le contenu du cartouche peut être importé et exporté en tant que fichier XML distinct dans la boîte de dialogue du cartouche.
 
 ## Capture d’écran de carte
 
