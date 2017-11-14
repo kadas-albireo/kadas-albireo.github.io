@@ -39,15 +39,15 @@ Avec la fonction * ajouter image * il est possible d'ajouter des graphiques SVG 
 
 Les graphiques vectoriels sont stockés dans la couche * SVG graphics *.
  
-+ <img src = "../ media / image7.png" />
+<img src = "../media/image7.png" />
 
-## SymTaZ Symbole 
+## Symboles SymTaZ
 
 SymTaZ est un programme externe qui peut être utilisé pour créer des symboles, des signes tactiques et des signatures civiles pour des documents militaires conformément au règlement 52.002.03 de l'armée suisse. Ces icônes peuvent être importées dans KADAS, soit par la fonction * Copier dans le Presse-papiers (Formulaire Texte) * dans SymTaZ suivie de * Coller * dans KADAS, ou en enregistrant en format SVG dans SymTaZ puis en ouvrant via * Ajouter Image * dans KADAS.
 
 ## Supprimer des objets
 
-<img src = "../ media / image8.png" /> Les objets individuels peuvent être supprimés via le menu contextuel ou la touche SUPPR. L'outil * Supprimer les objets * vous permet de supprimer plusieurs objets à la fois dans une section sélectionnée. Cette fonction peut également être appelée via Ctrl + Rectangle en mode panoramique.
+<img src = "../media/image8.png"/> Les objets individuels peuvent être supprimés via le menu contextuel ou la touche SUPPR. L'outil * Supprimer les objets * vous permet de supprimer plusieurs objets à la fois dans une section sélectionnée. Cette fonction peut également être appelée via Ctrl + Rectangle en mode panoramique.
 
 ## Exercices
 
