@@ -17,10 +17,3 @@ KADAS offre des fonctions pour créer, traiter, importer et exporter les itinér
 Les nouveaux itinéraires GPS importés ou créés via *Dessiner des waypoints* et *Dessiner des itinéraires* sont placés au niveau *Itinéraires GPS*. Les waypoints sont représentés comme géométries de points, les itinéraires et les tracks comme géométries de lignes. Elles peuvent être traitées comme les géométries redlining, ce qui offre aussi la possibilité de spécifier des attributs GPX, soit par le menu contextuel, soit par double clic.
 
 <img src="../media/image9.png"/>
-
-## Exercices
-
--   S’il y a un appareil GPS à disposition, créer une interface COM virtuelle avec le GPS-Gate et activer ensuite le GPS dans KADAS.
--   Dessiner un itinéraire GPS, exporter comme fichier GPX et, si un appareil GPS adéquat est à disposition, télécharger les données GPX sur l’appareil.
-
-## Notes

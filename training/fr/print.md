@@ -33,23 +33,3 @@ Les fonctions capture d’écran de carte offrent une fonction semblable à l’
 Le contenu de la carte peut aussi être exporté comme KML ou KMZ. Les images que les symboles MSS sont seulement exportés au format KMZ.
 
 Il faut savoir que KMZ et KML sont des formats d’exportation qui génèrent souvent des pertes de données et qui ne conviennent donc pas pour les échanges entre utilisateurs de KADAS. Pour de tels échanges, il faut utiliser le format de projet natif \*.qgs.
-
-## Exercices
-
--   Ouvrir la boîte de dialogue d’impression, choisir un modèle avec un format de papier fixe (par ex. A4 paysage) et adapter l’échelle et l’extrait. Activer et adapter les cartouches de carte. Exporter en PDF.
-
--   Activer d’autres éléments au choix. Exporter au format JPG.
-
--   Enregistrer la fenêtre de carte actuelle comme capture d’écran.
-
--   Placer quelques symboles MSS sur la carte, exporter la carte comme KML et KMZ. Si possible, importer dans Google Earth et comparer les résultats.
-
-Exercices pour experts :
-
--   Choisir le modèle *Custom* pour les « plots » grand format, saisir l’extrait numériquement.
-
--   Créer son propre modèle d’impression.
-
-## Notes
-
-

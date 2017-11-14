@@ -29,7 +29,7 @@ Les dessins de Redlining peuvent être copiés / coupé et collé + C, CTRL + X 
 Plusieurs objets de Redlining peuvent être sélectionnés avec la touche CTRL et déplacés, copiés, coupés et collés en tant que groupe.
 
 ## images raster
- 
+
 Les images raster dans les formats habituels (JPG, PNG, BMP) peuvent être ajoutées en tant qu'annotations à la carte. Ceux-ci sont affichés dans une bulle de dialogue. Si l'image est géoréférencée (balises EXIF), l'ancre est placée à l'emplacement approprié et l'emplacement est bloqué. Le verrouillage de position peut être activé ou désactivé via le menu contextuel. Un double-clic sur l'ancre ouvre l'image avec la visionneuse d'images par défaut du système d'exploitation. La taille de la bulle peut être modifiée à ses sommets.
 
 Les images raster sont stockées dans la couche *images*.
@@ -49,25 +49,3 @@ SymTaZ est un programme externe qui peut être utilisé pour créer des symboles
 ## Supprimer des objets
 
 <img src = "../media/image8.png"/> Les objets individuels peuvent être supprimés via le menu contextuel ou la touche SUPPR. L'outil *Supprimer les objets* vous permet de supprimer plusieurs objets à la fois dans une section sélectionnée. Cette fonction peut également être appelée via Ctrl + Rectangle en mode panoramique.
-
-## Exercices
-
--   Dessiner des points, des lignes, des textes, etc. Adapter la taille, le style de cadre et le remplissage.
-
--   Editer des géométries dessinées.
-
--   Adapter la transparence du niveau redlining dans le menu contextuel de son entrée de répertoire de carte.
-
--   Mesurer la surface d’une géométrie dessinée en pied via clic droit sur géométrie→ *Mesurer* ou *Analyse→Mesurer→Surface→Mesurer une géométrie existante*.
-
--   Ajouter une photo. Adapter la position de la bulle de discussion.
-
--   Supprimer tout le niveau redlining via le menu contextuel dans le répertoire de la carte.
-
--   Supprimer des objets, aussi bien un seul que plusieurs à la fois.
-
--   Supprimer le niveau redlining de la carte via le répertoire de la carte.
-
-## Notes
-
-
