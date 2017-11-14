@@ -1,7 +1,5 @@
 # The Vector Properties Dialog {#the-vector-properties-dialog}
 
-TODO: wurde leicht abgeändert
-
 The *Layer Properties* dialog for a vector layer provides information about the layer, symbology settings and labeling options. If your vector layer has been loaded from a PostgreSQL/PostGIS datastore, you can also alter the underlying SQL for the layer by invoking the *Query Builder* dialog on the *General* tab. To access the *Layer Properties* dialog, double-click on a layer in the legend or right-click on the layer and select *Properties* from the pop-up menu.
 
 **Figure Vector Properties 1:**

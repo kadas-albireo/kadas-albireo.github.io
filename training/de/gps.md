@@ -17,13 +17,3 @@ KADAS bietet Funkionen zum Erstellen, Bearbeiten Importieren und Exportieren von
 Importierte oder mittels *Wegpunkte zeichnen* und *Routen zeichnen* neu erstellte GPS Routen werden in der *GPS Routen* Ebene abgelegt. Wegpunkte werden als Punktgeometrien dargestellt, Routen und Tracks als Liniengeometrien. Sie können analog zu Redlining Geometrien bearbeitet werden, wobei zusätzlich noch die Möglichkeit besteht, GPX Attribute zu spezifizieren, entweder per Kontextmenü oder per Doppelklick.
 
 <img src="../media/image9.png" />
-
-## Übungen
-
--   Falls ein GPS Gerät zur Verfügung steht, eine virtuelle COM Schnittstelle mit GPS-Gate einrichten und anschliessend GPS in KADAS aktivieren.
-
--   Eine GPS Route zeichnen, als GPX exportieren, und falls ein passendes GPS Gerät zur Verfügung steht, die GPX Datei auf das Gerät hochladen.
-
-## Notizen
-
-

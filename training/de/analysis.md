@@ -25,17 +25,3 @@ Das Einsehbarkeitswerkzeug berechnet den sichtbaren bzw. unsichtbaren Geländebe
 Die Ergebnisse der Neigungs-, Schummerungs- und Einsehbarkeitsanalysen werden als Raster-Ebenen der Karte hinzugefügt, und erscheinen dementsprechend im Karteninhaltsverzeichnis. Beim Speichern des Projektes werden diese Datensätze im Ordner &lt;Projektname&gt;\_files abgelegt.
 
 <img src="../media/image5.png" />
-
-## Übungen
-
--   Distanzen, Flächen, Kreise und Azimut-Winkel messen. Einheiten umschalten.
-
--   Ein Höhenprofil erstellen, sowohl mit mehreren Segmenten sowie mit nur einem Segment. Im letzteren Fall eine Sichtbarkeitsanalyse durchführen.
-
--   Neigung und Schummerungsprofile erstellen. Projekt speichern, den &lt;Projektname&gt;\_files Ordner beachten.
-
--   Eine Einsehbarkeitsanalyse durchführen, sowohl in einem Teilkreissektor als in einem Vollkreis.
-
-## Notizen
-
-

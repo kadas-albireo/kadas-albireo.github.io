@@ -4,7 +4,7 @@
     ],
     "pluginsConfig": {
         "hide-element": {
-            "elements": [".gitbook-link", ".articles"]
+            "elements": [".gitbook-link"]
         }
     }
 }

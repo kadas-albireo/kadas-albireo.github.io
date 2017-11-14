@@ -51,25 +51,3 @@ SymTaZ ist ein externes Programm mit dem sich Symbole, taktische Zeichen und ziv
 ## Objekte löschen
 
 <img src="../media/image8.png" />Einzelne Objekte lassen sich per Kontextmenü oder DEL Taste löschen. Das *Objekte löschen* Werkzeug erlaubt es, mehrere Objekte auf einmal in einem ausgewählten Ausschnitt zu löschen. Diese Funktion ist im Pan-Modus auch per Ctrl+Rechteck aufziehen aufrufbar.
-
-## Übungen
-
--   Zeichnen von Punkte, Linien, Texte, usw. Anpassen von Grösse, Rand- und Füll-Stil.
-
--   Editieren von gezeichneten Geometrien.
-
--   Anpassen der Transparenz der Redlining-Ebene im Kontextmenu von dessen Karteninhaltsverzeichnis-Eintrag.
-
--   Die Fläche einer gezeichneten Geometrie in Fuss messen via Rechtsklick auf Geometrie→ *Messen* oder *Analyse→Messen→Fläche→Existierende Geometrie messen*.
-
--   Ein Kamerabild hinzufügen. Die Position der Sprechblase anpassen.
-
--   Entfernen des gesamten Redlining Ebene via Kontextmenu im Karteninhaltsverzeichnis.
-
--   Objekte löschen, sowohl einzeln als mehrere auf einmal.
-
--   Die Redlining-Ebene aus der Karte entfernen via Karteninhaltsverzeichnis.
-
-## Notizen
-
-

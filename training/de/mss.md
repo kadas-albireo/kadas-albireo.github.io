@@ -31,21 +31,3 @@ Beim Import einer MILXLY(Z) Datei werden sämtliche darin enthaltenen Ebenen imp
 OVL ist das Projektformat der Software PCMAP Swissline. Es wird nur die OVL Version 5.0 unterstützt. Ältere Dateien sollten mit der PCMAP Swissline Software aktualisiert werden, bevor sie in KADAS importiert werden.
 
 Der OVL Importer konvertiert darin enthaltene taktische Graphiken zu entsprechende MSS Symbole, während Geometrien und Beschriftungen in Redlining Objekte transformiert werden. Falls Konversionsfehler auftreten, werden diese dem Benutzer mitgeteilt. Auch bei erfolgreich konvertierten Objekte kann deren Darstellung gegenüber der PCMAP Swissline Software abweichen, somit ist es empfehlenswert, die importierten Daten zu überprüfen.
-
-## Übungen
-
--   Eine Lagedarstellung zeichnen: Einpunkt- und Mehrpunkt-Symbole platzieren und nachträglich editieren.
-
--   Symbolgrösse und Linienbreite der MSS Symbole anpassen.
-
--   Die MilX Ebene als genehmigt markieren.
-
--   Eine zweite Lagedarstellung in einer separaten Ebene zeichnen.
-
--   Beide Ebenen nach MILXLY exportieren.
-
--   Eine OVL Datei importieren.
-
-## Notizen
-
-

@@ -51,30 +51,3 @@ Gewisse Werkzeuge erzeugen Datensätze, die in Ordner &lt;projektname&gt;\_files
 Die Hauptdatenquelle ist der Geodatenkatalog. Beim Programmstart werden nur öffentliche Daten angezeigt. Abhängig vom Benutzer können nach erfolgter Authentifizierung weitere Daten zur Verfügung stehen. Die Authentifizierung erfolgt via Schloss-Ikone in der Geodaten-Toolbar. Nach erfolgreicher Authentifizierung wird der Geodatenkatalog automatisch neu geladen.
 
 Zusätzlich können lokale Vektor sowie Rasterdaten der Karte hinzugefügt werden, entweder via Ikone in der Geodaten-Toolbar oder per Drag and Drop auf die Karte.
-
-## Übungen
-
--   Sich mit der Navigation in der Karte vertraut machen.
-
--   Ein neues Projekt aus der Vorlage Schweiz (Online/Offline) erstellen.
-
--   Online-Betrieb: Eine Ebene aus dem Geodatenkatalog der Karte hinzufügen.
-
--   Im Karteninhaltsverzeichnis das Luftbild aktivieren.
-
--   Eine Ebene aus dem Projekt entfernen.
-
--   Das Anzeigekoordinatenbezugssystem auf WGS84 umstellen.
-
--   Das Projektionsbezugssystem auf WGS84 umstellen. Den Hinweis bezüglich möglichem Performanceverlust wegen Spontanprojektion beachten.
-
--   Das Projekt auf der Festplatte abspeichern.
-
-Expertenübungen:
-
--   Lokale Vektor und Raster Datensätze der Karte hinzufügen.
-
--   Vom Kontextmenü des jeweiligen Eintrags im Karteninhaltsverzeichnis die Ebeneneigenschaften öffnen und die Darstellungsoptionen (Symbologie) anpassen.
-
-## Notizen
-

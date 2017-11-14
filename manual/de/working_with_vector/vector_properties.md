@@ -1,7 +1,5 @@
 # Vektorlayereigenschaften {#the-vector-properties-dialog}
 
-TODO: wurde leicht abgeändert
-
 Der *Layereigenschaften*-Dialog stellt Informationen über den Layer, Darstellungseinstellungen und Beschriftungsoptionen bereit. Wenn ein Vektorlayer aus einer PostgreSQL/PostGIS Datenbank geladen wurde, können über den Dialog *Layereigenschaften* auch SQL-Abfragen mit dem *Objektuntermenge*-Dialog im Menü *Allgemein* angewendet werden. Um den *Layereigenschaften*-Dialog zu erreichen doppelklicken Sie einen Layer in der Legende oder machen Sie einen Rechtsklick auf den Layer und wählen Sie *Eigenschaften* aus dem Popupmenü.
 
 **Figure Vector Properties 1:**

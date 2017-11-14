@@ -1,7 +1,5 @@
 # Fenêtre Propriétés d’une couche vecteur {#the-vector-properties-dialog}
 
-TODO: wurde leicht abgeändert
-
 La fenêtre *Propriétés de la couche* pour une couche vectorielle fournit des informations sur la couche, les paramètres de représentation et les options d’étiquetage. Si votre couche a été chargée depuis une base PostgreSQL/PostGIS, vous pouvez également modifier la requête SQL d’appel de la couche, en l’éditant dans la fenêtre *Constructeur de requête* de l’onglet *Général*. Pour accéder à la fenêtre *Propriétés de la couche*, double-cliquez sur la couche dans la légende ou faites un clic droit sur la couche et sélectionnez *Propriétés* dans le menu qui apparait.
 
 **Figure Vector Properties 1:**
