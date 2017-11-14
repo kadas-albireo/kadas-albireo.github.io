@@ -22,7 +22,7 @@ L’outil de pente et d’estompage calcule le profil de la pente ainsi que l’
 
 L’outil de visibilité calcule les zones de terrain visibles et invisibles dans un secteur circulaire dont le centre est l’emplacement de l’observateur. L’analyse de visibilité prend en compte la courbe terrestre.
 
-Les résultats des analyses de pente, d’ombrage et de visibilité sont ajoutés à la carte comme niveaux de raster et apparaissent ainsi dans le répertoire de la carte. Lors de l’enregistrement du projet, ces données sont placées dans le dossier &lt;nom de projet&gt;\_files.
+Les résultats des analyses de pente, d’ombrage et de visibilité sont ajoutés à la carte comme niveaux de raster et apparaissent ainsi dans le répertoire de la carte. Lors de l’enregistrement du projet, ces données sont placées dans le dossier *&lt;nom de projet&gt;\_files*.
 
 <img src="../media/image5.png"/>
 
@@ -32,7 +32,7 @@ Les résultats des analyses de pente, d’ombrage et de visibilité sont ajouté
 
 -   Créer un profil d’altitude, tant avec plusieurs segments qu’avec un seul. Effectuer une analyse de visibilité dans le dernier cas.
 
--   Créer des profils de pente et d’ombrage. Enregistrer le projet, tenir compte du dossier &lt;nom de projet&gt;\_files.
+-   Créer des profils de pente et d’ombrage. Enregistrer le projet, tenir compte du dossier *&lt;nom de projet&gt;\_files*.
 
 -   Effectuer une analyse de visibilité, tant sur un arc de cercle que sur un cercle complet.
 

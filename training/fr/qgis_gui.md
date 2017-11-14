@@ -44,7 +44,7 @@ On peut activer la grille de la carte dans l’onglet *Vue*. La grille se base s
 
 Les cartes peuvent être chargées et enregistrées comme projets. On utilise le format de projet QGIS, qui se termine par \*.qgs. Les projets sont créés comme propositions. Au lancement de l’application, un projet est automatiquement créé comme proposition en ligne ou hors ligne, indépendamment du fait que l’ordinateur soit relié à Internet. Les fonctions *Nouveau, Ouvrir, Enregistrer* et *Enregistrer sous* permettent de créer de nouveaux projets (à partir d’une proposition), d’ouvrir des projets existants et d’enregistrer des projets.
 
-Certains outils créent des données qui sont placées dans le dossier &lt;nom de projet&gt;\_files, cf. chapitre 4.2. Lors d’un partage de projet, il faut ainsi distribuer ce dossier avec les données de projet. D’autres données locales qui sont partagées doivent aussi être placées dans cette liste et rajoutées depuis cette liste à la carte, sinon ce chemin sera enregistré dans le projet comme chemin absolu, et ne pourra peut-être pas être effacé sur d’autres systèmes.
+Certains outils créent des données qui sont placées dans le dossier *&lt;nom de projet&gt;\_files*. Lors d’un partage de projet, il faut ainsi distribuer ce dossier avec les données de projet. D’autres données locales qui sont partagées doivent aussi être placées dans cette liste et rajoutées depuis cette liste à la carte, sinon ce chemin sera enregistré dans le projet comme chemin absolu, et ne pourra peut-être pas être effacé sur d’autres systèmes.
 
 ## Sources de données
 

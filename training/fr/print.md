@@ -4,7 +4,7 @@
 
 La fonction imprimer est accessible depuis l’onglet *Mes cartes*.
 
-L’impression se base sur des modèles. Par défaut, des modèles sont proposés en format A3 et A4, aussi bien en portrait qu’en paysage, ainsi qu’un modèle *Custom*.
+L’impression se base sur des modèles. Par défaut, des modèles sont proposés en format A0-A6, aussi bien en portrait qu’en paysage, ainsi qu’un modèle *Custom*.
 
 Il faut savoir que les modèles sont spécifiques au projet, donc les modèles proposés varient d’un projet à l’autre.
 
@@ -30,7 +30,7 @@ Les fonctions capture d’écran de carte offrent une fonction semblable à l’
 
 ## Exportation KML/KMZ
 
-Le contenu de la carte peut aussi être exporté comme KML ou KMZ. Les photos ainsi que les niveaux MilX dans la représentation de situation sont exportés au format KMZ.
+Le contenu de la carte peut aussi être exporté comme KML ou KMZ. Les images que les symboles MSS sont seulement exportés au format KMZ.
 
 Il faut savoir que KMZ et KML sont des formats d’exportation qui génèrent souvent des pertes de données et qui ne conviennent donc pas pour les échanges entre utilisateurs de KADAS. Pour de tels échanges, il faut utiliser le format de projet natif \*.qgs.
 
