@@ -26,4 +26,4 @@ Les résultats sont listés dans des catégories indiquées en conséquence. La 
 
 ## Punaises
 
-L’outil de placement de punaises se trouve dans l’onglet *Dessiner*. L’infobulle d’une punaise placée indique la position et l’altitude. Un double clic sur la punaise ouvre sa boîte de dialogue. Un clic droit sur la punaise permet de copier sa position dans le presse-papier. Les liens web peuvent être copiés dans la zone de texte depuis un navigateur Internet par glisser-déplacer.
+L’outil de placement de punaises se trouve dans l’onglet *Dessiner*. L’infobulle d’une punaise placée indique la position et l’altitude. Un double clic sur la punaise ouvre sa boîte de dialogue. Les liens web peuvent être copiés dans la zone de texte depuis un navigateur Internet. Un clic droit sur la punaise permet de copier sa position dans le presse-papier.

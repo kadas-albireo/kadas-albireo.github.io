@@ -14,6 +14,6 @@ GPX (GPX Exchange Format) è uno standard per lo scambio dei dati GPS tra dispos
 
 KADAS offre varie funzioni che consentono di creare, modificare, importare ed esportare i percorsi GPS.
 
-I percorsi GPS importati o creati ex novo tramite *Disegna waypoint* e *Disegna percorsi* vengono memorizzati nel layer *Rotte GPS*. I waypoint vengono rappresentati come figure geometriche punti­formi, mentre i percorsi e i tracciati come figure geometriche lineari. Possono essere modificati analogamente alle figure geometriche redlining e, in più, è possibile specificare gli attributi GPX tramite menu contestuale o doppio clic.
+I percorsi GPS importati o creati ex novo tramite *Disegna waypoint* e *Disegna percorsi* vengono memorizzati nel layer *Rotte GPS*. I waypoint vengono rappresentati come figure geometriche punti­formi, mentre i percorsi e i tracciati come figure geometriche lineari. Possono essere modificati analogamente alle figure geometriche redlining e, in più, è possibile specificare gli attributi GPX.
 
 <img src="../media/image9.png" />

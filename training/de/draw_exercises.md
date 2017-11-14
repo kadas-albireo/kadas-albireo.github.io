@@ -10,8 +10,6 @@
 
 -   Ein Kamerabild hinzufügen. Die Position der Sprechblase anpassen.
 
--   Entfernen des gesamten Redlining Ebene via Kontextmenu im Karteninhaltsverzeichnis.
+-   Entfernen der gesamten Redlining Ebene via Kontextmenu im Karteninhaltsverzeichnis.
 
 -   Objekte löschen, sowohl einzeln als mehrere auf einmal.
-
--   Die Redlining-Ebene aus der Karte entfernen via Karteninhaltsverzeichnis.

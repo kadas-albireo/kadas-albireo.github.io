@@ -26,4 +26,4 @@ Rechts vom Suchfeld gibt es die Möglichkeit, einen Filter für die lokale und r
 
 ## Stecknadeln {#map-pins}
 
-Das Werkzeug zum Platzieren von Stecknadeln befindet sich in der Registerkarte *Zeichnen*. Im Tooltip einer platzierten Stecknadel können Position und Höhe abgelesen werden. Ein Doppelklick auf die Stecknadel öffnet dessen Attributdialog. Per Rechtsklick auf die Stecknadel kann dessen Position in die Zwischenablage kopiert werden. Web-Links können von einem Webbrowser mittels Drag und Drop in das Textfeld kopiert werden.
+Das Werkzeug zum Platzieren von Stecknadeln befindet sich in der Registerkarte *Zeichnen*. Im Tooltip einer platzierten Stecknadel können Position und Höhe abgelesen werden. Ein Doppelklick auf die Stecknadel öffnet dessen Attributdialog. Web-Links können von einem Webbrowser in das Textfeld kopiert werden. Per Rechtsklick auf die Stecknadel kann dessen Position in die Zwischenablage kopiert werden.

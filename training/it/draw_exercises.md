@@ -10,8 +10,6 @@
 
 -   Inserire un'immagine della fotocamera. Modificare la posizione del fumetto.
 
--   Rimuovere tutto il layer Redlining tramite menu contestuale nell'elenco delle carte.
+-   Rimuovere il layer Redlining dalla mappa tramite la legenda.
 
 -   Cancellare degli oggetti, sia singolarmente che più oggetti alla volta.
-
--   Rimuovere il layer Redlining dalla mappa tramite l'elenco delle carte.

@@ -10,8 +10,6 @@
 
 -   Ajouter une photo. Adapter la position de la bulle de discussion.
 
--   Supprimer tout le niveau redlining via le menu contextuel dans le répertoire de la carte.
+-   Supprimer le niveau redlining de la carte via le répertoire de la carte.
 
 -   Supprimer des objets, aussi bien un seul que plusieurs à la fois.
-
--   Supprimer le niveau redlining de la carte via le répertoire de la carte.
