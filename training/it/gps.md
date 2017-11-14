@@ -17,13 +17,3 @@ KADAS offre varie funzioni che consentono di creare, modificare, importare ed es
 I percorsi GPS importati o creati ex novo tramite *Disegna waypoint* e *Disegna percorsi* vengono memorizzati nel layer *Rotte GPS*. I waypoint vengono rappresentati come figure geometriche punti­formi, mentre i percorsi e i tracciati come figure geometriche lineari. Possono essere modificati analogamente alle figure geometriche redlining e, in più, è possibile specificare gli attributi GPX tramite menu contestuale o doppio clic.
 
 <img src="../media/image9.png" />
-
-## Esercizi
-
--   Qualora sia disponibile un dispositivo GPS, creare un'interfaccia COM virtuale con GPS-Gate e attivare il GPS in KADAS.
-
--   Disegnare un percorso GPS, esportarlo come GPX e, qualora sia disponibile un dispositivo GPS adeguato, caricare il file GPX sul dispositivo.
-
-## Appunti
-
-
