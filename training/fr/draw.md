@@ -22,7 +22,7 @@ Les opérations d'édition sur une couche de Redlining peuvent se faire par CTRL
 
 Lors de la création et de l'édition de géométries, les valeurs mesurées pertinentes sont affichées en même temps.
 
-<img src = "../ media / image6.png" />
+<img src = "../media/image6.png" />
 
 Les dessins de Redlining peuvent être copiés / coupé et collé + C, CTRL + X et CTRL + V via le menu contextuel ou les raccourcis habituels CTRL.
 
