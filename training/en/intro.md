@@ -28,7 +28,7 @@ The terms of use for the data are listed in the application under Help → About
     - Height display in the status bar
     - Speed ​​improvements in map display
     - Attribute table for vector layers
-* * Analysis *:
+* *Analysis*:
     - Geodetic distance and area measurement
     - Option to measure azimuth relative to the map north or geographical north
 * *Draw*:
