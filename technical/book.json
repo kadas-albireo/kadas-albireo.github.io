@@ -1,0 +1,9 @@
+{
+    "title": "KADAS Albireo Technical Documentation",
+    "plugins": [
+        "offline"
+    ],
+     "styles": {
+      "pdf": "styles/pdf.css"
+    }
+}
