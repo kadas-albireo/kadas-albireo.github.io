@@ -92,15 +92,15 @@ Services
 ### Location search, CH:
 
  * Fine-grained search (places, ZIP codes, municipalities, ...)
- * API: (https://api3.geo.admin.ch/services/sdiservices.html#search)[https://api3.geo.admin.ch/services/sdiservices.html#search] -> Location search
- * KADAS groups results by `origin` (i.e. `zipcode`, `district`, ...), see (https://api3.geo.admin.ch/services/sdiservices.html#id26)[https://api3.geo.admin.ch/services/sdiservices.html#id26]
+ * API: [https://api3.geo.admin.ch/services/sdiservices.html#search](https://api3.geo.admin.ch/services/sdiservices.html#search) -> Location search
+ * KADAS groups results by `origin` (i.e. `zipcode`, `district`, ...), see [https://api3.geo.admin.ch/services/sdiservices.html#id26](https://api3.geo.admin.ch/services/sdiservices.html#id26)
  * Online: `<config.ini> -> [search] -> locationsearchurl`
  * Offline: `<config.ini> -> [search] -> locationofflinesearchurl`
 
 ### Location search, worldwide:
 
  * Coarse-grained search (cities)
- * API: (https://api3.geo.admin.ch/services/sdiservices.html#search)[https://api3.geo.admin.ch/services/sdiservices.html#search] -> Location search
+ * API: [https://api3.geo.admin.ch/services/sdiservices.html#search](https://api3.geo.admin.ch/services/sdiservices.html#search) -> Location search
  * KADAS groups results by `origin` (currently only `geonames` recognized, which is mapped to `World Places`)
  * Online: `<config.ini> -> [search] -> worldlocationsearchurl`
  * Offline: `<config.ini> -> [search] -> worldlocationofflinesearchurl`
@@ -108,7 +108,7 @@ Services
 ### Map service feature search
 
  * Searches features inside map service layers loaded in current project
- * API: (https://api3.geo.admin.ch/services/sdiservices.html#search)[https://api3.geo.admin.ch/services/sdiservices.html#search] -> Feature search
+ * API: [https://api3.geo.admin.ch/services/sdiservices.html#search](https://api3.geo.admin.ch/services/sdiservices.html#search) -> Feature search
  * Online only: `<config.ini> -> [search] -> remotedatasearchurl`
 
 ### Raster identify
@@ -218,7 +218,7 @@ Services
 ### Crash reporting service
 
  * A crash handler generates a backtrace whenever KADAS crashes, which the user can submit as an error report to a web service
- * Sample implementation of web service: (https://github.com/manisandro/GdbCrashHandler/blob/master/service/report.php)[https://github.com/manisandro/GdbCrashHandler/blob/master/service/report.php]
+ * Sample implementation of web service: [https://github.com/manisandro/GdbCrashHandler/blob/master/service/report.php](https://github.com/manisandro/GdbCrashHandler/blob/master/service/report.php)
  * `<config.ini> -> [Qgis] -> crashrpt_url`
 
 Interfaces
