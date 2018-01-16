@@ -220,36 +220,3 @@ Services
  * A crash handler generates a backtrace whenever KADAS crashes, which the user can submit as an error report to a web service
  * Sample implementation of web service: [https://github.com/manisandro/GdbCrashHandler/blob/master/service/report.php](https://github.com/manisandro/GdbCrashHandler/blob/master/service/report.php)
  * `<config.ini> -> [Qgis] -> crashrpt_url`
-
-Interfaces
-==========
-
-
-- KADAS Funktionalität [Sandro, 20']
-  - C++ Module, Python Plugins
-- Infrastruktur / SW-Komponenten Swisstopo (Rémy, 20')
-- KADAS Konfiguration [Sandro, 20']
-  - Installationslayout
-    - Geodaten (Minimal + Offline)
-  - Ini-File, wichtige Parameter
-  - Debug Log
-- Github Repositories [Pirmin, 10']
-  - kadas-albireo
-  - Manuals
-  - Git / Pull Requests (Tickets?)
-- KADAS Classic GUI [Sandro, 30']
-  - Startparameter
-  - Python-Bibliotheken
-  - Übung Plugin (eigenes oder externes)
-- KADAS Build [Sandro, 60']
-  - Kurzeinführung Docker [Pirmin]
-  - QGIS Build-Prozess (CMake, ...)
-  - Output mingwbuild.sh
-  - Python Plugins
-  - Paketierung (Portable/MSI)
-- KADAS Entwicklung [Sandro, 15']
-  - C++, Build in Docker Container
-  - Python
-  - API Dokumentation
-- KADAS, QGIS Enterprise, QGIS LTR, QGIS 3 [Pirmin, 15']
-- Diskussion [30']
