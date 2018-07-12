@@ -17,4 +17,6 @@
   - [Feldrechner](working_with_vector/field_calculator.md)
   - [Arbeiten mit Rasterdaten](working_with_raster/supported_data.md)
   - [Dialogfenster Rasterlayereigenschaften](working_with_raster/raster_properties.md)
-* [Anhang](appendices/appendices.md)
+* Anhang
+  - [Tastaturkürzel](appendices/shortcuts.md)
+  - [Lizenz](appendices/license.md)

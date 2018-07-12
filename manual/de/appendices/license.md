@@ -1,7 +1,4 @@
-# Anhang {#appendix}
-
-
-## GNU General Public License {#gnu-general-public-license}
+# GNU General Public License {#gnu-general-public-license}
 
 Deutsche Übersetzung der Version 2, Juni 1991. Den offiziellen englischen Originaltext finden Sie unter <a href="http://www.gnu.org/licenses/gpl.html" class="uri" class="reference external">http://www.gnu.org/licenses/gpl.html</a>. Diese Übersetzung wird mit der Absicht angeboten, das Verständnis der GNU General Public License (GNU GPL) zu erleichtern. Es handelt sich jedoch nicht um eine offizielle oder im rechtlichen Sinne anerkannte Übersetzung. Diese Übersetzung wurde ursprünglich erstellt von Katja Lachmann. Übersetzungen im Auftrag der S.u.S.E. GmbH - <a href="http://www.suse.de" class="uri" class="reference external">http://www.suse.de</a>. Sie wurde überarbeitet von Peter Gerwinski, G-N-U GmbH - <a href="http://www.g-n-u.de" class="uri" class="reference external">http://www.g-n-u.de</a> (31. Oktober 1996, 4. Juni 2000)
 

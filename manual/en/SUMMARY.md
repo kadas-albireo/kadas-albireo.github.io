@@ -17,4 +17,6 @@
   - [Field Calculator](working_with_vector/field_calculator.md)
   - [Working with Raster Data](working_with_raster/supported_data.md)
   - [Raster Properties Dialog](working_with_raster/raster_properties.md)
-* [Appendix](appendices/appendices.md)
+* Appendix
+  - [Keyboard shortcuts](appendices/shortcuts.md)
+  - [License](appendices/license.md)

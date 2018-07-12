@@ -17,4 +17,6 @@
   - [Calculatrice de champ](working_with_vector/field_calculator.md)
   - [Les données raster](working_with_raster/supported_data.md)
   - [Fenêtre Propriétés de la couche raster](working_with_raster/raster_properties.md)
-* [Annexe](appendices/appendices.md)
+* Annexe
+  - [Raccourcis](appendices/shortcuts.md)
+  - [License](appendices/license.md)

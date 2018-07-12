@@ -1,7 +1,4 @@
-# Appendix {#appendix}
-
-
-## GNU General Public License {#gnu-general-public-license}
+# GNU General Public License {#gnu-general-public-license}
 
 Version 2, June 1991
 
