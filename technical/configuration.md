@@ -246,6 +246,31 @@ Advanced configuration
 
 ### Extending KADAS Albireo with Python plugins
 
+ * KADAS Albireo can be extended through plugins written in Python.
+ * The API documentation is available at [https://sourcepole.github.io/kadas-manuals/apidoc/](https://sourcepole.github.io/kadas-manuals/apidoc/).
+ * Most of the QGIS 2.x Plugin development resources available online will also apply to KADAS Albireo.
+ * The [QgsInterface::addAction](https://sourcepole.github.io/kadas-manuals/apidoc/classQgisInterface.html) method specific to KADAS Albireo allows generically adding new actions to both the ribbon GUI as well as the classic GUI. A minimal example is as follows:
+
+       from PyQt5.QtCore import *
+       from PyQt5.QtGui import *
+ 
+       class KadasExample(QObject):
+ 
+           def __init__(self, iface):
+               QObject.__init__(self)
+               self.iface = iface
+ 
+           def initGui(self):
+               self.exampleAction = QAction(QIcon(":/icon.png"), self.tr("Example"))
+               self.exampleAction.triggered.connect(self.__run)
+               self.iface.addAction(self.exampleAction, self.iface.PLUGIN_MENU, self.iface.NO_TOOLBAR, self.iface.CUSTOM_TAB, self.tr("&Custom tab"))
+ 
+           def unload(self):
+               pass
+ 
+           def __run(self):
+               QMessageBox.information(self.iface.mainWindow(), self.tr("Example plugin"), self.tr("Example plugin"))
+
  * Place custom python plugins in
    * System wide location: `<InstallRoot>\share\qgis\python\plugins`
    * Per-user location: `%APPDATA%\Sourcepole\kadas-albireo\python\plugins`
