@@ -1,0 +1,7 @@
+baseURL = "."
+uglyurls = true
+canonifyURLs = false
+relativeURLs = true
+languageCode = "en-us"
+title = "KADAS Albireo"
+theme = "learn"
