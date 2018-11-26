@@ -1,0 +1,11 @@
+{
+    "plugins": [
+        "-search",
+        "-lunr",
+        "-sharing",
+        "-buttons",
+        "-fontsettings"
+    ],
+    "pluginsConfig": {
+    }
+}
