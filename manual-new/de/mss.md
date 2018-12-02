@@ -51,6 +51,6 @@ OVL ist das Projektformat der Software PCMAP Swissline. Es wird nur die OVL Vers
 
 ## <a name="sec5"></a>Symbolgrösse, Liniendicke und Arbeitsmodus
 
-
+Diese Einstellungen beeinflussen die Darstellung aller MSS Symbole in der Karte.
 
 

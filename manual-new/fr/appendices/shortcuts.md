@@ -26,7 +26,6 @@
 | Nouvelle vue       | `CTRL+V + CTRL+W` |
 | 3D                 | `CTRL+V + CTRL+3` |
 | Grille             | `CTRL+V + CTRL+G` |
-| Grille de guidage  | `CTRL+V + CTRL+R` |
 
 ## Analyse
 | Fonction           | Raccourci         |
@@ -51,6 +50,8 @@
 | Épingle          | `CTRL+D + CTRL+M` |
 | Adjouter image   | `CTRL+D + CTRL+I` |
 | Coller           | `CTRL+V`          |
+| Grille de guidage| `CTRL+V + CTRL+R` |
+| Bullseye         | `CTRL+D + CTRL+B` |
 | Effacer objets   | `CTRL + Select`   |
 
 ## GPS

@@ -2,18 +2,18 @@
 # Vue
 
 
-## <a name="sec0"></a>Extrait précédent/suivant
+## <a name="sec0"></a>Étendue précédente/suivant
 
-En se déplaçant dans la carte, on peut retourner à l’extrait de carte affiché auparavant par la fonction **_Extrait précédent_**. On peut ensuite aller sur l’extrait de carte choisi postérieurement par la fonction **_Extrait suivant_**.
+En se déplaçant dans la carte, on peut retourner à l’étendue de carte affiché auparavant par la fonction **_Étendue précédent_**. On peut ensuite aller sur l’extrait de carte choisi postérieurement par la fonction **_Étendue suivant_**.
 
 
-## <a name="sec1"></a>Nouvelle fenêtre de carte
+## <a name="sec1"></a>Nouvelle vue
 
-D’autres fenêtres de carte peuvent être ouvertes par la fonction **_Nouvelle fenêtre de carte_**. On peut les placer à volonté à l’intérieur de la fenêtre principale en les tirant depuis la barre de titre, ou les découpler.
+Des vues secondaires de la carte peuvent être ouvertes par la fonction **_Nouvelle vue_**. On peut les placer à volonté à l’intérieur de la fenêtre principale en les tirant depuis la barre de titre, ou les découpler.
 
 Dans les vues de sous-fenêtres, on peut activer et désactiver les niveaux indépendamment de la vue principale. On peut gérer l’extrait indépendamment de la vue principale ou l’y coupler en activant l’icône serrure dans la barre de titre de la sous-fenêtre.
 
-Seul l’outil de navigation est disponible dans la sous-fenêtre de carte, tous les autres outils peuvent uniquement être utilisés dans la vue principale.
+Seul l’outil de navigation est disponible dans les vues secondaires de carte, tous les autres outils peuvent uniquement être utilisés dans la vue principale.
 
 Le titre de la sous-fenêtre peut être modifié si nécessaire.
 
@@ -44,19 +44,17 @@ Les couches 2D sont dessinées par défaut en tant que texture sur le globe. Les
 Les punaises, photos et symboles MSS ponctuels sont indiqués comme billboards.
 
 
-### Navigation
+### Navigation dans la vue 3D
 
-+ **Navigation de l’angle de vue** : La molette de navigation supérieure tourne la caméra à gauche ou à droite par les flèches gauche/droite . Les flèches haut/bas changent l’angle de vue vertical de la caméra.
-+ **Navigation sur le globe** : La molette de navigation inférieure tourne le globe à gauche, à droite, vers le haut ou vers le bas au moyen des flèches correspondantes.
-+ **+** : la caméra se rapproche du globe, c’est-à-dire que l’altitude de la caméra diminue.
-+ **-** : La caméra s’éloigne du globe, c’est-à-dire que l’altitude de la caméra augmente.
++ **Angle de vue* : La commande de navigation supérieure permet à l'utilisateur de modifier les angles de vue horizontal et vertical de la caméra.
++ **Position de la caméra**: La commande de navigation inférieure permet de changer la position de la caméra autour du globe. La même chose peut être accomplie avec les touches fléchées du clavier.
++ **+**: Réduit la hauteur de la caméra.
++ **-**: Augmente la hauteur de la caméra.
 
 
 ## <a name="sec3"></a>Grille
 
 On peut activer la **_grille_** de la carte dans l’onglet Vue. La grille se base sur le système de coordonnées cartographiques choisi.
 
-### Propriétés de la grille
-
-##
+Dans le dialogue Propriétés de la grille, on peut régler l'intervalle de grille et l'affichage.
 

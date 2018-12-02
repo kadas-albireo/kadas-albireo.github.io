@@ -48,3 +48,5 @@ OVL is the project format of the software PCMAP Swissline. Only OVL version 5.0 
 
 ## <a name="sec5"></a>Symbol size, line width and work mode
 
+These settings influence the display of all MSS symbols on the map.
+

@@ -23,6 +23,30 @@ Die Nutzungsbedingungen für die Daten sind in der Anwendung unter Hilfe → Üb
 
 ## <a name="sec3"></a>Versionsprotokoll
 
+### Version 1.2 (Dezember 2018)
+* *Allgemein*:
+    - Verbesserte KML/KMZ Export Funktionalität
+    - Neue KML/KMZ Import Funktionalität
+    - Neue GeoPackage Export und Import Funktionalität
+    - Erlaube das Hinzufügen von CSV/WMS/WFS/WCS Ebenen im Ribbon GUI
+    - Erlaube das Hinzufügen von Aktionen zum Ribbon GUI via Python Schnittstelle
+    - Setzte Tastenkürzel für zahlreiche Aktionen des Ribbon GUIs
+    - Verbessertes "Fuzzy-Matching" bei der Koordinatensuche
+* *Analyse*:
+    - Darstellung von Knotenpunkte der Messlinie im Höhenprofil
+* *Zeichnen*:
+    - Unterstützung für numerische Eingabe beim Zeichnen von Redlining Objekte
+    - Erlaube das Setzen von Skalierungsfaktoren für Annotationenebenen
+    - Erlaube das aktivieren/deaktivieren des Rahmen der Bild-Annotationen
+    - Erlaube des Manipulieren von Gruppen von Annotationen
+    - Neue Funktionalität: Führungsraster
+    - Neue Funktionalität: Bullseye
+* *GPS*:
+    - Erlaube das Konvertieren zwischen Waypoints und Stecknadeln
+    - Erlaube das Ändern der Farbe von Waypoints un Routen
+* *MSS*:
+    - Upgrade auf MSS-2019
+
 ### Version 1.1 (November 2017)
 * *Allgemein*:
     - Frei setzbaren Cursor im Suchfeld

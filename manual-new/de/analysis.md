@@ -3,6 +3,8 @@
 
 In der Registerkarte **_Analyse_** befinden sich die Werkzeuge zum Messen von Distanzen, Flächen, Kreise und Winkeln sowie verschiedene Geländeanalysefunktionen.
 
+Um die Geländeanalysefunktionen verwenden zu können, muss im aktuellen Projekt ein Höhenmodell definiert sein. Eine Raster-Ebene kann in dessen Kontextmenü in der Kartenlegende als Höhenmodell ausgewählt werden.
+
 
 ## <a name="sec0"></a>Distanzen, Flächen und Azimut Messen
 
@@ -44,7 +46,7 @@ Um diese Geländeanalysefunktionen verwenden zu können, muss im Projekt ein Hö
 
 Beide dieser Analysen werden innerhalb eines rechteckigen Auschnittes der Karte berechnet. Die Schummerung erfordert noch zusätzlich die Eingabe der horizontalen und vertikalen Winkel der Lichtquelle.
 
-Die Ergebnisse der Neigungs- und Schummerungsanalysen werden als Raster-Ebenen der Karte hinzugefügt, und erscheinen dementsprechend im Karteninhaltsverzeichnis. Beim Speichern des Projektes werden diese Datensätze im Ordner _< Projektname > files_ abgelegt.
+Die Ergebnisse der Neigungs- und Schummerungsanalysen werden als Raster-Ebenen der Karte hinzugefügt, und erscheinen dementsprechend im Karteninhaltsverzeichnis. Beim Speichern des Projektes werden diese Datensätze im Ordner *<Projektname>_files* abgelegt.
 
 <img src="../media/image5.png" />
 
@@ -57,6 +59,6 @@ Um diese Geländeanalysefunktionen verwenden zu können muss im Projekt ein Höh
 
 Die Einsehbarkeitsanalyse wird innerhalb eines Kreissektors oder einem Vollkreis berechnet. Beim ersten Mausklick auf die Karte wird der Beobachterstandort definiert, der zweite definiert den Radius, und der dritte den Sektoröffungswinkel. Falls die numerische Eingabe aktiv ist, können diese Parameter auch numerisch eingegeben werden. Nach dem erfassen der Analysefläche können die Berechnungsparameter angepasst werden, nämlich die Beobachterhöhe, die Zielhöhe, ob diese Höhen relativ zum Terrain oder dem Meeresspiegel interpretiert werden sollen, und ob der sichtbare oder der unsichtbare Berich angezeigt werden soll.
 
-Das Ergebnis wird als Rasterebene der Karte hinzugefügt. Beim Speichern des Projektes wird diese Ebene in den _< Projektname > files_ Ordner abgelegt.
+Das Ergebnis wird als Rasterebene der Karte hinzugefügt. Beim Speichern des Projektes wird diese Ebene in den *<Projektname>_files* Ordner abgelegt.
 
 

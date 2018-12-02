@@ -26,7 +26,6 @@
 | Neues Kartenfenster   | `CTRL+V + CTRL+W` |
 | 3D                    | `CTRL+V + CTRL+3` |
 | Gitter                | `CTRL+V + CTRL+G` |
-| Führungsraster        | `CTRL+V + CTRL+R` |
 
 ## Analyse
 | Funktion              | Kürzel            |
@@ -51,6 +50,8 @@
 | Stecknadel            | `CTRL+D + CTRL+M` |
 | Bild hinzufügen       | `CTRL+D + CTRL+I` |
 | Einfügen              | `CTRL+V`          |
+| Führungsraster        | `CTRL+D + CTRL+R` |
+| Bullseye              | `CTRL+D + CTRL+B` |
 | Objekte löschen       | `CTRL + Auswahl`  |
 
 ## GPS

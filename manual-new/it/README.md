@@ -24,6 +24,30 @@ Le condizioni d'uso dei dati sono riportate nell'applicazione alla voce Aiuto �
 
 ## <a name="sec3"></a>Protocollo delle versioni
 
+### Versione 1.2 (Dicembre 2018)
+* *Generale*:
+    - Funzionalità di esportazione KML/KMZ migliorata
+    - Nuova funtionalità di importazione KML/KMZ
+    - Nuova funzionalità di esportazione e importazione GeoPackage
+    - Possibilità di aggiungere livelli CSV/WMS/WFS/WCS dall'interfaccia ribbon
+    - Possibilità di aggiungere funzionalità all'interfaccia ribbon dall'API Python
+    - Aggiungi tasti di scelta rapida per varie funzionalità dell'interfaccia ribbon
+    - Migliora il "fuzzy-matching" nella ricerca di coordinate
+* *Analisi*:
+    - Disegna i vertici della linea di misura nel profilo di elevazione
+* *Disegnare*:
+    - Supporta l'input numerico nel disegno di oggetti redlining
+    - Possibilità di scalare il contanuto di interi livelli di annotazioni
+    - Possibilità di attivare e disattivare le cornici di immagini
+    - Possibilità di manipulare gruppi di annotazioni
+    - Nuova funtionalità: griglia di guida
+    - Nuova funtionalità: Bullseye
+* *GPS*:
+    - Possibilità di convertire tra waypoints e spilli
+    - Possibilità di modificare il colore di waypoints e rotte
+* *MSS*:
+    - Aggiornamento a MSS-2019
+
 ### Versione 1.1 (Novembre 2017)
 * *Generale*:
     - Cursore liberamente posizionabile nel campo di ricerca

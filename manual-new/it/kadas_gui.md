@@ -14,15 +14,15 @@ L’interfaccia grafica KADAS è divisa in cinque aree:
 
 ## <a name="sec0"></a>Menu delle funzionalità
 
-(Text ergänzen)
+Le funzionalità sono raggruppate in schede, le quali possono essere attivate dalla barra del menu. Le schede contengono pulsanti per le varie funzionalità. Queste sono documentate nei rispettivi capitoli:
 
-+ Mappe
-+ Vista
-+ Analisi
-+ Disegnare
-+ GPS
-+ MSS
-+ Impostazioni / Guida
++ <a href="map.html">Mappa</a>
++ <a href="view.html">Vista</a>
++ <a href="analysis.html">Analisi</a>
++ <a href="draw.html">Disegnare</a>
++ <a href="gps.html">GPS</a>
++ <a href="mss.html">MSS</a>
++ <a href="settings.html">Impostazioni</a>
 
 
 ## <a name="sec1"></a>Preferiti e ricerca
@@ -41,7 +41,7 @@ Il campo di ricerca offre un'interfaccia unitaria per diversi servizi di ricerca
 + Località in tutto il mondo
 + Attributi nei set di dati locali
 + Attributi nei set di dati remoti (servizi web)
-+ Attributi nelle spilli
++ Attributi negli spilli
 
 La ricerca viene avviata appena sono stati digitati tre o più caratteri nel campo.
 
@@ -54,14 +54,15 @@ Alla destra del campo di ricerca è possibile definire un filtro per la ricerca 
 
 ## <a name="sec2"></a>Visualizzazione mappa
 
-Questa è la “parte commerciale” di KADAS: è in quest’area che vengono visualizzate le mappe. La mappa visualizzata in questa finestra è il risultato dei vettori e/o raster che si è scelto di caricare.
+Quest'area centrale di KADAS visualizza i livelli caricati e permette di eseguire varie operazioni sulla mappa.
 
-È possibile modificare la zona di visualizzazione della mappa (spostando la messa a fuoco dell’esposizione della mappa ad un’altra regione) e aumentare o dimunire lo zoom. Le altre operazioni che possono essere eseguite sulla mappa sono descritte nella sezione sopra, relativa alla barra degli strumenti.
+È possibile navigare nella mappa con il tasto sinistro o centrale del mouse e zoomare con la rotella di scorrimento o con i tasti di zoom nell'angolo superiore destro della finestra della mappa. Il tasto destro del mouse apre il menu di contesto. I movimenti di panoramica e rotazione vengono riconosciuti sui dispositivi touch. Inoltre, è possibile ingrandire in una certa misura tenendo premuto il tasto SHIFT e trascinando un rettangolo. 
 
-La visualizzazione della mappa e la legenda sono strettamente legate l’una all’altra: le mappe visualizzate riflettono i cambiamenti apportati nell’area della legenda. 
+Indipendentemente dallo strumento mappa attivo, il tasto centrale del mouse e la rotella di scorrimento sono sempre utilizzati per la navigazione nella mappa. La funzione del tasto sinistro e destro del mouse dipendono dallo strumento attivo.
 
-Nella scheda Vista è possibile aggiungere sottofinestre della mappa.
+Il contenuto della mappa è controllato dalla legenda della mappa, descritta nella sezione successiva.
 
+Nella scheda Visualizza è possibile aggiungere ulteriori visualizzazioni della mappa. Queste visualizzazioni aggiuntive sono passive, il che significa che non sono possibili altre interazioni oltre alla panoramica e allo zoom.
 
 ## <a name="sec3"></a>Livelli e catalogo dei geodati
 
@@ -80,42 +81,38 @@ Per rimuovere un livello da un gruppo, può essere selezionato e trascinato al d
 
 È possibile utilizzare la casella di controllo di un gruppo per mostrare/nascondere tutti i livelli del gruppo con un singolo clic.
 
-Il contenuto del menu contestuale varia a seconda che l’elemento selezionato con il tasto destro del mouse sia un raster o un livello vettoriale.
+Tramite click destro su un elemento è possibile eseguire varie operazioni, a dipendenza del tipo di livello selezionato, come ad esempio:
 
-+ **Menu contestuale per i raster**
-  + Zoom al livello
-  + Rimuovi
-  + Duplica
-  + Proprietà...
-+ **Menu contestuale per i vettori**
-  + Zoom al livello
-  + Rimuovi
-  + Duplica
-  + Proprietà...
-+ **Menu contestuale per i gruppi di livelli**
-  + Rimuovi
-  + Rinomina
++ Zoom sull'estensione del livello
++ Rimuovere
++ Rinominare
++ Aprire le proprietà del livello
 
-È possibile selezionare più livelli o gruppi alla volta tenendo premuto il tasto Ctrl e facendo clic con il tasto sinistro del mouse sui vari livelli. In questo modo si potranno spostare contemporaneamente tutti i livelli selezionati in un nuovo gruppo.
+È possibile selezionare più livelli o gruppi alla volta tenendo premuto il tasto Ctrl e facendo clic con il tasto sinistro del mouse sui vari livelli.
 
 
 ## <a name="sec4"></a>Catalogo dei geodati
 
-Ulteriori livelli di carta possono essere aggiunti alla carta dal catalogo dei geodati. Se l'elenco è vuoto, non è stato possibile connettersi al servizio di catalogo. Inserendo i termini di ricerca nel campo di testo, i livelli disponibili sono limitati di conseguenza. È possibile aggiungere un livello alla mappa utilizzando il menu contestuale (tasto destro del mouse sulla voce del livello) o tramite "Drag and Drop".
+Ulteriori livelli di carta possono essere aggiunti alla carta dal catalogo dei geodati. Se l'elenco è vuoto, non è stato possibile connettersi al servizio di catalogo. 
+
+All'avvio del programma vengono visualizzati solo i dati pubblici. A seconda dell'utente, dopo aver effettuato correttamente l'autenticazione, posso­no essere disponibili ulteriori dati, vedi *Autenticazione SAML* sotto.
+
+Inserendo i termini di ricerca nel campo di testo, i livelli disponibili sono limitati di conseguenza. È possibile aggiungere un livello alla mappa utilizzando il menu contestuale (tasto destro del mouse sulla voce del livello) o tramite "Drag and Drop".
 
 Le seguenti funzioni sono disponibili sopra l'elenco del catalogo:
 
-+ **_Aggiungere dati locali_**: Aggiungere dati vettoriali o i dati raster locali alla mappa.
++ **_Aggiungi layer locale_**: Aggiungere dati locali vettoriali, raster o CSV alla mappa.
++ **_Aggiungi layer da un servizio Web_**: Aggiungere layer WMS, WFS o WCS.
 + **_Ricaricare il catalogo_**: Ricarica il catalogo dei geodati.
-+ **_Autenticazione_**: Si apre una finestra in cui è possibile effettuare un login basato sul web sul server. Dopo aver effettuato con successo il login, il catalogo dei geodati viene ricaricato e sono disponibili ulteriori livelli di carta in base alle autorizzazioni.
++ **_Autenticazione SAML_**: Si apre una finestra in cui è possibile effettuare un login basato sul web sul server. Dopo aver effettuato con successo il login, il catalogo dei geodati viene ricaricato e sono disponibili ulteriori livelli di carta in base alle autorizzazioni.
 
 ## <a name="sec5"></a>Barra di stato
 
 Nella barra di stato sono disposti i seguenti indicatori e le seguenti funzioni:
 
-+ **GPS**: La funzione del tasto GPS è descritta in nel capitolo *Attivazione GPS*.
-+ **Posizione del mouse**: La **_posizione corrente del mouse_** può essere visualizzata in diversi sistemi di coordinate. Il sistema desiderato può essere selezionato con il tasto a destra dell'indicatore di posizione.
-+ **Scala**: Accanto alla visualizzazione delle coordinate si trova la visualizzazione della **_scala_**. Mostra la scala della finestra della mappa. Quando si esegue lo zoom avanti o indietro, KADAS mostra la scala corrente. C'è un **_menu di selezione_** dal quale è possibile scegliere tra scale predefinite da 1:500 a 1:100000000.
-+ **Sistema di coordinate**: Nel campo di selezione **_Sistema di coordinate_** è possibile selezionare il sistema di riferimento in cui deve essere visualizzata la mappa corrente. Il sistema di riferimento visualizzato può differire dal sistema di riferimento in cui sono disponibili i dati. In questo caso, i dati vengono riproiettati per la visualizzazione.
++ **_GPS_**: L'uso del pulsante GPS è descritto nel <a href="gps.html">capitolo *GPS*<a>.
++ _**Posizione del mouse_**: La posizione corrente del mouse sulla mappa può essere visualizzata rispetto a molteplici sistemi di riferimento . Il sistema desiderato può essere selezionato dal menu a sinistra campo di visualizzazione. L'unità di misura dell'altezza può essere modificata nella scheda Impostazioni.
++ **_Scala_**: La scala corrente della visualizzazione della mappa è mostrata accanto al campo delle coordinate. Il selettore di scala consente di scegliere tra scale predefinite tra 1:500 e 1:100000000.
++ **_Sistema di coordinate_**: Il pulsante di selezione del sistema di coordinate permette di scegliere quale proiezione utilizzare per la mappa. Se la proiezione selezionata differisce dalla proiezione nativa di un dataset, quest'ultimo viene riproiettato, il che può comportare una riduzione delle prestazioni a seconda della quantità di dati.
 
 

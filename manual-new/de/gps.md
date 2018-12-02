@@ -25,7 +25,7 @@ Sobald KADAS vom GPS Positionsdaten empfängt, wird auf der Karte ein entspreche
 Diese Funktion aktiviert das automatische verscheiben des sichtbaren Kartenausschnittes, zentriert auf der aktuellen GPS-Position.
 
 
-## <a name="sec2"></a>Wegpunkte und Routen Zeichnen
+## <a name="sec2"></a>Wegpunkte und Routen zeichnen
 
 Mit diesen Funktionen können Wegpunkte und Routen gezeichnet werden, welche später als GPX gespeichert werden können, z.B. für das Hochladen auf ein GPS gerät.
 

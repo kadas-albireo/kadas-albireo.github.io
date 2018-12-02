@@ -23,6 +23,30 @@ The terms of use for the data are listed in the application under Help → About
 
 ## <a name="sec3"></a>Changelog
 
+### Version 1.2 (December 2018)
+* *General*:
+    - Improved KML/KMZ export functionality
+    - New KML/KMZ import functionality
+    - New GeoPackage export and import functionality
+    - Allow adding CSV/WMS/WFS/WCS layers from ribbon GUI
+    - Allow adding actions to ribbon GUI via Python API
+    - Add keyboard shortcuts for many actions in ribbon GUI
+    - Improved fuzzy matching when searching coordinates
+* *Analysis*:
+    - Show node markers in height profile
+* *Draw*:
+    - Support numeric input when drawing redlining objects
+    - Allow setting scaling factor for annotation layers
+    - Allow toggling frames of image annotations
+    - Allow manipulating groups of annotation items
+    - New Guide Grid functionality
+    - New Bullseye functionality
+* *GPS*:
+    - Allow conversion between waypoints and pins
+    - Allow changing color of waypoints and routes
+* *MSS*:
+    - Update to MSS-2019
+
 ### Version 1.1 (November 2017)
 * *General*:
     - Freely positionable cursor in the search field

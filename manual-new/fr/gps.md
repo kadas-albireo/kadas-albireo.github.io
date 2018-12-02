@@ -25,15 +25,15 @@ Dès que KADAS reçoit des données sur la position GPS, un marqueur de position
 Cette fonction active le déplacement automatique de la portion de carte visible pour qu’elle soit centrée sur la position GPS mise à jour.
 
 
-## <a name="sec1"></a>Dessiner des points de parcours et des routes
+## <a name="sec1"></a>Dessiner des waypoints et des itinéraires
 
-Cette fonction permet de dessiner des points de parcours et des routes qui pourront être sauvegardés ultérieurement en tant que GPX, p.ex. pour les charger sur un GPS.
+Cette fonction permet de dessiner des waypoints et des itinéraires qui pourront être sauvegardés ultérieurement en tant que GPX, p.ex. pour les charger sur un GPS.
 
-Les **_points de parcours_** sont de simples points sur la carte qui peuvent être nommés.
+Les **_waypoints_** sont de simples points sur la carte qui peuvent être nommés.
 
-Les **_routes_** sont des lignes que l’on peut nommer et numéroter.
+Les **_itinéraires_** sont des lignes que l’on peut nommer et numéroter.
 
-Les points de parcours et les routes ont leur propre niveau dans l’arborescence, Routes GPS, tout comme le niveau Redlining.
+Les waypoints et les itinéraires ont leur propre niveau dans l’arborescence, Routes GPS, tout comme le niveau Redlining.
 
 <img src="../media/image9.png" />
 

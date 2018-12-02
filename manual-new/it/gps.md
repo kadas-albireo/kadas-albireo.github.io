@@ -25,15 +25,15 @@ Non appena KADAS riceve dei dati sulla posizione dal GPS, sulla mappa viene dise
 Questa funzione attiva lo spostamento automatico della sezione di mappa visibile, centrata sulla posizione GPS attuale.
 
 
-## <a name="sec2"></a>Disegno di waypoint e percorsi
+## <a name="sec2"></a>Disegno di waypoint e rotte
 
-Con queste funzioni vengono disegnati waypoint e percorsi che potranno essere successivamente salvati in formato GPX, ad esempio per il caricamento su un apparecchio GPS.
+Con queste funzioni vengono disegnati waypoint e rotte che potranno essere successivamente salvati in formato GPX, ad esempio per il caricamento su un apparecchio GPS.
 
 I **_waypoint_** sono punti semplici sulla mappa che possono essere inoltre dotati di un nome.
 
-I **_percorsi_** sono polilinee che possono essere dotate di nome e numero.
+I **_rotte_** sono polilinee che possono essere dotate di nome e numero.
 
-Waypoint e percorsi vengono salvati nell’albero dei livelli in un proprio livello Percorsi GPS, analogo al livello Redlining.
+Waypoint e rotte vengono salvati nell’albero dei livelli in un proprio livello Percorsi GPS, analogo al livello Redlining.
 
 <img src="../media/image9.png" />
 

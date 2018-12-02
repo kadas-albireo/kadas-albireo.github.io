@@ -26,7 +26,6 @@
 | Nuova vista           | `CTRL+V + CTRL+W` |
 | 3D                    | `CTRL+V + CTRL+3` |
 | Reticolo              | `CTRL+V + CTRL+G` |
-| Griglia di guida      | `CTRL+V + CTRL+R` |
 
 ## Analisi
 | Funzione          | Combinazione      |
@@ -51,6 +50,8 @@
 | Spillo            | `CTRL+D + CTRL+M`  |
 | Aggiungi immagine | `CTRL+D + CTRL+I`  |
 | Incolla           | `CTRL+V`           |
+| Griglia di guida  | `CTRL+D + CTRL+R`  |
+| Bullseye          | `CTRL+D + CTRL+B`  |
 | Elimina elementi  | `CTRL + Seleziona` |
 
 ## GPS

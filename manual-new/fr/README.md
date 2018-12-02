@@ -23,7 +23,31 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
 
 ## <a name="sec3"></a>Protocole de version
 
-### Version 1.1 (novembre 2017)
+### Version 1.2 (décembre 2018)
+* *Général*:
+    - Fonctionnalité d'exportation KML/KMZ améliorée
+    - Nouvelle fonctionnalité d'importation KML/KMZ
+    - Nouvelle fonction d'exportation et d'importation GeoPackage
+    - Possibilité d'ajouter des niveaux CSV/WMS/WFS/WFS/WCS depuis l'interface ribbon
+    - Possibilité d'ajouter des fonctionnalités à l'interface ribbon à partir de l'API Python
+    - Ajout de raccourcis clavier pour diverses fonctions d'interface ribbon
+    - Améliore le "fuzzy matching" dans la recherche de coordonnées
+* *Analyse*:
+    - Tracer les sommets de la ligne de mesure dans le profil d'élévation
+* *Dessigner*:
+    - Prise en charge de la saisie numérique dans le dessin d'objets redlining
+    - Possibilité du réglage du facteur d'échelle pour les couches d'annotation
+    - Possibilité d'activer et de désactiver les cadres d'images
+    - Possibilité de manipuler des groupes d'annotations
+    - Nouvelle fonctionnalité: grille de guidage
+    - Nouvelle fonctionnalité: Bullseye
+* *GPS*:
+    - Possibilité de conversion entre les waypoints et les pins
+    - Possibilité de changer la couleur des waypoints et des itinéraires
+* *MSS*:
+    - Mise à niveau vers MSS-2019
+
+### Version 1.1 (Novembre 2017)
 
 * *Général*:
     - Curseur librement positionnable dans le champ de recherche
@@ -36,7 +60,7 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
     - Mesure géodésique de la distance et de la superficie
     - Azimut sélectionnable par rapport au nord de la carte ou géographique
 
-* *Draw*:
+* *Dessigner*:
     - Accrochage aux objets commutable lors du dessin
     - Annuler / refaire pendant le dessin
     - Les géométries peuvent être déplacées, copiées, coupées et collées, individuellement ou en groupe
@@ -57,7 +81,7 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
 * *Imprimer*:
     - Possibilité de gérer les modèles d'impression contenus dans un projet
 
-### Version 1.0 (septembre 2016)
+### Version 1.0 (Septembre 2016)
 * Version initiale
 
 

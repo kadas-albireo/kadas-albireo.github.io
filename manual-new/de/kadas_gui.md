@@ -14,15 +14,15 @@ Die KADAS Benutzeroberfläche ist in fünf Bereiche unterteilt:
 
 ## <a name="sec0"></a>Funktionsmenü
 
-Im Funkionsmenü kann über eine Menüleiste zwischen verschiedenen Symbolleisten umgeschaltet werden. Die Symbolleisten enthalten Knöpfe für die verschiedenen Funktionen. Die Funktionen der Symbolleisten sind in separaten Kapiteln dokumentiert:
+Im Funkionsmenü kann über eine Menüleiste zwischen verschiedenen Symbolleisten umgeschaltet werden. Die Symbolleisten enthalten Knöpfe für die verschiedenen Funktionen. Diese sind in separaten Kapiteln dokumentiert:
 
-+ Meine Karten
-+ Ansicht
-+ Analyse
-+ Zeichnen
-+ GPS
-+ MSS
-+ Einstellungen / Hilfe
++ <a href="map.html">Karte</a>
++ <a href="view.html">Ansicht</a>
++ <a href="analysis.html">Analyse</a>
++ <a href="draw.html">Zeichnen</a>
++ <a href="gps.html">GPS</a>
++ <a href="mss.html">MSS</a>
++ <a href="settings.html">Einstellungen</a>
 
 
 ## <a name="sec1"></a>Favoriten und Suche
@@ -54,13 +54,15 @@ Rechts vom Suchfeld gibt es die Möglichkeit, einen Filter für die lokale und r
 
 ## <a name="sec2"></a>Kartenfenster
 
-Dies ist der Ergebnisbereich von KADAS - hier werden die Daten visualisiert. Die Karten, die hier angezeigt werden, hängen davon ab, welche Raster- und Vektorlayer Sie ausgewählt haben.
+Dieser zentrale Bereich von KADAS zeigt die geladenen Layer an und ermöglicht verschiedene Operationen auf der Karte.
 
-Innerhalb des Kartenfensters können Sie ‘zoomen’, verschieben und eine Vielzahl weiterer Funktionen aus der Werkzeugleiste anwenden. 
+Das Navigieren in der Karte erfolgt mit der linken oder mittleren Maustaste, das Zoomen mit dem Scrollrad oder mit den Zoomtasten in der oberen rechten Ecke des Kartenfensters. Mit der rechten Maustaste wird das Kontextmenü geöffnet. Navigations- und Drehbewegungen werden auf berührungsempfindlichen Geräten erkannt. Darüber hinaus kann auf eine bestimmte Region gezoomt werden, indem man bei gedrückter SHIFT-Taste  ein Rechteck aufzieht. 
 
-Das Kartenfenster und die Legende sind miteinander verknüpft. Layer im Kartenfenster spiegeln Veränderungen in der Legende wider.
+Unabhängig vom aktiven Kartenwerkzeug werden die mittlere Maustaste und das Scrollrad immer für die Kartennavigation verwendet. Die Funktion der linken und rechten Maustasten ist abhängig vom aktiven Werkzeug.
 
-In der Registerkarte Ansicht können neue Kartenunterfenster geöffnet werden. 
+Der Inhalt der Karte wird durch die im nächsten Abschnitt beschriebene Kartenlegende gesteuert.
+
+In der Registerkarte Ansicht können zusätzliche Kartenansichten hinzugefügt werden. Diese zusätzlichen Ansichten sind passiv, d.h. es ist keine weitere Interaktion außer dem Navigieren und Zoomen möglich.
 
 
 ## <a name="sec3"></a>Ebenen und Geodatenkatalog
@@ -80,32 +82,28 @@ Um einen Layer aus einer Gruppe zu bringen, können Sie ihn herausschieben oder 
 
 Das Kontrollkästchen für eine Gruppe zeigt oder verbirgt alle Layer einer Gruppe mit einem Klick.
 
-Bei einem Rechtsklick hängt das Kontextmenü davon ab, ob es sich beim ausgewählten Element in der Legende um eine Raster- oder Vektor-Ebene handelt.
+Bei einem Rechtsklick auf einen Eintrag können, abhängig vom Typ der ausgewählten Ebene, verschiedene Operationen ausgeführt werden, wie:
 
-+ **Rechte-Maustaste-Menü für Rasterlayer**
-  + Zoom to Layer
-  + Entfernen
-  + Kopieren
-  + Eigenschaften...
-+ **Rechte-Maustaste-Menü für Vektorlayer**
-  + Zoom to Layer
-  + Entfernen
-  + Kopieren
-  + Eigenschaften...
-+ **Rechte Maustaste-Menü für Layergruppen**
-  + Entfernen
-  + Umbenennen
++ Auf Ebene zoomen
++ Entfernen
++ Unbenennen
++ Ebeneneigentschaften aufrufen
 
-Es ist möglich mehr als einen Layer oder Gruppe zur gleichen Zeit auszuwählen indem man die Strg Taste gedrückt hält und die Layer mit der linken Maustaste auswählt. Sie können dann alle ausgewählten Layer gleichzeitig zu einer neuen Gruppe verschieben.
+Es ist möglich mehr als einen Layer oder Gruppe zur gleichen Zeit auszuwählen indem man die Strg Taste gedrückt hält und die Layer mit der linken Maustaste auswählt.
 
 
 ### Geodatenkatalog
 
-Im Geodatenkatalog können weitere Kartenebenen zur Karte hinzugefügt werden. Ist die Liste leer, besteht keine Netzwerkverbindung zum Katalogdienst. Durch Eingabe von Suchbegriffen im Textfeld werden die verfügbaren Ebenen entsprechend eingeschränkt. Eine Ebene kann mittels Kontextmenü (rechte Maustaste auf dem Ebeneneintrag) oder via “Drag and Drop” der Karte hinzugefügt werden.
+Im Geodatenkatalog können weitere Kartenebenen zur Karte hinzugefügt werden. Ist die Liste leer, besteht keine Netzwerkverbindung zum Katalogdienst. 
+
+Beim Programmstart werden nur öffentliche Daten angezeigt. Abhängig vom Benutzer können nach erfolgter Authentifizierung weitere Daten zur Verfügung stehen, siehe *SAML Authentifizierung* unten.
+
+Durch Eingabe von Suchbegriffen im Textfeld werden die verfügbaren Ebenen entsprechend eingeschränkt. Eine Ebene kann mittels Kontextmenü (rechte Maustaste auf dem Ebeneneintrag) oder via “Drag and Drop” der Karte hinzugefügt werden.
 
 Oberhalb der Katalogliste stehen folgende Funktionen zur Verfügung:
 
-+ **_Lokaler Datensatz hinzufügen_**: Es können Vektordaten oder Rasterdaten zur Karte hinzugefügt werden.
++ **_Lokaler Datensatz hinzufügen_**: Es können Vektor-, Raster- und CSV-Daten hinzugefügt werden.
++ **_Ebene eines Webdienstes hinzufügen_**: Es können WMS, WFS und WCS Ebenen hinzugefügt werden.
 + **_Katalog neu laden_**: Lädt die Liste der verfügbaren Kartenebenen neu.
 + **_SAML Authentifizierung_**: Es wird ein Fenster geöffnet, in dem ein webbasiertes Login auf dem Server durchgeführt werden kann. Nach erfolgreichem Login wird der Geodatenkatalog neu geladen und es stehen entsprechend den Berechtigungen zusätzliche Kartenebenen zur Verfügung.
 
@@ -114,8 +112,8 @@ Oberhalb der Katalogliste stehen folgende Funktionen zur Verfügung:
 
 In der Statuszeile sind folgende Anzeigen und Bedienelemente angeordnet:
 
-+ **GPS**: Die Funktion des GPS-Knopfes ist unter "GPS aktivieren beschrieben".
-+ **Mausposition**: Die aktuelle **_Mausposition_** kann in verschiedenen Koordinatensystemen angezeigt werden. Das gewünschte Anzeigesystem kann über den Knopf rechts der Positionsanzeige ausgewählt werden.
-+ **Massstab**: Neben der Koordinatenanzeige finden Sie die **_Massstabsanzeige_**. Es zeigt den Massstab des Kartenfensters. Wenn Sie herein- oder hinauszoomen zeigt KADAS ihnen den aktuellen Maßstab. Es gibt eine **_Massstabsauswahl_** mit der Sie zwischen vordefinierten Massstäben von 1:500 bis 1:1000000 wählen können.
-+ **Koordinatensystem**: Im Auswahlfeld **_Koordinatensystem_** kann das Referenzsystem ausgewählt werden, in dem die aktuelle Karte dargestellt werden soll. Das angzeigte Referensystem kann vom Referenzsystem, in dem die Daten vorliegen, abweichen. In diesem Fall werden die Daten zur Darstellung umprojiziert.
++ **_GPS_**: Die Verwendung der GPS Schaltfläche ist im Kapitel <a href="gps.html">Kapitel *GPS*<a> beschrieben.
++ Mausposition_**: Die aktuelle Mausposition auf der Karte kann in Bezug auf mehrere Referenzsysteme angezeigt werden. Das gewünschte System kann im Menü links neben der Positionsanzeige ausgewählt werden. Die Einheit für die Höhe kann in der Einstellungen-Registerkarte geändert werden.
++ **_Massstab_**: Der aktuelle Massstab der Kartenansicht wird neben dem Koordinatenfeld angezeigt. Der Menü ermöglicht die Auswahl zwischen vordefinierten Skalen zwischen 1:500 und 1:100000000.
++ Koordinatenbezugssystem_**: In dieser Auswahlschaltfläche ausgewählt werden, welche Projektion für die Karte verwendet werden soll. Weicht die gewählte Projektion von der nativen Projektion eines Datensatzes ab, wird dieser neu projiziert, was je nach Datenmenge zu Leistungseinbussen führen kann.
 

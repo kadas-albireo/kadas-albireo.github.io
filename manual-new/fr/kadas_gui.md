@@ -14,15 +14,15 @@ L’interface de KADAS est divisée en cinq zones distinctes :
 
 ## <a name="sec0"></a>Menu de fonction
 
-On peut alterner entre diverses barres d’outils dans le menu de fonction grâce à la liste de menu. Les barres d’outils contiennent des touches pour les diverses fonctions. Les fonctions des barres d’outils sont documentées dans un chapitre séparé :
+On peut alterner entre diverses barres d’outils dans le menu de fonction grâce à la liste de menu. Les barres d’outils contiennent des touches pour les diverses fonctions. Les fonctions sont documentées dans un chapitre séparé :
 
-+ Cartes
-+ Vue
-+ Analyse
-+ Dessiner
-+ GPS
-+ MSS
-+ Paramètres / Aide
++ <a href="map.html">Carte</a>
++ <a href="view.html">Vue</a>
++ <a href="analysis.html">Analyse</a>
++ <a href="draw.html">Dessiner</a>
++ <a href="gps.html">GPS</a>
++ <a href="mss.html">MSS</a>
++ <a href="settings.html">Paramètres</a>
 
 
 ## <a name="sec1"></a>Favoris et recherche
@@ -54,21 +54,23 @@ Les résultats sont listés dans des catégories indiquées en conséquence. La 
 
 ## <a name="sec2"></a>Affichage de la carte
 
-C’est la partie centrale de KADAS puisque les cartes y sont affichées. Le contenu qui s’affiche dépend des couches de types raster et vecteur que vous avez choisies de charger.
+Cette zone centrale de KADAS affiche les couches chargées et permet d'effectuer diverses opérations sur la carte.
 
-L’emprise de la carte peut être modifiée en portant le focus sur une autre région, ou en zoomant en avant ou en arrière. Plusieurs opérations peuvent être effectuées sur la carte comme il est expliqué dans les descriptions des barres d’outils. 
+La navigation au sein de la carte s’effectue via le bouton central ou gauche de la souris, le zoom via la roulette ou avec le bouton zoom en haut à droite de la fenêtre de la carte. Le bouton droit de la souris ouvre le menu contextuel. Les moniteurs à écran tactile reconnaissent les gestes pan et rotation. De plus, il est possible de zoomer sur une partie déterminée en dessinant un rectangle: pour cela, maintenir la touche SHIFT enfoncée.
 
-La carte et la légende sont étroitement liées — la carte reflète les changements que vous opérez dans la légende.
+Indépendamment des outils de carte actifs, le bouton central et la roulette de la souris servent toujours à la navigation dans la carte. La fonction du bouton gauche et droit de la souris dépend de l’outil actif.
 
-Dans l’onglet Vue, on peut ouvrir de nouvelles sous-fenêtres de carte.
+Le contenu de la carte est contrôlé par la légende de la carte, décrite dans la section suivante.
+
+Dans le tab Vue, des vues de carte supplémentaires peuvent être ajoutées. Ces vues supplémentaires sont passives, ce qui signifie qu'aucune autre interaction que la navigation et le zoom est possible.
 
 
-## <a name="sec3"></a>Niveaux et catalogue de géodonnées
+## <a name="sec3"></a>Couches et catalogue de géodonnées
 
 Sur le bord gauche de la fenêtre de programme se trouve une zone rabattable qui contient les fonctions d’administration des niveaux de cartes. La partie supérieure contient les légendes des cartes et la partie inférieure le catalogue des géodonnées.
 
 
-### Niveaux
+### Couches
 
 La zone de légende de la carte énumère toutes les **_couches_** du projet. La case à cocher de chaque rubrique de la légende peut être utilisée pour afficher ou cacher la couche.
 
@@ -80,32 +82,28 @@ Pour retirer une couche d’un groupe, il suffit de pointer votre curseur sur el
 
 La case à cocher d’un groupe permet d’afficher ou de cacher toutes les couches du groupe en un seul clic.
 
-Le contenu du menu contextuel (clic droit de la souris) va dépendre du fait que l’entrée sélectionnée dans la légende soit une couche raster ou vectorielle.
+En cliquant avec le bouton droit sur une entrée, différentes opérations peuvent être effectuées, selon le type de la couche sélectionnée, par exemple :
 
-+ **Menu clic droit pour les couches de type raster**
-  + Zoomer sur la couche
-  + Supprimer
-  + Dupliquer
-  + Propriétés...
-+ **Menu clic droit pour les couches de type vecteur**
-  + Zoomer sur la couche
-  + Supprimer
-  + Dupliquer
-  + Propriétés...
-+ **Menu clic droit pour les groupes**
-  + Supprimer
-  + Renommer
++ Zoom sur la couche
++ Enlever
+Renommer
++ Ouvrir les propriétés de la couche
 
-Il est possible de sélectionner plus d’une couche ou d’un groupe à la fois en tenant appuyée la touche Ctrl pendant que vous sélectionnez les couches avec le bouton gauche de la souris. Vous pouvez alors déplacer en une fois toutes les couches sélectionnées dans un nouveau groupe.
+Il est possible de sélectionner plus d’une couche ou d’un groupe à la fois en tenant appuyée la touche Ctrl pendant que vous sélectionnez les couches avec le bouton gauche de la souris.
 
 
 ### Catalogue de géodonnées
 
-D’autres niveaux de cartes peuvent être ajoutés à la carte dans le catalogue de géodonnées. Si la liste est vide, il n’y a pas de raccordement par réseau avec le service de catalogue. La saisie de termes de recherche dans le champ de texte limite en conséquence les niveaux disponibles. Un niveau peut être ajouté au moyen du menu contextuel (clic droit sur l’indication du niveau) ou par “glisser-déposer” sur la carte.
+D’autres niveaux de cartes peuvent être ajoutés à la carte dans le catalogue de géodonnées. Si la liste est vide, il n’y a pas de raccordement par réseau avec le service de catalogue. 
+
+Au lancement du programme, seules les données publiques sont affichées. En fonction de l’utilisateur, d’autres données pourront être mises à disposition après authentification, voir *Authentification SAML* ci-dessous.
+
+La saisie de termes de recherche dans le champ de texte limite en conséquence les niveaux disponibles. Un niveau peut être ajouté au moyen du menu contextuel (clic droit sur l’indication du niveau) ou par “glisser-déposer” sur la carte.
 
 Les fonctions suivantes sont à disposition en haut de la liste de catalogue :
 
-+ **_Ajouter base de données locale_** : On peut ajouter des données de vecteur ou raster à la carte.
++ **_Ajouter base de données locale_** : On peut ajouter des données de vecteur, raster out CSV à la carte.
++ **_Adjouter une couche à partire d'un service Web_**: On peut adjouter des données WMS, WFS et WCS.
 + **_Recharger le catalogue_** : Recharge la liste des niveaux de carte disponibles.
 + **_Authentification SAML_** : Une fenêtre est ouverte où l’on peut effectuer un enregistrement par Internet sur le serveur. Après la réussite de l’enregistrement, le catalogue de géodonnées est rechargé et d’autres niveaux de cartes sont disponibles selon les autorisations.
 
@@ -114,8 +112,8 @@ Les fonctions suivantes sont à disposition en haut de la liste de catalogue :
 
 Les indications et les éléments de commande suivants sont énumérés dans la barre d’état :
 
-+ **GPS**: La fonction de la touche GPS est décrite sous "Activer un GPS".
-+ **Position de la souris**: La **_position actuelle de la souris_** peut être affichée dans différents systèmes de coordonnées. Le système d’affichage souhaité peut être choisi par la touche à droite de l’indication de la position.
-+ **Échelle**: À droite de ces coordonnées se trouve **_l’échelle de la carte_**. Si vous zoomez ou dé-zoomez, l’échelle se met à jour automatiquement. Une liste déroulante vous permet de choisir une échelle prédéterminée allant du 1:500ème au 1:1000000ème.
-+ **Système de coordonnées**: Le système de référence où la carte actuelle doit être représentée peut être choisi dans le champ de sélection **_Système de coordonnées_**. Le système de référence affiché peut différer du système de référence dans lequel les données existent. Dans ce cas, les données sont converties pour la représentation.
++ **GPS**: La fonction de la touche GPS est décrite dans le <a href="gps.html">chapitre *GPS*<a>.
++ **Position de la souris**: La *position actuelle de la souris* peut être affichée dans différents systèmes de coordonnées. Le système d’affichage souhaité peut être choisi par la touche à droite de l’indication de la position.
++ **Échelle**: À droite de ces coordonnées se trouve *l’échelle de la carte_*. Si vous zoomez ou dé-zoomez, l’échelle se met à jour automatiquement. Une liste déroulante vous permet de choisir une échelle prédéterminée allant du 1:500ème au 1:1000000ème.
++ **Système de coordonnées**: Le système de référence où la carte actuelle doit être représentée peut être choisi dans le champ de sélection du *système de coordonnées*. Le système de référence affiché peut différer du système de référence dans lequel les données existent. Dans ce cas, les données sont converties pour la représentation.
 

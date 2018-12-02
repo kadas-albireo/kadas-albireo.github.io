@@ -9,11 +9,11 @@ Beim Bewegen in der Karte kann über die Funktion **_Vorheriger Ausschnitt_** au
 
 ## <a name="sec1"></a>Neues Kartenfenster
 
-Über die Funktion **_Neues Kartenfenster_** können weitere Kartenfenster geöffnet werden. Diese können durch Ziehen an der Titelleiste beliebig innerhalb des Hauptfenster oder entkoppelt davon angeordnet werden.
+Über die Funktion **_Neues Kartenfenster_** können sekundäre Kartenansichten geöffnet werden. Diese können durch Ziehen an der Titelleiste beliebig innerhalb des Hauptfenster oder entkoppelt davon angeordnet werden.
 
 In den Unterfensteransichten können unabhängig von der Hauptansicht Ebenen aktiviert und deaktiviert werden. Der Ausschnitt lässt sich unabhängig von der Hauptansicht steuern oder mit dieser koppeln indem das Schloss-Symbol in der Titelleiste des Unterfenster aktiviert wird.
 
-In Kartenunterfenster ist nur das Navigationswerkzeug verfügbar, sämtliche weitere Werkzeuge können nur in der Hauptansicht verwendet werden.
+In sekundären Kartenansichten ist nur das Navigationswerkzeug verfügbar, sämtliche weitere Werkzeuge können nur in der Hauptansicht verwendet werden.
 
 Der Titel der Unterfenster lässt sich bei Bedarf ändern.
 
@@ -28,11 +28,11 @@ Der Titel der Unterfenster lässt sich bei Bedarf ändern.
 
 ### Einstellungen
 
-Die angezeigten Ebenen können unabhängig vom Hauptfenster im Menü **_Fenster_** ausgewählt werden.
+Folgende Funktionen befinden sich in der Titelleiste des 3D Fensters:
 
-+ **Ausschnitt synchronisieren**: Über das Symbol **_Ausschnitt synchronisieren_** wird auf dem Globus zum Kartenausschnitt des Hauptfensters navigiert.
-+ **Szene neu laden**: Über das Symbol **_Szene neu laden_** wird die Ebenen im Globus neu geladen.
-+ **Globus Einstellungen**: Über das Symbol **_Globus Einstellungen_** wird ein Dialog mit weiteren Einstellungsmöglichkeiten aufgerufen. Dort werden unter anderem die Geländemodelle für die 3D Ansicht konfiguriert, und es können ebenfalls Bildebenen hinzugefügt werden. Die darzustellende Ebenen der 2D Ansicht werden im Menü links in der Titelleiste ausgewählt. Im Interesse der Performance werden standardmässig nur lokale Ebenen der 2D Ansicht aktiviert - Hintergrundbildebenen sollten nach Möglichkeit direkt als Bildebenen im Globus Einstellungsdialog hinzugefügt werden.
++ **Ausschnitt synchronisieren**: Hiermit wird auf dem Globus zum Kartenausschnitt des Hauptfensters navigiert.
++ **Szene neu laden**: Hiermit werden alle ebenen im Globus neu geladen.
++ **Globus Einstellungen**: Hiermit wird ein Dialog mit weiteren Einstellungsmöglichkeiten aufgerufen. Dort werden unter anderem die Geländemodelle für die 3D Ansicht konfiguriert, und es können ebenfalls Bildebenen hinzugefügt werden. Die darzustellende Ebenen der 2D Ansicht werden im Menü links in der Titelleiste ausgewählt. Im Interesse der Performance werden standardmässig nur lokale Ebenen der 2D Ansicht aktiviert - Hintergrundbildebenen sollten nach Möglichkeit direkt als Bildebenen im Globus Einstellungsdialog hinzugefügt werden.
 
 Ebenen der 2D Ansicht werden standardmässig als Textur über das Gelände des Globus gezeichnet. Vektorebenen (darunter Redlining) können alternativ entweder als extrudierte 2.5D Modelle oder als 3D Modelle gezeichnet werden, wobei der Stil der 2D Ansicht soweit wie möglich in der 3D Ansicht übernommen wird. Für die Darstellung als 3D Modelle müssen die Geometrien der Ebene mit Höheninformationen (Z-Koordinaten) versehen sein, und diese müssen entweder gegenüber dem Gelände oder dem Meeresspiegel ausgedrückt sein. Die Darstellungsoptionen für Vektorebenen kann man in den entsprechenden Layereigenschaften setzten.
 
@@ -45,25 +45,17 @@ Ebenen der 2D Ansicht werden standardmässig als Textur über das Gelände des G
 Stecknadeln, Kamerabilder und einpunkt MSS Symbole werden als Billboards angezeigt.
 
 
-### Navigation
+### Navigation in der 3D-Ansicht
 
-+ **Navigation Ansichtswinkel**: Im oberen Navigationsrad wird die Kamera über die Links-/Rechts-Pfeile nach links bzw. rechts gedreht. Über die Auf-/Ab-Pfeile wird der vertikale Sichtwinkel der Kamera geändert.
-+ **Navigation auf Globus**: Im unteren Navigationsrad wird der Globus über die Pfeiltasten entsprechend nach links, rechts, oben oder unten gedreht.
-+ **+**: Die Kamera bewegt sich näher zum Globus, das heisst die Höhe der Kamera wird reduziert.
-+ **-**: Die Kamera bewegt sich weiter vom Globus weg, das heisst die Höhe der Kamera wird angehoben.
++ Blickwinkel**: Mit der oberen Navigationssteuerung kann der Benutzer den horizontalen und vertikalen Blickwinkel der Kamera ändern.
++ Kameraposition**: Die untere Navigationssteuerung verändert die Kameraposition rund um den Globus. Das Gleiche kann durch Drücken der Tastaturpfeile erreicht werden.
++ **+**: Reduziert die Kamerahöhe.
++ **-**: Erhöht den Kamerahöhe.
 
 
 ## <a name="sec3"></a>Gitter
 
 In der Registerkarte Ansicht kann das Kartengitter aktiviert werden. Das **_Gitter_** basiert auf dem gewähltem Kartenkoordinatensystem.
 
-
-### Gittereigenschaften
-
-
-
-## <a name="sec4"></a>Guide Grid
-
-
-
+Im Dialog der Gittereigentschaften können Gitterintervall und Darstellung angepasst werden.
 

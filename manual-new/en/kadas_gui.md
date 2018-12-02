@@ -16,13 +16,13 @@ The KADAS GUI is divided into five areas:
 
 Functionalities are grouped by topic in tabs, which can be activated from the menu bar. The tabs contain buttons for the various functionalities. The functionalities of each tab are documented in the respective chapters:
 
-+ My maps
-+ View
-+ Analysis
-+ Draw
-+ GPS
-+ MSS
-+ Settings / Help
++ <a href="map.html">Map</a>
++ <a href="view.html">View</a>
++ <a href="analysis.html">Analysis</a>
++ <a href="draw.html">Draw</a>
++ <a href="gps.html">GPS</a>
++ <a href="mss.html">MSS</a>
++ <a href="settings.html">Settings</a>
 
 
 ## <a name="sec1"></a>Favorites and search
@@ -38,30 +38,31 @@ The search field provides a unified interface for various search services:
 
 + Coordinates (LV03, LV95, DD, DM, DMS, UTM, MGRS)
 + Locations and addresses throughout Switzerland
-+ Towns worldwide
++ Locations worldwide
 + Attributes in local layers
 + Attributes in remote layers (web services)
 + Attributes in pins
 
-After entering at least three letters, the search starts and results are displayed.
+As soon as at least three characters are typed, the search starts and results are displayed.
 
-The results are listed in correspondingly designated categories. The result list can be searched with mouse or keyboard arrows. When selecting a result with the arrows, a blue pin is placed in the appropriate location. When activating a result with the mouse, the map section is centered on the corresponding location.
+The results are listed in correspondingly designated categories. The result list can be searched with mouse or keyboard arrows. When selecting a result with the arrows, a blue pin is placed in the appropriate location. When activating a result with the mouse, the map extent is centered on the corresponding location.
 
 <img src="../media/image2.png" />
 
-To the right of the search field, it is possible to define a filter geometry for local and remote data set search. This filter is not used for coordinates, location or pin searches.
+To the right of the search field, it is possible to define a filter geometry for local and remote data set search. This filter is applied to coordinate, location or pin searches.
 
 
 ## <a name="sec2"></a>Map View
 
-This is the “business end” of KADAS — maps are displayed in this area. The map displayed in this window will depend on the vector and raster layers you have chosen to load.
+This central area of KADAS displays the loaded layers and allows performing various operations on the map.
 
-The map view can be panned, shifting the focus of the map display to another region, and it can be zoomed in and out. Various other operations can be performed on the map as described in the toolbar description above. 
+Panning in the map is done with the left or middle mouse button, zooming with the scroll wheel or with the zoom buttons in the upper right corner of the map window. The right mouse button opens the context menu. Pan and rotation gestures are recognized on touch-enabled devices. In addition, you can zoom to a specific extent by holding down the SHIFT key and dragging a rectangle. 
 
-The map view and the legend are tightly bound to each other — the maps in view reflect changes you make in the legend area.
+Regardless of the active map tool, the middle mouse button and the scroll wheel are always used for map navigation. The function of the left and right mouse buttons depend on the active tool.
 
-In the View tab, new map sub-windows can be opened.
+The contents of the map is controlled by the map legend, described in the next section.
 
+In the View tab, additional map views can be added. These additional views are passive, meaning no other interaction besides panning and zooming is possible.
 
 ## <a name="sec3"></a>Layers and geodata catalog
 
@@ -80,32 +81,28 @@ To bring a layer out of a group, you can drag it out, or right click on it and c
 
 The checkbox for a group will show or hide all the layers in the group with one click.
 
-The content of the right mouse button context menu depends on whether the selected legend item is a raster or a vector layer.
+Via right click on an entry it is possible to perform various operations, depending on the type of the selected layer, such as:
 
-+ **Right mouse button menu for raster layers**
-  + Zoom to Layer
-  + Remove
-  + Duplicate
-  + Properties...
-+ **Right mouse button menu for vector layers**
-  + Zoom to Layer
-  + Remove
-  + Duplicate
-  + Properties...
-+ **Right mouse button menu for layer groups**
-  + Remove
-  + Rename
++ Zoom to layer
++ Remove
++ Rename
++ Open layer properties
 
-It is possible to select more than one layer or group at the same time by holding down the Ctrl key while selecting the layers with the left mouse button. You can then move all selected layers to a new group at the same time.
+It is possible to select more than one layer or group at the same time by holding down the Ctrl key while selecting the layers with the left mouse button.
 
 
 ### Geodata catalog
 
-The geodata catalog allows the user to add additional layers to the map. The catalog is empty if no network connection to the catalog service could be established. The contents of the catalog can by filtered by entering an appropriate text in the input field above the catalog. A layer in the catalog can be added to the map by drag and drop or double click.
+The geodata catalog allows adding additional layers to the map. The catalog is empty if no network connection to the catalog service could be established
+
+When starting the program, only public data is displayed. Depending on the user, further data may be available after authentication, see *SAML authentication* below.
+
+The contents of the catalog can by filtered by entering an appropriate text in the input field above the catalog. A layer in the catalog can be added to the map by drag and drop or double click.
 
 The toolbar above the catalog contains the following functionalities:
 
-+ **_Add local dataset_**: Local vector or raster can be added to the map.
++ **_Add local layer_**: Add local vector, raster or CSV layer to the map.
++ **_Add service layer_**: Add remote WMS, WFS or WCS layer to the map. 
 + **_Reload catalog_**: Reloads the catalog from the catalog service.
 + **_SAML authentication_**: A window for performing a web-based login will be shown. Upon successful authentication, the geodata catalog will be refreshed and additional layers will be listed, according to the privileges of the authenticated user.
 
@@ -114,8 +111,8 @@ The toolbar above the catalog contains the following functionalities:
 
 The status bar contains following labels and control widgets:
 
-+ **_GPS_**: Usage of the GPS button is described in "Enabling GPS".
-+ **_Mouse position_**: The current **_mouse position_** on the map can be displayed with respect to multiple reference systems. The desired format can be selected from the menu left of the display label.
-+ **_Scale_**: Next to the coordinate display you will find the **_scale display_**. It shows the scale of the map view. If you zoom in or out, KADAS shows you the current scale. There is a scale selector, which allows you to choose between predefined scales from 1:500 to 1:1000000.
-+ **_Coordinate reference system_**: The **_Coordinate reference system_** selection button allows the user to choose which projection to use for the map. This selection may differ from the native projection of the datasets, in which case the data is reprojected.
++ **_GPS_**: Usage of the GPS button is described in the <a href="gps.html">*GPS* chapter<a>.
++ **_Mouse position_**: The current mouse position on the map can be displayed with respect to multiple reference systems. The desired format can be selected from the menu left of the display label. The unit for the height can be changed in the Settings tab.
++ **_Scale_**: The current scale of the map view is displayed next to the coordinate field. The scale selector allows to choose between predefined scales ranging from 1:500 to 1:1000000.
++ **_Coordinate reference system_**: The coordinate reference system selection button allows to choose which projection to use for the map. If the selected projection differs from the native projection of a dataset, the latter will be reprojected, which may result in reduced performance depending on the amount of data.
 

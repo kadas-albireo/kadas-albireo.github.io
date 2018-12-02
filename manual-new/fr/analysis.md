@@ -3,6 +3,8 @@
 
 L’onglet **_Analyse_** contient les outils de mesures des distances, des surfaces, des circonférences et des angles ainsi que diverses fonctions d’analyse de terrain.
 
+Pour utiliser les fonctions d’analyse de terrain, il faut définir un modèle d’altitude dans le projet actuel. Un niveau de raster peut être sélectionné comme modèle d’altitude dans son menu contextuel dans la légende de la carte.
+
 ## <a name="sec0"></a>Mesurer des distances, surfaces et azimut
 
 Quatre méthodes de mesure sont proposées :
@@ -34,29 +36,29 @@ Le graphique de profil d’altitude peut également être copié dans l’archiv
 <img src="../media/image4.png" />
 
 
-## <a name="sec2"></a>Pente et estompage
+## <a name="sec2"></a>Pente et ombrage
 
 La fonction **_Pente_** permet de représenter le profil de pente du terrain à l’aide d’un schéma à code couleurs.
 
-La fonction **_Estompage_** calcule l’ombrage du terrain, qui est superposé sur la carte en mi-transparence.
+La fonction **_Ombrage_** calcule l’ombrage du terrain, qui est superposé sur la carte en mi-transparence.
 
 Pour utiliser ces fonctions d’analyse du terrain, il faut définir un modèle d’altitude dans le projet.
 
 Ces deux analyses sont effectuées dans une portion rectangulaire de la carte. L’estompage nécessite également de saisir l’angle horizontal et vertical de la source de lumière.
 
-Les résultats des analyses de pente et d’ombrage sont ajoutés à la carte comme niveaux de raster et apparaissent ainsi dans le répertoire de la carte. Lors de l’enregistrement du projet, ces données sont placées dans le dossier _<nom de projet> files_.
+Les résultats des analyses de pente et d’ombrage sont ajoutés à la carte comme niveaux de raster et apparaissent ainsi dans le répertoire de la carte. Lors de l’enregistrement du projet, ces données sont placées dans le dossier *<nom de projet>_files*.
 
 <img src="../media/image5.png" />
 
 
-## <a name="sec3"></a>Visibilité
+## <a name="sec3"></a>Bassin visuel
 
-L’outil **_Visibilité_** calcule les zones de terrain visibles et invisibles dans un secteur circulaire dont le centre est l’emplacement de l’observateur. L’analyse de visibilité prend en compte la courbe terrestre.
+L’outil **_Bassin visuel_** calcule les zones de terrain visibles et invisibles dans un secteur circulaire dont le centre est l’emplacement de l’observateur. L’analyse de visibilité prend en compte la courbe terrestre.
 
 Pour utiliser ces fonctions d’analyse du terrain, il faut définir un modèle d’altitude dans le projet.
 
 L’analyse de visibilité est calculée au sein d’une portion de cercle ou d’un cercle complet. Le premier clic sur la carte permet de définir la position de l’observateur, le deuxième clic le rayon et le troisième l’angle d’ouverture du secteur. Si la saisie numérique est activée, ces paramètres peuvent également être saisis numériquement. Une fois que la surface à analyser a été saisie, les paramètres de calcul peuvent être modifiés, autrement dit l’altitude de l’observateur, la hauteur du signal, l’interprétation (ou non) de l’altitude en fonction du terrain ou du niveau de la mer et l’affichage (ou non) des portions de terrain visibles ou invisibles.
 
-Après calcul, le résultat est ajouté à la carte sous forme de couche raster. Si vous sauvegardez le projet, cette couche sera classée dans le dossier _< nom de projet > files_.
+Après calcul, le résultat est ajouté à la carte sous forme de couche raster. Si vous sauvegardez le projet, cette couche sera classée dans le dossier *<nom de projet>_files*.
 
 

@@ -3,9 +3,11 @@
 
 Nella scheda **_Analisi_** sono disponibili gli strumenti per la misura di distanze, aree, cerchi e angoli, nonché diverse funzionalità di analisi dei terreni.
 
+Per poter utilizzare le funzionalità di analisi del terreno è necessario definire un modello elevazione nel progetto corrente. Nel menu contestuale di un layer raster nella legenda della mappa, è possibile impostarlo come modello di elevazione.
+
 ## <a name="sec0"></a>Rilevamento di lunghezza, superfici e azimut
 
-Sono offerti quattro metodi di analisi:
+Sono disponibili quattro funzioni di misurazione:
 
 + Linea (distanza)
 + Superficie
@@ -34,7 +36,7 @@ Il grafico del profilo altimetrico può inoltre essere copiato negli appunti o i
 <img src="../media/image4.png" />
 
 
-## <a name="sec2"></a>Inclinazione e tonalità del rilievo
+## <a name="sec2"></a>Pendenza e tonalità del rilievo
 
 La funzione **_Pendenza_** calcola il profilo di inclinazione del terreno quale griglia codificata cromaticamente.
 
@@ -44,7 +46,7 @@ Per poter utilizzare queste funzioni di analisi del terreno, deve essere definit
 
 Entrambe queste analisi vengono calcolate in un riquadro rettangolare della mappa. La tonalità del rilievo richiede inoltre l’immissione dell’angolo orizzontale e verticale della sorgente luminosa.
 
-I risultati delle analisi di pendenza e rilievo vengono inseriti come layer raster alla mappa e compaiono, di conseguenza, nella legenda. Salvando il progetto, questi layer vengono memorizzati nella cartella _<nome progetto> files_.
+I risultati delle analisi di pendenza e rilievo vengono inseriti come layer raster alla mappa e compaiono, di conseguenza, nella legenda. Salvando il progetto, questi layer vengono memorizzati nella cartella *<nome progetto>_files*.
 
 <img src="../media/image5.png" />
 
@@ -57,6 +59,6 @@ Per poter utilizzare queste funzioni di analisi del terreno, deve essere definit
 
 L’analisi della visibilità viene calcolata all’interno di un settore circolare o di un cerchio completo. Al primo clic del mouse sulla mappa viene definito il luogo d’osservazione; il secondo clic definisce il raggio; il terzo clic definisce l’apertura angolare del settore. Questi parametri possono essere immessi anche numericamente se l’immissione numerica è attiva. Dopo il rilevamento della superficie di analisi, possono essere adeguati i parametri di calcolo – ovvero l’altezza d’osservazione, l’altezza di arrivo, se queste altezze debbano essere interpretate relativamente al terreno o al livello del mare e se debba essere visualizzata l’area visibile o quella non visibile.
 
-Il risultato viene aggiunto quale livello della griglia della mappa. Al salvataggio del progetto, questo livello viene salvato nella cartella _< nome progetto > files_.
+Il risultato viene aggiunto quale livello della griglia della mappa. Al salvataggio del progetto, questo livello viene salvato nella cartella *<nome progetto>_files*.
 
 

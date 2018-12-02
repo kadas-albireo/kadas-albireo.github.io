@@ -8,7 +8,7 @@
 | Zoom out         | `CTRL+-`          |
 | Initial extent   | `CTRL+H`          |
 
-## My Maps
+## Map
 | Function         | Shortcut          |
 |------------------|-------------------|
 | New              | `CTRL+N`          |
@@ -26,7 +26,6 @@
 | New map window   | `CTRL+V + CTRL+W` |
 | 3D               | `CTRL+V + CTRL+3` |
 | Grid             | `CTRL+V + CTRL+G` |
-| Guide Grid       | `CTRL+V + CTRL+R` |
 
 ## Analysis
 | Function         | Shortcut          |
@@ -51,6 +50,8 @@
 | Pin              | `CTRL+D + CTRL+M` |
 | Add image        | `CTRL+D + CTRL+I` |
 | Paste            | `CTRL+V`          |
+| Guide Grid       | `CTRL+D + CTRL+G` |
+| Bullseye         | `CTRL+D + CTRL+B` |
 | Delete Items     | `CTRL + Select`   |
 
 ## GPS

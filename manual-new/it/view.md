@@ -2,18 +2,18 @@
 # Vista
 
 
-## <a name="sec0"></a>Visualizzazione precedente/successiva
+## <a name="sec0"></a>Estensione precedente/successiva
 
 Spostandosi sulla mappa con la funzione **_Estensione precedente_** è possibile tornare all’estensione di mappa mostrato in precedenza. Tramite **_Estensione successivo_** si passa all’estensione di mappa selezionato successivamente.
 
 
 ## <a name="sec1"></a>Nuova finestra della mappa
 
-La funzione **_Nuova finestra della mappa_** permette di aprire nuove finestre della mappa. Trascinamento della barra del titolo, queste possono essere posizionate a piacimento, all'interno della finestra principale o disassociata da essa.
+La funzione **_Nuova vista_** permette di aprire viste secondarie della mappa. Trascinamento della barra del titolo, queste possono essere posizionate a piacimento, all'interno della finestra principale o disassociata da essa.
 
-Nelle sottofinestre è possibile attivare o disattivare i layer indipendentemente dalla vista principale. Il riquadro può essere comandato indipendentemente dalla vista principale oppure può essere automaticamente sincronizzato attivando l'icona del lucchetto sulla barra del titolo della sottofinestra.
+Nelle sottofinestre è possibile attivare o disattivare i livelli indipendentemente dalla vista principale. Il riquadro può essere comandato indipendentemente dalla vista principale oppure può essere automaticamente sincronizzato attivando l'icona del lucchetto sulla barra del titolo della sottofinestra.
 
-Nelle sottofinestre della mappa è disponibile soltanto lo strumento di navigazione, tutti gli altri strumenti possono essere utilizzati unicamente nella vista principale.
+Nelle viste secondarie della mappa è disponibile soltanto lo strumento di navigazione, tutti gli altri strumenti possono essere utilizzati unicamente nella vista principale.
 
 In caso di necessità, è possibile modificare il titolo della sottofinestra.
 
@@ -27,37 +27,35 @@ Con la funzione **_3D_** è possibile aprire una finestra in cui viene visualizz
 
 ### Impostazioni
 
-I livelli visualizzati possono essere scelti dal menu **_Finestra_** indipendentemente dalla finestra principale.
+Le seguenti funzioni sono disponibili dalla barra titolo della finestra 3D:
 
-+ **Sincronizza gli estratti**: l’icona **_Sincronizza gli estratti_** consente di esplorare il globo attraverso l’estratto di mappa della finestra principale.
-+ **Carica scena**: l’icona **_Ricarica scena_** consente di caricare i livelli sulla mappa del globo.
-+ **Impostazioni globo**: l’icona **_Impostazioni globo_** richiama una finestra di dialogo in cui sono indicate le altre impostazioni possibili. In esso è possibile configurare i modelli di elevazione e inserire immagini di sfondo. I layer della vista 2D da visualizzare sul globo vengono selezionati dal menu situato a sinistra nella barra del titolo. Per motivi di prestazione, come impostazione standard vengono visualizzati solo i layer locali della vista 2D. Se possibile, i layer delle immagini di sfondo dovrebbero essere inseriti direttamente nel dialogo delle impostazioni del globo.
++ **Selezione dei livelli**: Permette la selezione dei livelli della vista 2D da visualizzare sul globo.
++ **Sincronizza estensione**: questo bottone permette di sincronizzare l'estensione della vista del globo con l'estensione della finestra principale.
++ **Ricarica scena**: questo bottone ricarica tutti i livelli visualizzati sul globo.
++ **Impostazioni globo**: questo pulsante apre il dialogo di configurazione del globo. In esso è possibile configurare i modelli di elevazione e le immagini di sfondo. I layer della vista 2D da visualizzare sul globo vengono selezionati dal menu situato a sinistra nella barra del titolo. Per motivi di prestazione, come impostazione standard vengono visualizzati solo i layer locali della vista 2D. Se possibile, i layer delle immagini di sfondo dovrebbero essere selezionati direttamente nel dialogo delle impostazioni del globo.
 
 Per impostazione predefinita, i layer della vista 2D sono disegnati come immagini drappeggiate sul terreno del globo. Layer vettoriali (tra cui redlining) possono alternativamente venir visualizzati come modelli estrusi 2.5D oppure come modelli 3D. Lo stile del layer viene applicato ai modelli nel limite del possibile. Per la rappresentazione come modelli 3D, le geometrie devono contenere informazioni di quota (coordinate Z), e queste devono essere espresse relative al livello del suolo oppure al livello del mare. Le impostazioni di visualizzazione si possono modificare nel dialogo delle proprietà del rispettivo layer.
 
-> I tooltip dei campi delle impostazioni del Globo del layer descrivono le varie impostazioni in dettaglio.
+*Nota*: I tooltip dei campi delle impostazioni del Globo del layer descrivono le varie impostazioni in dettaglio.
 
-> L'ombreggiatura dei modelli 3D dipende dalla posizione del sole. Questa può venir controllata inserendo la data e ora desiderata nelle impostazioni del globo.
+*Nota*: L'ombreggiatura dei modelli 3D dipende dalla posizione del sole. Questa può venir controllata inserendo la data e ora desiderata nelle impostazioni del globo.
 
 <img src="../media/image15.png" />
 
 Spilli, immagini e simboli MSS mono-punto vengono visualizzati come billboard.
 
 
-### Navigazione
+### Navigazione nella vista 3D
 
-+ **Navigazione angolo di visualizzazione**: nella ruota di navigazione in alto, la telecamera viene fatta ruotare a destra o a sinistra con i rispettivi tasti freccia. I tasti freccia per la navigazione verso l’alto e verso il basso permettono di cambiare l’angolo di visualizzazione della telecamera.
-+ **Navigazione del globo terrestre**: nella ruota di navigazione in basso, il globo viene fatto ruotare a destra, a sinistra, verso l’alto e verso il basso con i rispettivi tasti freccia.
-+ **+**: la telecamera si avvicina al globo terrestre e si abbassa.
-+ **-**: la telecamera si allontana dal globo terrestre e si alza.
++ **Rotazione della telecamera**: il controllo di navigazione superiore permette di impostare la rotazione della telecamera.
++ **Posizione della telecamera**: Il controllo di navigazione inferiore permette di spostare la posizione della telecamera. Il medesimo risultato si ottiene premendo le freccie della tastiera.
++ **+**: Avvicina la telecamera al globo.
++ **-**: Allontana la telecamera dal globo.
 
 
 ## <a name="sec3"></a>Reticolo
 
 Nella scheda Vista, è possibile attivare la **_reticolo_** della mappa. La griglia si basa sul sistema di coordinate della mappa selezionato.
 
-
-### Proprietà del reticolo
-
-##
+Del dialog di proprietà del reticolo è possibile personalizzare gli intervalli e lo stile della griglia.
 
