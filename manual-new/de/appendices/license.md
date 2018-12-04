@@ -1,10 +1,10 @@
 # GNU General Public License {#gnu-general-public-license}
 
-Deutsche Übersetzung der Version 2, Juni 1991. Den offiziellen englischen Originaltext finden Sie unter <a href="http://www.gnu.org/licenses/gpl.html" class="uri" class="reference external">http://www.gnu.org/licenses/gpl.html</a>. Diese Übersetzung wird mit der Absicht angeboten, das Verständnis der GNU General Public License (GNU GPL) zu erleichtern. Es handelt sich jedoch nicht um eine offizielle oder im rechtlichen Sinne anerkannte Übersetzung. Diese Übersetzung wurde ursprünglich erstellt von Katja Lachmann. Übersetzungen im Auftrag der S.u.S.E. GmbH - <a href="http://www.suse.de" class="uri" class="reference external">http://www.suse.de</a>. Sie wurde überarbeitet von Peter Gerwinski, G-N-U GmbH - <a href="http://www.g-n-u.de" class="uri" class="reference external">http://www.g-n-u.de</a> (31. Oktober 1996, 4. Juni 2000)
+Deutsche Übersetzung der Version 2, Juni 1991. Den offiziellen englischen Originaltext finden Sie unter <a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a>. Diese Übersetzung wird mit der Absicht angeboten, das Verständnis der GNU General Public License (GNU GPL) zu erleichtern. Es handelt sich jedoch nicht um eine offizielle oder im rechtlichen Sinne anerkannte Übersetzung. Diese Übersetzung wurde ursprünglich erstellt von Katja Lachmann. Übersetzungen im Auftrag der S.u.S.E. GmbH - <a href="http://www.suse.de">http://www.suse.de</a>. Sie wurde überarbeitet von Peter Gerwinski, G-N-U GmbH - <a href="http://www.g-n-u.de">http://www.g-n-u.de</a> (31. Oktober 1996, 4. Juni 2000)
 
 Copyright (C) 1989, 1991 Free Software Foundation, Inc. 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
-Es ist jedermann gestattet, diese <span id="index-3" class="target"></span>Lizenzurkunde zu vervielfältigen und unveränderte Kopien zu verbreiten; Änderungen sind jedoch nicht erlaubt.
+Es ist jedermann gestattet, diese <span id="index-3"></span>Lizenzurkunde zu vervielfältigen und unveränderte Kopien zu verbreiten; Änderungen sind jedoch nicht erlaubt.
 
 Vorwort
 
@@ -97,7 +97,7 @@ Keine Gewährleistung
 >
 > Copyright 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc
 >
-> <a href="http://fsf.org/" class="uri" class="reference external">http://fsf.org/</a>
+> <a href="http://fsf.org/">http://fsf.org/</a>
 >
 Es ist jedermann gestattet, diese Lizenzurkunde zu vervielfältigen und unveränderte Kopien zu verbreiten; Änderungen sind jedoch nicht erlaubt.
 
@@ -229,7 +229,7 @@ Die Beendigung Ihrer Rechte unter diesem Abschnitt beendet nicht die Lizenzen de
 
 **10. Zukünftige Überarbeitungen dieser Lizenz**
 
-Die Free Software Foundation kann von Zeit zu Zeit neue, überarbeitete Versionen der GNU-Lizenz für freie Dokumentation veröffentlichen. Solche neuen Versionen werden im Geist zur gegenwärtigen Version gleich sein, aber können sich im Detail unterscheiden, um neue Probleme oder Anliegen anzusprechen. Sehen Sie <a href="http://www.gnu.org/copyleft/" class="uri" class="reference external">http://www.gnu.org/copyleft/</a>.
+Die Free Software Foundation kann von Zeit zu Zeit neue, überarbeitete Versionen der GNU-Lizenz für freie Dokumentation veröffentlichen. Solche neuen Versionen werden im Geist zur gegenwärtigen Version gleich sein, aber können sich im Detail unterscheiden, um neue Probleme oder Anliegen anzusprechen. Sehen Sie <a href="http://www.gnu.org/copyleft/">http://www.gnu.org/copyleft/</a>.
 
 Jeder Version der Lizenz wird eine charakteristische Versionsnummer gegeben. Wenn das Dokument spezifiziert, dass eine besonders nummerierte Version dieser Lizenz ‘oder jede spätere Version’ auf sich zutrifft, haben Sie die Wahl den Bestimmungen und Bedingungen entweder dieser spezifizierten Version oder jeder späteren Version, die (nicht als Entwurf) durch die Free Software Foundation veröffentlicht worden ist, zu folgen. Wenn das Dokument spezifiziert, dass ein Bevollmächtigter entscheiden darf welche zukünftigen Versionen dieser Lizenz verwendet werden können, berechtigt Sie das dauerhaft, durch die öffentliche Aussage desjenigen Bevollmächtigten über die Akzeptanz einer Version, diese Version für das Dokument zu wählen.
 

@@ -6,7 +6,7 @@ The GPS-Tab groups functionalities for interacting with a connected GPS device, 
 
 ## <a name="sec0"></a>Enabling GPS
 
-To use a GPS device with KADAS, the GpsGate Splitter application must be installed on the system.
+To use a GPS device with KADAS, the GpsGate Splitter application must be installed on the system, see [Configuring GPSGate](gpsgate/gpsgate.md).
 
 The status of the GPS connection is displayed in the status bar in the lower area of the application window. This button can be toggled to set up resp. terminate a connection. The fill color of the status button changes depending on the current connection status
 

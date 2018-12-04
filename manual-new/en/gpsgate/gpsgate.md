@@ -1,12 +1,12 @@
-# GpsGate {#gpsgate}
+# GpsGate <a name="#gpsgate"></a>
 
-## Run GpsGate {#run-gpsgate}
+## Run GpsGate <a name="#run-gpsgate"></a>
 
-You can launch GpsGate under “Start-&gt;Programs-&gt;KADAS-&gt;GpsGate”.
+You can launch GpsGate under *Start&rarr;Programs&rarr;KADAS&rarr;GpsGate*.
 
 The first time GpsGate is run a setup Wizard will start. The Wizard will help you to find your GPS and tell you how to connect your GPS applications to GpsGate.
 
-## Running the setup Wizard {#running-the-setup-wizard}
+## Running the setup Wizard <a name="#running-the-setup-wizard"></a>
 
 Make sure you turn your GPS on, and connect it to your computer, if it is a wireless Bluetooth GPS simply turn it on. To speed up the search you can uncheck the types of GPS receivers you do not want to search for. If you are unsure, keep all options checked. After this is done, click “Next” and the Wizard will scan your computer for a connected GPS.
 

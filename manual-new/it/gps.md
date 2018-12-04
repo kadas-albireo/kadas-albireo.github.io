@@ -6,7 +6,7 @@ Nella scheda GPS si trovano le funzionalità  per l’interazione con un apparec
 
 ## <a name="sec0"></a>Attivazione GPS
 
-Per poter usare un GPS con KADAS, sul sistema deve essere installata l’applicazione GpsGate Splitter.
+Per poter usare un GPS con KADAS, sul sistema deve essere installata l’applicazione GpsGate Splitter, vedi [Configurazione di GPSGate](gpsgate/gpsgate.md)
 
 Lo stato del collegamento GPS viene visualizzato nella riga di stato nell’area di programma inferiore. Questo pulsante di stato del GPS può essere attivato o disattivato per realizzare o interrompere la connessione. Il colore di riempimento del pulsante di stato cambia in base allo stato di connessione attuale:
 

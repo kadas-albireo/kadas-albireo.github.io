@@ -1,10 +1,10 @@
-# Expressions {#expressions}
+# Expressions <a name="#expressions"></a>
 
-The **Expressions** feature are available through the field calculator or the add a new column button in the attribut table or the Field tab in the Layer properties ; through the graduaded, categorized and rule-based rendering in the Style tab of the Layer properties ; through the expression-based labeling <a href="../../images/browsebutton.png" class="reference internal"><img src="../../images/browsebutton.png" alt="browsebutton" /></a> in the <a href="../../images/mActionLabeling.png" class="reference internal"><img src="../../images/mActionLabeling.png" alt="mActionLabeling" /></a> <sup>Labeling</sup> core application ; through the feature selection and through the diagram tab of the Layer properties as well as the *Main properties* of the label item and the *Atlas generation* tab in the Print Composer.
+The **Expressions** feature are available through the field calculator or the add a new column button in the attribut table or the Field tab in the Layer properties ; through the graduaded, categorized and rule-based rendering in the Style tab of the Layer properties ; through the expression-based labeling <img src="../../images/browsebutton.png" /> in the <img src="../../images/mActionLabeling.png" /> *Labeling* core application ; through the feature selection and through the diagram tab of the Layer properties as well as the *Main properties* of the label item and the *Atlas generation* tab in the Print Composer.
 
 They are a powerful way to manipulate attribute value in order to dynamically change the final value in order to change the geometry style, the content of the label, the value for diagram, select some feature or create virtual column.
 
-## Functions List {#functions-list}
+## Functions List <a name="#functions-list"></a>
 
 The **Function List** contains functions as well as fields and values. View the help function in the **Selected Function Help**. In **Expression** you see the calculation expressions you create with the **Function List**. For the most commonly used operators, see **Operators**.
 
@@ -13,7 +13,7 @@ In the **Function List**, click on *Fields and Values* to view all attributes of
 The *Operators*, *Math*, *Conversions*, *String*, *Geometry* and *Record* groups provide several functions. In *Operators*, you find mathematical operators. Look in *Math* for mathematical functions. The *Conversions* group contains functions that convert one data type to another. The *String* group provides functions for data strings. In the *Geometry* group, you find functions for geometry objects. With *Record* group functions, you can add a numeration to your data set. To add a function to the Field calculator **Expression** box, click on the &gt; and then double click the function.
 
 
-### Operators {#operators}
+### Operators <a name="#operators"></a>
 
 This group contains operators (e.g., +, -, \*).
 
@@ -64,7 +64,7 @@ This group contains operators (e.g., +, -, \*).
 
         "description" LIKE 'Hello%'
 
-### Conditionals {#conditionals}
+### Conditionals <a name="#conditionals"></a>
 
 This group contains functions to handle conditional checks in expressions.
 
@@ -83,7 +83,7 @@ This group contains functions to handle conditional checks in expressions.
 
         CASE WHEN "software" LIKE '%QGIS%' THEN 'QGIS' ELSE 'Other'
 
-### Mathematical Functions {#mathematical-functions}
+### Mathematical Functions <a name="#mathematical-functions"></a>
 
 This group contains math functions (e.g., square root, sin and cos).
 
@@ -126,7 +126,7 @@ This group contains math functions (e.g., square root, sin and cos).
     ceil                          rounds a number upwards
     $pi                           pi as value for calculations
 
-### Conversions {#conversions}
+### Conversions <a name="#conversions"></a>
 
 This group contains functions to convert one data type to another (e.g., string to integer, integer to string).
 
@@ -140,7 +140,7 @@ This group contains functions to convert one data type to another (e.g., string 
                                  used to take days, hours, months, etc. off a
                                  date)
 
-### Date and Time Functions {#date-and-time-functions}
+### Date and Time Functions <a name="#date-and-time-functions"></a>
 
 This group contains functions for handling date and time data.
 
@@ -167,7 +167,7 @@ This group contains functions for handling date and time data.
 
         month($now) || '/' || year($now)
 
-### String Functions {#string-functions}
+### String Functions <a name="#string-functions"></a>
 
 This group contains functions that operate on strings (e.g., that replace, convert to upper case).
 
@@ -206,7 +206,7 @@ This group contains functions that operate on strings (e.g., that replace, conve
     format_date                  formats a date type or string into a custom
                                  string format
 
-### Color Functions {#color-functions}
+### Color Functions <a name="#color-functions"></a>
 
 This group contains functions for manipulating colors.
 
@@ -230,7 +230,7 @@ This group contains functions for manipulating colors.
                     cyan, magenta, yellow, black and alpha (transparency)
                     components
 
-### Geometry Functions {#geometry-functions}
+### Geometry Functions <a name="#geometry-functions"></a>
 
 This group contains functions that operate on geometry objects (e.g., length, area).
 
@@ -309,7 +309,7 @@ This group contains functions that operate on geometry objects (e.g., length, ar
     transform        returns the geometry transformed from the source CRS to
                      the dest CRS
 
-### Record Functions {#record-functions}
+### Record Functions <a name="#record-functions"></a>
 
 This group contains functions that operate on record identifiers.
 
@@ -331,7 +331,7 @@ This group contains functions that operate on record identifiers.
                              the map is being drawn within the main QGIS
                              window.
 
-### Fields and Values {#fields-and-values}
+### Fields and Values <a name="#fields-and-values"></a>
 
 Contains a list of fields from the layer. Sample values can also be accessed via right-click.
 

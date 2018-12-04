@@ -1,21 +1,21 @@
-# Expressions {#expressions}
+# Espressioni <a name="#expressions"></a>
 
-The **Expressions** feature are available through the field calculator or the add a new column button in the attribut table or the Field tab in the Layer properties ; through the graduaded, categorized and rule-based rendering in the Style tab of the Layer properties ; through the expression-based labeling <a href="../../images/browsebutton.png" class="reference internal"><img src="../../images/browsebutton.png" alt="browsebutton" /></a> in the <a href="../../images/mActionLabeling.png" class="reference internal"><img src="../../images/mActionLabeling.png" alt="mActionLabeling" /></a> <sup>Labeling</sup> core application ; through the feature selection and through the diagram tab of the Layer properties as well as the *Main properties* of the label item and the *Atlas generation* tab in the Print Composer.
+La funzione **Espressioni** è disponibile tramite il calcolatore di campo o il pulsante per aggiungere una nuova colonna nella tabella degli attributi o nella scheda Campo nelle proprietà del livello; tramite il rendering graduato, categorizzato e basato su regole nella scheda Stile delle proprietà del livello; tramite l'etichettatura basata sulle espressioni <img src="../../images/browsebutton.png" /> nell'applicazione principale *Etichettatura* <img src="../../images/mActionLabeling.png" />; tramite la selezione delle funzioni e tramite la scheda diagramma delle proprietà del livello, nonché le proprietà principali dell'elemento etichetta e la scheda generazione di *Atlante* nel Compositore di stampa.
 
-They are a powerful way to manipulate attribute value in order to dynamically change the final value in order to change the geometry style, the content of the label, the value for diagram, select some feature or create virtual column.
+Sono un modo potente per manipolare il valore degli attributi al fine di modificare dinamicamente il valore finale per cambiare lo stile della geometria, il contenuto dell'etichetta, il valore per il diagramma, selezionare qualche caratteristica o creare colonne virtuali.
 
-## Functions List {#functions-list}
+## Lista delle funzioni <a name="#functions-list"></a>
 
-The **Function List** contains functions as well as fields and values. View the help function in the **Selected Function Help**. In **Expression** you see the calculation expressions you create with the **Function List**. For the most commonly used operators, see **Operators**.
+La **Lista funzioni** contiene funzioni, campi e valori. Visualizzare la funzione di aiuto nella **Aiuto funzioni selezionate**. In **Espressione** vengono visualizzate le espressioni di calcolo create con la **Lista funzioni**. Per gli operatori più comunemente utilizzati, vedere **Operatori**.
 
-In the **Function List**, click on *Fields and Values* to view all attributes of the attribute table to be searched. To add an attribute to the Field calculator **Expression** field, double click its name in the *Fields and Values* list. Generally, you can use the various fields, values and functions to construct the calculation expression, or you can just type it into the box. To display the values of a field, you just right click on the appropriate field. You can choose between *Load top 10 unique values* and *Load all unique values*. On the right side, the **Field Values** list opens with the unique values. To add a value to the Field calculator **Expression** box, double click its name in the **Field Values** list.
+Nella **Lista funzioni**, fare clic su *Campi e valori* per visualizzare tutti gli attributi della tabella degli attributi da ricercare. Per aggiungere un attributo al campo Campo calcolatrice **Espressione**, fare doppio clic sul suo nome nell'elenco *Campi e valori*. Generalmente, è possibile utilizzare i vari campi, valori e funzioni per costruire l'espressione di calcolo, oppure è sufficiente digitarla nella casella. Per visualizzare i valori di un campo, è sufficiente fare clic con il tasto destro del mouse sul campo appropriato. È possibile scegliere tra *Carica i 10 valori unici* e *Carica tutti i valori unici*. Sul lato destro, si apre l'elenco **Valori di campo** con i valori univoci. Per aggiungere un valore alla casella Campo calcolatrice **Espressione**, fare doppio clic sul suo nome nell'elenco **Valori di campo**.
 
-The *Operators*, *Math*, *Conversions*, *String*, *Geometry* and *Record* groups provide several functions. In *Operators*, you find mathematical operators. Look in *Math* for mathematical functions. The *Conversions* group contains functions that convert one data type to another. The *String* group provides functions for data strings. In the *Geometry* group, you find functions for geometry objects. With *Record* group functions, you can add a numeration to your data set. To add a function to the Field calculator **Expression** box, click on the &gt; and then double click the function.
+I gruppi *Operatori*, *Math*, *Conversioni*, *String*, *Geometria* e *Registrazione* offrono diverse funzioni. In *Operatori*, si trovano gli operatori matematici. Cerca in *Matematica* per le funzioni matematiche. Il gruppo *Conversioni* contiene funzioni che convertono un tipo di dati in un altro. Il gruppo *String* fornisce funzioni per le stringhe di dati. Nel gruppo *Geometria* si trovano le funzioni per gli oggetti geometrici. Con le funzioni del gruppo *Record* è possibile aggiungere una numerazione al proprio set di dati. Per aggiungere una funzione alla casella Campo calcolatrice **Espressione**, fare clic su &gt; quindi fare doppio clic sulla funzione.
 
 
-### Operators {#operators}
+### Operatori <a name="#operators"></a>
 
-This group contains operators (e.g., +, -, \*).
+Questo gruppo contiene operatori (ad es., +, -, \*).
 
     a + b      a plus b
     a - b      a minus b
@@ -54,19 +54,19 @@ This group contains operators (e.g., +, -, \*).
     a IN (value[,value])          a is below the values listed
     a NOT IN (value[,value])      a is not below the values listed
 
-**Some examples:**
+**Alcuni esempi:**
 
--   Joins a string and a value from a column name:
+-   Unisce una stringa e un valore di una colonna:
 
-        'My feature's id is: ' || "gid"
+        'ID oggetto: ' || "gid"
 
--   Test if the “description” attribute field starts with the ‘Hello’ string in the value (note the position of the % character):
+-   Verifica se il valore della colonna "descrizione" inizia con 'Hello' (nota la posizione del carattere %):
 
-        "description" LIKE 'Hello%'
+        "descrizione" LIKE 'Hello%'
 
-### Conditionals {#conditionals}
+### Condizionali <a name="#conditionals"></a>
 
-This group contains functions to handle conditional checks in expressions.
+Questo gruppo contiene funzioni per gestire i controlli condizionali nelle espressioni.
 
     CASE                          evaluates multiple expressions and returns a
                                   result
@@ -77,15 +77,15 @@ This group contains functions to handle conditional checks in expressions.
     regexp_match                  returns true if any part of a string matches
                                   the supplied regular expression
 
-**Some example:**
+**Esempio:**
 
--   Send back a value if the first condition is true, else another value:
+-   Inviare un valore se la prima condizione è vera, altrimenti un altro valore:
 
         CASE WHEN "software" LIKE '%QGIS%' THEN 'QGIS' ELSE 'Other'
 
-### Mathematical Functions {#mathematical-functions}
+### Funzioni matematiche <a name="#mathematical-functions"></a>
 
-This group contains math functions (e.g., square root, sin and cos).
+Questo gruppo contiene funzioni matematiche (es. radice quadrata, peccato e cos).
 
     sqrt(a)                       square root of a
     abs                           returns the absolute value of a number
@@ -126,9 +126,9 @@ This group contains math functions (e.g., square root, sin and cos).
     ceil                          rounds a number upwards
     $pi                           pi as value for calculations
 
-### Conversions {#conversions}
+### Conversioni <a name="#conversions"></a>
 
-This group contains functions to convert one data type to another (e.g., string to integer, integer to string).
+Questo gruppo contiene funzioni per convertire un tipo di dati in un altro (ad esempio, da stringa a intero, da intero a stringa).
 
     toint                        converts a string to integer number
     toreal                       converts a string to real number
@@ -140,9 +140,9 @@ This group contains functions to convert one data type to another (e.g., string 
                                  used to take days, hours, months, etc. off a
                                  date)
 
-### Date and Time Functions {#date-and-time-functions}
+### Funzioni data e ora <a name="#date-and-time-functions"></a>
 
-This group contains functions for handling date and time data.
+Questo gruppo contiene funzioni per la gestione dei dati di data e ora.
 
     $now       current date and time
     age        difference between two dates
@@ -161,15 +161,15 @@ This group contains functions for handling date and time data.
     second     extract the second from a datetime or time, or the number
                of minutes from an interval
 
-**Some example:**
+**Esempio:**
 
--   Get the month and the year of today in the format “10/2014”
+-   Estrarre il mese e l'anno di oggi nel formato “10/2014”
 
         month($now) || '/' || year($now)
 
-### String Functions {#string-functions}
+### Funzioni stringa <a name="#string-functions"></a>
 
-This group contains functions that operate on strings (e.g., that replace, convert to upper case).
+Questo gruppo contiene funzioni che operano su stringhe (ad esempio, che sostituiscono, convertono in lettere maiuscole).
 
     lower                        convert string a to lower case
     upper                        convert string a to upper case
@@ -206,9 +206,10 @@ This group contains functions that operate on strings (e.g., that replace, conve
     format_date                  formats a date type or string into a custom
                                  string format
 
-### Color Functions {#color-functions}
 
-This group contains functions for manipulating colors.
+### Funzioni colore <a name="#color-functions"></a>
+
+Questo gruppo contiene funzioni per la manipolazione dei colori.
 
     color_rgb       returns a string representation of a color based on its
                     red, green, and blue components
@@ -230,9 +231,11 @@ This group contains functions for manipulating colors.
                     cyan, magenta, yellow, black and alpha (transparency)
                     components
 
-### Geometry Functions {#geometry-functions}
 
-This group contains functions that operate on geometry objects (e.g., length, area).
+
+### Funzioni geometria <a name="#geometry-functions"></a>
+
+Questo gruppo contiene funzioni che operano su oggetti geometrici (ad es. lunghezza, area).
 
     $geometry        returns the geometry of the current feature (can be used
                      for processing with other functions)
@@ -309,9 +312,10 @@ This group contains functions that operate on geometry objects (e.g., length, ar
     transform        returns the geometry transformed from the source CRS to
                      the dest CRS
 
-### Record Functions {#record-functions}
 
-This group contains functions that operate on record identifiers.
+### Funzioni record <a name="#record-functions"></a>
+
+Questo gruppo contiene funzioni che operano su identificatori di record.
 
     $rownum                  returns the number of the current row
     $id                      returns the feature id of the current row
@@ -331,13 +335,14 @@ This group contains functions that operate on record identifiers.
                              the map is being drawn within the main QGIS
                              window.
 
-### Fields and Values {#fields-and-values}
+### Campi e valori <a name="#fields-and-values"></a>
 
-Contains a list of fields from the layer. Sample values can also be accessed via right-click.
+Contiene un elenco di campi del livello. I valori dei campioni sono accessibili anche con il tasto destro del mouse.
 
-Select the field name from the list, then right-click to access a context menu with options to load sample values from the selected field.
+Selezionare il nome del campo dall'elenco, quindi fare clic con il pulsante destro del mouse per accedere a un menu contestuale con le opzioni per caricare i valori del campione dal campo selezionato.
 
-Fields name should be double-quoted. Values or string should be simple-quoted.
+Il nome del campo deve essere citato due volte. I valori o le stringhe dovrebbero essere semplici da citare.
+
 
 
 

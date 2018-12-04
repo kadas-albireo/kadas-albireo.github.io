@@ -26,9 +26,9 @@
 |-----------------------|-------------------|
 | Estensione precedente | `CTRL+PgUp`       |
 | Estensione successiva | `CTRL+PgDn`       |
-| Nuova vista           | `CTRL+V + CTRL+W` |
-| 3D                    | `CTRL+V + CTRL+3` |
-| Reticolo              | `CTRL+V + CTRL+G` |
+| Nuova vista           | `CTRL+W + CTRL+N` |
+| 3D                    | `CTRL+W + CTRL+3` |
+| Reticolo              | `CTRL+W + CTRL+G` |
 
 ## Analisi
 | Funzione          | Combinazione      |

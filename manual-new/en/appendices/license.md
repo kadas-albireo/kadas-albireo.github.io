@@ -4,11 +4,11 @@ Version 2, June 1991
 
 Copyright (C) 1989, 1991 Free Software Foundation, Inc. 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
 
-Everyone is permitted to copy and distribute verbatim copies of this <span id="index-0" class="target"></span>license document, but changing it is not allowed.
+Everyone is permitted to copy and distribute verbatim copies of this <span id="index-0"></span>license document, but changing it is not allowed.
 
 Preamble
 
-The licenses for most software are designed to take away your freedom to share and change it. By contrast, the <span id="index-1" class="target"></span>GNU General Public License is intended to guarantee your freedom to share and change free software–to make sure the software is free for all its users. This General Public License applies to most of the Free Software Foundation’s software and to any other program whose authors commit to using it. (Some other Free Software Foundation software is covered by the GNU Library General Public License instead.) You can apply it to your programs, too.
+The licenses for most software are designed to take away your freedom to share and change it. By contrast, the <span id="index-1"></span>GNU General Public License is intended to guarantee your freedom to share and change free software–to make sure the software is free for all its users. This General Public License applies to most of the Free Software Foundation’s software and to any other program whose authors commit to using it. (Some other Free Software Foundation software is covered by the GNU Library General Public License instead.) You can apply it to your programs, too.
 
 When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for this service if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs; and that you know you can do these things.
 
@@ -92,7 +92,7 @@ NO WARRANTY
 >
 > Copyright 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc
 >
-> &lt;<a href="http://fsf.org/" class="uri" class="reference external">http://fsf.org/</a>&gt;
+> &lt;<a href="http://fsf.org/">http://fsf.org/</a>&gt;
 >
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
@@ -210,7 +210,7 @@ Termination of your rights under this section does not terminate the licenses of
 
 **10. FUTURE REVISIONS OF THIS LICENSE**
 
-The Free Software Foundation may publish new, revised versions of the GNU Free Documentation License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns. See <a href="http://www.gnu.org/copyleft/" class="uri" class="reference external">http://www.gnu.org/copyleft/</a>.
+The Free Software Foundation may publish new, revised versions of the GNU Free Documentation License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns. See <a href="http://www.gnu.org/copyleft/">http://www.gnu.org/copyleft/</a>.
 
 Each version of the License is given a distinguishing version number. If the Document specifies that a particular numbered version of this License “or any later version” applies to it, you have the option of following the terms and conditions either of that specified version or of any later version that has been published (not as a draft) by the Free Software Foundation. If the Document does not specify a version number of this License, you may choose any version ever published (not as a draft) by the Free Software Foundation. If the Document specifies that a proxy can decide which future versions of this License can be used, that proxy’s public statement of acceptance of a version permanently authorizes you to choose that version for the Document.
 

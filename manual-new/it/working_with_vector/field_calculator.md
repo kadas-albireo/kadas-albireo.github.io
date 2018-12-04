@@ -1,38 +1,33 @@
-# Calcolatore di campi {#field-calculator}
+# Calcolatore di campi <a name="#field-calculator"></a>
 
-The <a href="../../images/mActionCalculateField.png" class="reference internal"><img src="../../images/mActionCalculateField.png" alt="mActionCalculateField" /></a> <sup>Field\\ Calculator</sup> button in the attribute table allows you to perform calculations on the basis of existing attribute values or defined functions, for instance, to calculate length or area of geometry features. The results can be written to a new attribute field, a virtual field, or they can be used to update values in an existing field.
+Il pulsante *Calcolatore di campi* <img src="../../images/mActionCalculateField.png" /> nella tabella degli attributi consente di eseguire calcoli sulla base dei valori degli attributi esistenti o di funzioni definite, ad esempio, per calcolare la lunghezza o l'area degli elementi geometrici. I risultati possono essere scritti in un nuovo campo attributo, un campo virtuale, oppure possono essere usati per aggiornare i valori in un campo esistente.
 
-Suggerimento
+**Campi virtuali**
 
-**Virtual Fields**
+-   Campi virtuali non sono permanenti e non sono salvati.
+-   Un campo deve essere definito virtuale al momento della sua creazione.
 
--   Virtual fields are not permanent and are not saved.
--   To make a field virtual it must be done when the field is made.
+Il calcolatore di campo è disponibile su qualsiasi livello che supporti la modifica. Quando si fa clic sull'icona della calcolatrice di campo, si apre la finestra di dialogo. Se il livello non è in modalità di modifica, viene visualizzato un avviso e l'utilizzo del calcolatore di campo farà sì che il livello venga messo in modalità di modifica prima di effettuare il calcolo.
 
-The field calculator is now available on any layer that supports edit. When you click on the field calculator icon the dialog opens (see <a href="#figure-attributes-3" class="reference internal">figure_attributes_3</a>). If the layer is not in edit mode, a warning is displayed and using the field calculator will cause the layer to be put in edit mode before the calculation is made.
+La barra di calcolo rapido del campo in cima alla tabella degli attributi è visibile solo se il livello è modificabile.
 
-The quick field calculation bar on top of the attribute table is only visible if the layer is editable.
+Nella barra di calcolo rapido del campo, selezionate prima il nome del campo esistente, quindi aprite la finestra di dialogo dell'espressione per creare la vostra espressione o scriverla direttamente nel campo, quindi cliccate sul pulsante **Aggiorna tutto**.
 
-In quick field calculation bar, you first select the existing field name then open the expression dialog to create your expression or write it directly in the field then click on **Update All** button.
+## Scheda espressioni <a name="#expression-tab"></a>
 
-## Expression tab {#expression-tab}
-
-In the field calculator dialog, you first must select whether you want to only update selected features, create a new attribute field where the results of the calculation will be added or update an existing field.
-
-**Figure Attributes 3:**
+Nella finestra di dialogo del campo calcolatrice, è necessario prima di tutto selezionare se si desidera aggiornare solo le caratteristiche selezionate, creare un nuovo campo attributo in cui verranno aggiunti i risultati del calcolo o aggiornare un campo esistente.
 
 ![](../../images/fieldcalculator.png)
-Calcolatore di campi 
 
-Per aggiungere un nuovo campo devi creare il nome, il tipo di campo (intero, decimale, testo) e la lunghezza del campo. Per il tipo Numero decimale puoi anche definire la precisione, ovvero il numero di cifre dopo la virgola: ad esempio un campo con larghezza 10 e precisione 3 avrà 6 cifre prima della virgola, la virgola stessa è un campo ed infine 3 cifre decimali (vedi <a href="#figure-attributes-3" class="reference internal">figure_attributes_3</a>).
+Per aggiungere un nuovo campo devi creare il nome, il tipo di campo (intero, decimale, testo) e la lunghezza del campo. Per il tipo Numero decimale puoi anche definire la precisione, ovvero il numero di cifre dopo la virgola: ad esempio un campo con larghezza 10 e precisione 3 avrà 6 cifre prima della virgola, la virgola stessa è un campo ed infine 3 cifre decimali (vedi <a href="#figure-attributes-3">figure_attributes_3</a>).
 
-A short example illustrates how field calculator works when using the *Expression* tab. We want to calculate the length in km of the `railroads` layer from the KADAS sample dataset:
+Un breve esempio illustra come funziona il calcolatore di campo quando si utilizza la scheda *Espressione*. Vogliamo calcolare la lunghezza in km del livello `ferrovie` dal dataset del campione KADAS:
 
-1.  Carica lo shapefile `railroads.shp` e clicca su <a href="../../images/mActionOpenTable.png" class="reference internal"><img src="../../images/mActionOpenTable.png" alt="mActionOpenTable" /></a> <sup>Apri\\ tabella\\ attributi</sup>.
+1.  Carica lo shapefile `railroads.shp` e clicca su <img src="../../images/mActionOpenTable.png" /> *Apri tabella attributi*.
 
-2.  Attiva la modalità <a href="../../images/mActionToggleEditing.png" class="reference internal"><img src="../../images/mActionToggleEditing.png" alt="mActionToggleEditing" /></a> <sup>Modifica</sup> e apri il <a href="../../images/mActionCalculateField.png" class="reference internal"><img src="../../images/mActionCalculateField.png" alt="mActionCalculateField" /></a> <sup>Calcolatore\\ di\\ campi</sup>.
+2.  Attiva la modalità <img src="../../images/mActionToggleEditing.png" /> *Modifica* e apri il <img src="../../images/mActionCalculateField.png" /> *Calcolatore di campi*.
 
-3.  Spunta la casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Crea un nuovo campo* per attivare la creazione di un nuovo campo.
+3.  Spunta la casella di controllo <img src="../../images/checkbox.png" /> *Crea un nuovo campo* per attivare la creazione di un nuovo campo.
 
 4.  Chiama il campo `length`, imposta `Numero decimale (real)` come tipo, 10 come larghezza e 3 come precisione.
 
@@ -42,29 +37,29 @@ A short example illustrates how field calculator works when using the *Expressio
 
 7.  You can now find a new field `length` in the attribute table.
 
-The available functions are listed in <a href="expression.html#vector-expressions" class="reference internal"><em>Expressions</em></a> chapter.
+Le funzioni disponibili sono elencate nel capitolo [Espressioni](expression.md).
 
-## Function Editor tab {#function-editor-tab}
+## Scheda Editor funzioni <a name="#function-editor-tab"></a>
 
-With the Function Editor you are able to define your own Python custom functions in a comfortable way. The function editor will create new Python files in `qgis2pythonexpressions` and will auto load all functions defined when starting QGIS. Be aware that new functions are only saved in the `expressions` folder and not in the project file. If you have a project that uses one of your custom functions you will need to also share the .py file in the expressions folder.
+Con il l'editor funzioni è possibile definire le proprie funzioni personalizzate Python in modo confortevole. L'editor di funzioni creerà nuovi file Python in `qgis2pythonexpressions` e caricherà automaticamente tutte le funzioni definite all'avvio di KADAS. Nota che le nuove funzioni vengono salvate solo nella cartella `espressioni` e non nel file di progetto. Se hai un progetto che utilizza una delle tue funzioni personalizzate, dovrai anche condividere il file .py nella cartella delle espressioni.
 
-Here’s a short example on how to create your own functions:
+Ecco un breve esempio su come creare le proprie funzioni:
 
     @qgsfunction(args="auto", group='Custom')
     def myfunc(value1, value2 feature, parent):
         pass
 
-The short example creates a function ‘myfunc’ that will give you a function with two values. When using the args=’auto’ function argument the number of function arguments required will be calculated by the number of arguments the function has been defined with in Python (minus 2 - feature, and parent).
+L'esempio breve crea una funzione 'myfunc' che vi darà una funzione con due valori. Quando si usa l'argomento della funzione args='auto' il numero di argomenti della funzione richiesti sarà calcolato dal numero di argomenti con cui la funzione è stata definita in Python (meno 2 - feature, e parent).
 
-This function then can be used with the following expression:
+Questa funzione può quindi essere usata con la seguente espressione:
 
     myfunc('test1', 'test2')
 
-Your function will be implemented in the ‘Custom’ *Functions* of the *Expression* tab after using the *Run Script* button.
+La funzione sarà implementata nella scheda *Funzioni* Personalizzate della scheda *Espressione* dopo aver utilizzato il pulsante *Esegui Script*.
 
-Further information about creating Python code can be found on <a href="http://www.qgis.org/html/en/docs/pyqgis_developer_cookbook/index.html" class="uri" class="reference external">http://www.qgis.org/html/en/docs/pyqgis_developer_cookbook/index.html</a>.
+Ulteriori informazioni sulla creazione del codice Python possono essere trovate su <a href="http://www.qgis.org/html/en/docs/pyqgis_developer_cookbook/index.html">http://www.qgis.org/html/en/docs/pyqgis_developer_cookbook/index.html</a>.
 
-The function editor is not only limited to working with the field calculator, it can be found whenever you work with expressions. See also <a href="expression.html#vector-expressions" class="reference internal"><em>Expressions</em></a>.
+L'editor di funzioni non si limita a lavorare con il calcolatore di campo, ma si può trovare ogni volta che si lavora con le espressioni.
 
 
 

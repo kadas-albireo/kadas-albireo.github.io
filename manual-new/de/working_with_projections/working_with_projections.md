@@ -1,15 +1,15 @@
-# Arbeiten mit Projektionen {#working-with-projections}
+# Arbeiten mit Projektionen <a name="#working-with-projections"></a>
 
 KADAS ermöglicht es, globale und projektbezogene KBS (Koordinatenbezugssysteme) für Layer ohne vordefinierte KBS zu definieren. Es können benutzerdefinierte Koordinatenbezugssysteme erstellt werden und für Raster- und Vektorlayer wird On-The-Fly (OTF) Projektion unterstützt, um Layer gemeinsam und lagegenau darzustellen, auch wenn sie unterschiedliche KBS besitzen.
 
 
-## Überblick zur Projektionsunterstützung {#overview-of-projection-support}
+## Überblick zur Projektionsunterstützung <a name="#overview-of-projection-support"></a>
 
 KADAS unterstützt etwa 2700 bekannte Koordinatenbezugssysteme (KBS). Diese sind in einer SQlite-Datenbank abgelegt, die mit QGIS installiert wird. Normalerweise muss diese Datenbank nicht editiert werden, und es kann Probleme verursachen, wenn Sie es dennoch versuchen. Selbstdefinierte KBS sind in einer Benutzerdatenbank abgelegt. Informationen zum Anlegen einer Benutzerdatenbank finden Sie im Abschnitt *sec\_custom\_projections*.
 
 Die Koordinatenbezugssysteme in KADAS basieren auf EPSG Codes der European Petroleum Search Group (EPSG) und dem Institut Geographic National de France (IGNF) und entsprechen weitestgehend den spatial reference Tabellen der Software GDAL. Die EPSG IDs sind in einer SQlite-Datenbank abgelegt und werden benutzt, um KBS in KADAS zu spezifizieren.
 
-Um OTF Projektion zu verwenden, müssen die Daten Informationen über ihr Koordinatenbezugssystem enthalten oder Sie müssen ein globales, layer- oder projektbezogenes KBS definieren. Bei PostGIS-Layern benutzt KADAS die spatial reference ID, die bei der Erstellung des Layers festgelegt wurde. Bei Daten, die von der OGR-Bibliothek unterstützt werden, bezieht sich KADAS auf das Vorhandensein eines KBS bei den Daten. Bei Shapes bedeutet dies, dass eine Datei mit der Endung .prj vorhanden sein muss, in der das KBS im Well Known Text (<span id="index-5" class="target"></span>WKT) Format angegeben ist. Für ein Shape mit dem Namen `alaska.shp` gäbe es also eine entsprechende Projektionsdatei `alaska.prj`.
+Um OTF Projektion zu verwenden, müssen die Daten Informationen über ihr Koordinatenbezugssystem enthalten oder Sie müssen ein globales, layer- oder projektbezogenes KBS definieren. Bei PostGIS-Layern benutzt KADAS die spatial reference ID, die bei der Erstellung des Layers festgelegt wurde. Bei Daten, die von der OGR-Bibliothek unterstützt werden, bezieht sich KADAS auf das Vorhandensein eines KBS bei den Daten. Bei Shapes bedeutet dies, dass eine Datei mit der Endung .prj vorhanden sein muss, in der das KBS im Well Known Text (<span id="index-5"></span>WKT) Format angegeben ist. Für ein Shape mit dem Namen `alaska.shp` gäbe es also eine entsprechende Projektionsdatei `alaska.prj`.
 
 The *CRS* tab contains the following important components:
 
@@ -21,7 +21,7 @@ The *CRS* tab contains the following important components:
 
 4.  **Proj4Text** - dies ist ein Ausdruck der von der PROJ4-Bibliothek genutzt wird. Er dient nur zu Information und kann nicht verändert werden.
 
-## Standard Datumtransformationen {#default-datum-transformations}
+## Standard Datumtransformationen <a name="#default-datum-transformations"></a>
 
 Eine Spontan-Reprojektion hängt davon ab ob Daten in ein ‘Standard-KBS’ transformiert werden können, KADAS benutzt hierbei WGS84. Für einige KBS sind eine Reihe von Transformationen verfügbar. Sie können unter KADAS die benutzte Transformation definieren sonst benutzt es eine Standard-Transformation.
 

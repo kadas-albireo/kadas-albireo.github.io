@@ -25,9 +25,9 @@
 |------------------|-------------------|
 | Previous Extent  | `CTRL+PgUp`       |
 | Next Extent      | `CTRL+PgDn`       |
-| New map window   | `CTRL+V + CTRL+W` |
-| 3D               | `CTRL+V + CTRL+3` |
-| Grid             | `CTRL+V + CTRL+G` |
+| New map window   | `CTRL+W + CTRL+N` |
+| 3D               | `CTRL+W + CTRL+3` |
+| Grid             | `CTRL+W + CTRL+G` |
 
 ## Analysis
 | Function         | Shortcut          |

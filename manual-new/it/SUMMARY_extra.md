@@ -7,6 +7,7 @@
   - [Calcolatore dei campi](working_with_vector/field_calculator.md)
   - [Lavorare con i dati raster](working_with_raster/supported_data.md)
   - [Proprietà raster](working_with_raster/raster_properties.md)
+  - [Configurazione di GPSGate](gpsgate/gpsgate.md)
 * Appendice
   - [Tasti di scelta rapida](appendices/shortcuts.md)
   - [Licenza](appendices/license.md)

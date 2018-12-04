@@ -1,19 +1,19 @@
-# Expressions {#expressions}
+# Expressions <a name="#expressions"></a>
 
-Les **Expressions** sont disponibles dans la Calculatrice de champ ou via le bouton Ajout d’une nouvelle colonne dans la table attributaire ou via l’onglet Champ dans les Propriétés de la couche; via les rendus Gradué, Catégorisé et Basé sur un ensemble de règles dans l’onglet Style des Propriétés de la couche; via le bouton <a href="../../images/browsebutton.png" class="reference internal"><img src="../../images/browsebutton.png" alt="browsebutton" /></a> d’étiquetage basé sur une formule dans l’<sup>Étiquetage</sup> <a href="../../images/mActionLabeling.png" class="reference internal"><img src="../../images/mActionLabeling.png" alt="mActionLabeling" /></a>; via la sélection d’entité et via l’onglet diagramme des Propriétés de la couche ainsi que dans le Composeur d’impression pour les *Propriétés principales* d’un objet étiquette et dans l’onglet *Génération d’Atlas* .
+Les **Expressions** sont disponibles dans la Calculatrice de champ ou via le bouton Ajout d'une nouvelle colonne dans la table attributaire ou via l'onglet Champ dans les Propriétés de la couche; via les rendus Gradué, Catégorisé et Basé sur un ensemble de règles dans l'onglet Style des Propriétés de la couche; via le bouton <img src="../../images/browsebutton.png" /> d'étiquetage basé sur une formule dans l’*Étiquetage* <img src="../../images/mActionLabeling.png" />; via la sélection d'entité et via l'onglet diagramme des Propriétés de la couche ainsi que dans le Composeur d'impression pour les *Propriétés principales* d'un objet étiquette et dans l'onglet *Génération d'Atlas* .
 
-Ils constituent un moyen efficace de manipuler la valeur d’attribut pour changer dynamiquement la valeur finale afin de changer le style de géométrie, le contenu d’une étiquette, la valeur d’un diagramme, sélectionner des entités ou créer une colonne virtuelle.
+Ils constituent un moyen efficace de manipuler la valeur d'attribut pour changer dynamiquement la valeur finale afin de changer le style de géométrie, le contenu d'une étiquette, la valeur d'un diagramme, sélectionner des entités ou créer une colonne virtuelle.
 
-## Liste de fonctions {#functions-list}
+## Liste de fonctions <a name="#functions-list"></a>
 
-La **Liste de fonctions** contient aussi bien des fonctions que des champs et des valeurs. Référez-vous à la fonction d’aide dans l’**Aide pour la fonction sélectionnée**. Dans **Expression**, vous pouvez voir les expressions de calcul que vous créez avec la **Liste de fonctions**. Pour les opérateurs les plus couramment utilisés, voir sous **Opérateurs**.
+La **Liste de fonctions** contient aussi bien des fonctions que des champs et des valeurs. Référez-vous à la fonction d'aide dans l’**Aide pour la fonction sélectionnée**. Dans **Expression**, vous pouvez voir les expressions de calcul que vous créez avec la **Liste de fonctions**. Pour les opérateurs les plus couramment utilisés, voir sous **Opérateurs**.
 
-Dans la **Liste de fonctions**, cliquez sur *Champs et valeurs* pour visualiser tous les attributs de la table attributaire à chercher. Pour ajouter un attribut au champ ‘**Expression** de la Calculatrice de champ, double-cliquez sur son nom dans la liste *Champs et valeurs*. Vous pouvez en général utiliser les différents champs, valeurs et fonctions pour construire votre expression de calcul, ou vous pouvez simplement les taper dans la zone expression. Pour afficher les valeurs d’un champ, faites un clic-droit sur le champ voulu. Vous avez le choix entre *Charger les 10 premières valeurs uniques* et *Charger toutes les valeurs uniques*. Une liste **Valeurs de champs** apparaît à droite avec les valeurs uniques. Pour ajouter une valeur à la zone **Expression** de la Calculatrice de champ, double-cliquez dessus dans la liste des **Valeurs de champs**.
+Dans la **Liste de fonctions**, cliquez sur *Champs et valeurs* pour visualiser tous les attributs de la table attributaire à chercher. Pour ajouter un attribut au champ ‘**Expression** de la Calculatrice de champ, double-cliquez sur son nom dans la liste *Champs et valeurs*. Vous pouvez en général utiliser les différents champs, valeurs et fonctions pour construire votre expression de calcul, ou vous pouvez simplement les taper dans la zone expression. Pour afficher les valeurs d'un champ, faites un clic-droit sur le champ voulu. Vous avez le choix entre *Charger les 10 premières valeurs uniques* et *Charger toutes les valeurs uniques*. Une liste **Valeurs de champs** apparaît à droite avec les valeurs uniques. Pour ajouter une valeur à la zone **Expression** de la Calculatrice de champ, double-cliquez dessus dans la liste des **Valeurs de champs**.
 
 Les groupes *Opérateurs*, *Math*, *Conversions*, *Chaîne*, *Géométrie* et *Enregistrement* offrent plusieurs fonctions. Dans *Opérateurs*, vous trouvez des opérateurs mathématiques. Regardez dans *Math* pour les fonctions mathématiques. Le groupe *Conversions* contient des fonctions qui convertissent un type de données en un autre. Le groupe *Chaîne* contient des fonctions pour des chaînes de données. Dans le groupe *Géométrie*, vous trouvez des fonctions pour des objets géométriques. Avec le groupe de fonctions *Enregistrement*, vous pouvez ajouter une numérotation à votre jeu de données. Pour ajouter une fonction à la zone **Expression** de la Calculatrice de champ, cliquez sur &gt; et ensuite double-cliquez sur la fonction.
 
 
-### Opérateurs {#operators}
+### Opérateurs <a name="#operators"></a>
 
 This group contains operators (e.g., +, -, \*).
 
@@ -54,17 +54,17 @@ This group contains operators (e.g., +, -, \*).
     a IN (value[,value])          a is below the values listed
     a NOT IN (value[,value])      a is not below the values listed
 
-**Quelques exemples :**
+**Quelques exemples:**
 
 -   Joint une chaîne et une valeur depuis un nom de colonne:
 
         'My feature's id is: ' || "gid"
 
--   Teste si la “description” du champ d’attribut commence avec la chaîne ‘Hello’ dans la valeur (notez la position du caractère %):
+-   Teste si la “description” du champ d'attribut commence avec la chaîne *Hello* dans la valeur (notez la position du caractère %):
 
         "description" LIKE 'Hello%'
 
-### Conditions {#conditionals}
+### Conditions <a name="#conditionals"></a>
 
 Ce groupe contient des fonctions permettant de gérer des conditions dans les expressions.
 
@@ -83,7 +83,7 @@ Ce groupe contient des fonctions permettant de gérer des conditions dans les ex
 
         CASE WHEN "software" LIKE '%QGIS%' THEN 'QGIS' ELSE 'Other'
 
-### Fonctions mathématiques {#mathematical-functions}
+### Fonctions mathématiques <a name="#mathematical-functions"></a>
 
 Ce groupe contient des fonctions mathématiques (par ex. racine carré, sin et cos).
 
@@ -126,7 +126,7 @@ Ce groupe contient des fonctions mathématiques (par ex. racine carré, sin et c
     ceil                          rounds a number upwards
     $pi                           pi as value for calculations
 
-### Conversions {#conversions}
+### Conversions <a name="#conversions"></a>
 
 Ce groupe contient des fonctions pour convertir un type de données en un autre (par ex. chaîne à entier, entier à chaîne).
 
@@ -140,9 +140,9 @@ Ce groupe contient des fonctions pour convertir un type de données en un autre 
                                  used to take days, hours, months, etc. off a
                                  date)
 
-### Fonctions de Date et Heure {#date-and-time-functions}
+### Fonctions de Date et Heure <a name="#date-and-time-functions"></a>
 
-Ce groupe contient des fonctions permettant de gérer des données de date et d’heure.
+Ce groupe contient des fonctions permettant de gérer des données de date et d'heure.
 
     $now       current date and time
     age        difference between two dates
@@ -163,11 +163,11 @@ Ce groupe contient des fonctions permettant de gérer des données de date et d�
 
 **Quelques exemples:**
 
--   Obtenir le mois et l’année d’aujourd’hui dans le format “10/2014”
+-   Obtenir le mois et l'année d'aujourd'hui dans le format “10/2014”
 
         month($now) || '/' || year($now)
 
-### Fonctions de Chaîne {#string-functions}
+### Fonctions de Chaîne <a name="#string-functions"></a>
 
 Ce groupe contient des fonctions qui opèrent sur des chaînes (par ex. qui remplace, convertit en majuscule).
 
@@ -206,7 +206,7 @@ Ce groupe contient des fonctions qui opèrent sur des chaînes (par ex. qui remp
     format_date                  formats a date type or string into a custom
                                  string format
 
-### Fonctions de Couleur {#color-functions}
+### Fonctions de Couleur <a name="#color-functions"></a>
 
 Ce groupe contient des fonctions pour manipuler les couleurs.
 
@@ -230,7 +230,7 @@ Ce groupe contient des fonctions pour manipuler les couleurs.
                     cyan, magenta, yellow, black and alpha (transparency)
                     components
 
-### Fonctions de Géométrie {#geometry-functions}
+### Fonctions de Géométrie <a name="#geometry-functions"></a>
 
 Ce groupe contient des fonctions qui opèrent sur des objets géométriques (par ex. longueur, aire).
 
@@ -309,9 +309,9 @@ Ce groupe contient des fonctions qui opèrent sur des objets géométriques (par
     transform        returns the geometry transformed from the source CRS to
                      the dest CRS
 
-### Fonctions d’Enregistrement {#record-functions}
+### Fonctions d'Enregistrement <a name="#record-functions"></a>
 
-Ce groupe contient des fonctions qui permettent d’accéder aux identifiants des enregistrements.
+Ce groupe contient des fonctions qui permettent d'accéder aux identifiants des enregistrements.
 
     $rownum                  returns the number of the current row
     $id                      returns the feature id of the current row
@@ -331,14 +331,11 @@ Ce groupe contient des fonctions qui permettent d’accéder aux identifiants de
                              the map is being drawn within the main QGIS
                              window.
 
-### Champs et Valeurs {#fields-and-values}
+### Champs et Valeurs <a name="#fields-and-values"></a>
 
 Contient une liste de champs de la couche. Un échantillon de valeurs peut aussi être obtenu avec un clic-droit.
 
-Sélectionnez le nom du champ de la liste, puis faites un clic-droit pour accéder à un menu contextuel avec des options pour charger des valeurs d’échantillon du champ sélectionné.
+Sélectionnez le nom du champ de la liste, puis faites un clic-droit pour accéder à un menu contextuel avec des options pour charger des valeurs d'échantillon du champ sélectionné.
 
 Le nom des champs devrait être entre guillemets double. Les valeurs ou chaînes devraient être entre guillemets simples.
-
-
-
 

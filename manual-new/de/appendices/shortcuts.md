@@ -25,9 +25,9 @@
 |-----------------------|-------------------|
 | Vorheriger Ausschnitt | `CTRL+PgUp`       |
 | Nächster Ausschnitt   | `CTRL+PgDn`       |
-| Neues Kartenfenster   | `CTRL+V + CTRL+W` |
-| 3D                    | `CTRL+V + CTRL+3` |
-| Gitter                | `CTRL+V + CTRL+G` |
+| Neues Kartenfenster   | `CTRL+W + CTRL+N` |
+| 3D                    | `CTRL+W + CTRL+3` |
+| Gitter                | `CTRL+W + CTRL+G` |
 
 ## Analyse
 | Funktion              | Kürzel            |

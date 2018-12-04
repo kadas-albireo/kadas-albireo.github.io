@@ -8,7 +8,7 @@ La copie et la distribution de copies exactes de ce document sont autorisées, m
 
 Préambule
 
-Les licences d’utilisation de la plupart des programmes sont définies pour limiter ou supprimer toute liberté à l’utilisateur. À l’inverse, la <span id="index-3" class="target"></span>GNU General Public License est destinée à vous garantir la liberté de partager et de modifier les logiciels libres, et de s’assurer que ces logiciels sont effectivement accessibles à tout utilisateur. Cette Licence Publique Générale s’applique à la plupart des programmes de la Free Software Foundation, comme à tout autre programme dont l’auteur l’aura décidé (d’autres logiciels de la FSF sont couverts pour leur part par la Licence Publique Générale pour Bibliothèques GNU (LGPL)). Vous pouvez aussi appliquer les termes de cette Licence à vos propres programmes, si vous le désirez.
+Les licences d’utilisation de la plupart des programmes sont définies pour limiter ou supprimer toute liberté à l’utilisateur. À l’inverse, la <span id="index-3"></span>GNU General Public License est destinée à vous garantir la liberté de partager et de modifier les logiciels libres, et de s’assurer que ces logiciels sont effectivement accessibles à tout utilisateur. Cette Licence Publique Générale s’applique à la plupart des programmes de la Free Software Foundation, comme à tout autre programme dont l’auteur l’aura décidé (d’autres logiciels de la FSF sont couverts pour leur part par la Licence Publique Générale pour Bibliothèques GNU (LGPL)). Vous pouvez aussi appliquer les termes de cette Licence à vos propres programmes, si vous le désirez.
 
 Liberté des logiciels ne signifie pas nécessairement gratuité. Notre Licence est conçue pour vous assurer la liberté de distribuer des copies des programmes, gratuitement ou non, de recevoir le code source ou de pouvoir l’obtenir, de modifier les programmes ou d’en utiliser des éléments dans de nouveaux programmes libres, en sachant que vous y êtes autorisé.
 
@@ -97,7 +97,7 @@ LIMITATION DE GARANTIE
 >
 > Copyright 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc
 >
-> &lt;<a href="http://fsf.org/" class="uri" class="reference external">http://fsf.org/</a>&gt;
+> &lt;<a href="http://fsf.org/">http://fsf.org/</a>&gt;
 >
 Tout le monde est autorisé à copier et redistribuer à l’identique le texte de cette licence, mais le modifier n’est pas autorisé.
 
@@ -229,7 +229,7 @@ L’expiration de vos droits engendrée par cette section n’entraine pas l’e
 
 **10. RÉVISIONS FUTURES DE CETTE LICENCE**
 
-Il se peut que de temps en temps la Fondation pour le logiciel libre publie une nouvelle version, révisée, de la licence GNU de documentation libre. Ces nouvelles versions seront dans le même esprit, mais elles pourront différer dans les détails, pour répondre à de nouveaux problèmes ou inquiétudes. Référez-vous à <a href="http://www.gnu.org/copyleft/" class="uri" class="reference external">http://www.gnu.org/copyleft/</a>.
+Il se peut que de temps en temps la Fondation pour le logiciel libre publie une nouvelle version, révisée, de la licence GNU de documentation libre. Ces nouvelles versions seront dans le même esprit, mais elles pourront différer dans les détails, pour répondre à de nouveaux problèmes ou inquiétudes. Référez-vous à <a href="http://www.gnu.org/copyleft/">http://www.gnu.org/copyleft/</a>.
 
 Chaque version de la Licence possède un numéro de version distinct. Si le Document spécifie qu’il peut être utilisé selon les termes d’une version numérotée particulière de cette Licence “ou toute version ultérieure”, vous avez le choix de vous conformer aux termes et aux conditions de la version spécifiée ou de toute version ultérieure qui a été publiée (pas en tant que brouillon) par la Fondation pour le logiciel libre. Si le Document ne spécifie pas de numéro de version, vous pouvez choisir n’importe quelle version publiée (pas en tant que brouillon) par la Fondation pour le logiciel libre. Si le Document spécifie qu’un serveur mandataire peut décider quelles versions futures de cette Licence peuvent être utilisées, la déclaration publique d’acceptation d’une version de la part de ce serveur mandataire vous autorise de manière permanente à choisir cette version pour utiliser le Document.
 

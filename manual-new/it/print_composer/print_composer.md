@@ -1,1138 +1,791 @@
-# Compositore di stampe {#print-composer}
-
-Con il Compositore di Stampa puoi creare mappe belle e atlanti, che possono essere stampati o salvati in formato PDF, immagine o SVG. Questo è utile per condividere informazioni geografiche prodotte con KADAS che possono essere incluse in relazioni o pubblicate.
-
-The Print Composer provides growing layout and printing capabilities. It allows you to add elements such as the KADAS map canvas, text labels, images, legends, scale bars, basic shapes, arrows, attribute tables and HTML frames. You can size, group, align, position and rotate each element and adjust the properties to create your layout. The layout can be printed or exported to image formats, PostScript, PDF or to SVG (export to SVG is not working properly with some recent Qt4 versions; you should try and check individually on your system). You can save the layout as a template and load it again in another session. Finally, generating several maps based on a template can be done through the atlas generator. See a list of tools in <a href="#table-composer-1" class="reference internal">table_composer_1</a>:
-
-
-Icona
-
-Azione
-
-Icona
-
-Azione
-
- 
- 
- 
- 
-<a href="../../images/mActionFileSave.png" class="reference internal"><img src="../../images/mActionFileSave.png" alt="mActionFileSave" /></a>
-Salva progetto
-
-<a href="../../images/mActionNewComposer.png" class="reference internal"><img src="../../images/mActionNewComposer.png" alt="mActionNewComposer" /></a>
-Nuova composizione
-
-<a href="../../images/mActionDuplicateComposer.png" class="reference internal"><img src="../../images/mActionDuplicateComposer.png" alt="mActionDupComposer" /></a>
-Duplica composizione
-
-<a href="../../images/mActionComposerManager.png" class="reference internal"><img src="../../images/mActionComposerManager.png" alt="mActionComposerManager" /></a>
-Gestore di stampe
-
-<a href="../../images/mActionFileOpen.png" class="reference internal"><img src="../../images/mActionFileOpen.png" alt="mActionFileOpen" /></a>
-Caraica da modello
-
-<a href="../../images/mActionFileSaveAs.png" class="reference internal"><img src="../../images/mActionFileSaveAs.png" alt="mActionFileSaveAs" /></a>
-Salva come modello
-
-<a href="../../images/mActionFilePrint.png" class="reference internal"><img src="../../images/mActionFilePrint.png" alt="mActionFilePrint" /></a>
-Stampa o esporta come
-
-<a href="../../images/mActionSaveMapAsImage.png" class="reference internal"><img src="../../images/mActionSaveMapAsImage.png" alt="mActionSaveMapAsImage" /></a>
-Esporta come immagine
-
-<a href="../../images/mActionSaveAsSVG.png" class="reference internal"><img src="../../images/mActionSaveAsSVG.png" alt="mActionSaveAsSVG" /></a>
-Esporta come SVG
-
-<a href="../../images/mActionSaveAsPDF.png" class="reference internal"><img src="../../images/mActionSaveAsPDF.png" alt="mActionSaveAsPDF" /></a>
-Esporta come PDF
-
-<a href="../../images/mActionUndo.png" class="reference internal"><img src="../../images/mActionUndo.png" alt="mActionUndo" /></a>
-Annulla l’ultimo cambiamento
-
-<a href="../../images/mActionRedo.png" class="reference internal"><img src="../../images/mActionRedo.png" alt="mActionRedo" /></a>
-Rispristina l’ultimo cambiamento
-
-<a href="../../images/mActionZoomFullExtent.png" class="reference internal"><img src="../../images/mActionZoomFullExtent.png" alt="mActionZoomFullExtent" /></a>
-Vista ad estensione massima
-
-<a href="../../images/mActionZoomActual.png" class="reference internal"><img src="../../images/mActionZoomActual.png" alt="mActionZoomActual" /></a>
-Zoom al 100%
-
-<a href="../../images/mActionZoomIn.png" class="reference internal"><img src="../../images/mActionZoomIn.png" alt="mActionZoomIn" /></a>
-Ingrandisci
-
-<a href="../../images/mActionZoomIn.png" class="reference internal"><img src="../../images/mActionZoomIn.png" alt="mActionZoomIn" /></a>
-Rimpicciolisci
-
-<a href="../../images/mActionDraw.png" class="reference internal"><img src="../../images/mActionDraw.png" alt="mActionDraw" /></a>
-Aggiorna la vista
-
- 
- 
-<a href="../../images/mActionPan.png" class="reference internal"><img src="../../images/mActionPan.png" alt="mActionPan" /></a>
-Sposta
-
-<a href="../../images/mActionZoomToSelected.png" class="reference internal"><img src="../../images/mActionZoomToSelected.png" alt="mActionZoomToSelected" /></a>
-Zoom a una regione specifica
-
-<a href="../../images/mActionSelect.png" class="reference internal"><img src="../../images/mActionSelect.png" alt="mActionSelect" /></a>
-Scegli/Sposta oggetto
-
-<a href="../../images/mActionMoveItemContent.png" class="reference internal"><img src="../../images/mActionMoveItemContent.png" alt="mActionMoveItemContent" /></a>
-Sposta contenuto elemento
-
-<a href="../../images/mActionAddMap.png" class="reference internal"><img src="../../images/mActionAddMap.png" alt="mActionAddMap" /></a>
-Aggiungi una nuova immagine dalla mappa di KADAS
-
-<a href="../../images/mActionAddImage.png" class="reference internal"><img src="../../images/mActionAddImage.png" alt="mActionAddImage" /></a>
-Aggiungi immagine
-
-<a href="../../images/mActionLabel.png" class="reference internal"><img src="../../images/mActionLabel.png" alt="mActionLabel" /></a>
-Aggiungi etichetta
-
-<a href="../../images/mActionAddLegend.png" class="reference internal"><img src="../../images/mActionAddLegend.png" alt="mActionAddLegend" /></a>
-Aggiungi nuova legenda vettoriale
-
-<a href="../../images/mActionScaleBar.png" class="reference internal"><img src="../../images/mActionScaleBar.png" alt="mActionScaleBar" /></a>
-Aggiungi nuova barra di scala alla composizione di stampa
-
-<a href="../../images/mActionAddBasicShape.png" class="reference internal"><img src="../../images/mActionAddBasicShape.png" alt="mActionAddBasicShape" /></a>
-Aggiungi forma base
-
-<a href="../../images/mActionAddArrow.png" class="reference internal"><img src="../../images/mActionAddArrow.png" alt="mActionAddArrow" /></a>
-Aggiungi freccia
-
-<a href="../../images/mActionOpenTable.png" class="reference internal"><img src="../../images/mActionOpenTable.png" alt="mActionOpenTable" /></a>
-Aggiungi tabella attributi
-
-<a href="../../images/mActionAddHtml.png" class="reference internal"><img src="../../images/mActionAddHtml.png" alt="mActionAddHtml" /></a>
-Aggiungi una cornice HTML
-
- 
- 
-<a href="../../images/mActionGroupItems.png" class="reference internal"><img src="../../images/mActionGroupItems.png" alt="mActionGroupItems" /></a>
-Raggruppa oggetti
-
-<a href="../../images/mActionUngroupItems.png" class="reference internal"><img src="../../images/mActionUngroupItems.png" alt="mActionUnGroupItems" /></a>
-Rimuovi raggruppamento
-
-[<span id="id9" class="problematic">|bloccato|</span>](#id8)
-
-Blocca gli oggetti selezionati
-
-[<span id="id11" class="problematic">|sbloccato|</span>](#id10)
-
-Sblocca tutti gli elementi
-
-<a href="../../images/mActionRaiseItems.png" class="reference internal"><img src="../../images/mActionRaiseItems.png" alt="mActionRaiseItems" /></a>
-Muovi in alto
-
-<a href="../../images/mActionLowerItems.png" class="reference internal"><img src="../../images/mActionLowerItems.png" alt="mActionLowerItems" /></a>
-Muovi in basso
-
-<a href="../../images/mActionMoveItemsToTop.png" class="reference internal"><img src="../../images/mActionMoveItemsToTop.png" alt="mActionMoveItemsToTop" /></a>
-Porta in cima
-
-<a href="../../images/mActionMoveItemsToBottom.png" class="reference internal"><img src="../../images/mActionMoveItemsToBottom.png" alt="mActionMoveItemsToBottom" /></a>
-Porta in fondo
-
-<a href="../../images/mActionAlignLeft.png" class="reference internal"><img src="../../images/mActionAlignLeft.png" alt="mActionAlignLeft" /></a>
-Allinea a sinistra
-
-<a href="../../images/mActionAlignRight.png" class="reference internal"><img src="../../images/mActionAlignRight.png" alt="mActionAlignRight" /></a>
-Allinea a destra
-
-<a href="../../images/mActionAlignHCenter.png" class="reference internal"><img src="../../images/mActionAlignHCenter.png" alt="mActionAlignHCenter" /></a>
-Allinea su asse verticale
-
-<a href="../../images/mActionAlignVCenter.png" class="reference internal"><img src="../../images/mActionAlignVCenter.png" alt="mActionAlignVCenter" /></a>
-Allinea su asse orizzontale
-
-<a href="../../images/mActionAlignTop.png" class="reference internal"><img src="../../images/mActionAlignTop.png" alt="mActionAlignTop" /></a>
-Allinea in alto
-
-<a href="../../images/mActionAlignBottom.png" class="reference internal"><img src="../../images/mActionAlignBottom.png" alt="mActionAlignBottom" /></a>
-Allinea in basso
-
-<a href="../../images/mIconAtlas.png" class="reference internal"><img src="../../images/mIconAtlas.png" alt="mIconAtlas" /></a>
-Anteprima atlante
-
-<a href="../../images/mActionAtlasFirst.png" class="reference internal"><img src="../../images/mActionAtlasFirst.png" alt="mActionAtlasFirst" /></a>
-Prima geometria
-
-<a href="../../images/mActionAtlasPrev.png" class="reference internal"><img src="../../images/mActionAtlasPrev.png" alt="mActionAtlasPrev" /></a>
-Geometria precedente
-
-<a href="../../images/mActionAtlasNext.png" class="reference internal"><img src="../../images/mActionAtlasNext.png" alt="mActionAtlasNext" /></a>
-Geometria successiva
-
-<a href="../../images/mActionAtlasLast.png" class="reference internal"><img src="../../images/mActionAtlasLast.png" alt="mActionAtlasLast" /></a>
-Ultima geometria
-
-<a href="../../images/mActionFilePrint.png" class="reference internal"><img src="../../images/mActionFilePrint.png" alt="mActionFilePrint" /></a>
-Stampa atlante
-
-<a href="../../images/mActionSaveMapAsImage.png" class="reference internal"><img src="../../images/mActionSaveMapAsImage.png" alt="mActionSaveMapAsImage" /></a>
-Esporta atlante come immagini
-
-<a href="../../images/mActionAtlasSettings.png" class="reference internal"><img src="../../images/mActionAtlasSettings.png" alt="mActionAtlasSettings" /></a>
-Impostazioni atlante
-
-Strumenti del Compositore di Stampe
-
-Tutti gli strumenti del compositore di stampe sono disponibili sia dai menu che dalle icone. Puoi disattivare la barra degli strumenti facendo click con il tasto destro del mouse sulla barra stessa.
-
-
-
-## Panoramica del compositore di stampe {#overview-of-the-print-composer}
-
-All’apertura il compositore di stampa presenta una mappa bianca che rappresenta la superficie del foglio da utilòizzare per la stampa. Trovi icone per aggiungere voci mappa compositore; l’attuale KADAS mappa, testi, immagini, leggende, barre di scala, forme base, frecce, tabelle di attributi e frame HTML. Negli strumenti trovi la barra degli strumenti per navigare, lo zoom e panoramica della vista, la barra degli strumenti per selezionare un elemento della mappa compositore e per spostare il contenuto della mappa.
-
-<a href="#figure-composer-overview" class="reference internal">Figure_composer_overview</a> mostra la vista iniziale del compositore di stampa prima dell’aggiunta di elementi.
-
-**Figure Composer Overview:**
+# Compositore di stampa <a name="print-composer"></a>
+
+Con Compositore di stampa è possibile creare mappe e occhiali che possono essere stampati o salvati come file PDF, un'immagine o un file SVG. Questo è un modo potente per condividere le informazioni geografiche prodotte con KADAS che possono essere incluse nei report o pubblicate.
+
+Il compositore di stampa offre funzionalità di layout e di stampa. Consente di aggiungere elementi come la mappa, etichette di testo, immagini, legende, barre di scala, forme di base, frecce, tabelle degli attributi e pagine HTML. È possibile dimensionare, raggruppare, allineare, posizionare e ruotare ogni elemento e regolare le proprietà per creare il layout. Il layout può essere stampato o esportato in formati immagine, PostScript, PDF o SVG. È possibile salvare il layout come modello e caricarlo nuovamente in un'altra sessione. Infine, la generazione di diverse mappe basate su un modello può essere effettuata tramite il generatore atlante. Il seguente elenco fornisce una panoramica degli strumenti disponibili nei menu e come icone in una barra degli strumenti:
+
+* <img src="../../images/mActionFileSave.png" /> <i>Salva progetto</i>
+* <img src="../../images/mActionNewComposer.png" /> <i>Nuovo compositore</i>
+* <img src="../../images/mActionDuplicateComposer.png" /> <i>Duplica compositore</i>
+* <img src="../../images/mActionComposerManager.png" /> <i>Gestore compositore</i>
+* <img src="../../images/mActionFileOpen.png" /> <i>Carica da modello</i>
+* <img src="../../images/mActionFileSaveAs.png" /> <i>Salva come template</i>
+* <img src="../../images/mActionFilePrint.png" /> <i>Stampa o esporta come PostScript</i>
+* <img src="../../images/mActionSaveMapAsImage.png" /> <i>Esportazione come immagine</i>
+* <img src="../../images/mActionSaveAsSVG.png" /> <i>Esportazione come SVG</i>
+* <img src="../../images/mActionSaveAsPDF.png" /> <i>Esportazione come PDF</i>
+* <img src="../../images/mActionUndo.png" /> <i>Annulla ultima modifica</i>
+* <img src="../../images/mActionRedo.png" /> <i>Ripristina ultima modifica</i>
+* <img src="../../images/mActionZoomFullExtent.png" /> <i>Zoom in tutta la sua estensione</i>
+* <img src="../../images/mActionZoomActual.png" /> <i>Zoom al 100%</i>
+* <img src="../../images/mActionZoomIn.png" /> <i>Aumenta zoom</i>
+* <img src="../../images/mActionZoomIn.png" /> <i>Riduci zoom</i>
+* <img src="../../images/mActionDraw.png" /> <i>Aggiorna</i>
+* <img src="../../images/mActionPan.png" /> <i>Pan</i>
+* <img src="../../images/mActionZoomToSelected.png" /> <i>Zoom sulla regione selezionata</i>
+* <img src="../../images/mActionSelect.png" /> <i>Seleziona/muovi elemento nella composizione di stampa</i>
+* <img src="../../images/mActionMoveItemContent.png" /> <i>Sposta contenuto all'interno dell'elemento</i>
+* <img src="../../images/mActionAddMap.png" /> <i>Aggiungi nuovo elemento mappa</i>
+* <img src="../../images/mActionAddImage.png" /> <i>Aggiungi immagine</i>
+* <img src="../../images/mActionLabel.png" /> <i>Aggiungi etichetta</i>
+* <img src="../../images/mActionAddLegend.png" /> <i>Aggiungi nuova leggenda</i>
+* <img src="../../images/mActionScaleBar.png" /> <i>Aggiungi barra scala</i>
+* <img src="../../images/mActionAddBasicShape.png" /> <i>Aggiungi forma geometrica</i>
+* <img src="../../images/mActionAddArrow.png" /> <i>Aggiungi freccia</i>
+* <img src="../../images/mActionOpenTable.png" /> <i>Aggiungi tabella attributi</i>
+* <img src="../../images/mActionAddHtml.png" /> <i>Aggiungi una pagina HTML</i>
+* <img src="../../images/mActionGroupItems.png" /> <i>Raggruppa elementi</i>
+* <img src="../../images/mActionUngroupItems.png" /> <i>Separa gruppo di elementi</i>
+* <img src="../../images/locked.png" /> <i>Blocca gli elementi selezionati</i>
+* <img src="../../images/unlocked.png" /> <i>Sblocca tutti gli elementi</i>
+* <img src="../../images/mActionRaiseItems.png" /> <i>Sposta elementi selezionati in alto</i>
+* <img src="../../images/mActionLowerItems.png" /> <i>Sposta elementi selezionati in basso</i>
+* <img src="../../images/mActionMoveItemsToTop.png" /> <i>Sposta elementi selezionati in primo piano</i>
+* <img src="../../images/mActionMoveItemsToBottom.png" /> <i>Sposta elementi selezionati in ultimo piano</i>
+* <img src="../../images/mActionAlignLeft.png" /> <i>Allinea elementi selezionati a sinistra</i>
+* <img src="../../images/mActionAlignRight.png" /> <i>Allinea elementi selezionati a destra</i>
+* <img src="../../images/mActionAlignHCenter.png" /> <i>Centra elementi selezionati orrizontalmente</i>
+* <img src="../../images/mActionAlignVCenter.png" /> <i>Centra elementi selezionati verticalmente</i>
+* <img src="../../images/mActionAlignTop.png" /> <i>Allinea elementi selezionati in alto</i>
+* <img src="../../images/mActionAlignBottom.png" /> <i>Allinea elementi selezionati in basso</i>
+* <img src="../../images/mIconAtlas.png" /> <i>Anteprima atlante</i>
+* <img src="../../images/mActionAtlasFirst.png" /> <i>Prima pagina atlante</i>
+* <img src="../../images/mActionAtlasPrev.png" /> <i>Pagina atlante precedente</i>
+* <img src="../../images/mActionAtlasNext.png" /> <i>Prossima pagina atlante</i>
+* <img src="../../images/mActionAtlasLast.png" /> <i>Ultima pagina atlante</i>
+* <img src="../../images/mActionFilePrint.png" /> <i>Stampa atlante</i>
+* <img src="../../images/mActionSaveMapAsImage.png" /> <i>Esporta atlante come immagine</i>
+* <img src="../../images/mActionAtlasSettings.png" /> <i>Impostazioni atlante</i>
+
+
+## Panoramica del compositore di stampa <a name="overview-of-the-print-composer"></a>
+
+Inizialmente il compositore di stampa si presenta come un'area di disegno vuota, che rappresenta l'area che viene stampata quando si utilizzano le rispettive funzionalità. Con i pulsanti a sinistra dell'area di disegno è possibile aggiungere elementi al compositore di stampla: mappe, etichette di testo, immagini, legende, barre di scala, forme geometriche, frecce, tabelle degli attributi e pagine HTML. In questa barra degli strumenti si trovano anche i pulsanti della barra degli strumenti per navigare, ingrandire un'area e scorrere la vista sul compositore e i pulsanti della barra degli strumenti per selezionare una voce del compositore di mappe e per spostare il contenuto della voce della mappa.
+
+La vista iniziale della composizione di stampa prima di aggiungere elementi è illustrata di seguito:
 
 ![](../../images/print_composer_blank.png)
-Compositore di stampe 
 
-A destra della mappa accanto la tela si trovano due pannelli. Il pannello superiore contiene le schede: guilabel: \`\` degli articoli e: guilabel: Command Storia dell’Attore e il pannello inferiore contiene le schede: guilabel: Composizione\`,: guilabel: Proprietà oggetto,guilabel:Generazione atlante e: guilabel:Oggetti.
+Sulla destra accanto dell'area di disegno si trovano due pannelli. Il pannello superiore contiene le schede *Elementi* e *Cronologia dei comandi* e il pannello inferiore contiene le schede *Composizione*, *Proprietà degli oggetti* e *Generazione atlante*.
 
--   La scheda *Items* mostra una lista di tutti gli oggetti agginti al foglio.
+- La scheda *Elementi* fornisce un elenco di tutti gli elementi del compositore di mappe aggiunti alla composizione.
+- La scheda *Cronologia comando* mostra la cronologia di tutte le modifiche apportate al layout del compositore di stampa. Con un clic del mouse, è possibile annullare e rifare le modifiche al layout avanti e indietro fino ad un certo stato.
+- La scheda *Composizione* consente di impostare le dimensioni della pagina, l'orientamento, lo sfondo, il numero di pagine e la qualità di stampa del file di output in dpi. Inoltre, è anche possibile attivare la casella di controllo <img src="../../images/checkbox.png" /> *Stampa come raster*. Questo significa che tutti gli elementi saranno convertiti in raster prima di essere stampati o salvati come PostScript o PDF. In questa scheda, è anche possibile personalizzare le impostazioni per la griglia e le guide intelligenti.
+- La scheda *Proprietà elemento* visualizza le proprietà per l'elemento selezionato. Clicca sull'icona <img src="../../images/mActionSelect.png" /> <i>Seleziona/Move item</i> per selezionare un elemento (es. legenda, barra di scala o etichetta) nell'area di disegno. Quindi fare clic sulla scheda *Proprietà elemento* e personalizzare le impostazioni per l'elemento selezionato.
+- La scheda *Generazione Atlante* permette di abilitare la generazione di un atlante per il compositore corrente e dà accesso ai suoi parametri.
+- Infine, è possibile salvare la composizione di stampa con il pulsante <img src="../../images/mActionFileSave.png" /> <i>Salva progetto</i>.
 
--   La scheda: guilabel:Storico dei comandi visualizza una cronologia di tutte le modifiche applicate al compositore. Con un clic del mouse, è possibile annullare e ripetere le operazioni avanti e indietro.
+Nella parte inferiore della finestra compositore di stampa, è possibile trovare una barra di stato con la posizione del mouse, il numero di pagina corrente e una casella combinata per impostare il livello di zoom.
 
--   La scheda :guilabel: Composizione consente di impostare il formato del foglio, l’orientamento, lo sfondo della pagina, il numero di pagine e qualità di stampa per il file di output in dpi. Inoltre, puoi attivare la [<span id="id13" class="problematic">|casella|</span>](#id12) :guilabel: Stampa come raster. Ciò significa che tutti gli articoli saranno convertiti in raster prima di stampare o salvare in PostScript o PDF. In questa scheda, puoi anche personalizzare le impostazioni per reticolo e guide.
+È possibile aggiungere più elementi al compositore. È anche possibile avere più di una mappa, legenda o barra di scala nel compositore di stampa, su una o più pagine. Ogni elemento ha le proprie proprietà e, nel caso della mappa, la propria estensione. È possibile rimuovere qualsiasi elemento dalla composizione con il tasto `Cancella` o il tasto `Backspace`.
 
--   La scheda *Proprietà oggetto* mostra le proprietà dell’oggetto selezionato. Clic <a href="../../images/mActionSelect.png" class="reference internal"><img src="../../images/mActionSelect.png" alt="mActionSelect" /></a> <sup>Seleziona/Sposta\\ oggetto</sup> icona per selezionare un elemento (ad esempio, la leggenda, barra di scala o etichetta) sul foglio. Quindi fare clic sulla scheda *Proprietà oggetto* e personalizza le impostazioni per l’elemento selezionato.
+### Strumenti di navigazione <a name="navigation-tools"></a>
 
--   La scheda *Generazione atlante* ti permette di abilitare la generazioni di un atlante per la composizione attuale avrai accesso a tutti i suoi parametri.
+Per navigare nel layout dell'area di disegno, il compositore di stampa fornisce alcuni strumenti generali:
 
--   Infine, puoi salvare la composizione di stampa con il bottone <a href="../../images/mActionFileSave.png" class="reference internal"><img src="../../images/mActionFileSave.png" alt="mActionFileSave" /></a>: sup: Salva progetto.
+- <img src="../../images/mActionZoomIn.png" /> <i>Aumenta zoom</i>
+- <img src="../../images/mActionZoomIn.png" /> <i>Riduci zoom</i>
+- <img src="../../images/mActionZoomFullExtent.png" /> <i>Zoom in tutta la sua estensione</i>
+- <img src="../../images/mActionZoomActual.png" /> <i>Zoom al 100%</i>
+- <img src="../../images/mActionDraw.png" /> <i>Aggiorna</i>
+- <img src="../../images/mActionPan.png" /> <i>Pan</i>
+- <img src="../../images/mActionZoomToSelected.png" /> <i>Zoom sulla regione selezionata</i>
 
-Nella parte inferiore della finestra del compositore di stampe, troverai una barra di stato con la posizione del mouse, il numero attuale della pagine e un menu a tendina per selezionare il livello di zoom.
+È possibile modificare il livello di zoom anche utilizzando la rotellina del mouse o la casella combinata nella barra di stato. Se avete bisogno di passare alla modalità pan mentre lavorate nell'area Composer, potete tenere premuto il tasto `Spazio` o la rotellina del mouse. Con la `Ctrl+Spazio`, potete passare temporaneamente alla modalità <i>Aumenta zoom</i>, e con `Ctrl+Shift+Spazio`, alla modalità <i>Riduci zoom</i>.
 
-Puoi aggiungere elementi multipli al compositore. Puoi anche visualizzare più di una mappa o legenda o barra di scala nella vista del compositore su una o più pagine. Ogni elemento ha le sue proprietà e, nel caso della mappa, la sua estensione. Se vuoi rimuovere un qualsiasi elemento dalla vista selezionalo e premi il pulsante `Delete` o `Backspace`.
+## Esempio <a name="sample-session"></a>
 
-### Strumenti per l’esplorazione del layout di stampa {#navigation-tools}
+I passaggi seguenti descrivono un esempio di flusso di lavoro per la creazione di una composizione:
 
-Per navigare nella mappa, il compositore ti offre diversi strumenti:
+1. Nella barra degli strumenti a sinistra, selezionare il pulsante <img src="../../images/mActionAddMap.png" /> <i>Aggiungi nuova mappa</i> e disegnare un rettangolo nell'area di disegno tenendo premuto il pulsante sinistro del mouse. All'interno del rettangolo verrà disegnata la mappa.
+2. Nella barra degli strumenti, selezionare <img src="../../images/mActionScaleBar.png" /> <i>Aggiungi barra scala</i> e posizionare l'elemento della mappa con il tasto sinistro del mouse nell'area di disegno. Una barra di scala verrà aggiunta alla composizione.
+3. Nella barra degli strumenti, selezionare <img src="../../images/mActionAddLegend.png" /> <i>Aggiungi legenda</i> e disegnare un rettangolo nell'area di disegno tenendo premuto il tasto sinistro del mouse. All'interno del rettangolo disegnato verrà disegnata la legenda.
+4. Selezionare l'icona <img src="../../images/mActionSelect.png" /> <i>Seleziona elemento</i> per selezionare la mappa nell'area di disegno e spostarla.
+5. Mentre l'elemento della mappa è ancora selezionato è anche possibile modificare le dimensioni dell'elemento della mappa. Fare clic tenendo premuto il tasto sinistro del mouse, in un piccolo rettangolo bianco in uno degli angoli dell'elemento della mappa e trascinarlo in una nuova posizione per cambiarne le dimensioni.
+6. Fare clic sulla scheda *Proprietà elemento* nel pannello inferiore sinistro e trovare l'impostazione per l'orientamento. Modificare il valore dell'impostazione *orientamento della mappa* a '15.00°'. Si dovrebbe vedere l'orientamento della voce della mappa cambiare.
+7. Infine, è possibile salvare la composizione di stampa con il pulsante <img src="../../images/mActionFileSave.png" /> <i>Salva progetto</i>.
 
--   <a href="../../images/mActionZoomIn.png" class="reference internal"><img src="../../images/mActionZoomIn.png" alt="mActionZoomIn" /></a> <sup>Ingrandisci</sup>
+## Opzioni compositore di stampa <a name="print-composer-options"></a>
 
--   <a href="../../images/mActionZoomOut.png" class="reference internal"><img src="../../images/mActionZoomOut.png" alt="mActionZoomOut" /></a> <sup>Rimpicciolosci</sup>
+Da *Impostazioni &rarr; Opzioni compositore* è possibile impostare alcune opzioni che verranno utilizzate come predefinito durante il lavoro.
 
--   <a href="../../images/mActionZoomFullExtent.png" class="reference internal"><img src="../../images/mActionZoomFullExtent.png" alt="mActionZoomFullExtent" /></a> <sup>Zoom\\ full</sup>
--   <a href="../../images/mActionZoomActual.png" class="reference internal"><img src="../../images/mActionZoomActual.png" alt="mActionZoomActual" /></a> <sup>Zoom\\ al\\ 100%</sup>
+- Le *Impostazioni predefinite compositore* consentono di specificare il carattere predefinito da utilizzare.
+- Con *Aspetto griglia*, è possibile impostare lo stile della griglia e il suo colore. Ci sono tre tipi di griglia: **Punti**, **Linee** e **Croci**.
+- Le *Impostazioni predefinite griglia e guida* definiscono la spaziatura, l'offset e la tolleranza della griglia di allineamento.
 
--   <a href="../../images/mActionDraw.png" class="reference internal"><img src="../../images/mActionDraw.png" alt="mActionDraw" /></a> <sup>Refresh\\ view</sup> (if you find the view in an inconsistent state)
--   <a href="../../images/mActionPan.png" class="reference internal"><img src="../../images/mActionPan.png" alt="mActionPan" /></a> <sup>Sposta\\ compositore</sup>
+## Scheda Composizione - Impostazione composizione generale <a name="composition-tab-general-composition-setup"></a>
 
--   <a href="../../images/mActionZoomToSelected.png" class="reference internal"><img src="../../images/mActionZoomToSelected.png" alt="mActionZoomToSelected" /></a> <sup>Zoom</sup> (zoom to a specific region of the Composer)
+Nella scheda *Composizione*, è possibile definire le impostazioni globali della propria composizione.
 
-You can change the zoom level also using the mouse wheel or the combo box in the status bar. If you need to switch to pan mode while working in the Composer area, you can hold the `Spacebar` or the the mouse wheel. With `Ctrl+Spacebar`, you can temporarily switch to zoom mode, and with `Ctrl+Shift+Spacebar`, to zoom out mode.
+- È possibile scegliere uno dei *Preset* per il foglio di carta, oppure immettere *larghezza* e *altezza* personalizzati.
+- La composizione può essere suddivisa in più pagine. Per esempio, una prima pagina può mostrare una mappa, e una seconda pagina può mostrare la tabella degli attributi associata ad un livello, mentre una terza pagina mostra una pagina HTML che si collega al sito web della vostra organizzazione. Impostare il *Numero di pagine* al valore desiderato. È possibile scegliere la pagina *Orientamento* e la sua *risoluzione esportata*. Quando selezionata, <img src="../../images/checkbox.png" /> *print as raster* significa che tutti gli elementi saranno rasterizzati prima della stampa o del salvataggio come PostScript o PDF.
+- *Griglia e guide* consente di personalizzare le impostazioni della griglia come *spazio*, *offset* e *tolleranza* in base alle proprie esigenze. La tolleranza è la distanza massima al di sotto della quale un elemento viene agganciato alle guide intelligenti.
 
-## Esempio {#sample-session}
+È possibile attivare lo snap alla griglia e/o alle guide intelligenti dal menu *Visualizza*. In questo menu è anche possibile nascondere o mostrare la griglia e le guide intelligenti.
 
-Per creare una mappa segui le seguenti istruzioni.
+## Opzioni comuni per gli elementi della composizione <a name="composer-items-common-options"></a>
 
-1.  Nella Barra degli strumenti Oggetti del compositore, selezionare il <a href="../../images/mActionAddMap.png" class="reference internal"><img src="../../images/mActionAddMap.png" alt="mActionAddMap" /></a> <sup>Aggiungi\\ nuova\\ mappa</sup> e disegna un rettangolo sulla tela tenendo premuto il tasto sinistro del mouse. All’interno del rettangolo disegnato la visualizzazione della mappa QGIS alla tela.
-
-2.  Seleziona <a href="../../images/mActionScaleBar.png" class="reference internal"><img src="../../images/mActionScaleBar.png" alt="mActionScaleBar" /></a> <sup>Aggiungi\\ nuova\\ barra\\ di\\ scala</sup> e posiziona l’oggetto con il pulsante sinistro del mouse sul foglio del compositore di stampe. Una barra di scala sarà aggiunta.
-
-3.  Seleziona il bottone <a href="../../images/mActionAddLegend.png" class="reference internal"><img src="../../images/mActionAddLegend.png" alt="mActionAddLegend" /></a> <sup>Aggiungi\\ nuova\\ legenda</sup> e disegna un rettangolo sul foglio tenendo premuto il pulsante sinistro del mouse. Nel rettangolo verrà disegnata una legenda.
-
-4.  Seleziona <a href="../../images/mActionSelect.png" class="reference internal"><img src="../../images/mActionSelect.png" alt="mActionSelect" /></a> <sup>Seleziona/Muovi\\ oggetto</sup> per selezionare la mappa sul foglio e spostarla.
-
-5.  While the map item is still selected you can also change the size of the map item. Click while holding down the left mouse button, in a white little rectangle in one of the corners of the map item and drag it to a new location to change it’s size.
-6.  Click the *Item Properties* tab on the left lower panel and find the setting for the orientation. Change the value of the setting *Map orientation* to ‘15.00° ‘. You should see the orientation of the map item change.
-7.  Infine, puoi salvare la composizione di stampa con il bottone <a href="../../images/mActionFileSave.png" class="reference internal"><img src="../../images/mActionFileSave.png" alt="mActionFileSave" /></a>: sup: Salva progetto.
-
-## Opzioni compositore di stampe {#print-composer-options}
-
-Dal menu *Settings ‣ Opzioni compositore* puoi scegliere alcune opzioni che verranno usate in maniera predefinita durante il flusso di lavoro.
-
--   *Opzioni predefinite del compositore* ti permette di scegliere il carattere da usare.
-
--   With *Grid appearance*, you can set the grid style and its color. There are three types of grid: **Dots**, **Solid** lines and **Crosses**.
--   *Grid and guide defaults* defines spacing, offset and tolerance of the grid.
-
-## Scheda Composizione — Impostazioni generali {#composition-tab-general-composition-setup}
-
-Nella scheda *Composizione* puoi scegliere le impostazioni generali della tua composizione di stampa.
-
--   Puoi scegliere una delle opzioni *Preimpostazioni* per i tuoi fogli di carta oppure puoi inserire manualmente i valori di *larghezza* e *altezza*.
-
--   Puoi ora dividere la composizione in diverse pagine. Per esempio, la prima pagina mostra una mappa, la seconda mostra la tabella degli attributi di un vettore e la terza mostra una cornice HTML della tua azienda. Imposta il *Numero di pagine* con il valore che preferisci. Puoi scegliere l’*Orientamento* e la *Risoluzione di esportazione*. Quando spuntata, la casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *stampa come raster* permette di trasformare in raster tutti gli elementi prima del salvataggio o esportazione in PostScript o PDF.
-
--   *Grid and guides* lets you customize grid settings like *spacings*, *offsets* and *tolerance* to your need. The tolerance is the maximum distance below which an item is snapped to smart guides.
-
-Puoi attivare l’aggancio al reticolo e/o le guide intelligenti dal menu *Visualizza*. In questo menu puoi anche scegliere se mostrare o nascondere il reticolo e le guide intelligenti.
-
-## Opzioni generali degli oggetti del compositore {#composer-items-common-options}
-
-Gli oggetti del compositore hanno proprietà comuni che trovi nella scheda *Proprietà oggetto*: Posizione e dimensione, Rotazione, Cornice, Sfondo, ID oggetto e visualizzazione (Vedi <a href="#figure-composer-common-1" class="reference internal">figure_composer_common_1</a>)
-
-**Figure Composer Common 1:**
+Gli elementi del compositore hanno un insieme di proprietà comuni che si trovano nella parte inferiore della scheda *Proprietà elemento*: Posizione e dimensione, rotazione, cornice, sfondo, ID elemento e rendering.
 
 ![](../../images/print_composer_common_properties.png)
-Finestra di dialogo delle proprietà dell’oggetto 
 
--   La voce *Posizione e dimensione* ti permette di scegliere la posizione della cornice che contiene l’oggetto. Puoi anche scegliere quale deve essere il *Punto di riferimento* delle coordinate **X** e **Y**.
-
--   Con *Rotazione* puoi impostare la rotazione dell’elemento (in gradi).
-
--   The <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Frame* shows or hides the frame around the label. Use the *Frame color* and *Thickness* menus to adjust those properties.
--   Use the *Background color* menu for setting a background color. With the dialog you can pick a color (see <a href="../working_with_vector/vector_properties.html#color-picker" class="reference internal"><em>Selettore di colore</em></a> ).
--   Usa *ID oggetto* per creare una relazione con altri oggetti del compositore. Questa opzione è usata con KADAS server e altri potenziali web client. Puoi impostare un ID di un oggetto (per esempio una mappa e un’etichetta) e poi il web client sarà in grado di impostare un corretto stile per i dati (esempio le etichette). Il comando GetProjectSettings elencherà gli oggetti e quali ID sono disponibili nel layout.
-
--   Puoi selezionare la modalità *Visualizzazione* con la giusta opzione. Vedi <a href="#rendering-mode" class="reference internal">Rendering_Mode</a>.
-
-Nota
-
--   The <a href="../../images/mIconDataDefine.png" class="reference internal"><img src="../../images/mIconDataDefine.png" alt="mIconDataDefine" /></a> <sup>Data\\ defined\\ override</sup> icon next to a field means that you can associate the field with data in the map item or use expressions. These are particularly helpful with atlas generation (See <a href="#atlas-data-defined-overrides" class="reference internal">atlas_data_defined_overrides</a>).
+- La finestra di dialogo *Posizione e dimensione* consente di definire la dimensione e la posizione della cornice che contiene l'elemento. È inoltre possibile scegliere il *punto di riferimento* per le coordinate **X** e **Y** definite.
+- La *Rotazione* imposta la rotazione dell'elemento (in gradi).
+- <img src="../../images/checkbox.png" /> *Cornice* mostra o nasconde la cornice attorno all'etichetta. Utilizzare i menu *Colore cornice* e *Spessore* per regolare queste proprietà.
+- Utilizzare il menu *Colore di sfondo* per impostare un colore di sfondo. Con la finestra di dialogo è possibile scegliere un colore.
+- La modalità *Rendering* può essere selezionata nel campo opzione. Vedere <a href="#rendering-mode">Modalità rendering</a>.
 
 
-KADAS ti permette di effettuare visualizzazioni avanzate per ogni elemento del compositore proprio come per i vettori e per i raster.
+KADAS consente il rendering avanzato per gli elementi Composer proprio come i livelli vettoriali e raster.
 
-**Figure Composer common 2:**
+![](../../../images/rendering_mode.png)
 
-![](../../images/rendering_mode.png)
-Modalità Visualizzazione 
+- *Trasparenza*: Con questo strumento è possibile rendere visibile l'elemento sottostante nella composizione. Usa il cursore per adattare la visibilità dell'oggetto alle tue esigenze. È inoltre possibile definire con precisione la percentuale di visibilità nel menu accanto al cursore.
 
--   *Transparency* ![slider](../../images/slider.png): You can make the underlying item in the Composer visible with this tool. Use the slider to adapt the visibility of your item to your needs. You can also make a precise definition of the percentage of visibility in the menu beside the slider.
+- <img src="../../images/checkbox.png" /> *Escludi elemento dall'esportazione*: Puoi decidere nascondere un elemento dalle quando la composizione verrà stampata o esportata a PDF o altri formati.
 
--   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Exclude item from exports*: You can decide to make an item not visible in all exports. After activating this checkbox, the item will not be included in PDF’s, prints etc..
+- *Modalità di sovrapposizione*: È possibile ottenere effetti di rendering speciali con questi strumenti che in precedenza si possono conoscere solo da programmi di grafica. I pixel degli elementi di sovrapposizione e di sottoesposizione sono mischiati attraverso le impostazioni descritte di seguito.
 
--   *Modalità fusione*: grazie a questi strumenti usati soprattutto in ambito grafico, potrai creare effettivi visivi speciali. I pixel del vettore più in alto vengono mischiati con i pixel di tutti gli elementi sottostanti. Hai molte scelte diverse.
+    > - Normale: Questa è la modalità di fusione standard, che utilizza il canale alfa del pixel superiore per fondersi con il pixel sottostante; i colori non sono mescolati.
+    > - Alleggerisci: Seleziona il massimo di ogni componente dai pixel di primo piano e di sfondo. Si tenga presente che i risultati tendono ad essere frastagliati e duri.
+    > - Schermo: I pixel chiari dalla sorgente sono dipinti sopra la destinazione, mentre i pixel scuri non lo sono. Questa modalità è molto utile per mescolare la texture di un livello con un altro livello (ad esempio, è possibile utilizzare un hillshade per strutturare un altro livello).
+    > - Dodge: Dodge illuminerà e saturerà i pixel sottostanti in base alla luminosità del pixel superiore. Così, i pixel superiori più luminosi fanno aumentare la saturazione e la luminosità dei pixel sottostanti. Questo funziona meglio se i pixel superiori non sono troppo luminosi, altrimenti l'effetto è troppo estremo.
+    > - Aggiunta: Questa modalità di fusione aggiunge semplicemente i valori dei pixel di un livello con i valori dei pixel dell'altro. Nel caso di valori superiori a 1 (come nel caso di RGB), viene visualizzato il bianco. Questa modalità è adatta per evidenziare le caratteristiche.
+    > - Scurisci: crea un pixel risultante che trattiene le componenti più piccole dei pixel di primo piano e di sfondo. Come per schiarire, i risultati tendono ad essere frastagliati e duri.
+    > - Moltiplica: Qui, i numeri per ogni pixel dello strato superiore vengono moltiplicati con i numeri per il corrispondente pixel dello strato inferiore. I risultati sono immagini più scure.
+    > - Bruciare: colori più scuri nello strato superiore causano l'oscuramento degli strati sottostanti. Le ustioni possono essere usate per modificare e colorare i livelli sottostanti.
+    > - Sovrapposizione: Questa modalità combina le modalità di moltiplicazione e di fusione dello schermo. Nell'immagine risultante, le parti chiare diventano più chiare e le parti scure più scure.
+    > - Luce morbida: Questo è molto simile alla sovrapposizione, ma invece di usare il moltiplicatore/schermo usa la funzione di masterizzazione colore/bordo. Questa modalità dovrebbe emulare la luce soffusa su un'immagine.
+    > - Luce dura: la luce dura è molto simile alla modalità di sovrapposizione. Dovrebbe emulare la proiezione di una luce molto intensa su un'immagine.
+    > - Differenza: La differenza sottrae il pixel superiore dal pixel inferiore, o viceversa, per ottenere sempre un valore positivo. La fusione con il nero non produce alcun cambiamento, poiché la differenza con tutti i colori è pari a zero.
+    > - Sottrai: Questa modalità di fusione sottrae semplicemente i valori dei pixel di uno strato con i valori dei pixel dell'altro. In caso di valori negativi, viene visualizzato il nero.
 
-    > -   Normale: è la modalità fusione predefinita che usa il canale alpha del pixel più in alto fondendolo con quello sotto. I colori non sono quindi mescolati.
-    >
-    > -   Schiarisci: seleziona il valore massimo di ogni componente dal basso verso l’alto. Il risultato può apparire frastagliato e duro.
-    >
-    > -   Scolorisci: i pixel chiari provenienti dal vettore sorgente vengono dipinti sopra la destinazione, mentre i pixel più scuri no. Questa modalità è molto utile per mescolare le trame di un vettore con un altro (per esempio un raster di ombreggiatura con un altro layer).
-    >
-    > -   Scherma: questa modalità schiarirà e saturerà i pixel sottostanti in base a quanto sono chiari i pixel di sopra. In questo modo, i pixel più chiari in cima aumenteranno la saturazione e schiariranno i pixel sottostanti. Otterrai il miglior risultato se i pixel in cima non sono troppo chiari, altrimenti l’effetto sarà troppo estremo.
-    >
-    > -   Addizione: questa modalità addiziona semplicemente il valore dei pixel di un vettore con i valori dei layer sottostanti. Se i valori sono maggiori di uno (ovvero quando si lavora con bande RGB) verrà mostrato il bianco. Questa modalità è ottima per evidenziare dei particolari.
-    >
-    > -   Scurisci: il pixel finale conserva il valore minore dei pixel del layer in cima e in fondo. Come la modalità schiarsci, il risultato tende a essere frastagliato e duro.
-    >
-    > -   Moltiplica: qui, il valore di ogni pixel del layer in cima viene moltiplicato per il valore dei pixel corrispondenti di tutti i layer sottostanti. Il risultato tende quindi a essere piuttosto scuro.
-    >
-    > -   Brucia: i colori più scuri del layer in cima scuriranno i layer sottostanti. Questa modalità è utile per aggiustare e colorare i layer sottostanti.
-    >
-    > -   Sovrapponi: è una combinazione delle modalità moltiplica e scolorisci. Le parti chiare risulteranno ancora più chiare e quelle scure ancora più scure.
-    >
-    > -   Luce diffusa: molto simile alla modalità sovrapponi, ma invece di combinare le modalità moltiplica/scolorisci, combina brucia/scherma. Il risultato è una luce chiara e luccicante su tutta l’immagine.
-    >
-    > -   Luce intensa: anche questa modalità è simile alla modalità sovrapponi. Proietta una luce molto intensa su tutta l’immagine.
-    >
-    > -   Differenza: vengono sottratti i pixel in cima da quelli sul fondo, oppure al contrario, ma in modo da ottenere sempre valori positivi. Questa modalità non ha effetti con il nero, perché la differenza di questo colore con tutti gli altri è sempre zero.
-    >
-    > -   Sottrai: questa modalità sottrae semplicemente i valori di un pixel dagli altri pixel. Se il valore dovesse essere negativo verrà visualizzato il nero.
-    >
-## Oggetto mappa {#the-map-item}
+## L'elemento mappa <a name="the-map-item"></a>
 
-Clicca sul pulsante <a href="../../images/mActionAddMap.png" class="reference internal"><img src="../../images/mActionAddMap.png" alt="mActionAddMap" /></a> <sup>Aggiungi\\ mappa</sup> presente nella barra degli strumenti del compositore per aggiungere una mappa. Ora tieni premuto il pulsante del mouse e trascina il rettangolo corrispondente per aggiungere la mappa. Per visualizzare la mappa attuale puoi scegliere fra tre differenti modalità accessibili dalla scheda *Proprietà oggetto*:
+Clicca sul pulsante <img src="../../images/mActionAddMap.png" /> <i>Aggiungi nuova mappa</i> nella barra degli strumenti del compositore di stampa per aggiungere una mappa. Ora, trascinare un rettangolo nell'area di disegno Composer con il tasto sinistro del mouse per aggiungere la mappa. Per visualizzare la mappa corrente, è possibile scegliere tra tre diverse modalità nella scheda *Proprietà elemento* della mappa:
 
--   **Rettangolo** visualizza un rettangolo vuoto con la scritta ‘La mappa verrà stampata qui’.
+- **Rettangolo** è l'impostazione predefinita. Visualizza solo una casella vuota con il messaggio "La mappa sarà stampata qui".
+- **Cache** rende la mappa nella risoluzione corrente dello schermo. Se si ingrandisce o si riduce la finestra Composer, la mappa non viene visualizzata di nuovo, ma l'immagine verrà ridimensionata.
+- **Render** significa che se si ingrandisce o si riduce la finestra Composer, la mappa sarà nuovamente resa, ma per motivi di spazio, solo fino ad una risoluzione massima.
 
--   **Cache** disegna la mappa alla risoluzione corrente dello schermo. Se ingrandisci/rimpiccolisci la finestra del compositore, la mappa non viene ridisegnata, ma l’immagine viene scalata.
+**Cache** è la modalità di anteprima predefinita per le mappe Compositore di stampa appena aggiunte.
 
--   **Visualizza** a differenza del metodo cache, in questo caso se ridimensioni la finestra del compositore, la mappa viene ridisegnata.
+Puoi ridimensionare l'elemento mappa cliccando sul pulsante <img src="../../images/mActionSelect.png" /> <i>Seleziona elemento</i>, selezionando l'elemento e trascinando una delle maniglie nell'angolo della mappa. Con la mappa selezionata, è ora possibile adattare altre proprietà nella scheda *Proprietà elemento* della mappa.
 
-**Cache** è la modalità predefinita per ogni nuova composizione di stampa.
-
-Puoi ridimensionare la mappa in un momento successivo cliccando sul pulsante <a href="../../images/mActionSelectPan.png" class="reference internal"><img src="../../images/mActionSelectPan.png" alt="mActionSelectPan" /></a> <sup>Seleziona/Sposta\\ oggetto</sup>, selezionando un elemento e trascinando uno dei quadrati agli angoli della mappa. Una volta selezionata una mappa, puoi regolarne ulteriori proprietà nella scheda *Opzioni oggetto*.
-
-To move layers within the map element, select the map element, click the <a href="../../images/mActionMoveItemContent.png" class="reference internal"><img src="../../images/mActionMoveItemContent.png" alt="mActionMoveItemContent" /></a> <sup>Move\\ item\\ content</sup> icon and move the layers within the map item frame with the left mouse button. After you have found the right place for an item, you can lock the item position within the Print Composer canvas. Select the map item and use the toolbar <a href="../../images/locked.png" class="reference internal"><img src="../../images/locked.png" alt="locked" /></a> <sup>Lock\\ Selected\\ Items</sup> or the *Items* tab to Lock the item. A locked item can only be selected using the *Items* tab. Once selected you can use the *Items* tab to unlock individual items. The <a href="../../images/unlocked.png" class="reference internal"><img src="../../images/unlocked.png" alt="unlocked" /></a><sup>Unlock\\ All\\ Items</sup> icon will unlock all locked composer items.
+Per spostare i livelli all'interno dell'elemento mappa, selezionare l'elemento mappa, fare clic sull'icona <img src="../../images/unlocked.png" /><i>Sblocca elementi</i> per sbloccare tutti gli elementi del compositore bloccati.
 
 
-### Proprietà principali {#main-properties}
+### Proprietà principali <a name="main-properties"></a>
 
-The *Main properties* dialog of the map *Item Properties* tab provides the following functionalities (see <a href="#figure-composer-map-1" class="reference internal">figure_composer_map_1</a>):
+La finestra di dialogo *Proprietà principali* della scheda *Proprietà elemento* della mappa fornisce le seguenti funzionalità:
 
-**Figure Composer Map 1:**
+- L'area **Anteprima** permette di definire le modalità di anteprima *Rettangolo*, *Cache* e *Render*, come descritto sopra. Se si modifica la visualizzazione sulla mappa KADAS cambiando le proprietà vettoriali o raster, è possibile aggiornare la visualizzazione della composizione di stampa selezionando l'elemento della mappa nella composizione di stampa e cliccando sul pulsante **\[Aggiorna anteprima anteprima\]**.
+- Il campo *Scala* <img src="../../images/selectnumber.png" /> imposta una scala manuale.
+- Il campo *Rotazione mappa* <img src="../../images/selectnumber.png" /> permette di ruotare il contenuto dell'elemento mappa in senso orario in gradi. La rotazione della visualizzazione della mappa può essere imitata qui. Si noti che un quadro di coordinate corretto può essere aggiunto solo con il valore di default 0 e che una volta definita una *rotazione della mappa* attualmente non può essere modificata.
+- <img src="../../images/checkbox.png" /> *Disegna annotazioni* permette di mostrare le annotazioni che possono essere posizionate sull'area di disegno della mappa di KADAS.
+- È possibile scegliere di bloccare i livelli mostrati su un elemento della mappa. Selezionare <img src="../../images/checkbox.png" /> *Blocca livelli della mappa*. Dopo che questo è stato selezionato, qualsiasi livello che sarebbe stato visualizzato o nascosto nella mappa KADAS non apparirà o non sarà nascosto nella mappa della composizione. Ma lo stile e le etichette di un livello bloccato sono ancora aggiornate secondo l'interfaccia principale di KADAS. È possibile prevenirlo utilizzando *Blocca stili dei livelli della mappa*.
 
 ![](../../images/print_composer_map1.png)
-Scheda proprietà oggetti 
 
--   L’area **Anteprima** ti permette di scegliere fra le modalità ‘Rettangolo’, ‘Cache’ e ‘Visualizza’ descritte sopra. Se cambi la vista della mappa in KADAS cambiando le proprietà dei vettori e dei raster, puoi aggiornare la vista del compositore selezionando l’elemento corrispondente e premendo il pulsante **\[Aggiorna anteprima\]**.
+### Estensioni <a name="extents"></a>
 
--   Il campo *Scala* <a href="../../images/selectnumber.png" class="reference internal"><img src="../../images/selectnumber.png" alt="selectnumber" /></a> ti permette di inserire una scala manuale.
-
--   The field *Map rotation* <a href="../../images/selectnumber.png" class="reference internal"><img src="../../images/selectnumber.png" alt="selectnumber" /></a> allows you to rotate the map element content clockwise in degrees. The rotation of the map view can be imitated here. Note that a correct coordinate frame can only be added with the default value 0 and that once you defined a *Map rotation* it currently cannot be changed.
--   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Disegna elementi sulla mappa* ti permette di visualizzare le note testuali che hai aggiunto sulla mappa di KADAS.
-
--   You can choose to lock the layers shown on a map item. Check <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Lock layers for map item*. After this is checked, any layer that would be displayed or hidden in the main KADAS window will not appear or be hidden in the map item of the Composer. But style and labels of a locked layer are still refreshed according to the main KADAS interface. You can prevent this by using *Lock layer styles for map item*.
--   The <a href="../../images/mActionShowPresets.png" class="reference internal"><img src="../../images/mActionShowPresets.png" alt="mActionShowPresets" /></a> button allows you to add quickly all the presets views you have prepared in QGIS. Clicking on the <a href="../../images/mActionShowPresets.png" class="reference internal"><img src="../../images/mActionShowPresets.png" alt="mActionShowPresets" /></a> button you will see the list of all the preset views: just select the preset you want to display. The map canvas will automatically lock the preset layers by enabling the <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Lock layers for map item*: if you want to unselect the preset, just uncheck the <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> and press on the <a href="../../images/mActionDraw.png" class="reference internal"><img src="../../images/mActionDraw.png" alt="mActionDraw" /></a> button. See <a href="../introduction/qgis_gui.html#label-legend" class="reference internal"><em>Legenda mappa</em></a> to find out how to create presets views.
-
-### Estensione mappa {#extents}
-
-The *Extents* dialog of the map item tab provides the following functionalities (see <a href="#figure-composer-map-2" class="reference internal">figure_composer_map_2</a>):
-
-**Figure Composer Map 2:**
+La finestra di dialogo *Estensioni* della scheda di proprietà per l'elemento mappa fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_map2.png)
-Finestra di dialogo estensione mappa 
 
--   The **Map extents** area allows you to specify the map extent using X and Y min/max values and by clicking the **\[Set to map canvas extent\]** button. This button sets the map extent of the composer map item to the extent of the current map view in the main KADAS application. The button **\[View extent in map canvas\]** does exactly the opposite, it updates the extent of the map view in the QGIS application to the extent of the composer map item.
+- L'area **Estensioni mappa** consente di specificare l'estensione della mappa utilizzando i valori X e Y min/max e facendo clic sul pulsante **\[Usa estensione della mappa principale\]**. Questo pulsante imposta l'estensione della mappa dell'elemento della mappa del compositore all'estensione della visualizzazione della mappa di KADAS. Il pulsante **\[Usa estensione mappa compositore\]** fa esattamente il contrario, aggiorna l'estensione della visualizzazione della mappa KADAS all'estensione dell'elemento della mappa del compositore.
 
-If you change the view on the KADAS map canvas by changing vector or raster properties, you can update the Print Composer view by selecting the map element in the Print Composer and clicking the **\[Update preview\]** button in the map *Item Properties* tab (see <a href="#figure-composer-map-1" class="reference internal">figure_composer_map_1</a>).
+Se si modifica la visualizzazione nell'area di disegno della mappa KADAS cambiando le proprietà vettoriali o raster, è possibile aggiornare la visualizzazione della composizione di stampa selezionando l'elemento della mappa nella composizione di stampa e facendo clic sul pulsante **\[Aggiorna anteprima\]** nella scheda *Proprietà elemento* della mappa.
 
 
-### Grids {#grids}
+### Griglie <a name="grids"></a>
 
-The *Grids* dialog of the map *Item Properties* tab provides the possibility to add several grids to a map item.
+La finestra di dialogo *Griglie* della scheda *Proprietà elemento* della mappa offre la possibilità di aggiungere più griglie a un elemento della mappa.
 
--   With the plus and minus button you can add or remove a selected grid.
--   With the up and down button you can move a grid in the list and set the drawing priority.
+- Con i pulsanti più e meno è possibile aggiungere o rimuovere una griglia selezionata.
+- Con i pulsanti su e giù è possibile spostare una griglia nell'elenco e impostare la priorità di disegno.
 
-Cliccando sul reticolo aggiunto è possibile assegnarli un altro nome.
-
-**Figure Composer Map 3:**
+Quando si fa doppio clic sulla griglia aggiunta, è possibile darle un altro nome.
 
 ![](../../images/map_grids.png)
-Finestra di dialogo reticolo 
 
-After you have added a grid, you can activate the checkbox <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Show grid* to overlay a grid onto the map element. Expand this option to provide a lot of configuration options, see <a href="#figure-composer-map-4" class="reference internal">Figure_composer_map_4</a>.
-
-**Figure Composer Map 4:**
+Dopo aver aggiunto una griglia, è possibile attivare la casella di controllo per disegnare la griglia.
 
 ![](../../images/draw_grid.png)
-Draw Grid Dialog 
 
-As grid type, you can specify to use a ‘Solid’, ‘Cross’, ‘Markers’ or ‘Frame and annotations only’. ‘Frame and annotations only’ is especially useful when working with rotated maps or reprojected grids. In the devisions section of the Grid Frame Dialog mentioned below you then have a corresponding setting. Symbology of the grid can be chosen. See section <a href="#rendering-mode" class="reference internal">Rendering_Mode</a>. Furthermore, you can define an interval in the X and Y directions, an X and Y offset, and the width used for the cross or line grid type.
-
-**Figure Composer Map 5:**
+Come tipo di griglia, è possibile specificare di utilizzare un *Solido*, *Croce*, *Marcatori* o *Cornice e solo annotazioni*. Quest'ultima opzione è particolarmente utile quando si lavora con mappe ruotate o griglie riproiettate. È possibile scegliere la simbologia della griglia. Vedere la sezione <a href="#rendering-mode">Modalità rendering</a>. Inoltre, è possibile definire un intervallo nelle direzioni X e Y, un offset X e Y, e la larghezza usata per il tipo di griglia trasversale o lineare.
 
 ![](../../images/grid_frame.png)
-Grid Frame Dialog 
 
--   There are different options to style the frame that holds the map. Following options are available: No Frame, Zebra, Interior ticks, Exterior ticks, Interior and Exterior ticks and Lineborder.
--   With ‘LatitudeY/ only’ and ‘Longitude/X only’ setting in the devisions section you have the possibility to prevent a mix of latitude/y and longitude/x coordinates showing on a side when working with rotated maps or reprojected grids.
--   Advanced rendering mode is also available for grids (see section <a href="#rendering-mode" class="reference internal">Rendering_mode</a>).
--   The <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Draw coordinates* checkbox allows you to add coordinates to the map frame. You can choose the annotation numeric format, the options range from decimal to degrees, minute and seconds, with or without suffix, and aligned or not. You can choose which annotation to show. The options are: show all, latitude only, longitude only, or disable(none). This is useful when the map is rotated. The annotation can be drawn inside or outside the map frame. The annotation direction can be defined as horizontal, vertical ascending or vertical descending. In case of map rotation you can Finally, you can define the annotation font, the annotation font color, the annotation distance from the map frame and the precision of the drawn coordinates.
+- Ci sono diverse opzioni per modellare la cornice che contiene la mappa.
+- Con l'impostazione *Solo latitudine/Y* e *Solo longitudine/X* nella sezione deviazioni si ha la possibilità di evitare un mix di latitudine/y e longitudine/x che appaiono su un lato quando si lavora con mappe ruotate o griglie riproiettate.
+- La modalità di rendering avanzato è disponibile anche per le griglie (vedere la sezione <a href="#rendering-mode">Modalità rendering</a>).
+- La casella di controllo <img src="../../images/checkbox.png" /> *Disegna coordinate* permette di aggiungere coordinate alla cornice della mappa. Puoi scegliere il formato numerico dell'annotazione, le opzioni vanno da decimale a gradi, minuti e secondi, con o senza suffisso, e allineato o meno. È possibile scegliere quale annotazione mostrare. Le opzioni sono: mostra tutte, solo latitudine, solo longitudine o disabilita (nessuna). Questo è utile quando la mappa viene ruotata. L'annotazione può essere disegnata all'interno o all'esterno del riquadro della mappa. La direzione dell'annotazione può essere definita come orizzontale, verticale ascendente o verticale discendente. In caso di rotazione della mappa si può infine definire il font dell'annotazione, il colore del font dell'annotazione, la distanza di annotazione dal riquadro della mappa e la precisione delle coordinate disegnate.
 
-**Figure Composer map 6:**
+![](../../../../images/grid_draw_coordinates.png)
 
-![](../../images/grid_draw_coordinates.png)
-Grid Draw Coordinates dialog 
+### Panoramiche <a name="overviews"></a>
 
-### Panoramiche {#overviews}
-
-The *Overviews* dialog of the map *Item Properties* tab provides the following functionalities:
-
-**Figure Composer Map 7:**
+La finestra di dialogo *Panoramica* della scheda *Proprietà elemento* della mappa fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_map4.png)
-Finestra di dialogo panoramica 
 
-You can choose to create an overview map, which shows the extents of the other map(s) that are available in the composer. First you need to create the map(s) you want to include in the overview map. Next you create the map you want to use as the overview map, just like a normal map.
+È possibile scegliere di creare una mappa panoramica, che mostra le estensioni delle altre mappe disponibili nel compositore. Per prima cosa è necessario creare le mappe che si desidera includere nella mappa panoramica. Successivamente si crea la mappa che si desidera utilizzare come mappa panoramica, proprio come una mappa normale.
 
--   Con i pulsanti più e meno è possibile aggiungere o rimuovere una panoramica.
+- Con i pulsanti più e meno è possibile aggiungere o rimuovere una panoramica.
+- Con i pulsanti su e giù è possibile spostare una panoramica nell'elenco e impostare la priorità di disegno.
 
--   With the up and down button you can move an overview in the list and set the drawing priority.
+Aprire *Panoramiche* e premere il pulsante verde più l'icona per aggiungere una panoramica. Inizialmente questa panoramica si chiama *Panoramica 1*. È possibile cambiare il nome quando si fa doppio clic sull'elemento della panoramica nell'elenco denominato "Panoramica 1" e cambiarlo in un altro nome.
 
-Open *Overviews* and press the green plus icon-button to add an overview. Initially this overview is named ‘Overview 1’ (see <a href="#figure-composer-map-7" class="reference internal">Figure_composer_map_7</a>). You can change the name when you double-click on the overview item in the list named ‘Overview 1’ and change it to another name.
+Quando si seleziona la voce di panoramica nell'elenco, è possibile personalizzarla.
 
-When you select the overview item in the list you can customize it.
+- Il <img src="../../images/checkbox.png" /> *Disegna panoramica "&lt;nome\_panoramica&gt;"* deve essere attivato per disegnare l'estensione della cornice della mappa selezionata.
+- La lista *Cornice mappa* può essere usata per selezionare l'elemento della mappa le cui estensioni saranno disegnate sull'elemento della mappa attuale.
+- *Stile cornice* permette di cambiare lo stile della cornice della panoramica.
+- La modalità *Modalità di sovrapposizione* consente di impostare diverse modalità di miscela di trasparenza. Vedere <a href="#rendering-mode">Modalità rendering</a>.
+- Il <img src="../../images/checkbox.png" /> *Inverti panoramica* crea una maschera intorno agli estremi quando viene attivata: gli estremi della mappa di riferimento sono mostrati chiaramente, mentre tutto il resto viene miscelato con il colore del frame.
+- Il <img src="../../images/checkbox.png" /> *Centra su panoramica* imposta l'estensione della cornice panoramica al centro della mappa panoramica. È possibile attivare un solo elemento della panoramica da centrare, se sono state aggiunte più panoramiche.
 
--   The <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Draw “&lt;name\_overview&gt;” overview* needs to be activated to draw the extent of selected map frame.
--   The *Map frame* combo list can be used to select the map item whose extents will be drawn on the present map item.
--   The *Frame Style* allows you to change the style of the overview frame.
--   The *Blending mode* allows you to set different transparency blend modes. See <a href="#rendering-mode" class="reference internal">Rendering_Mode</a>.
--   The <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Invert overview* creates a mask around the extents when activated: the referenced map extents are shown clearly, whereas everything else is blended with the frame color.
--   The <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Center on overview* puts the extent of the overview frame in the center of the overview map. You can only activate one overview item to center, when you have added several overviews.
+## L'element etichetta <a name="the-label-item"></a>
 
-## The Label item {#the-label-item}
+Per aggiungere un'etichetta, clicca sull'icona <img src="../../images/mActionLabel.png" /> <i>Aggiungi etichetta</i>, posiziona l'elemento con il tasto sinistro del mouse sull'area di disegno della composizione di stampa e posiziona e personalizza il suo aspetto nella scheda *Proprietà elemento* dell'etichetta.
 
-Per aggiungere un’etichetta, clicca sull’icona <a href="../../images/mActionLabel.png" class="reference internal"><img src="../../images/mActionLabel.png" alt="mActionLabel" /></a> <sup>Aggiungi\\ etichetta</sup> e scegli dove inserirla cliccando sulla mappa con il mouse. Puoi personalizzare le etichette nella scheda *Proprietà oggetto*.
-
-The *Item Properties* tab of a label item provides the following functionality for the label item (see <a href="#figure-composer-label" class="reference internal">Figure_composer_label</a>):
-
-**Figure Composer 8:**
+La scheda *Proprietà elemento* di un elemento dell'etichetta fornisce le seguenti funzionalità per l'elemento dell'etichetta:
 
 ![](../../images/print_composer_label1.png)
-Scheda proprietà etichette 
 
-### Proprietà principali {#id1}
+### Proprietà principali <a name="id1"></a>
 
--   La voce proprietà principali è il posto dove devi inserire il testo (HTML oppure normale) o l’espressione che vuoi che compaia sull’etichetta.
+- La finestra di dialogo principale delle proprietà è dove il testo (HTML o meno) o l'espressione necessaria per riempire l'etichetta viene aggiunta all'area di disegno della composizione.
+- Le etichette possono essere interpretate come codice HTML: check <img src="../../images/checkbox.png" /> *Disegnare come HTML*. Ora è possibile inserire un URL, un'immagine cliccabile che si collega a una pagina web o qualcosa di più complesso.
+- Puoi anche inserire un'espressione. Clicca su **\[Inserisci un'espressione\]** per aprire una nuova finestra di dialogo. Costruisci un'espressione cliccando sulle funzioni disponibili sul lato sinistro del pannello. Possono essere utili due categorie speciali, particolarmente associate alla funzionalità dell'atlante: funzioni geometriche e funzioni di registrazione. Nella parte inferiore viene mostrata un'anteprima dell'espressione.
 
--   Puoi inserire del testo HTML per le etichette: spunta la casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Visualizza come HTML*. Ora puoi inserire un URL, un’immagine collegata a un sito web oppure qualcosa di più complesso.
+### Aspetto <a name="appearance"></a>
 
--   You can also insert an expression. Click on **\[Insert an expression\]** to open a new dialog. Build an expression by clicking the functions available in the left side of the panel. Two special categories can be useful, particularly associated with the atlas functionality: geometry functions and records functions. At the bottom, a preview of the expression is shown.
-
-### Appearance {#appearance}
-
--   Define *Font* by clicking on the **\[Font...\]** button or a *Font color* selecting a color using the color selection tool.
--   You can specify different horizontal and vertical margins in mm. This is the margin from the edge of the composer item. The label can be positioned outside the bounds of the label e.g. to align label items with other items. In this case you have to use negative values for the margin.
--   Using the *Alignment* is another way to position your label. Note that when e.g. using the *Horizontal alignment* in ![radiobuttonon](../../images/radiobuttonon.png)*Center* Position the *Horizontal margin* feature is disabled.
+- Definire *Carattere* cliccando sul pulsante **\[Carattere....\]** o un *Colore carattere* selezionando un colore utilizzando lo strumento di selezione del colore.
+- È possibile specificare diversi margini orizzontali e verticali in mm. Questo è il margine dal bordo dell'elemento compositore. L'etichetta può essere posizionata al di fuori dei limiti dell'etichetta, ad esempio per allineare gli elementi dell'etichetta con altri elementi. In questo caso è necessario utilizzare valori negativi per il margine.
+- L'uso di *Allineamento* è un altro modo per posizionare l'etichetta. Nota che quando, ad esempio, si utilizza *allineamento orizzontale* ![radiobuttonon](../../../images/radiobuttonon.png) *Centro*, la posizione del *margine orizzontale* è disabilitata.
 
 
-## The Image item {#the-image-item}
+## L'elemento immagine <a name="the-image-item"></a>
 
-Per aggiungere un’immagine, clicca sull’icona <a href="../../images/mActionAddImage.png" class="reference internal"><img src="../../images/mActionAddImage.png" alt="mActionAddImage" /></a> <sup>Aggiungi\\ immagine</sup> e scegli dove inserirla cliccando sulla mappa con il mouse. Puoi personalizzare l’immagine nella scheda *Proprietà oggetto*.
+Per aggiungere un'immagine, clicca sull'icona <img src="../../images/mActionAddImage.png" /> <i>Add image</i>, posiziona l'elemento con il tasto sinistro del mouse sull'area di disegno della composizione di stampa e posiziona e personalizza il suo aspetto nella scheda *Proprietà elemento* dell'immagine.
 
-
-The picture *Item Properties* tab provides the following functionalities (see <a href="#figure-composer-image-1" class="reference internal">figure_composer_image_1</a>):
-
-**Figure Composer image 1:**
+La scheda *Proprietà dell'immagine* in *Proprietà elemento* fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_image1.png)
-Scheda proprietà immagine 
 
-You first have to select the image you want to display. There are several ways to set the *image source* in the **Main properties** area.
+Per prima cosa è necessario selezionare l'immagine che si desidera visualizzare. Ci sono diversi modi per impostare la *origine immagine* nell'area **Proprietà principali**.
 
-1.  Use the browse button <a href="../../images/browsebutton.png" class="reference internal"><img src="../../images/browsebutton.png" alt="browsebutton" /></a> of *image source* to select a file on your computer using the browse dialog. The browser will start in the SVG-libraries provided with KADAS. Besides `SVG`, you can also select other image formats like `.png` or `.jpg`.
-2.  You can enter the source directly in the *image source* text field. You can even provide a remote URL-address to an image.
-3.  From the **Search directories** area you can also select an image from *loading previews ...* to set the image source.
-4.  Use the data defined button <a href="../../images/mIconDataDefine.png" class="reference internal"><img src="../../images/mIconDataDefine.png" alt="mIconDataDefine" /></a> to set the image source from a record or using a regular expression.
+1.  Utilizzare il pulsante di navigazione <img src="../../images/browsebutton.png" /> di *immagine* per selezionare un file sul computer utilizzando la finestra di dialogo di navigazione. Il browser si avvierà nelle librerie SVG fornite con KADAS. Oltre a `SVG`, è anche possibile selezionare altri formati di immagine come `.png` o `.jpg`.
+2.  È possibile inserire la sorgente direttamente nel campo di testo *immagine*. È anche possibile fornire un indirizzo URL remoto ad un'immagine.
+3.  Dall'area **Ricerca cartella** è anche possibile selezionare un'immagine da *caricamento anteprime ....* per impostare la fonte dell'immagine.
+4.  Utilizzare il pulsante dati definiti <img src="../.../images/mIconDataDefine.png" /> per impostare l'origine dell'immagine da un record o utilizzando un'espressione regolare.
 
-With the *Resize mode* option, you can set how the image is displayed when the frame is changed, or choose to resize the frame of the image item so it matches the original size of the image.
+Con l'opzione *Modalità ridimensionamento*, è possibile impostare la visualizzazione dell'immagine quando si cambia cornice, oppure scegliere di ridimensionare la cornice dell'elemento dell'immagine in modo che corrisponda alle dimensioni originali dell'immagine.
 
-You can select one of the following modes:
+È possibile selezionare una delle seguenti modalità:
 
--   Zoom: Enlarges the image to the frame while maintaining aspect ratio of picture.
--   Stretch: Stretches image to fit inside the frame, ignores aspect ratio.
--   Clip: Use this mode for raster images only, it sets the size of the image to original image size without scaling and the frame is used to clip the image, so only the part of the image inside the frame is visible.
--   Zoom and resize frame: Enlarges image to fit frame, then resizes frame to fit resultant image.
--   Resize frame to image size: Sets size of frame to match original size of image without scaling.
+- Zoom: Ingrandisce l'immagine alla cornice mantenendo il rapporto di aspetto dell'immagine.
+- Allungamento: Allunga l'immagine per adattarla all'interno della cornice, ignora il rapporto di aspetto.
+- Clip: Utilizzare questa modalità solo per le immagini raster, imposta le dimensioni dell'immagine alle dimensioni originali senza ridimensionamento e la cornice viene utilizzata per ritagliare l'immagine, in modo che solo la parte dell'immagine all'interno della cornice sia visibile.
+- Ingrandimento e ridimensionamento della cornice: Ingrandisce l'immagine per adattarla al frame, quindi ridimensiona il frame per adattarlo all'immagine risultante.
+- Ridimensiona la cornice in base alle dimensioni dell'immagine: Imposta la dimensione della cornice in modo che corrisponda alla dimensione originale dell'immagine senza ridimensionamento.
 
-Selected resize mode can disable the item options ‘Placement’ and ‘Image rotation’. The *Image rotation* is active for the resize mode ‘Zoom’ and ‘Clip’.
+La modalità di ridimensionamento selezionata può disabilitare le opzioni *Posizionamento* e *Rotazione immagine*. La *rotazione immagine* è attiva per le modalità di ridimensionamento *Zoom* e *Clip*.
 
-With *Placement* you can select the position of the image inside it’s frame. The **Search directories** area allows you to add and remove directories with images in SVG format to the picture database. A preview of the pictures found in the selected directories is shown in a pane and can be used to select and set the image source.
+Con *Posizionamento* è possibile selezionare la posizione dell'immagine all'interno della cornice. L'area **Ricerca cartella** consente di aggiungere e rimuovere directory con immagini in formato SVG nel database immagini. Un'anteprima delle immagini presenti nelle cartelle selezionate viene visualizzata in un riquadro e può essere utilizzata per selezionare e impostare l'origine dell'immagine.
 
-Images can be rotated with the *Image rotation* field. Activating the <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Sync with map* checkbox synchronizes the rotation of a picture in the KADAS map canvas (i.e., a rotated north arrow) with the appropriate Print Composer image.
+Le immagini possono essere ruotate con il campo *Ruota immagine*. Attivando la casella di controllo <img src="../../images/checkbox.png" /> *Sync con mappa* sincronizza la rotazione di un'immagine nella mappa KADAS (cioè, una freccia nord ruotata) con l'immagine appropriata della composizione di stampa.
 
-It is also possible to select a north arrow directly. If you first select a north arrow image from **Search directories** and then use the browse button <a href="../../images/browsebutton.png" class="reference internal"><img src="../../images/browsebutton.png" alt="browsebutton" /></a> of the field *Image source*, you can now select one of the north arrow from the list as displayed in <a href="#figure-composer-image-2" class="reference internal">figure_composer_image_2</a>.
+È anche possibile selezionare direttamente una freccia nord. Se si seleziona prima un'immagine della freccia nord da **Ricerca cartella** e poi si usa il pulsante di navigazione.
 
-Nota
+*Nota*: Molte delle frecce nord non hanno una *N* aggiunta nella freccia nord, questo è fatto apposta per le lingue che non usano una *N* per il nord, quindi possono usare un'altra lettera.
 
-Many of the north arrows do not have an ‘N’ added in the north arrow, this is done on purpose for languages that do not use an ‘N’ for North, so they can use another letter.
-
-**Figure Composer Image 2:**
-
-![](../../images/north_arrows.png)
-North arrows available for selection in provided SVG library
+![](../../../images/north_arrows.png)
 
 
-## The Legend item {#the-legend-item}
+## L'elemento legenda <a name="the-legend-item"></a>
 
-Per aggiungere una legenda, clicca su <a href="../../images/mActionAddLegend.png" class="reference internal"><img src="../../images/mActionAddLegend.png" alt="mActionAddLegend" /></a> <sup>Aggiungi\\ legenda</sup>, e scegli dove posizionarla con il tasto sinistro del mouse. Puoi personalizzare l’aspetto della legenda nella scheda *Proprietà oggetto*.
+Per aggiungere una legenda della mappa, clicca sull'icona <img src="../../images/mActionAddLegend.png" /> <i>Aggiungi nuova legenda</i>, posiziona l'elemento con il tasto sinistro del mouse sull'area di disegno della composizione di stampa e posiziona e personalizza l'aspetto nella scheda *Proprietà elemento*.
 
-The *Item properties* of a legend item tab provides the following functionalities (see <a href="#figure-composer-legend-1" class="reference internal">figure_composer_legend_1</a>):
-
-**Figure Composer Legend 1:**
+La scheda *Proprietà elemento* di una legenda fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_legend1.png)
-Scheda proprietà legenda 
 
-### Proprietà principali {#id3}
+### Proprietà principali <a name="id3"></a>
 
-The *Main properties* dialog of the legend *Item Properties* tab provides the following functionalities (see <a href="#figure-composer-legend-2" class="reference internal">figure_composer_legend_2</a>):
-
-**Figure Composer Legend 2:**
+La finestra di dialogo *Proprietà principali* nella scheda *Proprietà elemento* della legenda fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_legend2.png)
-Finestra di dialogo proprietà principali della legenda 
 
-In Main properties you can:
+Nelle proprietà principali è possibile:
 
--   Change the title of the legend.
--   Set the title alignment to Left, Center or Right.
--   You can choose which *Map* item the current legend will refer to in the select list.
--   You can wrap the text of the legend title on a given character.
+- Cambiare il titolo della legenda.
+- Impostare l'allineamento del titolo su Sinistra, Centro o Destra.
+- È possibile scegliere a quale voce *Mappa* si riferirà la legenda corrente nell'elenco di selezione.
+- È possibile avvolgere il testo del titolo della legenda su un dato carattere.
 
-### Oggetti della legenda {#legend-items}
+### Voci della leggenda <a name="legend-items"></a>
 
-The *Legend items* dialog of the legend *Item Properties* tab provides the following functionalities (see <a href="#figure-composer-legend-3" class="reference internal">figure_composer_legend_3</a>):
-
-**Figure Composer Legend 3:**
+La finestra di dialogo *Voci legenda* della scheda *Proprietà elemento* fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_legend3.png)
-Finestra di dialogo oggetti legenda 
 
--   The legend will be updated automatically if <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Auto-update* is checked. When *Auto-update* is unchecked this will give you more control over the legend items. The icons below the legend items list will be activated.
+- La legenda verrà aggiornata automaticamente se <img src="../../images/checkbox.png" /> *Auto-update* è selezionato. Quando *Auto-update* è deselezionato, questo vi darà un maggiore controllo sulle voci della legenda. Verranno attivate le icone sotto l'elenco degli elementi della legenda.
 
--   The legend items window lists all legend items and allows you to change item order, group layers, remove and restore items in the list, edit layer names and add a filter.
+- La finestra Leggende items elenca tutti gli elementi legenda e consente di modificare l'ordine degli elementi, raggruppare i livelli, rimuovere e ripristinare gli elementi nell'elenco, modificare i nomi dei livelli e aggiungere un filtro.
 
-    -   The item order can be changed using the **\[Up\]** and **\[Down\]** buttons or with ‘drag-and-drop’ functionality. The order can not be changed for WMS legend graphics.
-    -   Use the **\[Add group\]** button to add a legend group.
-    -   Use the **\[plus\]** and **\[minus\]** button to add or remove layers.
-    -   The **\[Edit\]** button is used to edit the layer-, groupname or title, first you need to select the legend item.
-    -   The **\[Sigma\]** button adds a feature count for each vector layer.
-    -   Use the **\[filter\]** button to filter the legend by map content, only the legend items visible in the map will be listed in the legend.
+    - L'ordine degli articoli può essere modificato utilizzando i pulsanti **\[Up\]** e **\[Down\]** o con la funzione "drag and drop". L'ordine non può essere modificato per la grafica delle legende WMS.
+    - Utilizzare il pulsante **\[Aggiungi gruppo\]** per aggiungere un gruppo di legende.
+    - Usa il pulsante **\[più\]** e **\[meno\]** per aggiungere o rimuovere i livelli.
+    - Il pulsante **\[Edit\]** è usato per modificare il livello, il nome del gruppo o il titolo, per prima cosa è necessario selezionare la voce legenda.
+    - Il pulsante **\[Sigma\]** aggiunge un conteggio delle caratteristiche per ogni livello vettoriale.
+    - Usa il pulsante **\[filtro\]** per filtrare la legenda in base al contenuto della mappa, solo gli elementi legenda visibili nella mappa saranno elencati nella legenda.
 
-    After changing the symbology in the KADAS main window, you can click on **\[Update All\]** to adapt the changes in the legend element of the Print Composer.
+    Dopo aver cambiato la simbologia nella finestra principale di KADAS, puoi cliccare su **\[Update All\]** per adattare le modifiche nell'elemento legenda della composizione di stampa.
 
-### Fonts, Columns, Symbol {#fonts-columns-symbol}
+### Carattere, Colonne, Simbolo <a name="fonts-columns-symbo"></a>.
 
-The *Fonts*, *Columns* and *Symbol* dialogs of the legend *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-legend-4" class="reference internal">figure_composer_legend_4</a>):
-
-**Figure Composer Legend 4:**
+Le finestre di dialogo *Fonts*, *Columns* e *Symbol* della scheda *Proprietà elemento* forniscono le seguenti funzionalità:
 
 ![](../../images/print_composer_legend4.png)
-Finestra di dialogo caratteri, colonne, simboli e spaziatura legenda 
 
--   Puoi cambiare il carattere del titolo, gruppo, sotto-gruppo o elemento singolo della legenda. Clicca sul pulsante corrispondente per aprire la finestra **Selezione carattere**.
+- È possibile modificare il carattere del titolo della legenda, del gruppo, del sottogruppo e dell'elemento (livello) nell'elemento legenda. Fare clic sul pulsante di una categoria per aprire una finestra di dialogo **Seleziona font**.
+- Si fornisce alle etichette un **Colore** utilizzando il selezionatore avanzato di colori, tuttavia il colore selezionato verrà assegnato a tutti gli elementi del carattere nella legenda.
+- Gli elementi della legenda possono essere disposti su più colonne. Impostare il numero di colonne nel campo *Count* <img src="../../images/selectnumber.png" />.
+    - <img src="../../images/checkbox.png" /> *Larghezze colonne uguali* imposta come regolare le colonne delle legende.
+    - L'opzione <img src="../../images/checkbox.png" /> *Split layers* permette di suddividere una legenda classificata o graduata tra le colonne.
+- È possibile modificare la larghezza e l'altezza del simbolo della legenda in questa finestra di dialogo.
 
--   You provide the labels with a **Color** using the advanced color picker, however the selected color will be given to all font items in the legend..
--   Legend items can be arranged over several columns. Set the number of columns in the *Count* <a href="../../images/selectnumber.png" class="reference internal"><img src="../../images/selectnumber.png" alt="selectnumber" /></a> field.
-    -   La casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Uguale larghezza delle colonne* imposta come le colonne della legenda devono essere gestite.
+### WMS LegendGraphic e spaziatura <a name="wms-legendgraphic-and-spacing"></a>
 
-    -   La casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Dividi layers* ti permette una divisione dei layer in base alla loro categorizzazione.
-
--   Puoi cambiare la larghezza e l’altezza di un simbolo della legenda.
-
-### WMS LegendGraphic and Spacing {#wms-legendgraphic-and-spacing}
-
-The *WMS LegendGraphic* and *Spacing* dialogs of the legend *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-legend-5" class="reference internal">figure_composer_legend_5</a>):
-
-**Figure Composer Legend 5:**
+Le finestre di dialogo *WMS LegendGraphic* e *Spaziatura* della scheda *Proprietà elemento* forniscono le seguenti funzionalità:
 
 ![](../../images/print_composer_legend5.png)
-WMS LegendGraphic Dialogs 
 
-When you have added a WMS layer and you insert a legend composer item, a request will be send to the WMS server to provide a WMS legend. This Legend will only be shown if the WMS server provides the GetLegendGraphic capability. The WMS legend content will be provided as a raster image.
+Quando si aggiunge un livello WMS e si inserisce una legenda compositore, viene inviata una richiesta al server WMS per fornire una legenda WMS. Questa legenda verrà mostrata solo se il server WMS fornisce la funzionalità GetLegendGraphic. Il contenuto della legenda WMS sarà fornito come immagine raster.
 
-*WMS LegendGraphic* is used to be able to adjust the *Legend width* and the *Legend height* of the WMS legend raster image.
+*WMS LegendGraphic* è usato per regolare la *larghezza* e l'*altezza* dell'immagine raster della leggenda WMS.
 
-Spacing around title, group, subgroup, symbol, icon label, box space or column space can be customized through this dialog.
+Attraverso questa finestra di dialogo è possibile personalizzare la spaziatura intorno a titolo, gruppo, sottogruppo, sottogruppo, simbolo, etichetta dell'icona, spazio scatola o spazio colonna.
 
 
-## The Scale Bar item {#the-scale-bar-item}
+## L'elemento barra di scala <a name="the-scale-bar-item"></a>
 
-Per aggiungere una barra di scala, clicca su <a href="../../images/mActionScaleBar.png" class="reference internal"><img src="../../images/mActionScaleBar.png" alt="mActionScaleBar" /></a> <sup>Aggiungi\\ nuova\\ barra\\ di\\ scala</sup> , scegli dove posizionarla e clicca con il tasto sinistro del mouse. Hai pieno accesso alla personalizzazione attraverso la scheda *Proprietà oggetto*.
+Per aggiungere una barra di scala, fare clic sull'icona <img src="../../images/mActionScaleBar.png" /> <i>Aggiungi nuova barra di scala</i>, posizionare l'elemento con il tasto sinistro del mouse sull'area di disegno della composizione di stampa e posizionare e personalizzare l'aspetto nella scheda *Proprietà elemento* della barra di scala.
 
-The *Item properties* of a scale bar item tab provides the following functionalities (see <a href="#figure-composer-scalebar-1" class="reference internal">figure_composer_scalebar_1</a>):
-
-**Figure Composer Scalebar 1:**
+La scheda *Proprietà elemento* di una barra di scala fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_scalebar1.png)
-Proprietà barra di scala 
 
-### Proprietà principali {#id4}
+### Proprietà principali <a name="id4"></a>
 
-The *Main properties* dialog of the scale bar *Item Properties* tab provides the following functionalities (see <a href="#figure-composer-scalebar-2" class="reference internal">figure_composer_scalebar_2</a>):
-
-**Figure Composer Scalebar 2:**
+La finestra di dialogo *Proprietà principali* della scheda *Proprietà elemento* della barra di scala fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_scalebar2.png)
-Proprietà principali della barra di scala 
 
--   Prima di tutto scegli a quale mappa vuoi aggiungere la barra di scala.
+- In primo luogo, scegliere la mappa alla quale sarà collegata la barra di scala.
+- Quindi, scegliere lo stile della barra della scala. Sono disponibili sei stili:
+    - **Cornice singola** e **cornice doppia**, che contengono una o due linee di cornice a colori alternati.
+    - Righette sulla linea: **Metà**, **Su** o **Giù**.
+    - **Numerico**, dove viene stampato il rapporto di scala (cioè, 1:50000).
 
--   Poi scegli lo stile della barra di scale. Hai a disposizione sei stili:
+### Unità e Segmenti <a name="units-and-segment"></a>
 
-    -   **Riquadro singolo** e **Riquadro doppio** che contengono una o due linee con colori alternati.
-
-    -   **Linea con tacche al centro**, **Linea con tacche in basso** o **Linea con tacche in alto**.
-
-    -   **Numerico** che mostra semplicemente il rapporto di scala (per esempio
-
-### Unità e segmenti {#units-and-segments}
-
-The *Units* and *Segments* dialogs of the scale bar *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-scalebar-3" class="reference internal">figure_composer_scalebar_3</a>):
-
-**Figure Composer scalebar 3:**
+Le finestre di dialogo *Unità* e *Segmenti* della scheda *Proprietà elemento* della barra di scala forniscono le seguenti funzionalità:
 
 ![](../../images/print_composer_scalebar3.png)
-Unità e segmenti della barra di scala 
 
-In queste due sezioni puoi scegliere come deve essere rappresentata la barra di scala.
+In queste due finestre di dialogo, è possibile impostare come sarà rappresentata la barra della scala.
 
--   Select the map units used. There are four possible choices: **Map Units** is the automated unit selection; **Meters**, **Feet** or **Nautical Miles** force unit conversions.
--   Specifica nel campo *Etichetta* il testo che descriverà l’unità scelta.
+- Selezionare le unità di misura della mappa utilizzate. Ci sono quattro possibilità di scelta: **Unità mappa** è la selezione automatica delle unità di misura; **Metri**, **Piedi** o **Miglia nautiche** conversioni di unità di forza.
+- Il campo *Etichetta* definisce il testo utilizzato per descrivere le unità della barra della scala.
+- Il campo *Map units per bar unit* permette di fissare il rapporto tra l'unità di una mappa e la sua rappresentazione nella barra di scala.
+- È possibile definire quanti *segmenti* saranno disegnati a sinistra e a destra della barra della scala e quanto tempo sarà lungo ogni segmento (campo *Dimensione*). È possibile definire anche l'altezza.
 
--   Il campo *Unità mappa per unità di barra* ti permette di fissare il rapporto fra le unità di mappa e la loro rappresentazione nella barra di scala.
+### Visualizza <a name="display"></a>
 
--   Puoi scegliere quanti *Segmenti* devono essere disegnati a sinistra e a destra della barra di scala e quanto ogni segmento deve essere lungo (*Dimensione*). Puoi anche scegliere l’*Altezza*.
-
-### Display {#display}
-
-The *Display* dialog of the scale bar *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-scalebar-4" class="reference internal">figure_composer_scalebar_4</a>):
-
-**Figure Composer Scalebar 4:**
+La finestra di dialogo *Visualizza* della scheda *Proprietà elemento* della barra di scala fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_scalebar4.png)
-Scale Bar Display 
 
-You can define how the scale bar will be displayed in its frame.
+È possibile definire come sarà visualizzata la barra della scala nel suo riquadro.
 
--   *Box margin* : space between text and frame borders
--   *Labels margin* : space between text and scale bar drawing
--   *Line width* : line widht of the scale bar drawing
--   *Join style* : Corners at the end of scalebar in style Bevel, Rounded or Square (only available for Scale bar style Single Box & Double Box)
--   *Cap style* : End of all lines in style Square, Round or Flat (only available for Scale bar style Line Ticks Up, Down and Middle)
--   *Alignment* : Puts text on the left, middle or right side of the frame (works only for Scale bar style Numeric)
+- *Margine della casella* : spazio tra il testo e i bordi della cornice
+- *Margine delle etichette* : spazio tra il testo e il disegno della barra in scala.
+- *Larghezza della linea* : larghezza della linea in larghezza del disegno della barra in scala
+- *Stile unito* : Angoli alla fine dello scalebar in stile Bevel, Rounded o Square (disponibile solo per Scale bar style Single Box & Double Box)
+- *Stile Cap* : Fine di tutte le linee in stile Square, Round o Flat (disponibile solo per le Line Ticks Up, Down e Middle).
+- *Allineamento* : Mette il testo sul lato sinistro, centrale o destro del riquadro (funziona solo per lo stile della barra di scala Numerico).
 
-### Fonts and colors {#fonts-and-colors}
+### Caratteri e colori <a name="fonts-and-colors"></a>
 
-The *Fonts and colors* dialog of the scale bar *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-scalebar-5" class="reference internal">figure_composer_scalebar_5</a>):
-
-**Figure Composer Scalebar 5:**
+La finestra di dialogo *Fonts and colors* della scheda *Proprietà elemento* della barra di scala fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_scalebar5.png)
-Scale Bar Fonts and colors Dialogs 
 
-You can define the fonts and colors used for the scale bar.
+È possibile definire i font e i colori utilizzati per la barra della scala.
 
--   Use the **\[Font\]** button to set the font
--   *Font color*: set the font color
--   *Fill color*: set the first fill color
--   *Secondary fill color*: set the second fill color
--   *Stroke color*: set the color of the lines of the Scale Bar
+- Usare il pulsante **\[Font\\]** per impostare il font
+- *Colore font*: imposta il colore del font
+- *Colore di riempimento*: impostare il primo colore di riempimento
+- *Colore di riempimento secondario*: impostare il secondo colore di riempimento
+- *Colore dei tratti*: impostare il colore delle linee della barra di scala.
 
-Fill colors are only used for scale box styles Single Box and Double Box. To select a color you can use the list option using the dropdown arrow to open a simple color selection option or the more advanced color selection option, that is started when you click in the colored box in the dialog.
+I colori di riempimento sono utilizzati solo per gli stili di box in scala Box singolo e Box doppio. Per selezionare un colore è possibile utilizzare l'opzione elenco utilizzando la freccia a discesa per aprire una semplice opzione di selezione colore o l'opzione di selezione colore più avanzata, che viene avviata quando si fa clic sulla casella colorata nella finestra di dialogo.
 
-## The Basic Shape Items {#the-basic-shape-items}
+## Elementi figure geometriche <a name="the-basic-shape-items"></a>
 
-To add a basic shape (ellipse, rectangle, triangle), click the <a href="../../images/mActionAddBasicShape.png" class="reference internal"><img src="../../images/mActionAddBasicShape.png" alt="mActionAddBasicShape" /></a> <sup>Add\\ basic\\ shape</sup> icon or the <a href="../../images/mActionAddArrow.png" class="reference internal"><img src="../../images/mActionAddArrow.png" alt="mActionAddArrow" /></a> <sup>Add\\ Arrow</sup> icon, place the element holding down the left mouse. Customize the appearance in the *Item Properties* tab.
+Per aggiungere una forma geometrica (ellisse, rettangolo, triangolo), fare clic sull'icona <img src="../../images/mActionAddArrow.png" /> <i>Add Arrow</i>, posizionare l'elemento tenendo premuto il tasto sinistro del mouse. Personalizza l'aspetto nella scheda *Proprietà elemento*.
 
-When you also hold down the `Shift` key while placing the basic shape you can create a perfect square, circle or triangle.
-
-**Figure Composer Basic Shape:**
+Quando si tiene premuto anche il tasto `Shift` mentre si posiziona la forma di base è possibile creare un quadrato, cerchio o triangolo.
 
 ![](../../images/print_composer_shape.png)
-Scheda proprietà forma 
 
-The *Shape* item properties tab allows you to select if you want to draw an ellipse, rectangle or triangle inside the given frame.
+La scheda delle proprietà della voce *Forma* consente di selezionare se si desidera disegnare un'ellisse, un rettangolo o un triangolo all'interno della cornice data.
 
-You can set the style of the shape using the advanced symbol style dialog with which you can define its outline and fill color, fill pattern, use markers etcetera.
+È possibile impostare lo stile della forma utilizzando la finestra di dialogo avanzata dello stile dei simboli con cui è possibile definire il contorno e il colore di riempimento, il motivo di riempimento, l'uso di marcatori, eccetera.
 
-For the rectangle shape, you can set the value of the corner radius to round of the corners.
+Per la forma rettangolare, è possibile impostare il valore del raggio di arrotondamento degli angoli.
 
-Nota
+*Nota*: A differenza di altri elementi, non è possibile modellare la cornice o il colore di sfondo della cornice.
 
-Unlike other items, you can not style the frame or the background color of the frame.
+## L'elemento freccia <a name="the-arrow-item"></a>
 
-## The Arrow item {#the-arrow-item}
+Per aggiungere una freccia, fare clic sull'icona <img src="../../images/mActionAddArrow.png" /> <i>Add Arrow</i>, posizionare l'elemento tenendo premuto il tasto sinistro del mouse e trascinare una linea per disegnare la freccia nell'area di disegno della composizione di stampa e posizionare e personalizzare l'aspetto nella scheda *Proprietà elemento* della barra di scala.
 
-To add an arrow, click the <a href="../../images/mActionAddArrow.png" class="reference internal"><img src="../../images/mActionAddArrow.png" alt="mActionAddArrow" /></a> <sup>Add\\ Arrow</sup> icon, place the element holding down the left mouse button and drag a line to draw the arrow on the Print Composer canvas and position and customize the appearance in the scale bar *Item Properties* tab.
+Quando si tiene premuto anche il tasto `Shift` mentre si posiziona la freccia, questa viene posizionata in un angolo di 45° esatto.
 
-When you also hold down the `Shift` key while placing the arrow, it is placed in an angle of exactly 45° .
-
-The arrow item can be used to add a line or a simple arrow that can be used, for example, to show the relation between other print composer items. To create a north arrow, the image item should be considered first. KADAS has a set of North arrows in SVG format. Furthermore you can connect an image item with a map so it can rotate automatically with the map (see <a href="#the-image-item" class="reference internal">the_image_item</a>).
-
-**Figure Composer Arrow:**
+L'elemento freccia può essere utilizzato per aggiungere una riga o una semplice freccia che può essere utilizzata, ad esempio, per mostrare la relazione tra altri elementi del compositore di stampa. Per creare una freccia nord, l'elemento dell'immagine deve essere considerato per primo. KADAS ha una serie di frecce Nord in formato SVG. Inoltre è possibile collegare un elemento dell'immagine con una mappa in modo che possa ruotare automaticamente con la mappa.
 
 ![](../../images/print_composer_arrow.png)
-Scheda proprietà freccia 
 
-### Item Properties {#item-properties}
+### Proprietà dell'elemento <a name="item-properties"></a>
 
-The *Arrow* item properties tab allows you to configure an arrow item.
+La scheda delle proprietà della voce *Freccia* consente di configurare una voce con una freccia.
 
-The **\[Line style ...\]** button can be used to set the line style using the line style symbol editor.
+Il pulsante **\[Stile linea ....\]** può essere usato per impostare lo stile della linea utilizzando l'editor dei simboli di stile linea.
 
-In *Arrows markers* you can select one of three radio buttons.
+In *Marcatori freccia* è possibile selezionare uno dei tre pulsanti di opzione.
 
--   *Default* : To draw a regular arrow, gives you options to style the arrow head
--   *None* : To draw a line without arrow head
--   *SVG Marker* : To draw a line with an SVG *Start marker* and/or *End marker*
+- *Default* : Per disegnare una freccia normale, ti dà la possibilità di disegnare la punta della freccia.
+- *Nessuno* : Per tracciare una linea senza punta di freccia
+- Marcatore *SVG* : Per tracciare una linea con un marcatore SVG *Partire* e/o *Fine marcatore*.
 
-For *Default* Arrow marker you can use following options to style the arrow head.
+Per il marcatore di freccia *Default* è possibile utilizzare le seguenti opzioni per stilizzare la punta della freccia.
 
--   *Arrow outline color* : Set the outline color of the arrow head
--   *Arrow fill color* : Set the fill color of the arrow head
--   *Arrow outline width* : Set the outline width of the arrow head
--   *Arrow head width*: Set the size of the arrow head
+- *Colore del contorno delle frecce* : Impostare il colore del contorno della punta della freccia
+- *Colore di riempimento delle frecce* : Impostare il colore di riempimento della punta della freccia
+- *Larghezza del contorno della freccia* : Impostare la larghezza del contorno della punta della freccia
+- *Larghezza della punta della freccia*: Impostare la dimensione della punta della freccia
 
-For *SVG Marker* you can use following options.
+Per *SVG Marker* è possibile utilizzare le seguenti opzioni.
 
--   *Start marker* : Choose an SVG image to draw at the beginning of the line
--   *End marker* : Choose an SVG image to draw at the end of the line
--   *Arrow head width*: Sets the size of Start and/or End marker
+- *Punto di partenza* : Scegliere un'immagine SVG da disegnare all'inizio della linea
+- *Indicatore finale* : Scegliere un'immagine SVG da disegnare alla fine della linea
+- Larghezza della punta della freccia: Imposta la dimensione dell'indicatore di inizio e/o fine.
 
-SVG images are automatically rotated with the line. The color of the SVG image can not be changed.
+Le immagini SVG vengono ruotate automaticamente con la linea. Il colore dell'immagine SVG non può essere cambiato.
 
 
-## The Attribute Table item {#the-attribute-table-item}
+## L'elemento tabella degli attributi <a name="the-attribute-table-item"></a>.
 
-Puoi aggiungere parti della tabella degli attributi di un vettore al compositore di stampe: clicca sull’icona <a href="../../images/mActionOpenTable.png" class="reference internal"><img src="../../images/mActionOpenTable.png" alt="mActionOpenTable" /></a> <sup>Aggiungi\\ tabella\\ attributi</sup>, scegli dove posizionarla e clicca con il tasto sinistro del mouse. In seguito potrai personalizzarne gli aspetti dalla scheda *Proprietà oggetto*.
+È possibile aggiungere parti di una tabella di attributi vettoriali composizione: Fare clic sull'icona <img src="../../images/mActionOpenTable.png" /> <i>Aggiungi tabella attributi</i>, posizionare l'elemento con il tasto sinistro del mouse sull'area di disegno della composizione di stampa e posizionare e personalizzare l'aspetto nella scheda *Proprietà elemento*.
 
-The *Item properties* of an attribute table item tab provides the following functionalities (see <a href="#figure-composer-table-1" class="reference internal">figure_composer_table_1</a>):
+La scheda *Proprietà elemento* della tabella degli attributi fornisce le seguenti funzionalità:
 
-**Figure Composer Attribute Table 1:**
+![](../../images/print_composer_attributo1.png)
 
-![](../../images/print_composer_attribute1.png)
-Attribute table Item properties Tab 
+### Proprietà principali <a name="id5"></a>
 
-### Proprietà principali {#id5}
-
-The *Main properties* dialogs of the attribute table *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-table-2" class="reference internal">figure_composer_table_2</a>):
-
-**Figure Composer Attribute Table 2:**
+Le finestre di dialogo *Proprietà principali* della scheda *Proprietà elemento* della tabella degli attributi forniscono le seguenti funzionalità:
 
 ![](../../images/print_composer_attribute2.png)
-Attribute table Main properties Dialog 
 
--   For *Source* you can normally select only ‘Layer features’.
--   With *Layer* you can choose from the vector layers loaded in the project.
--   The button **\[Refresh table data\]** can be used to refresh the table when the actual contents of the table has changed.
--   In case you activated the <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a>*Generate an atlas* option in the *Atlas generation* tab, there are two additional *Source* possible: ‘Current atlas feature’ (see <a href="#figure-composer-table-2b" class="reference internal">figure_composer_table_2b</a>) and ‘Relation children’ (see <a href="#figure-composer-table-2c" class="reference internal">figure_composer_table_2c</a>). Choosing the ‘Current atlas feature’ you won’t see any option to choose the layer, and the table item will only show a row with the attributes from the current feature of the atlas coverage layer. Choosing ‘Relation children’, an option with the relation name will show up. The ‘Relation children’ option can only be used if you have defined a relation using your atlas coverage layer as parent, and it will show the children rows of the atlas coverage layer’s current feature (for further information about the atlas generation see <a href="#atlasgeneration" class="reference internal">atlasgeneration</a>).
-
-**Figure Composer Attribute Table 2b:**
+- Per *Source* normalmente è possibile selezionare solo "Caratteristiche del livello".
+- Con *Layer* è possibile scegliere tra i livelli vettoriali caricati nel progetto.
+- Il pulsante **\[Aggiorna dati tabella\]** può essere usato per aggiornare la tabella quando il contenuto effettivo della tabella è cambiato.
+- Nel caso in cui sia stata attivata la generazione dell'atlante.
 
 ![](../../images/print_composer_attribute2b.png)
-Attribute table Main properties for ‘Current atlas feature’ 
-
-**Figure Composer Attribute Table 2c:**
 
 ![](../../images/print_composer_attribute2c.png)
-Attribute table Main properties for ‘Relation children’ 
 
--   The button **\[Attributes...\]** starts the *Select attributes* menu, see <a href="#figure-composer-table-3" class="reference internal">figure_composer_table_3</a>, that can be used to change the visible contents of the table. After making changes use the **\[OK\]** button to apply changes to the table.
+- Il pulsante **\[Attributi....\]** avvia il menu *Seleziona attributi*, che può essere utilizzato per modificare il contenuto visibile della tabella. Dopo aver effettuato le modifiche utilizzare il pulsante **\[OK\]** per applicare le modifiche alla tabella.
 
-    In the *Columns* section you can:
+Nella sezione *Colonne* è possibile:
 
-    -   Remove an attribute, just select an attribute row by clicking anywhere in a row and press the minus button to remove the selected attribute.
-    -   Add a new attribute use the plus button. At the end a new empty row appears and you can select empty cell of the column *Attribute*. You can select a field attribute from the list or you can select to build a new attribute using a regular expression (<a href="../../images/mIconExpression.png" class="reference internal"><img src="../../images/mIconExpression.png" alt="mIconExpression" /></a> button). Of course you can modify every already existing attribute by means of a regular expression.
-    -   Use the up and down arrows to change the order of the attributes in the table.
-    -   Select a cel in the Headings column to change the Heading, just type in a new name.
-    -   Select a cel in the Alignment column and you can choose between Left, Center or Right alignment.
-    -   Select a cel in the Width column and you can change it from Automatic to a width in mm, just type a number. When you want to change it back to Automatic, use the cross.
-    -   The **\[Reset\]** button can always be used to restore it to the original attribute settings.
+- Rimuovere un attributo, basta selezionare una riga di un attributo cliccando in un punto qualsiasi di una riga e premere il pulsante meno per rimuovere l'attributo selezionato.
+- Aggiungere un nuovo attributo utilizzare il pulsante più. Alla fine appare una nuova riga vuota ed è possibile selezionare la cella vuota della colonna *Attributo*. Si può selezionare un attributo di campo dalla lista o si può scegliere di costruire un nuovo attributo usando un'espressione regolare (pulsante <img src="../../images/mIconExpression.png" />). Naturalmente è possibile modificare ogni attributo già esistente per mezzo di un'espressione regolare.
+- Usare le frecce su e giù per cambiare l'ordine degli attributi nella tabella.
+- Selezionare una cella nella colonna *Intestazioni* per cambiare l'intestazione, basta digitare un nuovo nome.
+- Selezionare una cella nella colonna *Allineamento* e si può scegliere tra allineamento a sinistra, centro o destra.
+- Selezionare una cella nella colonna *Larghezza* e si può cambiare da *Automatico* a una larghezza in mm, basta digitare un numero. Quando si desidera tornare ad *Automatico*, utilizzare la croce.
+- Il pulsante **\[Reset\]** può sempre essere usato per ripristinare le impostazioni degli attributi originali.
 
-    In the *Sorting* section you can:
+Nella sezione *Ordinamento* è possibile:
 
-    -   Add an attribute to sort the table with. Select an attribute and set the sorting order to ‘Ascending’ or ‘Descending’ and press the plus button. A new line is added to the sort order list.
-    -   select a row in the list and use the up and down button to change the sort priority on attribute level.
-    -   use the minus button to remove an attribute from the sort order list.
-
-**Figure Composer Attribute Table 3:**
+- Aggiungere un attributo per ordinare la tabella con cui ordinare la tabella. Selezionare un attributo e impostare l'ordine di ordinamento su *Ascendente* o *Discendente* e premere il pulsante più. Una nuova riga viene aggiunta all'elenco degli ordini.
+- Selezionare una riga nell'elenco e usare i pulsanti su e giù per cambiare la priorità di ordinamento a livello di attributo.
+- Usare il pulsante meno per rimuovere un attributo dall'elenco degli ordini.
 
 ![](../../images/print_composer_attribute3.png)
-Finestra di dialogo scegli attributo 
 
-### Feature filtering {#feature-filtering}
+### Filtrare oggetti <a name="feature-filtering"></a>
 
-The *Feature filtering* dialogs of the attribute table *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-table-4" class="reference internal">figure_composer_table_4</a>):
-
-**Figure Composer Attribute Table 4:**
+Le finestre di dialogo *Filtrare oggetti* della scheda *Proprietà elemento* della tabella degli attributi forniscono le seguenti funzionalità:
 
 ![](../../images/print_composer_attribute4.png)
-Attribute table Feature filtering Dialog 
 
-You can:
+È possibile:
 
--   Define the *Maximum rows* to be displayed.
+- Definire le *righe massime* da visualizzare.
 
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Remove duplicate rows from table* to show unique records only.
+- Attivare <img src="../../images/checkbox.png" /> *Rimuovere le righe duplicate dalla tabella* per mostrare solo i record unici.
 
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Show only visible features within a map* and select the corresponding *Composer map* to display the attributes of features only visible on selected map.
+- Attivare <img src="../../images/checkbox.png" /> *Mostra solo le caratteristiche visibili all'interno di una mappa* e selezionare la corrispondente *Mappa composer* per visualizzare gli attributi delle caratteristiche visibili solo sulla mappa selezionata.
 
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Show only features intersecting Atlas feature* is only available when <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Generate an atlas* is activated. When activated it will show a table with only the features shown on the map of that particular page of the atlas.
+- Attivare <img src="../../images/checkbox.png" /> *Generare atlante*. Quando attivato mostrerà una tabella con solo le caratteristiche mostrate sulla mappa di quella particolare pagina dell'atlante.
 
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Filter with* and provide a filter by typing in the input line or insert a regular expression using the given <a href="../../images/mIconExpression.png" class="reference internal"><img src="../../images/mIconExpression.png" alt="mIconExpression" /></a> expression button. A few examples of filtering statements you can use when you have loaded the airports layer from the Sample dataset:
+- Attivare <img src="../../images/mIconExpression.png" /> pulsante di espressione. Alcuni esempi di istruzioni di filtraggio che puoi usare quando hai caricato il livello aeroporti dal set di dati Sample:
 
     -   `ELEV > 500`
     -   `NAME = 'ANIAK'`
     -   `NAME NOT LIKE 'AN%`
     -   `regexp_match( attribute( $currentfeature, 'USE' )  , '[i]')`
 
-    The last regular expression will include only the arpoirts that have a letter ‘i’ in the attribute field ‘USE’.
+    L'ultima espressione regolare includerà solo le arpoirts che hanno una lettera *i* nel campo attributo *USE*.
 
-### Appearance {#id6}
+### Aspetto <a name="id6"></a>
 
-The *Appearance* dialogs of the attribute table *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-table-5" class="reference internal">figure_composer_table_5</a>):
-
-**Figure Composer Attribute Table 5:**
+Le finestre di dialogo *Aspetto* nelle *Proprietà elemento* della tabella degli attributi forniscono le seguenti funzionalità:
 
 ![](../../images/print_composer_attribute5.png)
-Attribute table appearance Dialog 
 
--   Click <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Show empty rows* to make empty entries in the attribute table visible.
--   With *Cell margins* you can define the margin around text in each cell of the table.
--   With *Display header* you can select from a list one of ‘On first frame’, ‘On all frames’ default option, or ‘No header’.
--   The option *Empty table* controls what will be displayed when the result selection is empty.
-    -   **Draw headers only**, will only draw the header except if you have choosen ‘No header’ for *Display header*.
-    -   **Hide entire table**, will only draw the background of the table. You can activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Don’t draw background if frame is empty* in *Frames* to completely hide the table.
-    -   **Draw empty cells**, will fill the attribute table with empty cells, this option can also be used to provide additional empty cells when you have a result to show!
-    -   **Show set message**, will draw the header and adds a cell spanning all columns and display a message like ‘No result’ that can be provided in the option *Message to display*
--   The option *Message to display* is only activated when you have selected **Show set message** for *Empty table*. The message provided will be shown in the table in the first row, when the result is an empty table.
--   With *Background color* you can set the background color of the table.
+- Fare clic su <img src="../../images/checkbox.png" /> *Mostra righe vuote* per rendere visibili le voci vuote nella tabella degli attributi.
+- Con *Cella margini* è possibile definire il margine intorno al testo in ogni cella della tabella.
+- Con *Mostra intestazione* puoi selezionare da una lista una delle opzioni predefinite *Sul primo frame*, *Su tutti i frames* o *Senza intestazione*.
+- L'opzione *Tabella vuota* controlla cosa verrà visualizzato quando la selezione dei risultati è vuota.
+    - *Disegna solo intestazioni*, disegnerà solo l'intestazione a meno che non sia stato scelto "Nessuna intestazione" per *Intestazione di visualizzazione*.
+    - *Nascondi intero tavolo*, disegnerà solo lo sfondo del tavolo. Puoi attivare <img src="../../images/checkbox.png" /> *Non disegnare lo sfondo se il frame è vuoto* in *Frames* per nascondere completamente la tabella.
+    - *Disegnare celle vuote*, riempirà la tabella degli attributi con celle vuote, questa opzione può anche essere usata per fornire ulteriori celle vuote quando si ha un risultato da mostrare!
+    - *Mostra messaggio impostato*, disegnerà l'intestazione e aggiungerà una cella che abbraccia tutte le colonne e visualizzerà un messaggio come *Nessun risultato* che può essere fornito nell'opzione *Messaggio da visualizzare*.
+- L'opzione *Messaggio da visualizzare* è attivata solo quando si seleziona *Mostra messaggio impostato* per *Tabella vuota*. Il messaggio fornito sarà mostrato nella tabella nella prima riga, quando il risultato è una tabella vuota.
+- Con *colore di sfondo* è possibile impostare il colore di sfondo della tabella.
 
-### Show grid {#show-grid}
+### Mostra griglia <a name="show-grid"></a>
 
-The *Show grid* dialog of the attribute table *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-table-6" class="reference internal">figure_composer_table_6</a>):
-
-**Figure Composer Attribute Table 6:**
+La finestra di dialogo *Mostra griglia* nelle *Proprietà elemento* della tabella degli attributi fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_attribute6.png)
-Attribute table Show grid Dialog 
 
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Show grid* when you want to display the grid, the outlines of the table cells.
--   With *Stroke width* you can set the thickness of the lines used in the grid.
--   The *Color* of the grid can be set using the color selection dialog.
+- Attivare <img src="../../images/checkbox.png" /> *Mostra griglia* quando si desidera visualizzare la griglia, i contorni delle celle della tabella.
+- Con *Spessore linea* è possibile impostare lo spessore delle linee utilizzate nella griglia.
+- Il *Colore* della griglia può essere impostato utilizzando la finestra di dialogo di selezione del colore.
 
-### Fonts and text styling {#fonts-and-text-styling}
+### Carattere e formattazione testo <a name="fonts-and-text-styling"></a>.
 
-The *Fonts and text styling* dialog of the attribute table *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-table-7" class="reference internal">figure_composer_table_7</a>):
-
-**Figure Composer Attribute Table 7:**
+La finestra di dialogo *Carattere e formattazione testo* della scheda *Proprietà elemento* della tabella degli attributi fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_attribute7.png)
-Attribute table Fonts and text styling Dialog 
 
--   You can define *Font* and *Color* for *Table heading* and *Table contents*.
--   For *Table heading* you can additionally set the *Alignment* and choose from Follow column alignment, Left, Center or Right. The column alignment is set using the *Select Attributes* dialog (see <a href="#figure-composer-table-3" class="reference internal">Figure_composer_table_3</a> ).
+- È possibile definire *Carattee* e *Colore* per *intestazione della tabella* e *contenuti della tabella*.
+- Per l'intestazione della tabella è inoltre possibile impostare il *Allineamento* e scegliere tra *Seguire l'allineamento della colonna*, *A sinistra*, *Al centro* o *A destra*. L'allineamento delle colonne viene impostato utilizzando la finestra di dialogo *Seleziona Attributi*.
 
-### Frames {#frames}
+### Cornici <a name="frames"></a>
 
-The *Frames* dialog of the attribute table *Item Properties* tab provide the following functionalities (see <a href="#figure-composer-table-8" class="reference internal">figure_composer_table_8</a>):
-
-**Figure Composer Attribute Table 8:**
+La finestra di dialogo *Cornici* nelle *Proprietà elemento* della tabella degli attributi fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_attribute8.png)
-Attribute table Frames Dialog 
 
--   With *Resize mode* you can select how to render the attribute table contents:
-    -   Use existing frames displays the result in the first frame and added frames only.
-    -   Extent to next page will create as many frames (and corresponding pages) as necessary to display the full selection of attribute table. Each frame can be moved around on the layout. If you resize a frame, the resulting table will be divided up between the other frames. The last frame will be trimmed to fit the table.
-    -   Repeat until finished will also create as many frames as the Extend to next page option, except all frames will have the same size.
--   Use the **\[Add Frame\]** button to add another frame with the same size as selected frame. The result of the table that will not fit in the first frame will continue in the next frame when you use the Resize mode Use existing frames.
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Don’t export page if frame is empty* prevents the page to be exported when the table frame has no contents. This means all other composer items, maps, scalebars, legends etc. will not be visible in the result.
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Don’t draw background if frame is empty* prevents the background to be drawn when the table frame has no contents.
+- Con *Modalità ridimensionamento* è possibile selezionare come rendere il contenuto della tabella degli attributi:
+    - Usa frames esistenti visualizza il risultato solo nel primo frame e solo i frames aggiunti.
+    - L'estensione alla pagina successiva creerà tutti i frames (e le pagine corrispondenti) necessari per visualizzare la selezione completa della tabella degli attributi. Ogni frame può essere spostato sul layout. Se si ridimensiona un frame, la tabella risultante sarà divisa tra gli altri frames. L'ultimo frame sarà tagliato per adattarsi alla tabella.
+    - Ripetere fino al termine creerà anche tanti frames quanti sono quelli dell'opzione Estendi alla pagina successiva, tranne che tutti i frames avranno la stessa dimensione.
+- Usare il pulsante **\[Aggiungi frame\]** per aggiungere un altro frame con le stesse dimensioni del frame selezionato. Il risultato della tabella che non si adatta al primo frame continuerà nel frame successivo quando si utilizza la modalità di ridimensionamento *Usa frames esistenti*.
+- Attivare <img src="../../images/checkbox.png" /> *Non esportare la pagina se il frame è vuoto* impedisce di esportare la pagina quando il frame della tabella non ha contenuto. Questo significa che tutti gli altri elementi del compositore, mappe, scalebar, legende, ecc. non saranno visibili nel risultato.
+- Attivare <img src="../../images/checkbox.png" /> *Non disegnare lo sfondo se il frame è vuoto* impedisce che lo sfondo venga disegnato quando il frame della tabella non ha contenuto.
 
 
-## The HTML frame item {#the-html-frame-item}
+## L'elemento HTML <a name="the-html-frame-item"></a>.
 
-It is possible to add a frame that displays the contents of a website or even create and style your own HTML page and display it!
-
-Click the <a href="../../images/mActionAddHtml.png" class="reference internal"><img src="../../images/mActionAddHtml.png" alt="mActionAddHtml" /></a> <sup>Add\\ HTML\\ frame</sup> icon, place the element by dragging a rectangle holding down the left mouse button on the Print Composer canvas and position and customize the appearance in the *Item Properties* tab (see <a href="#figure-composer-html-1" class="reference internal">figure_composer_html_1</a>).
-
-**Figure Composer HTML 1:**
+E' possibile aggiungere una cornice che visualizza i contenuti di un sito web o addirittura creare e modellare la propria pagina HTML e visualizzarla.
 
 ![](../../images/print_composer_html1.png)
-HTML frame, the item properties Tab 
 
-### HTML Source {#html-source}
+### Sorgente HTML <a name="html-source"></a>
 
-As an HTML source, you can either set a URL and activate the URL radiobutton or enter the HTML source directly in the textbox provided and activate the Source radiobutton.
+Come sorgente HTML, è possibile impostare un URL e attivare il pulsante radio dell'URL oppure inserire la sorgente HTML direttamente nella casella di testo fornita e attivare il pulsante radio Source.
 
-The *HTML Source* dialog of the HTML frame *Item Properties* tab provides the following functionalities (see <a href="#figure-composer-html-2" class="reference internal">figure_composer_html_2</a>):
-
-**Figure Composer HTML 2:**
+La finestra di dialogo *Sorgente HTML* della scheda *Proprietà elemento* dell'elemento HTML fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_html2.png)
-HTML frame, the HTML Source properties 
 
--   In *URL* you can enter the URL of a webpage you copied from your internet browser or select an HTML file using the browse button <a href="../../images/browsebutton.png" class="reference internal"><img src="../../images/browsebutton.png" alt="browsebutton" /></a>. There is also the option to use the Data defined override button, to provide an URL from the contents of an attribute field of a table or using a regular expression.
--   In *Source* you can enter text in the textbox with some HTML tags or provide a full HTML page.
--   The **\[insert an expression\]** button can be used to insert an expression like `[%Year($now)%]` in the Source textbox to display the current year. This button is only activated when radiobutton *Source* is selected. After inserting the expression click somewhere in the textbox before refreshing the HTML frame, otherwise you will lose the expression.
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Evaluate QGIS expressions in HTML code* to see the result of the expression you have included, otherwise you will see the expression instead.
--   Use the **\[Refresh HTML\]** button to refresh the HTML frame(s) to see the result of changes.
+- In *URL* puoi inserire l'URL di una pagina web che hai copiato dal tuo browser internet o selezionare un file HTML usando il pulsante di navigazione <img src="../../images/browsebutton.png" />. C'è anche la possibilità di utilizzare il pulsante di override *Definito da dati*, per fornire un URL dal contenuto di un campo attributo di una tabella o utilizzando un'espressione regolare.
+- In *Source* è possibile inserire testo nella casella di testo con alcuni tag HTML o fornire una pagina HTML completa.
+- Il pulsante **\[inserire un'espressione\]** può essere usato per inserire un'espressione come `[%Year($now)%]%]` nella casella di testo sorgente per visualizzare l'anno corrente. Questo pulsante viene attivato solo quando è selezionato il pulsante radio *Source*. Dopo aver inserito l'espressione clicca da qualche parte nella casella di testo prima di aggiornare la cornice HTML, altrimenti perderai l'espressione.
+- Attiva <img src="../../images/checkbox.png" /> *Valuta le espressioni QGIS in codice HTML* per vedere il risultato dell'espressione che hai incluso, altrimenti vedrai invece l'espressione.
+- Usa il pulsante **\[Aggiorna HTML\]** per aggiornare i frame HTML per vedere il risultato delle modifiche.
 
-### Frames {#id7}
+### Cornici <a name="id7"></a>
 
-The *Frames* dialog of the HTML frame *Item Properties* tab provides the following functionalities (see <a href="#figure-composer-html-3" class="reference internal">figure_composer_html_3</a>):
-
-**Figure Composer HTML 3:**
+La finestra di dialogo *Cornice* della scheda *Proprietà elemento* del frame HTML fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_html3.png)
-HTML frame, the Frames properties 
 
--   With *Resize mode* you can select how to render the HTML contents:
-    -   Use existing frames displays the result in the first frame and added frames only.
-    -   Extent to next page will create as many frames (and corresponding pages) as necessary to render the height of the web page. Each frame can be moved around on the layout. If you resize a frame, the webpage will be divided up between the other frames. The last frame will be trimmed to fit the web page.
-    -   Repeat on every page will repeat the upper left of the web page on every page in frames of the same size.
-    -   Repeat until finished will also create as many frames as the Extend to next page option, except all frames will have the same size.
--   Use the **\[Add Frame\]** button to add another frame with the same size as selected frame. If the HTML page that will not fit in the first frame it will continue in the next frame when you use *Resize mode* or *Use existing frames*.
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Don’t export page if frame is empty* prevents the map layout from being exported when the frame has no HTML contents. This means all other composer items, maps, scalebars, legends etc. will not be visible in the result.
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Don’t draw background if frame is empty* prevents the HTML frame being drawn if the frame is empty.
+- Con *Modalità ridimensionamento* è possibile selezionare come rendere i contenuti HTML:
+    - Usa frames esistenti visualizza il risultato solo nel primo frame e solo i frames aggiunti.
+    - L'estensione alla pagina successiva creerà tutti i frames (e le pagine corrispondenti) necessari per rendere l'altezza della pagina web. Ogni frame può essere spostato sul layout. Se si ridimensiona un frame, la pagina web sarà divisa tra gli altri frames. L'ultimo frame sarà tagliato per adattarsi alla pagina web.
+    - Ripetere su ogni pagina ripeterà la parte superiore sinistra della pagina web su ogni pagina in frame della stessa dimensione.
+    - Ripetere fino al termine creerà anche tanti frames quanti sono quelli dell'opzione Estendi alla pagina successiva, tranne per il fatto che tutti i frames avranno la stessa dimensione.
+- Usa il pulsante **\[Add Frame\]** per aggiungere un altro frame con le stesse dimensioni del frame selezionato. Se la pagina HTML che non si adatta al primo frame, continuerà nel frame successivo quando si usa *Modalità di ridimensionamento* o *Usa frames esistenti*.
+- Attivare <img src="../../images/checkbox.png" /> *Non esportare la pagina se il frame è vuoto* impedisce che il layout della mappa venga esportato quando il frame non ha contenuti HTML. Questo significa che tutti gli altri elementi del compositore, mappe, scalebar, legende, ecc. non saranno visibili nel risultato.
+- Attivare <img src="../../images/checkbox.png" /> *Non disegnare lo sfondo se il frame è vuoto* impedisce che il frame HTML venga disegnato se il frame è vuoto.
 
-### Use smart page breaks and User style sheet {#use-smart-page-breaks-and-user-style-sheet}
+### Interruzioni di pagina intelligenti e stylesheet personalizzato <a name="use-smart-page-breaks-and-user-style-sheet"></a>.
 
-The *Use smart page breaks* dialog and *Use style sheet* dialog of the HTML frame *Item Properties* tab provides the following functionalities (see <a href="#figure-composer-html-4" class="reference internal">figure_composer_html_4</a>):
-
-**Figure Composer HTML 4:**
+La finestra di dialogo *Interruzioni di pagina intelligenti* e *Stylesheet personalizzato* della scheda *Proprietà elemento* del frame HTML fornisce le seguenti funzionalità:
 
 ![](../../images/print_composer_html4.png)
-HTML frame, Use smart page breaks and User stylesheet properties 
 
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Use smart page breaks* to prevent the html frame contents from breaking mid-way a line of text so it continues nice and smooth in the next frame.
+- Attivare <img src="../../images/checkbox.png" /> *Usa interruzioni di pagina intelligenti* per evitare che il contenuto del frame html rompa a metà di una riga di testo in modo che continui bene e senza intoppi nel frame successivo.
 
--   Set the *Maximum distance* allowed when calculating where to place page breaks in the html. This distance is the maximum amount of empty space allowed at the bottom of a frame after calculating the optimum break location. Setting a larger value will result in better choice of page break location, but more wasted space at the bottom of frames. This is only used when *Use smart page breaks* is activated.
+- Impostare la *Distanza massima* consentita quando si calcola dove posizionare le interruzioni di pagina nell'html. Questa distanza è la quantità massima di spazio vuoto consentito nella parte inferiore di un frame dopo aver calcolato la posizione ottimale di interruzione. Impostando un valore più grande si otterrà una migliore scelta della posizione di interruzione di pagina, ma più spazio sprecato nella parte inferiore dei frames. Questo viene utilizzato solo quando è attivato *Usa interruzioni pagina intelligente*.
 
--   Activate <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *User stylesheet* to apply HTML styles that often is provided in cascading style sheets. An example of style code is provide below to set the color of `<h1>` header tag to green and set the font and fontsize of text included in paragraph tags `<p>`.
+- Attivare <img src="../../images/checkbox.png" /> *Foglio di stile utente* per applicare stili HTML che spesso sono forniti in fogli di stile a cascata. Un esempio di codice di stile è fornito di seguito per impostare il colore dell'intestazione `<h1>`` in verde e impostare il carattere e la dimensione del testo incluso nei tag di paragrafo `<p>`.
 
-        h1 {color: #00ff00;
+        h1 {color: #00ff00ff00;
         }
-        p {font-family: "Times New Roman", Times, serif;
+        p {font-family: "Times New Roman", Times, Times, serif;
            font-size: 20px;
         }
 
--   Use the **\[Update HTML\]** button to see the result of the stylesheet settings.
+- Usa il pulsante **\[Aggiorna HTML\]** per vedere il risultato delle impostazioni del foglio di stile.
 
 
-#### Gestisci elementi {#manage-items}
+# Gestire gli elementi <a name="manage-item"></a>
 
-## Dimensione e posizione {#size-and-position}
+## Dimensioni e posizione <a name="size-and-position"></a>
 
-Puoi spostare/ridimensionare ogni elemento del compositore per creare un layout di stampa perfetto. Per entrambe le operazioni devi prima attivare cliccare sull’icona <a href="../../images/mActionSelect.png" class="reference internal"><img src="../../images/mActionSelect.png" alt="mActionSelect" /></a> <sup>Scegli/Sposta\\ oggetto</sup> e poi cliccare sull’oggetto corrispondente; ora puoi muoverlo con il pulsante sinistro del mouse. Se vuoi forzare lo spostamento lungo un asse orizzontale o verticale, tieni premuto il tasto `Shift`. Se hai bisogno di una maggiore precisione usa le `Frecce direzionali` della tastiera; se il movimento è troppo lento lo puoi velocizzare tenendo premuto il tasto `Shift`.
+Ogni elemento all'interno del Compositore può essere spostato / ridimensionato per creare un layout perfetto. Per entrambe le operazioni il primo passo è attivare lo strumento <img src="../../images/mActionSelect.png" /> <i>Seleziona elemento</i> e cliccare sulla voce; è quindi possibile spostarla tenendo premuto il tasto sinistro del mouse. Se avete bisogno di limitare i movimenti all'asse orizzontale o verticale, basta tenere premuto il tasto `Shift` mentre si muove il mouse. Se hai bisogno di una maggiore precisione, puoi muovere un elemento selezionato usando i "tasti freccia" sulla tastiera; se il movimento è troppo lento, puoi accelerarlo tenendo premuto il tasto `Shift`.
 
-A selected item will show squares on its boundaries; moving one of them with the mouse, will resize the item in the corresponding direction. While resizing, holding `Shift` will maintain the aspect ratio. Holding `Alt` will resize from the item center.
+Un elemento selezionato mostrerà dei quadrati sui suoi confini; spostando uno di essi con il mouse, ridimensionerà l'elemento nella direzione corrispondente. Mentre si ridimensiona, tenendo premuto *Shift* si manterrà il rapporto d'aspetto. Tenendo premuto `Alt` si ridimensionerà dal centro dell'oggetto.
 
-The correct position for an item can be obtained using snapping to grid or smart guides. Guides are set by clicking and dragging in the rulers. Guides are moved by clicking in the ruler, level with the guide and dragging to a new place. To delete a guide move it off the canvas. If you need to disable the snap on the fly just hold `Ctrl` while moving the mouse.
+La posizione corretta per un articolo può essere ottenuta con lo snapping alla griglia o alle guide intelligenti. Le guide vengono impostate facendo clic e trascinando i righelli. Le guide vengono spostate facendo clic sul righello, livellando la guida e trascinandola in una nuova posizione. Per eliminare una guida, spostarla fuori dall'area di disegno. Se avete bisogno di disabilitare lo snap al volo basta tenere premuto il tasto `Ctrl` mentre si muove il mouse.
 
-Puoi usare lo strumento <a href="../../images/mActionSelect.png" class="reference internal"><img src="../../images/mActionSelect.png" alt="mActionSelect" /></a> <sup>Sposta/Muovi\\ oggetto</sup> su più oggetti contemporaneamente. Tieni premuto il tasto `Shift` e clicca su tutti gli oggetti che vuoi selezionare. Ora li puoi spostare o ridimensionare tutti in un colpo solo.
+È possibile scegliere più elementi con il pulsante <img src="../../images/mActionSelect.png" /> <i>Seleziona elemento</i>. Tieni premuto il pulsante `Shift` e clicca su tutti gli elementi di cui hai bisogno. È quindi possibile ridimensionare/spostare questo gruppo come un singolo elemento.
 
-Once you have found the correct position for an item, you can lock it by using the items on the toolbar or ticking the box next to the item in the *Items* tab. Locked items are **not** selectable on the canvas.
+Una volta trovata la posizione corretta per un elemento, è possibile bloccarlo utilizzando gli elementi sulla barra degli strumenti o spuntando la casella accanto all'elemento nella scheda *Elementi*. Gli elementi bloccati **non** sono selezionabili nell'area di disegno.
 
-Locked items can be unlocked by selecting the item in the *Items* tab and unchecking the tickbox or you can use the icons on the toolbar.
+Gli elementi bloccati possono essere sbloccati selezionando l'elemento nella scheda *Elementi* e deselezionando la casella di spunta oppure è possibile utilizzare le icone sulla barra degli strumenti.
 
-Per deselezionare un oggetto, cliccaci sopra tenendo premuto il tasto `Shift`.
+Per deselezionare un elemento, basta cliccare su di esso tenendo premuto il pulsante `Shift`.
 
-Nel menu *Modifica*, puoi trovare diversi strumenti che ti permettono di selezionare tutti gli elementi, di pulire o invertire la selezione attuale.
+All'interno del menu *Modifica*, si possono trovare azioni per selezionare tutte le voci, per cancellare tutte le selezioni o per invertire la selezione corrente.
 
-## Allineamento {#alignment}
+## Allineamento <a name="alignment"></a>
 
-Raising or lowering functionalities for elements are inside the <a href="../../images/mActionRaiseItems.png" class="reference internal"><img src="../../images/mActionRaiseItems.png" alt="mActionRaiseItems" /></a> <sup>Raise\\ selected\\ items</sup> pull-down menu. Choose an element on the Print Composer canvas and select the matching functionality to raise or lower the selected element compared to the other elements (see <a href="#table-composer-1" class="reference internal">table_composer_1</a>). This order is shown in the *Items* tab. You can also raise or lower objects in the *Items* tab by clicking and dragging an object’s label in this list.
+![](../../../images/alignment_lines.png)
 
-**Figure Composer 28:**
-
-![](../../images/alignment_lines.png)
-Linee guida di allineamento del compositore di stampe 
-
-Ci sono diverse funzionalità disponibili nel menu a tendina <a href="../../images/mActionAlignLeft.png" class="reference internal"><img src="../../images/mActionAlignLeft.png" alt="mActionAlignLeft" /></a> <sup>Allinea\\ gli\\ oggetti\\ selezionati</sup> (vedi <a href="#table-composer-1" class="reference internal">table_composer_1</a>). Per usare una di queste funzionalità, seleziona prima alcuni oggetti e poi clicca sull’icona. In questo modo tutti gli elementi verranno allineati all’interno della loro cornice. Quando muovi gli elementi nel compositore, appaiono delle linee ai margini del foglio che ti aiutano ad allineare gli oggetti.
+Per utilizzare una funzionalità di allineamento, si selezionano prima alcuni elementi e poi si clicca sull'icona di allineamento corrispondente. Tutti gli elementi selezionati saranno quindi allineati all'interno del loro comune rettangolo di delimitazione. Quando si spostano elementi sull'area di disegno del Compositore, le linee di aiuto all'allineamento appaiono quando i bordi, i centri o gli angoli sono allineati.
 
 
-## Copia/Taglia e Incolla oggetti {#copy-cut-and-paste-items}
+## Copia/Taglia/Incolla elementi <a name="copy-cut-and-paste-items"></a>
 
-Il compositore di stampe include tutte le azioni più comuni di copia/taglia/incolla per gli oggetti del layout. Prima di tutto seleziona l’oggetto: nel menu *Modifica* potrai trovare le azioni che potrai effettuare. Mentre usi l’azione incolla, gli oggetti verranno incollati nella posizione attuale del mouse.
+Il compositore di stampa include azioni per utilizzare la comune funzionalità Copia/Taglia/Incolla per gli elementi del layout. Come al solito è necessario prima di tutto selezionare gli elementi utilizzando una delle opzioni viste sopra; a questo punto le azioni possono essere trovate nel menu *Modifica*. Quando si usa l'azione Incolla, gli elementi saranno incollati in base alla posizione corrente del mouse.
 
-Nota
+*Nota*: Gli elementi HTML non possono essere copiati in questo modo. Come soluzione, usa il pulsante **\[Add Frame\]** nella scheda *Proprietà elemento*.
 
-HTML items can not be copied in this way. As a workaround, use the **\[Add Frame\]** button in the *Item Properties* tab.
+Durante il processo di layout è possibile ripristinare e ripristinare le modifiche. Questo può essere fatto con gli strumenti di ripristino e ripristino:
 
-Durante la creazione di un layout di stampa puoi annullare e ripristinare le azioni. Lo puoi fare semplicemente usando lo strumento annulla/ripristina:
+- <img src=".../.../../images/mActionUndo.png" /> <i>Annulla ultima modifica</i>
+- <img src=".../.../.../images/mActionRedo.png" /> <i>Ripristina ultima modifica</i>
 
--   <a href="../../images/mActionUndo.png" class="reference internal"><img src="../../images/mActionUndo.png" alt="mActionUndo" /></a> <sup>Revert\\ last\\ change</sup>
--   <a href="../../images/mActionRedo.png" class="reference internal"><img src="../../images/mActionRedo.png" alt="mActionRedo" /></a> <sup>Restore\\ last\\ change</sup>
-
-This can also be done by mouse click within the *Command history* tab (see <a href="#figure-composer-29" class="reference internal">figure_composer_29</a>).
-
-**Figure Composer 29:**
+Questo può essere fatto anche con un clic del mouse all'interno della scheda *Cronologia comando*.
 
 ![](../../images/command_hist.png)
-Storico dei comandi del compositore di stampe 
 
 
-Il compositore di stampe include anche una funzionalità che ti permette di creare automaticamente degli atlanti. Il concetto è quello di usare un vettore di copertura che contiene campi e geometrie. Per ogni geometria di questo vettore potrai creare un nuovo output: ogni nuovo output sarà centrato sulla geometria corrispondente. Puoi usare i campi delle geometrie come etichette per gli output.
+Il compositore di stampa include funzioni di generazione che consentono di creare libri cartografici in modo automatico. Il concetto è quello di utilizzare un livello di copertura, che contiene geometrie e campi. Per ogni geometria del livello di copertura, verrà generato un nuovo output dove il contenuto di alcune mappe verrà spostato per evidenziare la geometria corrente. I campi associati a questa geometria possono essere utilizzati all'interno delle etichette di testo.
 
-Every page will be generated with each feature. To enable the generation of an atlas and access generation parameters, refer to the Atlas generation tab. This tab contains the following widgets (see <a href="#figure-composer-atlas" class="reference internal">Figure_composer_atlas</a>):
-
-**Figure Composer Atlas:**
+Ogni pagina sarà generata con ogni caratteristica. Per abilitare la generazione di un atlante e i parametri di generazione degli accessi, fare riferimento alla scheda di generazione dell'atlante. Questa scheda contiene i seguenti widget:
 
 ![](../../images/print_composer_atlas.png)
-Scheda generazione atlante 
 
--   <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Genera un atlante*, che attiva o disattiva la generazione dell’atlante.
+- <img src="../../images/checkbox.png" /> *Generare un atlante*, che abilita o disabilita la generazione dell'atlante.
+- Un *Strato di copertura* <img src="../../images/selectstring.png" /> combo box che permette di scegliere il livello (vettoriale) contenente le geometrie su cui iterare.
+- Un <img src="../../images/checkbox.png" /> *Strato di copertura nascosto* che, se selezionato, nasconderà il livello di copertura (ma non gli altri) durante la generazione.
+- Un *Filtro con* area di testo opzionale che permette di specificare un'espressione per filtrare le caratteristiche del livello di copertura. Se l'espressione non è vuota, saranno selezionate solo le caratteristiche che valutano a `True`. Il pulsante sulla destra permette di visualizzare il costruttore dell'espressione.
+- Una casella di testo *Espressione file di uscita* che viene utilizzata per generare un nome file per ogni geometria, se necessario. Si basa sulle espressioni. Questo campo è significativo solo per il rendering su file multipli.
+- A <img src="../../images/checkbox.png" /> *Esportazione di un singolo file quando possibile* che permette di forzare la generazione di un singolo file se possibile con il formato di output scelto (PDF, per esempio). Se questo campo è selezionato, il valore del campo *Espressione file di uscita* non ha senso.
+- Un <img src="../../images/checkbox.png" /> *Ordina per* che, se selezionato, consente di ordinare le caratteristiche del livello di copertura. La combo box associata permette di scegliere quale colonna verrà usata come chiave di ordinamento. L'ordine (ascendente o discendente) è impostato da un pulsante a due stati che visualizza una freccia su o giù.
 
--   Un menu a tendina *Layer di copertura* <a href="../../images/selectstring.png" class="reference internal"><img src="../../images/selectstring.png" alt="selectstring" /></a> che ti permette di scegliere il layer (vettore) contenente le geometrie che verranno iterate.
+È possibile utilizzare più elementi della mappa con la generazione dell'atlante; ogni mappa sarà resa in base alle caratteristiche di copertura. Per abilitare la generazione dell'atlante per uno specifico elemento della mappa, è necessario selezionare <img src="../../images/checkbox.png" />*Controllato da Atlas* sotto le proprietà dell'elemento della mappa. Una volta selezionata, è possibile impostare:
 
--   Una casella di controllo opzionale <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Layer copertura nascosto* che, se attivata, nasconderà solamente il layer di copertura durante la generazione dell’atlante.
+- Un botone ![radiobuttonon](../../../images/radiobuttonon.png) *Margine geometria* che permette di selezionare la quantità di spazio aggiunto intorno ad ogni geometria all'interno della mappa assegnata. Il suo valore è significativo solo quando si utilizza la modalità di autoscalatura.
+- A ![radiobuttonoff](../../.../images/radiobuttonoff.png) *Scala predefinita* (best fit). Utilizzerà la migliore opzione di adattamento dall'elenco delle scale predefinite nelle impostazioni delle proprietà del progetto (vedere *Progetto &rarr; Proprietà progretto &rarr; Generale &rarr; Scale progetto* per configurare queste scale predefinite).
+- A ![radiobuttonoff](../../../images/radiobuttonoff.png) *Scala fissa* che permette di passare dalla modalità a scala automatica a quella a scala fissa. In modalità a scala fissa, la mappa sarà tradotta solo per ogni geometria da centrare. In modalità a scala automatica, le estensioni della mappa sono calcolate in modo tale che ogni geometria apparirà nella sua interezza.
 
--   Una casella opzionale *Filtra con* che ti permette di specificare un’espressione per filtrare le geometrie del layer di copertura. Se l’espressione non è vuota, solamente le geometrie valutate come `True` verranno selezionate. Premendo il pulsante sulla destra puoi aprire il costruttore di espressioni.
+## Etichette <a name="labels"></a>
 
--   Usa la casella di testo *Espressione nome file di output* per generare un nome per ogni geometria. Si basa su un’espressione. Questo campo ha senso solamente per la creazione di file multipli.
+Al fine di adattare le etichette alle caratteristiche del plugin iterates over dell'atlante, è possibile includere espressioni. Per esempio, per un livello città con i campi `CITY_NAME` e `ZIPCODE`, si può inserire questo:
 
--   Una casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Esporta file singolo se possibile* che ti permette di forzare la generazione di un singolo file se è compatibile con il formato di output scelto (per esempio, PDF). Se spuntata, il valore inserito in *Espressione del nome di file in output* non ha senso.
+    L'area di [% superiore (CITY_NAME) ||| ',' ||| ZIPCODE |||| ' è ' format_number($area/100000000,2) %] km2
 
--   Una casella di controllo opzionale <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Ordina per* che ti permette di ordinare le geometrie del layer di copertura. Il menu a tendina associato ti permette di scegliere quale colonna dovrà essere usate per l’ordinamento. Puoi impostare l’ordine (crescente o decrescente) grazie al pulsante a destra del menu a tendina.
+L'informazione `upper(CITY\_NAME) ||| ',' |||| ZIPCODE |||| ' è ' format\_number($area/100000000,2)` è un'espressione usata all'interno dell'etichetta. In questo modo l'atlante generato come:
 
-Puoi usare oggetti multipli con la generazione dell’atlante: ogni mappa verrà visualizzata secondo le geometrie del layer di copertura. Per impostare la generazione dell’atlante per un oggetto specifico, spunta la casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a>*Controllato dall’atlante* nella scheda delle proprietà dell’oggetto. Una volta spuntata potrai impostare:
-
--   A radiobutton ![radiobuttonon](../../images/radiobuttonon.png) *Margin around feature* that allows you to select the amount of space added around each geometry within the allocated map. Its value is meaningful only when using the auto-scaling mode.
--   A ![radiobuttonoff](../../images/radiobuttonoff.png) *Predefined scale* (best fit). It will use the best fitting option from the list of predefined scales in your project properties settings (see *Project –&gt; Project Properties –&gt; General –&gt; Project Scales* to configure these predefined scales).
--   A ![radiobuttonoff](../../images/radiobuttonoff.png) *Fixed scale* that allows you to toggle between auto-scale and fixed-scale mode. In fixed-scale mode, the map will only be translated for each geometry to be centered. In auto-scale mode, the map’s extents are computed in such a way that each geometry will appear in its entirety.
-
-## Etichette {#labels}
-
-In order to adapt labels to the feature the atlas plugin iterates over, you can include expressions. For example, for a city layer with fields CITY\_NAME and ZIPCODE, you could insert this:
-
-    The area of [% upper(CITY_NAME) || ',' || ZIPCODE || ' is ' format_number($area/1000000,2) %] km2
-
-The information \[% upper(CITY\_NAME) || ‘,’ || ZIPCODE || ‘ is ‘ format\_number($area/1000000,2) %\] is an expression used inside the label. That would result in the generated atlas as:
-
-The area of PARIS,75001 is 1.94 km2
+L'area di PARIGI,75001 è di 1,94 km2
 
 
-## Data Defined Override Buttons {#data-defined-override-buttons}
+## Impostazioni definite da dati<a name="data-defined-override-buttons"></a>
 
-There are several places where you can use a <a href="../../images/mIconDataDefine.png" class="reference internal"><img src="../../images/mIconDataDefine.png" alt="mIconDataDefine" /></a> <sup>Data\\ Defined\\ Override</sup> button to override the selected setting. These options are particularly usefull with Atlas Generation.
+Ci sono diversi punti in cui è possibile utilizzare un pulsante <img src="../../images/mIconDataDefine.png" /> <i>Data Defined Override</i> per sovrascrivere l'impostazione selezionata. Queste opzioni sono particolarmente utili con Atlas Generation.
 
-For the following examples the Regions layer of the KADAS sample dataset is used and selected for Atlas Generation. We also assume the paper format A4 (210X297) is selected in the *Composition* tab for field *Presets*.
+Con un pulsante di sovrascrittura definita dai dati è possibile impostare dinamicamente l'orientamento della carta. Ad esempio uando l'altezza (nord-sud) delle estensioni di una regione è maggiore della sua larghezza (est-ovest), si preferisce utilizzare l'orientamento verticale anziché orizzontale per ottimizzare l'uso della carta.
 
-With a Data Defined Override button you can dynamically set the paper orientation. When the height (north-south) of the extents of a region is greater than it’s width (east-west), you rather want to use portrait instead of landscape orientation to optimize the use of paper.
-
-In the *Composition* you can set the field *Orientation* and select Landscape or Portrait. We want to set the orientation dynamically using an expression depending on the region geometry. press the <a href="../../images/mIconDataDefine.png" class="reference internal"><img src="../../images/mIconDataDefine.png" alt="mIconDataDefine" /></a> button of field *Orientation*, select *Edit ...* so the *Expression string builder* dialog opens. Give following expression:
+Nel campo *Composizione* è possibile impostare il campo *Orientamento* e selezionare *Paesaggio* o *Ritratto*. Vogliamo impostare dinamicamente l'orientamento utilizzando un'espressione in base alla geometria della regione. premere il pulsante <img src="../../images/mIconDataDefine.png" /> del campo *Orientamento*, selezionare *Modifica ....* in modo da aprire la finestra di dialogo *Costruttore di stringhe di espressione*. Dare la seguente espressione:
 
     CASE WHEN bounds_width($atlasgeometry) > bounds_height($atlasgeometry) THEN 'Landscape' ELSE 'Portrait' END
 
-Now the paper orients itself automatically for each Region you need to reposition the location of the composer item as well. For the map item you can use the <a href="../../images/mIconDataDefine.png" class="reference internal"><img src="../../images/mIconDataDefine.png" alt="mIconDataDefine" /></a> button of field *Width* to set it dynamically using following expression:
+Ora la mappa si orienta automaticamente per ogni regione in cui è necessario riposizionare anche la posizione dell'elemento del compositore. Per l'elemento della mappa è possibile usare il pulsante <img src="../../images/mIconDataDefine.png" /> del campo *Larghezza* per impostarlo dinamicamente usando la seguente espressione:
 
     (CASE WHEN bounds_width($atlasgeometry) > bounds_height($atlasgeometry) THEN 297 ELSE 210 END) - 20
 
-Use the <a href="../../images/mIconDataDefine.png" class="reference internal"><img src="../../images/mIconDataDefine.png" alt="mIconDataDefine" /></a> button of field *Heigth* to provide following expression:
+Utilizzare il pulsante "<img src="../../images/mIconDataDefine.png" /> del campo *Altezza* per specificare la seguente espressione:
 
     (CASE WHEN bounds_width($atlasgeometry) > bounds_height($atlasgeometry) THEN 210 ELSE 297 END) - 20
 
-When you want to give a title above map in the center of the page, insert a label item above the map. First use the item properties of the label item to set the horizontal alignment to ![radiobuttonon](../../images/radiobuttonon.png) *Center*. Next activate from *Reference point* the upper middle checkbox. You can provide following expression for field *X* :
+Quando si desidera assegnare un titolo sopra la mappa al centro della pagina, inserire un'etichetta sopra la mappa. Innanzitutto utilizzare le proprietà dell'elemento dell'etichetta per impostare l'allineamento orizzontale su ![radiobuttonon](../../../images/radiobuttonon.png) *Centro*. Attivare quindi dalla casella di controllo *Punto di riferimento* la casella di controllo centrale superiore. È possibile fornire la seguente espressione per il campo *X* :
 
     (CASE WHEN bounds_width($atlasgeometry) > bounds_height($atlasgeometry) THEN 297 ELSE 210 END) / 2
 
-For all other composer items you can set the position in a similar way so they are correctly positioned when page is automatically rotated in portrait or landscape.
+Per tutti gli altri elementi del compositore è possibile impostare la posizione in modo simile in modo che siano posizionati correttamente quando la pagina viene ruotata automaticamente in verticale o in orizzontale.
 
-Information provided is derived from the excellent blog (in english and portugese) on the Data Defined Override options [<span id="id15" class="problematic">Multiple\_format\_map\_series\_using\_QGIS\_2.6\_</span>](#id14) .
+Questo è solo un esempio di come è possibile utilizzare i *Data Defined Overrides*.
 
-This is just one example of how you can use Data Defined Overrides.
+## Anteprima <a name="preview"></a>
 
-## Anteprima {#preview}
+Una volta configurate le impostazioni dell'atlante e selezionate le voci della mappa, è possibile creare un'anteprima di tutte le pagine cliccando su *Atlante &rarr; Anteprima atlante* e utilizzando le frecce, nello stesso menu, per navigare attraverso tutte le funzioni.
 
-Una volta che hai configurato le impostazioni dell’atlante e che hai selezionato gli oggetti della mappa, puoi creare un’anteprima di tutte le pagine cliccando sul pulsante *Atlante ‣ Anteprima atlante* e usare le frecce dello stesso menu per navigare fra le varie geometrie.
+## Generazione <a name="generation"></a>
 
-## Generazione {#generation}
+La generazione dell'atlante può essere fatta in diversi modi. Ad esempio, con *Atlante &rarr; Stampa Atlante* è possibile stamparlo direttamente. È inoltre possibile creare un PDF utilizzando *Atlante &rarr; Esporta Atlante come PDF*: All'utente verrà richiesta una directory per il salvataggio di tutti i file PDF generati (eccetto se è stata selezionata l'esportazione di <img src="../../images/checkbox.png" /> *Esporta come singolo file se possibile*). Se è desiderato stampare solo una pagina dell'atlante, è sufficiente avviare la funzione di anteprima, selezionare la pagina desiderata e fare clic su *Compositore &rarr; Stampa* (o creare un PDF).
 
-Puoi effettuare la generazione dell’atlante in modi diversi. Per esempio tramite il menu *Atlante ‣ Stampa atlante*. Puoi anche creare un PDF cliccando su *Atlente ‣ Esporta atlante come PDF*: ti verrà chiesto un percorso in cui salvare i PDF (eccetto se hai spuntato la casella di controllo <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Esporta file singolo se possibile*). Se devi stampare solamente una pagina dell’atlante, fai partire l’anteprima, fermati alla pagina che vuoi e clicca su *Compositore ‣ Stampa* (o esporta come PDF).
+Per massimizzare lo spazio disponibile per interagire con una composizione è possibile utilizzare *Visualizza &rarr;* <img src="../../images/checkbox.png" /> *Nascondi pannelli* o premere `F10`.
 
-To maximise the space available to interact with a composition you can use *View –&gt;* <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Hide panels* or press `F10`.
-
-:: note:
-
-    It's also possible to switch to a full screen mode to have more space to interact by pressing
-    :kbd:`F11` or using :guilabel:`View --> |checkbox| :guilabel:`Toggle full screen`.
-
-<a href="#figure-composer-output" class="reference internal">Figure_composer_output</a> shows the Print Composer with an example print layout, including each type of map item described in the sections above.
-
-**Figure Composer Output:**
+*Note*: È anche possibile passare ad una modalità a schermo intero per avere più spazio per interagire premendo `F11` o usando *Visualizza &rarr; Schermo intero*.
 
 ![](../../images/print_composer_complete.png)
-Compositore con mappa, legenda, immagine, barra di scala, coordinate, testo e cornice HTML 
 
-Before printing a layout you have the possibility to view your composition without bounding boxes. This can be enabled by deactivating *View –&gt;* <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *Show bounding boxes* or pressing the shortcut `Ctrl+Shift+B`.
+Prima di stampare un layout c'è la possibilità visualizzare la composizione senza caselle di delimitazione. Questo può essere attivato disattivando *Visualizza &rarr;* <img src="../../images/checkbox.png" /> *Mostra i rettangoli di selezione* o premendo i tasti `Ctrl+Shift+B`.
 
-Il compositore di stampe ti permette di creare diversi formati di output e puoi scegliere la risoluzione (qualità di stampa) e il formato pagina:
+Il compositore di stampa consente di creare diversi formati di output ed è possibile definire la risoluzione (qualità di stampa) e il formato della carta:
 
--   L’icona <a href="../../images/mActionFilePrint.png" class="reference internal"><img src="../../images/mActionFilePrint.png" alt="mActionFilePrint" /></a> <sup>Stampa</sup> ti permette di stampare il layout su una stampante collegata o su un file PDF o Postscript.
+- L'icona <img src="../../images/mActionFilePrint.png" /> <i>Stampa</i> permette di stampare il layout su una stampante collegata o un file PostScript, a seconda dei driver di stampa installati.
+- L'icona <img src="../../images/mActionSaveMapAsImage.png" /> <i>Esporta come immagine</i> esporta la composizione in diversi formati immagine, come PNG, BPM, TIF, JPG,....
+- <img src="../../images/mActionSaveAsPDF.png" /> <i>Esporta come PDF</i> salva la composizione di stampa definita direttamente come PDF.
+- L'icona <img src="../../images/mActionSaveAsSVG.png" /> <i>Esporta come SVG</i> salva la composizione come SVG (Scalable Vector Graphic).
 
--   L’icona <a href="../../images/mActionSaveMapAsImage.png" class="reference internal"><img src="../../images/mActionSaveMapAsImage.png" alt="mActionSaveMapAsImage" /></a> <sup>Esporta\\ come\\ immagine</sup> esporta il layout in diversi formati immagine come PNG, BPM, TIF, JPG,...
-
--   L’icona <a href="../../images/mActionSaveAsPDF.png" class="reference internal"><img src="../../images/mActionSaveAsPDF.png" alt="mActionSaveAsPDF" /></a> <sup>Esporta\\ come\\ PDF</sup> esporta il layout in formato PDF.
-
--   L’icona <a href="../../images/mActionSaveAsSVG.png" class="reference internal"><img src="../../images/mActionSaveAsSVG.png" alt="mActionSaveAsSVG" /></a> <sup>Esporta\\ come\\ SVG</sup> salva il layout di stampa in formato SVG (Scalable Vector Graphic).
-
-If you need to export your layout as a **georeferenced image** (i.e., to load back inside KADAS), you need to enable this feature under the Composition tab. Check <a href="../../images/checkbox.png" class="reference internal"><img src="../../images/checkbox.png" alt="checkbox" /></a> *World file on* and choose the map item to use. With this option, the ‘Export as image’ action will also create a world file.
-
-Nota
-
--   Currently, the SVG output is very basic. This is not a KADAS problem, but a problem with the underlying Qt library. This will hopefully be sorted out in future versions.
--   Exporting big rasters can sometimes fail, even if there seems to be enough memory. This is also a problem with the underlying Qt management of rasters.
-
-
-
+È possibile attivare l'esportazione della composizione come immagine **georeferenziata** (ad es., da caricare nuovamente in KADAS) sotto la scheda *Composizione*. Selezionare <img src="../../images/checkbox.png" /> *File world su* e scegliere l'elemento mappa da utilizzare. Con questa opzione, l'azione *Esporta come immagine* creerà anche un file *World*.
 

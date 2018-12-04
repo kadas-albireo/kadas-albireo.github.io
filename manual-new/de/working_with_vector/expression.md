@@ -1,10 +1,11 @@
-# Ausdrücke {#expressions}
+# Ausdrücke <a name="#expressions"></a>
 
-The **Expressions** feature are available through the field calculator or the add a new column button in the attribut table or the Field tab in the Layer properties ; through the graduaded, categorized and rule-based rendering in the Style tab of the Layer properties ; through the expression-based labeling <a href="../../images/browsebutton.png" class="reference internal"><img src="../../images/browsebutton.png" alt="browsebutton" /></a> in the <a href="../../images/mActionLabeling.png" class="reference internal"><img src="../../images/mActionLabeling.png" alt="mActionLabeling" /></a> <sup>Labeling</sup> core application ; through the feature selection and through the diagram tab of the Layer properties as well as the *Main properties* of the label item and the *Atlas generation* tab in the Print Composer.
+Die Funktion **Expressions** steht über den Feldrechner oder das Hinzufügen einer neuen Spaltenschaltfläche in der Attributtabelle oder der Registerkarte Feld in den Layereigenschaften zur Verfügung; über das abgestufte, kategorisierte und regelbasierte Rendering in der Registerkarte Style der Layereigenschaften; über die expressionsbasierte Beschriftung <img src="../../images/browsebutton.png" /> in der <img src="../../images/mActionLabeling.png" /> *Labeling* Kernanwendung; durch die Featureauswahl und durch den Diagrammreiter der Layereigenschaften sowie die *Haupteigenschaften* des Labelelements und die Registerkarte *Atlasgenerierung* im Print Composer.
 
-They are a powerful way to manipulate attribute value in order to dynamically change the final value in order to change the geometry style, the content of the label, the value for diagram, select some feature or create virtual column.
+Sie sind eine leistungsfähige Möglichkeit, den Attributwert zu manipulieren, um den Endwert dynamisch zu ändern, um den Geometrie-Stil, den Inhalt des Labels, den Wert für das Diagramm, die Auswahl eines Features oder die Erstellung einer virtuellen Spalte zu ändern.
 
-## Funktionsliste {#functions-list}
+
+## Funktionsliste <a name="#functions-list"></a>
 
 Die **Funktionsliste** enthält Funktionen genauso wie Felder und Werte. Sehen Sie sich die Hilfefunktionen im **Hilfe zu gewählten Funktionen** Bereich an. In **Ausdruck** sehen Sie die Berechnungsausdrücke, die Sie mit der **Funktionsliste** erstellt haben. Für die gebräuchlichsten Operatoren siehe **Operatoren**.
 
@@ -13,9 +14,9 @@ Klicken Sie in der **Funktionsliste** auf *Felder und Werte* um alle durchsuchba
 Die Gruppen *Operatoren*, *Mathematik*, *Umwandlungen*, *Zeichenketten*, *Geometrie* und *Datensatz* stellen zahlreiche Funktionen zur Verfügung. In *Operatoren* finden Sie mathematische Operatoren. Suchen Sie in *Mathematik* nach mathematischen Funktionen. Die *Umwandlungen* Gruppe enthält Funktionen die einen Datentyp in einen anderen konvertieren. Die *Zeichenkette* Gruppe stellt Funktionen für Datenketten zur Verfügung. In der *Geometrie* Gruppe finden Sie Funktionen für Geometrieobjekte. Mit den Funktionen der *Datensatz* Gruppe können Sie Ihren Datensatz mit einer Nummerierung versehen. Um eine Funktion in die **Ausdruck** Box des Feldrechners hinzuzufügen klicken Sie auf &gt; und doppelklicken Sie dann die Funktion.
 
 
-### Operatoren {#operators}
+### Operatoren <a name="#operators"></a>
 
-This group contains operators (e.g., +, -, \*).
+Diese Gruppe enthält Operatoren (z.B. +, -, -, \*).
 
     a + b      a plus b
     a - b      a minus b
@@ -54,17 +55,17 @@ This group contains operators (e.g., +, -, \*).
     a IN (value[,value])          a is below the values listed
     a NOT IN (value[,value])      a is not below the values listed
 
-**Some examples:**
+**Beispiele:**
 
 -   Verbindet eine Zeichenkette und einen Wert von einem Spaltennamen:
 
         'My feature's id is: ' || "gid"
 
--   Test if the “description” attribute field starts with the ‘Hello’ string in the value (note the position of the % character):
+-   Testen Sie, ob das Attributfeld "description" mit der Zeichenkette "Hello" im Wert beginnt (beachten Sie die Position des %-Zeichens):
 
         "description" LIKE 'Hello%'
 
-### Bedingungen {#conditionals}
+### Bedingungen <a name="#conditionals"></a>
 
 Diese Gruppe enthält Funktionen um bedingte Prüfungen in Ausdrücken zu handhaben.
 
@@ -77,13 +78,13 @@ Diese Gruppe enthält Funktionen um bedingte Prüfungen in Ausdrücken zu handha
     regexp_match                  returns true if any part of a string matches
                                   the supplied regular expression
 
-**Einige Beispiele:**
+**Beispiele:**
 
 -   Sende einen Wert zurück wenn die erste Bedingung wahr ist, sonst einen anderen Wert:
 
         CASE WHEN "software" LIKE '%QGIS%' THEN 'QGIS' ELSE 'Other'
 
-### Mathematische Funktionen {#mathematical-functions}
+### Mathematische Funktionen <a name="#mathematical-functions"></a>
 
 Diese Gruppe enthält mathematische Funktionen (z.B. sqrt, sin und cos).
 
@@ -126,7 +127,7 @@ Diese Gruppe enthält mathematische Funktionen (z.B. sqrt, sin und cos).
     ceil                          rounds a number upwards
     $pi                           pi as value for calculations
 
-### Umwandlungen {#conversions}
+### Umwandlungen <a name="#conversions"></a>
 
 Diese Gruppe enthält Funktionen, um einen Datentypen in einen anderen umzuwandeln (z.B. Zeichenketten zu Ganzzahlen oder umgekehrt).
 
@@ -140,7 +141,7 @@ Diese Gruppe enthält Funktionen, um einen Datentypen in einen anderen umzuwande
                                  used to take days, hours, months, etc. off a
                                  date)
 
-### Datum und Zeit Funktionen {#date-and-time-functions}
+### Datum und Zeit Funktionen <a name="#date-and-time-functions"></a>
 
 Diese Gruppe enthält Funktionen die auf Datums- und Zeitdaten angewendet werden können.
 
@@ -167,7 +168,7 @@ Diese Gruppe enthält Funktionen die auf Datums- und Zeitdaten angewendet werden
 
         month($now) || '/' || year($now)
 
-### Zeichenkettenfunktionen {#string-functions}
+### Zeichenkettenfunktionen <a name="#string-functions"></a>
 
 Diese Gruppe enthält Funktionen für Zeichenketten (z.B. Ersetzen und in Großbuchstaben umwandeln).
 
@@ -206,7 +207,7 @@ Diese Gruppe enthält Funktionen für Zeichenketten (z.B. Ersetzen und in Großb
     format_date                  formats a date type or string into a custom
                                  string format
 
-### Farbfunktionen {#color-functions}
+### Farbfunktionen <a name="#color-functions"></a>
 
 Diese Gruppe enthält Funktionen zur Farbmanipulation.
 
@@ -230,7 +231,7 @@ Diese Gruppe enthält Funktionen zur Farbmanipulation.
                     cyan, magenta, yellow, black and alpha (transparency)
                     components
 
-### Geometriefunktionen {#geometry-functions}
+### Geometriefunktionen <a name="#geometry-functions"></a>
 
 Dies Gruppe enthält Funktionen für das Arbeiten mit Geometrieobjekten (z.B. Länge und Flächeninhalt).
 
@@ -309,7 +310,7 @@ Dies Gruppe enthält Funktionen für das Arbeiten mit Geometrieobjekten (z.B. L�
     transform        returns the geometry transformed from the source CRS to
                      the dest CRS
 
-### Datensatzfunktionen {#record-functions}
+### Datensatzfunktionen <a name="#record-functions"></a>
 
 Diese Gruppe enthält Funktionen die sich auf datensatzbezeichner beziehen.
 
@@ -331,14 +332,10 @@ Diese Gruppe enthält Funktionen die sich auf datensatzbezeichner beziehen.
                              the map is being drawn within the main QGIS
                              window.
 
-### Felder und Werte {#fields-and-values}
+### Felder und Werte <a name="#fields-and-values"></a>
 
 Enthält eine Liste von Feldern vom Layer. Auf Beispielwerte kann über einen Rechtsklick zugegriffen werden.
 
 Wählen Sie einen Feldnamen aus der Liste, machen Sie dann einen Rechtsklick, um auf ein Kontextmenü mit Optionen zum Laden von Beispielwerten aus dem gewählten Feld zuzugreifen.
 
 Feldnamen sollten in doppelte Anführungsstriche gesetzt werden. Werte oder Zeichenketten sollten in einfache Anführungsstriche gesetzt werden.
-
-
-
-

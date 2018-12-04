@@ -25,9 +25,9 @@
 |--------------------|-------------------|
 | Étendue précedénte | `CTRL+PgUp`       |
 | Étendue suivante   | `CTRL+PgDn`       |
-| Nouvelle vue       | `CTRL+V + CTRL+W` |
-| 3D                 | `CTRL+V + CTRL+3` |
-| Grille             | `CTRL+V + CTRL+G` |
+| Nouvelle vue       | `CTRL+W + CTRL+N` |
+| 3D                 | `CTRL+W + CTRL+3` |
+| Grille             | `CTRL+W + CTRL+G` |
 
 ## Analyse
 | Fonction           | Raccourci         |
