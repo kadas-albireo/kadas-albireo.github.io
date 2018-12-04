@@ -15,8 +15,11 @@
 | Apri                  | `CTRL+O`          |
 | Salva                 | `CTRL+S`          |
 | Stampa                | `CTRL+P`          |
-| Esporta KML/KMZ       | `CTRL+E`          |
-| Importa KML/KMZ       | `CTRL+I`          |
+| Esporta KML           | `CTRL+E + CTRL+K` |
+| Importa KML           | `CTRL+I + CTRL+K` |
+| Esporta GPKG          | `CTRL+E + CTRL+G` |
+| Importa GPKG          | `CTRL+I + CTRL+G` |
+
 
 ## Vista
 | Funzione              | Combinazione      |
@@ -30,14 +33,14 @@
 ## Analisi
 | Funzione          | Combinazione      |
 |-------------------|-------------------|
-| Distanza          | `CTRL+M + CTRL+D` |
-| Area              | `CTRL+M + CTRL+A` |
-| Cerchio           | `CTRL+M + CTRL+C` |
-| Azimut            | `CTRL+M + CTRL+B` |
-| Profilo vista     | `CTRL+M + CTRL+P` |
-| Pendenza          | `CTRL+M + CTRL+S` |
-| Hillshade         | `CTRL+M + CTRL+H` |
-| Bacino visuale    | `CTRL+M + CTRL+V` |
+| Distanza          | `CTRL+A + CTRL+D` |
+| Area              | `CTRL+A + CTRL+A` |
+| Cerchio           | `CTRL+A + CTRL+C` |
+| Azimut            | `CTRL+A + CTRL+B` |
+| Profilo vista     | `CTRL+A + CTRL+P` |
+| Pendenza          | `CTRL+A + CTRL+S` |
+| Hillshade         | `CTRL+A + CTRL+H` |
+| Bacino visuale    | `CTRL+A + CTRL+V` |
 
 ## Disegnare
 | Funzione          | Combinazione       |

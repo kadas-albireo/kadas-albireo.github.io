@@ -15,8 +15,10 @@
 | Open             | `CTRL+O`          |
 | Save             | `CTRL+S`          |
 | Print            | `CTRL+P`          |
-| Export KML/KMZ   | `CTRL+E`          |
-| Import KML/KMZ   | `CTRL+I`          |
+| Export KML       | `CTRL+E + CTRL+K` |
+| Import KML       | `CTRL+I + CTRL+K` |
+| Export GPKG      | `CTRL+E + CTRL+G` |
+| Import GPKG      | `CTRL+I + CTRL+G` |
 
 ## View
 | Function         | Shortcut          |
@@ -30,14 +32,14 @@
 ## Analysis
 | Function         | Shortcut          |
 |------------------|-------------------|
-| Distance         | `CTRL+M + CTRL+D` |
-| Area             | `CTRL+M + CTRL+A` |
-| Circle           | `CTRL+M + CTRL+C` |
-| Azimuth          | `CTRL+M + CTRL+B` |
-| Profile Sight    | `CTRL+M + CTRL+P` |
-| Slope            | `CTRL+M + CTRL+S` |
-| Hillshade        | `CTRL+M + CTRL+H` |
-| Viewshed         | `CTRL+M + CTRL+V` |
+| Distance         | `CTRL+A + CTRL+D` |
+| Area             | `CTRL+A + CTRL+A` |
+| Circle           | `CTRL+A + CTRL+C` |
+| Azimuth          | `CTRL+A + CTRL+B` |
+| Profile Sight    | `CTRL+A + CTRL+P` |
+| Slope            | `CTRL+A + CTRL+S` |
+| Hillshade        | `CTRL+A + CTRL+H` |
+| Viewshed         | `CTRL+A + CTRL+V` |
 
 ## Draw
 | Function         | Shortcut          |

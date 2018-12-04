@@ -15,8 +15,10 @@
 | Öffnen                | `CTRL+O`          |
 | Speicher              | `CTRL+S`          |
 | Drucken               | `CTRL+P`          |
-| KML Export            | `CTRL+E`          |
-| KML Import            | `CTRL+I`          |
+| KML Export            | `CTRL+E + CTRL+K` |
+| KML Import            | `CTRL+I + CTRL+K` |
+| GPKG Export           | `CTRL+E + CTRL+G` |
+| GPKG Import           | `CTRL+I + CTRL+G` |
 
 ## Ansicht
 | Funktion              | Kürzel            |
@@ -30,14 +32,14 @@
 ## Analyse
 | Funktion              | Kürzel            |
 |-----------------------|-------------------|
-| Distanz               | `CTRL+M + CTRL+D` |
-| Fläche                | `CTRL+M + CTRL+A` |
-| Kreis                 | `CTRL+M + CTRL+C` |
-| Azimut                | `CTRL+M + CTRL+B` |
-| Profil / Sicht        | `CTRL+M + CTRL+P` |
-| Neigung               | `CTRL+M + CTRL+S` |
-| Schummerung           | `CTRL+M + CTRL+H` |
-| Einsehbarkeit         | `CTRL+M + CTRL+V` |
+| Distanz               | `CTRL+A + CTRL+D` |
+| Fläche                | `CTRL+A + CTRL+A` |
+| Kreis                 | `CTRL+A + CTRL+C` |
+| Azimut                | `CTRL+A + CTRL+B` |
+| Profil / Sicht        | `CTRL+A + CTRL+P` |
+| Neigung               | `CTRL+A + CTRL+S` |
+| Schummerung           | `CTRL+A + CTRL+H` |
+| Einsehbarkeit         | `CTRL+A + CTRL+V` |
 
 ## Zeichnen
 | Funktion              | Kürzel            |

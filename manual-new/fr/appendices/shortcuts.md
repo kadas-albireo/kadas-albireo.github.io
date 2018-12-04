@@ -15,8 +15,10 @@
 | Ouvrir             | `CTRL+O`          |
 | Enregistrer        | `CTRL+S`          |
 | Imprimer           | `CTRL+P`          |
-| Exporter KML/KMZ   | `CTRL+E`          |
-| Importer KML/KMZ   | `CTRL+I`          |
+| Exporter KML       | `CTRL+E + CTRL+K` |
+| Importer KML       | `CTRL+I + CTRL+K` |
+| Exporter GPKG      | `CTRL+E + CTRL+G` |
+| Importer GPKG      | `CTRL+I + CTRL+G` |
 
 ## Vue
 | Fonction           | Raccourci         |
@@ -30,14 +32,14 @@
 ## Analyse
 | Fonction           | Raccourci         |
 |--------------------|-------------------|
-| Distance           | `CTRL+M + CTRL+D` |
-| Surface            | `CTRL+M + CTRL+A` |
-| Cercle             | `CTRL+M + CTRL+C` |
-| Azimut             | `CTRL+M + CTRL+B` |
-| Profil Mire        | `CTRL+M + CTRL+P` |
-| Pente              | `CTRL+M + CTRL+S` |
-| Ombrage            | `CTRL+M + CTRL+H` |
-| Bassin visuel      | `CTRL+M + CTRL+V` |
+| Distance           | `CTRL+A + CTRL+D` |
+| Surface            | `CTRL+A + CTRL+A` |
+| Cercle             | `CTRL+A + CTRL+C` |
+| Azimut             | `CTRL+A + CTRL+B` |
+| Profil Mire        | `CTRL+A + CTRL+P` |
+| Pente              | `CTRL+A + CTRL+S` |
+| Ombrage            | `CTRL+A + CTRL+H` |
+| Bassin visuel      | `CTRL+A + CTRL+V` |
 
 ## Dessiner
 | Fonction         | Raccourci         |
@@ -50,7 +52,7 @@
 | Épingle          | `CTRL+D + CTRL+M` |
 | Adjouter image   | `CTRL+D + CTRL+I` |
 | Coller           | `CTRL+V`          |
-| Grille de guidage| `CTRL+V + CTRL+R` |
+| Grille de guidage| `CTRL+D + CTRL+R` |
 | Bullseye         | `CTRL+D + CTRL+B` |
 | Effacer objets   | `CTRL + Select`   |
 
