@@ -73,14 +73,14 @@ La funzione **_Incolla_** permette di aggiungere diversi tipi di oggetti alla ma
 SymZaZ è un'applicazione esterna con la quale è possibile create symboli, segni tattici e segni convenzionali civili secondo il regolamento 52.002.03 del esercito svizzero. Questi simboli possono essere importati in KADAS, tramite la funzionalità **_Copia negli appunti_** di SymTaZ seguito da **_Incolla_** in KADAS, oppure salvando il simbolo come SVG da SymTaZ e apprendo questo in KADAS attraverso **_Aggiungi immagine_**.
 
 
-## <a name="sec5"></a>Griglia di guida
+## <a name="sec5"></a>Griglia di condotta
 
-La griglia di guida è una griglia in cui le righe e le colonne sono etichettate con numeri o lettere. La griglia di guida è memorizzata in un livello specifico e appare nella legenda della mappa. È possibile personalizzare tutte le proprietà della griglia e la didascalia. Per impostazione predefinita, la griglia viene creata in base all'estensione corrente della mappa. È possibile creare un numero arbitrario di livelli di griglia di guida.
+La griglia di condotta è una griglia in cui le righe e le colonne sono etichettate con numeri o lettere. La griglia di condotta è memorizzata in un livello specifico e appare nella legenda della mappa. È possibile personalizzare tutte le proprietà della griglia e la didascalia. Per impostazione predefinita, la griglia viene creata in base all'estensione corrente della mappa. È possibile creare un numero arbitrario di livelli di griglia di condotta.
 
 
 ## <a name="sec6"></a>Bullseye
 
-Un Bullseye è disegnato come un numero di cerchi concentrici intorno ad un punto selezionato, con assi corrispondenti, separati ad intervalli regolari. Analogamente alla griglia di guida, è memorizzato nel proprio livello e le varie proprietà possono essere liberamente configurate.
+Un Bullseye è disegnato come un numero di cerchi concentrici intorno ad un punto selezionato, con assi corrispondenti, separati ad intervalli regolari. Analogamente alla griglia di condotta, è memorizzato nel proprio livello e le varie proprietà possono essere liberamente configurate.
 
 
 ## <a name="sec7"></a>Elimina elementi

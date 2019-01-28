@@ -74,14 +74,14 @@ La fonction **_Coller_**** permet d'insérer divers objets du presse-papiers dan
 SymTaZ est un programme externe qui peut être utilisé pour créer des symboles, des signes tactiques et des signatures civiles pour des documents militaires conformément au règlement 52.002.03 de l'armée suisse. Ces icônes peuvent être importées dans KADAS, soit par la fonction **_Copier dans le Presse-papiers (Formulaire Texte)_** dans SymTaZ suivie de **_Coller_** dans KADAS, ou en enregistrant en format SVG dans SymTaZ puis en ouvrant via **_Ajouter image_** dans KADAS.
 
 
-## <a name="sec5"></a>Grille de guidage
+## <a name="sec5"></a>Grille de conduite
 
-La grille de guidage est une grille dans laquelle les lignes et les colonnes sont identifiées par des chiffres ou des lettres. La grille de guidage est stockée à son propre couche et apparaît dans la légende de la carte. Toutes les propriétés de la grille ainsi que l'affichage des légendes peuvent être ajustées. Par défaut, la grille est créée en fonction de l'étendue actuelle de la carte. Il est possible de créer autant de niveaux de grille de guidage que vous le souhaitez.
+La grille de conduite est une grille dans laquelle les lignes et les colonnes sont identifiées par des chiffres ou des lettres. La grille de conduite est stockée à son propre couche et apparaît dans la légende de la carte. Toutes les propriétés de la grille ainsi que l'affichage des légendes peuvent être ajustées. Par défaut, la grille est créée en fonction de l'étendue actuelle de la carte. Il est possible de créer autant de niveaux de grille de conduite que vous le souhaitez.
 
 
 ## <a name="sec6"></a>Bullseye
 
-Un Bullseye est dessiné sous la forme d'un nombre de cercles concentriques autour d'un point sélectionné et d'axes correspondants, séparés à intervalles réguliers. Comme la grille de guidage, elle est stockée dans sa propre couche et différentes propriétés peuvent être configurées librement.
+Un Bullseye est dessiné sous la forme d'un nombre de cercles concentriques autour d'un point sélectionné et d'axes correspondants, séparés à intervalles réguliers. Comme la grille de conduite, elle est stockée dans sa propre couche et différentes propriétés peuvent être configurées librement.
 
 
 ## <a name="sec7"></a>Effacer des objets
