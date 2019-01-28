@@ -34,7 +34,7 @@
   - [Aggiungi immagine](draw.md#sec2)
   - [Incolla](draw.md#sec3)
   - [Simboli SymTaZ](draw.md#sec4)
-  - [Griglia di guida](draw.md#sec5)
+  - [Griglia di condotta](draw.md#sec5)
   - [Bullseye](draw.md#sec6)
   - [Elimina elementi](draw.md#sec7)
 * [GPS](gps.md)

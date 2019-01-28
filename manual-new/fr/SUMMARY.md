@@ -33,7 +33,7 @@
   - [Ajouter image](draw.md#sec2)
   - [Coller](draw.md#sec3)
   - [Symboles SymTaZ](draw.md#sec4)
-  - [Grille de guidage](draw.md#sec5)
+  - [Grille de conduite](draw.md#sec5)
   - [Bullseye](draw.md#sec6)
   - [Effacer des objets](draw.md#sec7)
 * [GPS](gps.md)
