@@ -13,6 +13,9 @@ KADAS Albireo is under the General Public License 2.0 (GPLv2).
 Release notes
 =============
 - - -
+### Version 2.0 (2020)
+* ...
+
 ### Version 1.1 (November 2017)
 * *General*:
     - Freely positionable cursor in the search field

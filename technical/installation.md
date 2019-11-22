@@ -26,6 +26,6 @@ Installation
  * `kadas-portable_<version>.zip`
  * Does not require installation
  * Core application only
- * Run `<...>\kadas\bin\qgis.exe`
+ * Run `<...>\kadas\bin\kadas.exe`
 
 

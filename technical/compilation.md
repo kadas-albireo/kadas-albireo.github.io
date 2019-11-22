@@ -2,19 +2,20 @@ Compiling KADAS Albireo
 =======================
 - - -
 
-* KADAS Albireo is written in C++ using the Qt 5 framework and extended through Python 2 plugins
+* KADAS Albireo is written in C++ using the Qt 5 framework and extended through Python 3 plugins
 * Core functionality implemented as Python plugins:
   * Print
+  * GPKG Import / Export
   * Help/About
   * OVL importer (requires proprietary MSS component)
 
 ### Getting the source code
 
- * The KADAS Albireo source code is hosted on GitHub at [https://github.com/sourcepole/kadas-albireo](https://github.com/sourcepole/kadas-albireo)
- * A snapshot of the latest codebase can be downloaded from [https://github.com/sourcepole/kadas-albireo/archive/master.zip](https://github.com/sourcepole/kadas-albireo/archive/master.zip)
+ * The KADAS Albireo source code is hosted on GitHub at [https://github.com/kadas-albireo/kadas-albireo2](https://github.com/kadas-albireo/kadas-albireo2)
+ * A snapshot of the latest codebase can be downloaded from [https://github.com/kadas-albireo/kadas-albireo2/archive/master.zip](https://github.com/kadas-albireo/kadas-albireo2/archive/master.zip)
  * Alternatively the codebase can be cloned using git:
 
-       git clone https://github.com/sourcepole/kadas-albireo.git
+       git clone https://github.com/kadas-albireo/kadas-albireo2.git
 
 
 ### Build requirements
@@ -27,23 +28,24 @@ Compiling KADAS Albireo
 
 ### Building KADAS Albireo for Windows using Docker
 
- * To compile KADAS Albireo, it is sufficient to run the following command from within the `kadas-albireo` source folder
+ * To compile KADAS Albireo, it is sufficient to run the following command from within the `kadas-albireo2` source folder
 
-       docker run -v $PWD:/workspace sourcepole/kadas-mingw-buildenv ms-windows/mingwbuild.sh
+       docker run -v $PWD:/workspace sourcepole/kadas2-mingw-buildenv scripts/mingwbuild.sh
 
- * The application will be compiled in a separate build directory, `kadas-albireo/build_mingw64_qt5`
+ * The application will be compiled in a separate build directory, `kadas-albireo2/build_mingw64`
  * The built application will appear under the build output folder
 
-       kadas-albireo/build_mingw64_qt5/dist/usr/x86_64-w64-mingw32/sys-root/mingw/
+       kadas-albireo2/build_mingw64/dist/usr/x86_64-w64-mingw32/sys-root/mingw/
 
    * The contents of this folder contains a self-contained, portable build of KADAS Albireo.
+   * In the `bin` subfolder, `kadas.exe` will launch KADAS Albireo 2, whereas `qgis.exe` will launch a stock QGIS 3.10.
 
 Build system details
 ====================
 - - -
 
- * `sourcepole/kadas-mingw-buildenv` is a Fedora Linux image with a full MinGW (*Minimalist GNU for Windows*) build environment
-   * `kadas-albireo/docker/mingw-buildenv/Dockerfile`
+ * `sourcepole/kadas2-mingw-buildenv` is a Fedora Linux image with a full MinGW (*Minimalist GNU for Windows*) build environment
+   * `kadas-albireo2/docker/mingw-buildenv/Dockerfile`
  * `docker run -v $PWD:/workspace sourcepole/kadas-mingw-buildenv ms-windows/mingwbuild.sh`
    * Mounts the current directory (`$PWD`, expected to be the `kadas-albireo` source folder) to `/workspace` inside the Docker container
    * Runs `ms-windows/mingwbuild.sh` inside the Docker container
@@ -57,15 +59,16 @@ Deployment
 - - -
 
  * The contents of the build output folder contains all the files necessary for launching a bare instance of KADAS Albireo
- * For a full deployment, the following items need to be included:
-   * Project templates in `share/qgis/project_templates`, along with any local geodata the project templates may reference
-   * Settings templates `settings_full.ini` and `settings_patch.ini` in `share/qgis`
-   * Any python plugins, such as the core plugins mentioned above, in `share/qgis/python/plugins`
-     * The print plugin is obtainable from [http://pkg.sourcepole.ch/qgis/vbs/kadas_print.zip](http://pkg.sourcepole.ch/qgis/vbs/kadas_print.zip)
-     * The help/about plugin is obtainable from [http://pkg.sourcepole.ch/qgis/vbs/kadas_help.zip](http://pkg.sourcepole.ch/qgis/vbs/kadas_help.zip)
-     * The ovl plugin is obtainable from [http://pkg.sourcepole.ch/qgis/vbs/kadas_ovl.zip](http://pkg.sourcepole.ch/qgis/vbs/kadas_ovl.zip)
- * These plugins can be added to `share/qgis/python/plugins` inside the build output folder
-   * If necessary, CA root certificates in `share/qgis/certificates`
+ * For a fullly vendored deployment, the following items need to be included:
+   * Project templates in `share/kadas/project_templates`, along with any local geodata the project templates may reference
+   * Settings templates `settings_full.ini` and `settings_patch.ini` in `share/kadas`
+   * Any python plugins, such as the core plugins mentioned above, in `share/kadas/python/plugins`
+     * The print plugin is obtainable from [https://github.com/kadas-albireo/kadas-print-plugin](https://github.com/kadas-albireo/kadas-print-plugin)
+     * The help/about plugin is obtainable from [https://github.com/kadas-albireo/kadas-help-plugin](https://github.com/kadas-albireo/kadas-help-plugin)
+     * The ovl plugin is obtainable from [https://github.com/kadas-albireo/kadas-ovl-plugin](https://github.com/kadas-albireo/kadas-ovl-plugin)
+   * These plugins can be added to `share/kadas/python/plugins` inside the build output folder
+ * If necessary, CA root certificates in `share/kadas/certificates`
+ * To use the MSS/MILX component, the MILX Server component needs to be installed to `opt/mss`
  * The result can be distributed as a portable ZIP, or packaged as an MSI package
 
 Debugging
@@ -77,10 +80,10 @@ Debugging
  * By default, the binaries contain only minimal debugging information (file and function names only)
  * Full debug symbols (which include source line numbers) are contained in the `*.debug` files, which are generated by the `mingwbuild.sh` build script
    * The official KADAS Albireo release does not install these files by default to save disk space, but they are available in `kadas-portable-debug_<version>.zip`
-   * These files need to be placed side-by-side to the respective binaries (i.e. `qgis.exe.debug` in the same folder as `qgis.exe`)
+   * These files need to be placed side-by-side to the respective binaries (i.e. `kadas.exe.debug` in the same folder as `kadas.exe`)
  * Minimal steps for debugging a deployed instance of KADAS Albireo:
 
-       <InstallRoot>\bin\gdb.exe <InstallRoot>\bin\qgis.exe
+       <InstallRoot>\bin\gdb.exe <InstallRoot>\bin\kadas.exe
        run
        # trigger crash
        thread apply all backtrace full
@@ -88,7 +91,7 @@ Debugging
 
  * To debug an running instance (i.e. if KADAS Albireo stop responding), the debugger can be attached to a running instance:
 
-       <InstallRoot>\bin\gdb.exe -p <PID of qgis.exe>
+       <InstallRoot>\bin\gdb.exe -p <PID of kadas.exe>
        thread apply all backtrace full
        quit
 
@@ -99,6 +102,6 @@ Development
  * Qt/QGIS development environment (Qt-Creator)
  * C++ Documentation:
    * Qt5: [http://doc.qt.io/qt-5/classes.html](http://doc.qt.io/qt-5/classes.html)
-   * QGIS: [http://qgis.org/api/2.8/](http://qgis.org/api/2.8/)
+   * QGIS: [http://qgis.org/api/3.10/](http://qgis.org/api/3.10/)
  * PyQGIS:
    * [http://geoapis.sourcepole.com/](http://geoapis.sourcepole.com/)
