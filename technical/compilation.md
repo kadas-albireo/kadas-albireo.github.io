@@ -20,39 +20,31 @@ Compiling KADAS Albireo
 
 ### Build requirements
 
- * The recommended way to build KADAS Albireo for Windows is by using the `sourcepole/kadas-mingw-buildenv` Docker image:
-   * This image contains all the necessary build dependencies with validated versions
+ * The recommended way to build KADAS Albireo for Windows is by using Docker:
    * Docker for Windows requires Windows 10 64bit Pro/Enterprise, build 14393 or later. It can be obtained from [https://docs.docker.com/docker-for-windows/install](https://docs.docker.com/docker-for-windows/install)
    * Docker for Linux can be installed according to [https://docs.docker.com/engine/installation/#server](https://docs.docker.com/engine/installation/#server)
  * KADAS Albireo can also be compiled for any recent Linux distribution
 
-### Building KADAS Albireo for Windows using Docker
+### Building KADAS Albireo for Windows x64 using Docker
 
- * To compile KADAS Albireo, it is sufficient to run the following command from within the `kadas-albireo2` source folder
+ * To compile KADAS Albireo, you need to first download the the latest QGIS Portable build `qgis-portable-win64.zip` from [https://github.com/kadas-albireo/QGIS/releases](https://github.com/kadas-albireo/QGIS/releases). Unpack this inside the `kadas-albireo2` source folder:
 
-       docker run -v $PWD:/workspace sourcepole/kadas2-mingw-buildenv scripts/mingwbuild.sh
+       unzip qgis-portable-win64.zip
 
- * The application will be compiled in a separate build directory, `kadas-albireo2/build_mingw64`
- * The built application will appear under the build output folder
+ * Then, run the followign command to build the docker image:
 
-       kadas-albireo2/build_mingw64/dist/usr/x86_64-w64-mingw32/sys-root/mingw/
+       docker build -t kadas2-mingw-buildenv .
 
-   * The contents of this folder contains a self-contained, portable build of KADAS Albireo.
+ * *Note*: The two commands above do not need to be repeated every time, just periodically to make sure the latest versions of QGIS and other build dependencies are used.
+ * Next, run the following commands from within the `kadas-albireo2` source folder:
+
+       # Build application
+       docker run -v $PWD:/workspace -e QGIS_INSTALL_PREFIX=/workspace/QGIS-Portable kadas2-mingw-buildenv scripts/mingwbuild.sh
+       # Install built application and all dependencies into the `kadas` subfolder
+       docker run -v $PWD:/workspace kadas2-mingw-buildenv packaging/kadas_release.sh
+
+ * The `kadas` subfolder contains a portable self-contained distribution of KADAS.
    * In the `bin` subfolder, `kadas.exe` will launch KADAS Albireo 2, whereas `qgis.exe` will launch a stock QGIS 3.10.
-
-Build system details
-====================
-- - -
-
- * `sourcepole/kadas2-mingw-buildenv` is a Fedora Linux image with a full MinGW (*Minimalist GNU for Windows*) build environment
-   * `kadas-albireo2/docker/mingw-buildenv/Dockerfile`
- * `docker run -v $PWD:/workspace sourcepole/kadas-mingw-buildenv ms-windows/mingwbuild.sh`
-   * Mounts the current directory (`$PWD`, expected to be the `kadas-albireo` source folder) to `/workspace` inside the Docker container
-   * Runs `ms-windows/mingwbuild.sh` inside the Docker container
- * `kadas-albireo/ms-windows/mingwbuild.sh` performs the actual build:
-   * Builds the KADAS Albireo binaries, using `cmake` to generate the build makefiles
-   * Optimizes the binaries by stripping the debug symbols to separate `*.debug` files
-   * Links all library (DLL) and data dependencies to the build output folder
 
 Deployment
 ==========

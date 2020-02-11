@@ -7,14 +7,25 @@ KADAS Albireo is under the General Public License 2.0 (GPLv2).
 
 ### Resources:
 
- * Source code: [https://github.com/sourcepole/kadas-albireo](https://github.com/sourcepole/kadas-albireo)
- * Manuals: [https://github.com/sourcepole/kadas-manuals](https://github.com/sourcepole/kadas-manuals)
+ * Source code: [https://github.com/kadas-albireo/kadas-albireo2](https://github.com/kadas-albireo/kadas-albireo2)
+ * Manuals: [https://github.com/kadas-albireo/kadas-manuals](https://github.com/kadas-albireo/kadas-manuals)
 
 Release notes
 =============
 - - -
-### Version 2.0 (2020)
-* ...
+### Version 2.0.0 (March 2020)
+- Complete architectural redesign: KADAS is now a separate application, built on top of the QGIS 3.x libraries
+- New map item architecture, for consistent workflow when drawing and editing redlining objects, MSS symbols, etc
+- Uses the new qgz file format, avoiding the previous `<projectname>_files` folder
+- Project autosave
+- New plugin manager for managing external plugins directly from within KADAS
+- Fullscreen mode
+- New map grid implementation, supporting also UTM/MGRS grids on the main map
+- KML/KMZ export by bounding box
+- GPKG data export by bounding box
+- Styles of redlining geometries are honoured when displayed as 2.5D or 3D objects on the Globe
+- Enhanced guide grid
+- Update to MSS-2020
 
 ### Version 1.1 (November 2017)
 * *General*:

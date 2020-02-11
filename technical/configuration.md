@@ -49,6 +49,24 @@ Geodata
    * Base imagery for 2D, offline: `CheLandeskarte*.gpkg`, `CheOperativePlanungsKarte.gpkg`, ...
  * Referenced by absolute path in project templates
 
+Datasource migrations
+=====================
+- - -
+
+* Located in `<InstallRoot>\share\kadas\datasource_migrations.json`
+* Defines paths which are automatically migrated to a new path when opening a project, i.e.:
+
+      [
+        {
+          "old": "c:/program files/kadasalbireo/appdata/grunddatensatz/chelandeskarte100.gpkg",
+          "new": "C:/Program Files/KadasAlbireo/share/kadas/geodata/CheLandeskarte100.gpkg"
+        },
+        ...
+      ]
+
+* Useful to automatically adapt project files created on systems where the base geodata was stored in a different location
+
+
 Online/Offline operation
 ========================
 - - -
