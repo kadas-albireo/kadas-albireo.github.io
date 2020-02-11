@@ -36,9 +36,9 @@ Folgende Funktionen befinden sich in der Titelleiste des 3D Fensters:
 
 Ebenen der 2D Ansicht werden standardmässig als Textur über das Gelände des Globus gezeichnet. Vektorebenen (darunter Redlining) können alternativ entweder als extrudierte 2.5D Modelle oder als 3D Modelle gezeichnet werden, wobei der Stil der 2D Ansicht soweit wie möglich in der 3D Ansicht übernommen wird. Für die Darstellung als 3D Modelle müssen die Geometrien der Ebene mit Höheninformationen (Z-Koordinaten) versehen sein, und diese müssen entweder gegenüber dem Gelände oder dem Meeresspiegel ausgedrückt sein. Die Darstellungsoptionen für Vektorebenen kann man in den entsprechenden Layereigenschaften setzten.
 
-> Die Tooltips der Eingabefelder in den Globus-Einstellungen der Ebene beschreiben die verschiedenen Optionen im Detail.
+Die Tooltips der Eingabefelder in den Globus-Einstellungen der Ebene beschreiben die verschiedenen Optionen im Detail.
 
-> Die Schattierung von 3D Modelle hängt vom Sonnenstand ab. Der Sonnenstand kann durch eine benutzerdefinierte Zeit/Datumsangabe in den Globus Einstellungen gesteuert werden.
+Die Schattierung von 3D Modelle hängt vom Sonnenstand ab. Der Sonnenstand kann durch eine benutzerdefinierte Zeit/Datumsangabe in den Globus Einstellungen gesteuert werden.
 
 <img src="../media/image15.png" />
 
@@ -55,7 +55,7 @@ Stecknadeln, Kamerabilder und einpunkt MSS Symbole werden als Billboards angezei
 
 ## <a name="sec3"></a>Gitter
 
-In der Registerkarte Ansicht kann das Kartengitter aktiviert werden. Das **_Gitter_** basiert auf dem gewähltem Kartenkoordinatensystem.
+In der Registerkarte Ansicht kann das Kartengitter aktiviert werden.
 
-Im Dialog der Gittereigentschaften können Gitterintervall und Darstellung angepasst werden.
+Im Eigenschaftenbereich des Gitters können Gittertyp, Intervalle und Darstellung angepasst werden.
 
