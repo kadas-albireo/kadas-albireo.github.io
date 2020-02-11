@@ -1,1 +1,0 @@
-../../training/it/intro.md

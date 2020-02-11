@@ -1,1 +1,0 @@
-../../training/en/draw.md

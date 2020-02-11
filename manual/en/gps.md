@@ -1,1 +1,0 @@
-../../training/en/gps.md

@@ -1,1 +1,0 @@
-../../training/it/mss.md

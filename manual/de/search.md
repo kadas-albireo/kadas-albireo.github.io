@@ -1,1 +1,0 @@
-../../training/de/search.md
