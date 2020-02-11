@@ -1,7 +1,7 @@
 KADAS Albireo Manuals
 =====================
 
-This repo contains the user and training manuals for [KADAS Albireo](https://github.com/sourcepole/kadas-albireo).
+This repo contains the user and training manuals for [KADAS Albireo 2](https://github.com/kadas-albireo/kadas-albireo2).
 
 
 Requirements
