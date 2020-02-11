@@ -18,10 +18,6 @@ User manual:
 
     cd manual
 
-Training manual:
-
-    cd training
-
 Install plugins:
 
     gitbook install
