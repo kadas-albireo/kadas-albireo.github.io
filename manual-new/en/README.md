@@ -2,7 +2,7 @@
 
 ## <a name="sec0"></a>Overview
 
-KADAS Albireo is mapping application based on the professional open source GIS software "QGIS" and targeted at non-specialized users. In cooperation with the company Ergnomen, a new user interface was developed, hiding much of the functionality aimed at advanced users, while enhancing the functionalities in area such drawing, terrain analysis, printing and data interoperability.
+KADAS Albireo is mapping application based on the professional open source GIS software "QGIS" and targeted at non-specialized users. In cooperation with the company Ergnomen, a new user interface was developed, hiding much of the functionality aimed at advanced users, while enhancing the functionalities in area such drawing, terrain analysis, printing and interoperability.
 
 ## <a name="sec1"></a>Terms of Use
 

@@ -76,8 +76,6 @@ A layer can be selected and dragged up or down in the legend to change the Z-ord
 
 Layers in the legend window can be organised into groups.
 
-To bring a layer out of a group, you can drag it out, or right click on it and choose **_Make to toplevel item_**. Groups can also be nested inside other groups.
-
 The checkbox for a group will show or hide all the layers in the group with one click.
 
 Via right click on an entry it is possible to perform various operations, depending on the type of the selected layer, such as:

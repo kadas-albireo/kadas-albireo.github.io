@@ -32,7 +32,8 @@ A special property of MilX layers is the possibility to mark them as **_Approved
 ## <a name="sec3"></a>MilX import and export
 
 MilX layers can be exported as MILXLY or MILXLYZ layers, and existing MILXLY or MILXLYZ layers can be imported. 
-> MILXLY (and the compressed variant MILXLYZ) is a format for the exchange of situation reports. It contains only MSS symbols of the situation report, and no further objects like redlining, pins or camera pictures.
+
+MILXLY (and the compressed variant MILXLYZ) is a format for the exchange of situation reports. It contains only MSS symbols of the situation report, and no further objects like redlining, pins or camera pictures.
 
 When **_exporting_** to MILXLY(Z) you can select which MilX layers to export and in which version the file should be created. In addition, you can choose whether to export the map cartouche defined in the print dialog.
 
@@ -44,7 +45,7 @@ OVL is the project format of the software PCMAP Swissline. Only OVL version 5.0 
 
 The OVL importer is a plugin, which must be enabled from the Plugin-Manager in the Settings Tab.
 
-> The OVL Importer converts tactical graphics contained within it into corresponding MSS symbols, while transforming geometries and labels into redlining objects. If conversion errors occur, they will be communicated to the user. Even with successfully converted objects, their presentation may differ from the PCMAP Swissline software, so it is advisable to check the imported data.
+The OVL Importer converts tactical graphics contained within it into corresponding MSS symbols, while transforming geometries and labels into redlining objects. If conversion errors occur, they will be communicated to the user. Even with successfully converted objects, their presentation may differ from the PCMAP Swissline software, so it is advisable to check the imported data.
 
 
 ## <a name="sec5"></a>Symbol size, line width and work mode
