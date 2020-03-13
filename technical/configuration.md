@@ -11,7 +11,7 @@ Application layout
  * `<InstallRoot>\share\kadas\settings_{full,patch}.ini`: Full / incremental settings template
  * `<InstallRoot>\share\kadas\python\plugins`: Location for python plugins
  * `<InstallRoot>\share\kadas\geodata`: Location of geodata
- * `<InstallRoot>\opt\mss`: MSS/MILX server component
+ * `<InstallRoot>\opt\mss`: MSS/MILX server component (not part of public release)
 
 
 ### Per-user configuration:
