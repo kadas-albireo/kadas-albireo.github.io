@@ -13,7 +13,7 @@ KADAS Albireo is under the General Public License 2.0 (GPLv2).
 Release notes
 =============
 - - -
-### Version 2.0.0 (March 2020)
+### Version 2.0.0 (May 2020)
 - Complete architectural redesign: KADAS is now a separate application, built on top of the QGIS 3.x libraries
 - New map item architecture, for consistent workflow when drawing and editing redlining objects, MSS symbols, etc
 - Uses the new qgz file format, avoiding the previous `<projectname>_files` folder

@@ -17,7 +17,7 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
 
 ## <a name="sec3"></a>Protocole de version
 
-### Version 2.0.0 (mars 2020)
+### Version 2.0.0 (mai 2020)
 - Nouvelle architecture d'application: KADAS est maintenant une application distincte, construite sur les bibliothèques QGIS 3.x
 - Nouvelle architecture des éléments de la carte, pour un flux de travail cohérent lors du dessin et de l'édition des objets Redlining, des symboles MSS, etc.
 - Utilise le nouveau format de fichier qgz, en évitant l'ancien dossier `<nom du projet>_files`
