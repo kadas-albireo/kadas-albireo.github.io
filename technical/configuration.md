@@ -16,8 +16,8 @@ Application layout
 
 ### Per-user configuration:
 
- * `%APPDATA%\Kadas\Kadas\Kadas\profiles\default\Kadas\Kadas.ini`: Application settings file
- * `%APPDATA%\Kadas\Kadas\Kadas\profiles\default\python\plugins`: Location for user specific python plugins
+ * `%APPDATA%\Kadas\Kadas\profiles\default\Kadas\Kadas.ini`: Application settings file
+ * `%APPDATA%\Kadas\Kadas\profiles\default\python\plugins`: Location for user specific python plugins
 
 Configuration file
 ==================
