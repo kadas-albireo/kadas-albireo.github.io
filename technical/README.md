@@ -31,7 +31,7 @@ Release notes
 * *General*:
     - Freely positionable cursor in the search field
     - Height display in the status bar
-    - Speed ​​improvements in map display
+    - Speed improvements in map display
     - Attribute table for vector layers
 * *Analysis*:
     - Geodetic distance and area measurement
