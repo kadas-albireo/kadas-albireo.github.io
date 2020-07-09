@@ -7,10 +7,12 @@ Application layout
  * `<InstallRoot>\bin\kadas.exe`: Main KADAS executable
  * `<InstallRoot>\bin\qgis.exe`: Main QGIS executable
  * `<InstallRoot>\share\kadas\project_templates`: Project templates
+ * `<InstallRoot>\share\kadas\print_templates`: Print templates
  * `<InstallRoot>\share\kadas\certificates`: Location for extra root certificates
- * `<InstallRoot>\share\kadas\settings_{full,patch}.ini`: Full / incremental settings template
  * `<InstallRoot>\share\kadas\python\plugins`: Location for python plugins
  * `<InstallRoot>\share\kadas\geodata`: Location of geodata
+ * `<InstallRoot>\share\kadas\settings_{full,patch}.ini`: Full / incremental settings template
+ * `<InstallRoot>\share\kadas\datasource_migrations.json`: Datasource migrations
  * `<InstallRoot>\opt\mss`: MSS/MILX server component (not part of public release)
 
 
@@ -54,15 +56,33 @@ Datasource migrations
 - - -
 
 * Located in `<InstallRoot>\share\kadas\datasource_migrations.json`
-* Defines paths which are automatically migrated to a new path when opening a project, i.e.:
+* Defines datasources which are automatically migrated when opening a project, i.e.:
 
-      [
-        {
-          "old": "c:/program files/kadasalbireo/appdata/grunddatensatz/chelandeskarte100.gpkg",
-          "new": "C:/Program Files/KadasAlbireo/share/kadas/geodata/CheLandeskarte100.gpkg"
-        },
-        ...
-      ]
+      {
+        "files": [ // Migrations for local file datasources
+          {
+            "old": "c:/program files/kadasalbireo/appdata/grunddatensatz/chelandeskarte100.gpkg",
+            "new": "C:/Program Files/KadasAlbireo/share/kadas/geodata/CheLandeskarte100.gpkg"
+          },
+          ...
+        ],
+        "ams": [ // Migrations for ArcGIS MapServer datasources
+          {
+            "old_url": "https://hostname1/servicepath/MapServer",
+            "new_params": "url=https://hostname2/servicepath/MapServer&layer=layerid"
+          },
+          ...
+        ],
+        "wms": [ // Migrations for WMS and WMTS datasources
+          {
+            "old_url": "https://hostname1/wms",
+            "old_ident": "layerid",
+            "new_params": "contextualWMSLegend=0&crs=EPSG:2056&dpiMode=7&featureCount=10&format=image/png&layers=layerid2&styles=default&url=https://hostname2/wms",
+            "del_params": "SmoothPixmapTransform,tileMatrixSet,referer,tileDimensions"
+          },
+          ...
+        ]
+      }
 
 * Useful to automatically adapt project files created on systems where the base geodata was stored in a different location
 
