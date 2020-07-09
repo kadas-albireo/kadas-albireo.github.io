@@ -17,7 +17,7 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
 
 ## <a name="sec3"></a>Protocole de version
 
-### Version 2.0.0 (mai 2020)
+### Version 2.0.0 (juliet 2020)
 - Nouvelle architecture d'application: KADAS est maintenant une application distincte, construite sur les bibliothèques QGIS 3.x
 - Nouvelle architecture des éléments de la carte, pour un flux de travail cohérent lors du dessin et de l'édition des objets Redlining, des symboles MSS, etc.
 - Utilise le nouveau format de fichier qgz, en évitant l'ancien dossier `<nom du projet>_files`
@@ -29,7 +29,7 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
 - Exportation de données GPKG limitée à une étendue
 - Les styles de géométrie redlining sont honorés lorsqu'ils sont affichés sous forme d'objets 2,5D ou 3D sur le Globe
 - Grille de guidage améliorée
-- Mise à jour du MSS à MSS-2020
+- Mise à jour du MSS à MSS-2021
 
 ### Version 1.2 (décembre 2018)
 * *Général*:
