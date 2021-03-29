@@ -1,29 +1,36 @@
 site_name: KADAS Albireo
-docs_dir: en
+docs_dir: src
 nav:
-    - General: README.md
-    - The Interface: kadas_gui.md
-    - Map: map.md
-    - View: view.md
-    - Analysis: analysis.md
-    - Draw: draw.md
-    - GPS: gps.md
-    - MSS: mss.md
-    - Settings: settings.md
+    - General: en/README.md
+    - The Interface: en/kadas_gui.md
+    - Map: en/map.md
+    - View: en/view.md
+    - Analysis: en/analysis.md
+    - Draw: en/draw.md
+    - GPS: en/gps.md
+    - MSS: en/mss.md
+    - Settings: en/settings.md
     - Advanced functionalities:
         - Vector layers:
-            - Supported formats: working_with_vector/supported_data.md
-            - Properties dialog: working_with_vector/vector_properties.md
-            - Expressions: working_with_vector/expression.md
-            - Field calculator: working_with_vector/field_calculator.md
+            - Supported formats: en/working_with_vector/supported_data.md
+            - Properties dialog: en/working_with_vector/vector_properties.md
+            - Expressions: en/working_with_vector/expression.md
+            - Field calculator: en/working_with_vector/field_calculator.md
         - Raster layers:
-            - Supported formats: working_with_raster/supported_data.md
-            - Properties dialog: working_with_raster/raster_properties.md
-        - Working with projections: working_with_projections/working_with_projections.md
-        - Print composer: print_composer/print_composer.md
-        - GPS Gate: gpsgate/gpsgate.md
+            - Supported formats: en/working_with_raster/supported_data.md
+            - Properties dialog: en/working_with_raster/raster_properties.md
+        - Working with projections: en/working_with_projections/working_with_projections.md
+        - Print composer: en/print_composer/print_composer.md
+        - GPS Gate: en/gpsgate/gpsgate.md
     - Appendix:
-        - Keyboard shortcuts: appendices/shortcuts.md
-        - License: appendices/license.md
+        - Keyboard shortcuts: en/appendices/shortcuts.md
+        - License: en/appendices/license.md
 
 theme: readthedocs
+
+plugins:
+  - exclude:
+      glob:
+        - de/*
+        - fr/*
+        - it/*

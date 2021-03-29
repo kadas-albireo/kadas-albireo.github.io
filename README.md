@@ -7,7 +7,9 @@ This repo contains the user and training manuals for [KADAS Albireo 2](https://g
 Requirements
 ------------
 
-The manuals are built with [Mkdocs](https://www.mkdocs.org/).
+The manuals are built with [`Mkdocs`](https://www.mkdocs.org/).
+
+The [`mkdocs-exclude`](https://pypi.org/project/mkdocs-exclude/) plugin is also required.
 
 
 HTML generation

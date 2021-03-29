@@ -1,29 +1,36 @@
 site_name: KADAS Albireo
-docs_dir: de
+docs_dir: src
 nav:
-    - Allgemeines: README.md
-    - Benutzeroberfläche: kadas_gui.md
-    - Karte: map.md
-    - Ansicht: view.md
-    - Analyse: analysis.md
-    - Zeichnen: draw.md
-    - GPS: gps.md
-    - MSS: mss.md
-    - Einstellungen: settings.md
+    - Allgemeines: de/README.md
+    - Benutzeroberfläche: de/kadas_gui.md
+    - Karte: de/map.md
+    - Ansicht: de/view.md
+    - Analyse: de/analysis.md
+    - Zeichnen: de/draw.md
+    - GPS: de/gps.md
+    - MSS: de/mss.md
+    - Einstellungen: de/settings.md
     - Erweiterte Funktionalitäten:
         - Vektorebenen:
-            - Unterstützte Formate: working_with_vector/supported_data.md
-            - Eigenschaftendialog: working_with_vector/vector_properties.md
-            - Ausdrücke: working_with_vector/expression.md
-            - Feldrechner: working_with_vector/field_calculator.md
+            - Unterstützte Formate: de/working_with_vector/supported_data.md
+            - Eigenschaftendialog: de/working_with_vector/vector_properties.md
+            - Ausdrücke: de/working_with_vector/expression.md
+            - Feldrechner: de/working_with_vector/field_calculator.md
         - Rasterebenen:
-            - Unterstützte Formate: working_with_raster/supported_data.md
-            - Eigenschaftendialog: working_with_raster/raster_properties.md
-        - Arbeiten mit Projektionen: working_with_projections/working_with_projections.md
-        - Druckzusammenstellung: print_composer/print_composer.md
-        - GPS Gate: gpsgate/gpsgate.md
+            - Unterstützte Formate: de/working_with_raster/supported_data.md
+            - Eigenschaftendialog: de/working_with_raster/raster_properties.md
+        - Arbeiten mit Projektionen: de/working_with_projections/working_with_projections.md
+        - Druckzusammenstellung: de/print_composer/print_composer.md
+        - GPS Gate: de/gpsgate/gpsgate.md
     - Anhang:
-        - Tastaturkürzel: appendices/shortcuts.md
-        - Lizenz: appendices/license.md
+        - Tastaturkürzel: de/appendices/shortcuts.md
+        - Lizenz: de/appendices/license.md
 
 theme: readthedocs
+
+plugins:
+  - exclude:
+      glob:
+        - en/*
+        - fr/*
+        - it/*

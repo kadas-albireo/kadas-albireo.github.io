@@ -1,5 +1,5 @@
 site_name: KADAS Albireo Technical Manual
-docs_dir: en
+docs_dir: src
 nav:
     - General: README.md
     - Installation: installation.md

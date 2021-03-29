@@ -1,29 +1,36 @@
 site_name: KADAS Albireo
-docs_dir: it
+docs_dir: src
 nav:
-    - Generalità: README.md
-    - Interfaccia: kadas_gui.md
-    - Mappa: map.md
-    - Vista: view.md
-    - Analisi: analysis.md
-    - Disegnare: draw.md
-    - GPS: gps.md
-    - MSS: mss.md
-    - Impostazioni: settings.md
+    - Generalità: it/README.md
+    - Interfaccia: it/kadas_gui.md
+    - Mappa: it/map.md
+    - Vista: it/view.md
+    - Analisi: it/analysis.md
+    - Disegnare: it/draw.md
+    - GPS: it/gps.md
+    - MSS: it/mss.md
+    - Impostazioni: it/settings.md
     - Funzionalita avanzate:
         - Layer vettoriali:
-            - Dati vettoriali: working_with_vector/supported_data.md
-            - Dialogo delle proprietà: working_with_vector/vector_properties.md
-            - Espressioni: working_with_vector/expression.md
-            - Campi per digitazioni numeriche: working_with_vector/field_calculator.md
+            - Dati vettoriali: it/working_with_vector/supported_data.md
+            - Dialogo delle proprietà: it/working_with_vector/vector_properties.md
+            - Espressioni: it/working_with_vector/expression.md
+            - Campi per digitazioni numeriche: it/working_with_vector/field_calculator.md
         - Layer raster:
-            - Dati raster: working_with_raster/supported_data.md
-            - Dialogo delle proprietà: working_with_raster/raster_properties.md
-        - Lavorare con le proiezioni: working_with_projections/working_with_projections.md
-        - Compositore di stampe: print_composer/print_composer.md
-        - GPS Gate: gpsgate/gpsgate.md
+            - Dati raster: it/working_with_raster/supported_data.md
+            - Dialogo delle proprietà: it/working_with_raster/raster_properties.md
+        - Lavorare con le proiezioni: it/working_with_projections/working_with_projections.md
+        - Compositore di stampe: it/print_composer/print_composer.md
+        - GPS Gate: it/gpsgate/gpsgate.md
     - Appendice:
-        - Tasti di scelta rapida: appendices/shortcuts.md
-        - Licenza: appendices/license.md
+        - Tasti di scelta rapida: it/appendices/shortcuts.md
+        - Licenza: it/appendices/license.md
 
 theme: readthedocs
+
+plugins:
+  - exclude:
+      glob:
+        - de/*
+        - en/*
+        - fr/*
