@@ -1,4 +1,4 @@
-# Licence GNU General Public License {#gnu-general-public-license}
+# Licence GNU General Public License
 
 Version 2, Juin 1991
 
@@ -91,7 +91,7 @@ LIMITATION DE GARANTIE
 > De plus, l’équipe de développement de QGIS vous donne la permission, à titre d’exception spéciale, de lier le code de ce programme avec la bibliothèque Qt, incluant sans limite les versions suivantes (à la fois libres et commerciales): Qt/Non-commerical Windows, Qt/Windows, Qt/X11, Qt/Mac, and Qt/Embedded (ou avec des versions modifiées de Qt qui utilisent la même licence que Qt) et de distribuer des combinaisons liées incluant les deux. Vous devez respecter la GNU General Public Licence pour tout le code qui ne concerne pas Qt. Si vous modifiez ce fichier, vous pouvez étendre cette exception à votre version de ce fichier mais vous n’êtes pas obligé de le faire. Si vous ne voulez pas le faire, supprimez cette déclaration d’exception de votre version.
 >
 
-## Licence GNU de documentation libre {#gnu-free-documentation-license}
+## Licence GNU de documentation libre
 
 > Version 1.3, 3 Novembre 2008
 >

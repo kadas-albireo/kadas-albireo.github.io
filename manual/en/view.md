@@ -16,13 +16,13 @@ In secondary map views, only the navigation tool is available, all other tools c
 
 The title of the subwindow can be changed if necessary.
 
-<img src="../media/image13.png" />
+<img src="/media/image13.png" />
 
 ## <a name="sec2"></a>3D
 
 The **_3D_** function opens an additional child window with a 3D globe view. It can be moved around within or outside the application window by dragging on their title bar.
 
-<img src="../media/image14.png" />
+<img src="/media/image14.png" />
 
 ### Settings
 
@@ -40,7 +40,7 @@ All 2D map layers are by default drawn as a draped textures on the globe. Vector
 
 *Note*: The shading of 3D models depends on the position of the sun. The position of the sun can be controlled by specifying time and date in the globe settings.
 
-<img src="../media/image15.png" />
+<img src="/media/image15.png" />
 
 Pins, camera images and one-point MSS symbols are displayed as billboards.
 

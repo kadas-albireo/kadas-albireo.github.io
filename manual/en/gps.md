@@ -34,7 +34,7 @@ These functions allow drawing waypoints and routes, which can later be exported 
 
 Waypoints and routes are managed in a dedicated GPS Routes layer in the layer tree, analogous to redlining layers.
 
-<img src="../media/image9.png" />
+<img src="/media/image9.png" />
 
 ## <a name="sec3"></a>GPX export und import
 

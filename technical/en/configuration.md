@@ -16,7 +16,7 @@ Application layout
  * `<InstallRoot>\opt\mss`: MSS/MILX server component (not part of public release)
 
 
-### Per-user configuration:
+### Per-user configuration
 
  * `%APPDATA%\Kadas\Kadas\profiles\default\Kadas\Kadas.ini`: Application settings file
  * `%APPDATA%\Kadas\Kadas\profiles\default\python\plugins`: Location for user specific python plugins

@@ -29,7 +29,7 @@ Bei ausgewählter Vorlage wird im Hauptkartenfenster ein blaues halb-transparent
 
 Beim Drucken können zusätzliche Elemente, Koordinatengitter, Kartenkartusche, Legende, und Massstabbalken je nach Wunsch ein- oder ausgeblendet werden. Die Position dieser Elemente ist in der Vorlage definiert. 
 
-<img src="../media/image12.png" />
+<img src="/media/image12.png" />
 
 ### Druckdialog
 
@@ -52,7 +52,7 @@ Beim Drucken können zusätzliche Elemente, Koordinatengitter, Kartenkartusche, 
 
 Die Druckvorlagen die im Projekt enthalten sind können im Druckzusammenstellungsdialog verwaltet werden, der durch die Schaltfläche rechts vom der Druckvorlageselektion geöffnet werden kann. Dort können einzelne Vorlagen importiert, exportiert sowie aus dem Projekt entfernt werden.
 
-<img src="../media/image12.1.png" />
+<img src="/media/image12.1.png" />
 
 ### Karten-Kartusche
 

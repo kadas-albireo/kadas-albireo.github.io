@@ -7,25 +7,19 @@ This repo contains the user and training manuals for [KADAS Albireo 2](https://g
 Requirements
 ------------
 
-The manuals are built with [GitBook](https://github.com/GitbookIO/gitbook).
-See [Setup and Installation of GitBook](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md#local-installation).
+The manuals are built with [Mkdocs](https://www.mkdocs.org/).
 
 
 HTML generation
 ---------------
 
-User manual:
+Run `./build.sh` in the respective subfolder, find the output in the respective `html` folder.
 
-    cd manual
+Development
+-----------
 
-Install plugins:
+Run
 
-    gitbook install
+    mkdocs serve -f <config>.yml
 
-Preview and serve your book using:
-
-    gitbook serve
-
-Or build the static website using:
-
-    gitbook build
+in the respective subfolder.

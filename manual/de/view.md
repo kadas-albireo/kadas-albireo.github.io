@@ -17,14 +17,14 @@ In sekundären Kartenansichten ist nur das Navigationswerkzeug verfügbar, sämt
 
 Der Titel der Unterfenster lässt sich bei Bedarf ändern.
 
-<img src="../media/image13.png" />
+<img src="/media/image13.png" />
 
 
 ## <a name="sec2"></a>3D
 
 Über die Funktion **_3D_** wird ein zusätzliches Fenster mit einer Globus-Ansicht geöffnet. Dieses Fenster wird automatisch angeordnet, kann aber auch mit der Maus an eine andere Stelle innerhalb oder ausserhalb des Programmfensters bewegt werden.
 
-<img src="../media/image14.png" />
+<img src="/media/image14.png" />
 
 ### Einstellungen
 
@@ -40,7 +40,7 @@ Die Tooltips der Eingabefelder in den Globus-Einstellungen der Ebene beschreiben
 
 Die Schattierung von 3D Modelle hängt vom Sonnenstand ab. Der Sonnenstand kann durch eine benutzerdefinierte Zeit/Datumsangabe in den Globus Einstellungen gesteuert werden.
 
-<img src="../media/image15.png" />
+<img src="/media/image15.png" />
 
 Stecknadeln, Kamerabilder und einpunkt MSS Symbole werden als Billboards angezeigt.
 

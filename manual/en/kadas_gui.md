@@ -1,6 +1,6 @@
 # KADAS Interface
 
-<img src="../media/image1.png" />
+<img src="/media/image1.png" />
 
 The KADAS GUI is divided into five areas:
 
@@ -15,13 +15,13 @@ The KADAS GUI is divided into five areas:
 
 Functionalities are grouped by topic in tabs, which can be activated from the menu bar. The tabs contain buttons for the various functionalities. The functionalities of each tab are documented in the respective chapters:
 
-+ <a href="map.md">Map</a>
-+ <a href="view.md">View</a>
-+ <a href="analysis.md">Analysis</a>
-+ <a href="draw.md">Draw</a>
-+ <a href="gps.md">Navigation</a>
-+ <a href="mss.md">MSS</a>
-+ <a href="settings.md">Settings</a>
++ <a href="/map">Map</a>
++ <a href="/view">View</a>
++ <a href="/analysis">Analysis</a>
++ <a href="/draw">Draw</a>
++ <a href="/gps">Navigation</a>
++ <a href="/mss">MSS</a>
++ <a href="/settings">Settings</a>
 
 
 ## <a name="sec1"></a>Favorites and search
@@ -46,7 +46,7 @@ As soon as at least three characters are typed, the search starts and results ar
 
 The results are listed in correspondingly designated categories. The result list can be searched with mouse or keyboard arrows. When selecting a result with the arrows, a blue pin is placed in the appropriate location. When activating a result with the mouse, the map extent is centered on the corresponding location.
 
-<img src="../media/image2.png" />
+<img src="/media/image2.png" />
 
 To the right of the search field, it is possible to define a filter geometry for local and remote data set search. This filter is *NOT* applied to coordinate, location or pin searches.
 
@@ -108,7 +108,7 @@ The toolbar above the catalog contains the following functionalities:
 
 The status bar contains following labels and control widgets:
 
-+ **_GPS_**: Usage of the GPS button is described in the <a href="gps.md">*Navigation* chapter<a>.
++ **_GPS_**: Usage of the GPS button is described in the <a href="/gps">*Navigation* chapter</a>.
 + **_Mouse position_**: The current mouse position on the map can be displayed with respect to multiple reference systems. The desired format can be selected from the menu left of the display label. The unit for the height can be changed in the Settings tab.
 + **_Scale_**: The current scale of the map view is displayed next to the coordinate field. The scale selector allows to choose between predefined scales ranging from 1:500 to 1:1000000.
 + **_Coordinate reference system_**: The coordinate reference system selection button allows to choose which projection to use for the map. If the selected projection differs from the native projection of a dataset, the latter will be reprojected, which may result in reduced performance depending on the amount of data.

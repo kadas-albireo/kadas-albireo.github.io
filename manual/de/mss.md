@@ -8,7 +8,7 @@ Die **_Symbol Hinzufügen_** Schaltfläche öffnet eine durchsuchbare Galerie vo
 
 Symbole werden in MilX Ebenen abgelegt. Diese sind im Karteninhaltsverzeichnis sichtbar. In der Symbolgalerie können neue MilX Ebenen erstellt werden sowie ausgewählt werden, welcher Ebene neu gezeichnete Symbole hinzugefügt werden.
 
-<img src="../media/image10.png" />
+<img src="/media/image10.png" />
 
 
 ## <a name="sec1"></a>MSS Symbole editieren
@@ -21,7 +21,7 @@ Bei **_Mehrpunktsymbole_** können, soweit es die Symbolspezifikation erlaubt, K
 
 Analog zu Redlining-Objekte lassen sich MSS Symbole individuell oder als Gruppe verschieben, kopieren, ausschneiden und einfügen. Neben den Einträgen im Kontextmenü und den üblichen Tastaturkürzel gibt es dafür noch die **_Kopieren nach..._** und **_Verschieben nach..._** Schaltflächen am unteren Kartenrand. Letztere erlauben explizit eine Zielebene anzugeben, ansonsten wird die aktuell selektierte MilX Ebene als Zielebene genommen. Falls keine MilX Ebene selektiert ist, wird nach der Zielebene gefragt.
 
-<img src="../media/image11.png" />
+<img src="/media/image11.png" />
 
 
 ## <a name="sec2"></a>Ebenenverwaltung

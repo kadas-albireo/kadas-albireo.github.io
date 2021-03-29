@@ -22,7 +22,7 @@ On peut éditer a posteriori les géométries déjà dessinées ou les textes en
 
 Les géométries de lignes et de polygones existantes peuvent être continuées via le menu contextuel sur un nœud.
 
-<img src="../media/image6.png" />
+<img src="/media/image6.png" />
 
 Les opérations d'édition sur une couche de Redlining peuvent se faire par CTRL+Z et CTRL+Y ou avec les touches correspondantes du bord inférieur de la carte.
 
@@ -56,7 +56,7 @@ Avec la fonction **_Ajouter image_** il est possible d'ajouter des graphiques SV
 
 Les graphiques vectoriels sont stockés dans la couche **_SVG graphics_**.
 
-<img src="../media/image7.png" />
+<img src="/media/image7.png" />
 
 
 ## <a name="sec3"></a>Coller
@@ -87,6 +87,6 @@ Un Bullseye est dessiné sous la forme d'un nombre de cercles concentriques auto
 
 Les objets individuels peuvent être supprimés via le menu contextuel ou la touche SUPPR. L'outil **_Supprimer les objets_** vous permet de supprimer plusieurs objets à la fois dans une section sélectionnée. Cette fonction peut également être appelée via CTRL+Rectangle en mode de navigation.
 
-<img src="../media/image8.png" />
+<img src="/media/image8.png" />
 
 

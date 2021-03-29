@@ -27,7 +27,7 @@ Une fois le modèle choisi, un rectangle bleu semi-transparent apparaît dans la
 
 Lors de l'impression d'éléments supplémentaires, la grille de coordonnées, la cartouche de cartes, la légende et la barre d'échelle peuvent être affichées ou masquées comme vous le souhaitez. La position de ces éléments est définie dans le modèle.
 
-<img src="../media/image12.png" />
+<img src="/media/image12.png" />
 
 
 ### Boîte de dialogue d’impression
@@ -51,7 +51,7 @@ Lors de l'impression d'éléments supplémentaires, la grille de coordonnées, l
 
 Les modèles d'impression contenus dans le projet peuvent être gérés dans la boîte de dialogue Imprimer composition, qui peut être ouverte à l'aide du bouton situé à droite de la sélection du modèle d'impression. Là, des modèles individuels peuvent être importés, exportés et supprimés du projet.
 
-<img src="../media/image12.1.png"/>
+<img src="/media/image12.1.png"/>
 
 
 ### Cartouche de la carte

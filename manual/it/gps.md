@@ -34,7 +34,7 @@ I **_rotte_** sono polilinee che possono essere dotate di nome e numero.
 
 Waypoint e rotte vengono salvat in un proprio layer **_Percorsi GPS_**, analogo al layer Redlining.
 
-<img src="../media/image9.png" />
+<img src="/media/image9.png" />
 
 ## <a name="sec3"></a>Esportazione e importazione GPX
 

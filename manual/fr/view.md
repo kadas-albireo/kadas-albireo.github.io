@@ -16,13 +16,13 @@ Seul l’outil de navigation est disponible dans les vues secondaires de carte, 
 
 Le titre de la sous-fenêtre peut être modifié si nécessaire.
 
-<img src="../media/image13.png" />
+<img src="/media/image13.png" />
 
 ## <a name="sec2"></a>3D
 
 La fonction **_3D_** ouvre une autre fenêtre avec une vue du globe. Cette fenêtre est disposée automatiquement, mais peut aussi être déplacée à un autre endroit à l’intérieur ou à l’extérieur de la fenêtre de programme au moyen de la souris.
 
-<img src="../media/image14.png" />
+<img src="/media/image14.png" />
 
 ### Réglages
 
@@ -38,7 +38,7 @@ Les couches 2D sont dessinées par défaut en tant que texture sur le globe. Les
 
 > L'ombrage des modèles 3D dépend de la position du soleil. La position du soleil peut être contrôlée par une heure / date définie par l'utilisateur dans les paramètres du globe.
 
-<img src="../media/image15.png" />
+<img src="/media/image15.png" />
 
 Les punaises, photos et symboles MSS ponctuels sont indiqués comme billboards.
 

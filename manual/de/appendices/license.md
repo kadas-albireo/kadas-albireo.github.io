@@ -1,4 +1,4 @@
-# GNU General Public License {#gnu-general-public-license}
+# GNU General Public License
 
 Deutsche Übersetzung der Version 2, Juni 1991. Den offiziellen englischen Originaltext finden Sie unter <a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a>. Diese Übersetzung wird mit der Absicht angeboten, das Verständnis der GNU General Public License (GNU GPL) zu erleichtern. Es handelt sich jedoch nicht um eine offizielle oder im rechtlichen Sinne anerkannte Übersetzung. Diese Übersetzung wurde ursprünglich erstellt von Katja Lachmann. Übersetzungen im Auftrag der S.u.S.E. GmbH - <a href="http://www.suse.de">http://www.suse.de</a>. Sie wurde überarbeitet von Peter Gerwinski, G-N-U GmbH - <a href="http://www.g-n-u.de">http://www.g-n-u.de</a> (31. Oktober 1996, 4. Juni 2000)
 
@@ -91,7 +91,7 @@ Keine Gewährleistung
 > Zusätzlich, als eine besondere Ausnahme, gibt das QGIS Development Team das Recht, den Quellcode dieses Programms mit der Qt-Bibliothek, einschliesslich aber nicht begrenzt auf die folgenden Versionen (frei und kommerziell): Qt/Non-commerical Windows, Qt/Windows, Qt/X11, Qt/Mac, und Qt/Embedded (oder mit modifizierten Qt-Versionen, welche die gleiche Lizenz wie Qt nutzen) zu verlinken und zu vertreiben. Für jeglichen Quellcode ausser dem Qt-Quellcode, müssen Sie die GNU General Public License in jeder Hinsicht befolgen. Wenn Sie diesen Text ändern, können Sie diese Ausnahmen erweitern zu Ihrer Version dieses Textes, aber Sie sind dazu nicht verpflichtet. Wenn Sie es nicht möchten, löschen Sie diese Ausnahme aus Ihrer Version.
 >
 
-## GNU Free Documentation License {#gnu-free-documentation-license}
+## GNU Free Documentation License
 
 > Dies ist eine inoffizielle Übersetzung der GNU Free Documentation License (FDLv1.3) ins Deutsche. Sie wurde nicht von der Free Software Foundation veröffentlicht, und legt keine rechtsgültigen Bestimmungen zur Verteilung für Dokumentation fest, welche die GNU FDL verwendet - nur der englische Originaltext der GNU FDL gewährleistet dies. Dennoch hoffen wir, dass diese Übersetzung Deutsch sprechenden dazu verhilft, die GNU FDL besser zu verstehen
 >

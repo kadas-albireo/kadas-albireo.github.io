@@ -22,13 +22,13 @@ Darüber hinaus kann eine Datei mit .prj Endung existieren. Diese enthält die P
 
 Beim Laden einer Vektorebene öffnet sich der folgende Dialog:
 
-![](../../images/addvectorlayerdialog.png)
+![](/images/addvectorlayerdialog.png)
 
-Wählen Sie aus den möglichen Quelltypen ![radiobuttonon](../../images/radiobuttonon.png) *Datei* und klicken Sie auf den Knopf **\[Durchsuchen\]**. Dadurch erscheint ein weiterer Dialog zum Öffnen (siehe <a href="#figure-vector-2">figure_vector_2</a>) mit dem Sie im Dateisystem navigieren können und Sie ein Shape oder eine andere unterstützte Datenquelle laden können. Die Auswahlbox *Filter* <img src="../../images/selectstring.png" /> ermöglicht es Ihnen einige OGR-untersützte Dateiformate vorzuwählen.
+Wählen Sie aus den möglichen Quelltypen ![radiobuttonon](/images/radiobuttonon.png) *Datei* und klicken Sie auf den Knopf **\[Durchsuchen\]**. Dadurch erscheint ein weiterer Dialog zum Öffnen mit dem Sie im Dateisystem navigieren können und Sie ein Shape oder eine andere unterstützte Datenquelle laden können. Die Auswahlbox *Filter* <img src="/images/selectstring.png" /> ermöglicht es Ihnen einige OGR-untersützte Dateiformate vorzuwählen.
 
 Außerdem kann auch der Kodierungstyp für die Shapedatei eingestellt werden, falls dies notwendig ist.
 
-![](../../images/shapefileopendialog.png)
+![](/images/shapefileopendialog.png)
 
 Wenn Sie ein Shapefile aus der Liste auswählen und auf **\[Öffnen\]** klicken, wird es in KADAS geladen.
 
@@ -44,7 +44,7 @@ Um die Darstellungsgeschwindigkeit zu optimieren, kann ein räumlicher Index ers
 
 Benutzen Sie folgende Schritte zum Erstellen eines räumlichen Index:
 
--   Um eine Shapedatei zu laden klicken Sie auf den <img src="../../images/mActionAddOgrLayer.png" /> *Vektorlayer hinzufügen* Knopf in der Werkzeugleiste oder drücken einfach `Strg+Umschalt+V`.
+-   Um eine Shapedatei zu laden klicken Sie auf den <img src="/images/mActionAddOgrLayer.png" /> *Vektorlayer hinzufügen* Knopf in der Werkzeugleiste oder drücken einfach `Strg+Umschalt+V`.
 
 -   Öffnen Sie den *Eigenschaften*-Dialog des Vektorlayers, indem Sie auf den Namen des Layers in der Legende doppelklicken oder mit der rechten Maustaste *Eigenschaften* auswählen.
 

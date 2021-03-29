@@ -1,6 +1,6 @@
 # Interface de KADAS
 
-<img src="../media/image1.png" />
+<img src="/media/image1.png" />
 
 L’interface de KADAS est divisée en cinq zones distinctes :
 
@@ -15,13 +15,13 @@ L’interface de KADAS est divisée en cinq zones distinctes :
 
 On peut alterner entre diverses barres d’outils dans le menu de fonction grâce à la liste de menu. Les barres d’outils contiennent des touches pour les diverses fonctions. Les fonctions sont documentées dans un chapitre séparé :
 
-+ <a href="map.md">Carte</a>
-+ <a href="view.md">Vue</a>
-+ <a href="analysis.md">Analyse</a>
-+ <a href="draw.md">Dessiner</a>
-+ <a href="gps.md">Navigation</a>
-+ <a href="mss.md">MSS</a>
-+ <a href="settings.md">Paramètres</a>
++ <a href="/map">Carte</a>
++ <a href="/view">Vue</a>
++ <a href="/analysis">Analyse</a>
++ <a href="/draw">Dessiner</a>
++ <a href="/gps">Navigation</a>
++ <a href="/mss">MSS</a>
++ <a href="/settings">Paramètres</a>
 
 
 ## <a name="sec1"></a>Favoris et recherche
@@ -46,7 +46,7 @@ Après avoir entré au moins trois lettres, la recherche commence et les premier
 
 Les résultats sont listés dans des catégories indiquées en conséquence. La liste des résultats peut être parcourue via la souris ou le clavier. Quand on sélectionne un résultat avec les flèches, une punaise bleue est placée au lieu correspondant. Si on active un résultat avec la souris, l’extrait de carte est centré sur le lieu correspondant.
 
-<img src="../media/image2.png" />
+<img src="/media/image2.png" />
 
 À droite du champ de recherche, il est possible de définir un filtre pour la recherche de données locales ou à distance. Ce filtre ne s’applique *pas* aux recherches de coordonnées, de localités ou de punaises.
 
@@ -111,7 +111,7 @@ Les fonctions suivantes sont à disposition en haut de la liste de catalogue :
 
 Les indications et les éléments de commande suivants sont énumérés dans la barre d’état :
 
-+ **GPS**: La fonction de la touche GPS est décrite dans le <a href="gps.md">chapitre *Navigation*<a>.
++ **GPS**: La fonction de la touche GPS est décrite dans le <a href="/gps">chapitre *Navigation*<a>.
 + **Position de la souris**: La *position actuelle de la souris* peut être affichée dans différents systèmes de coordonnées. Le système d’affichage souhaité peut être choisi par la touche à droite de l’indication de la position.
 + **Échelle**: À droite de ces coordonnées se trouve *l’échelle de la carte_*. Si vous zoomez ou dé-zoomez, l’échelle se met à jour automatiquement. Une liste déroulante vous permet de choisir une échelle prédéterminée allant du 1:500ème au 1:1000000ème.
 + **Système de coordonnées**: Le système de référence où la carte actuelle doit être représentée peut être choisi dans le champ de sélection du *système de coordonnées*. Le système de référence affiché peut différer du système de référence dans lequel les données existent. Dans ce cas, les données sont converties pour la représentation.

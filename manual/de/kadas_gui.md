@@ -1,6 +1,6 @@
 # KADAS Benutzeroberfläche
 
-<img src="../media/image1.png" />
+<img src="/media/image1.png" />
 
 Die KADAS Benutzeroberfläche ist in fünf Bereiche unterteilt:
 
@@ -15,13 +15,13 @@ Die KADAS Benutzeroberfläche ist in fünf Bereiche unterteilt:
 
 Im Funkionsmenü kann über eine Menüleiste zwischen verschiedenen Symbolleisten umgeschaltet werden. Die Symbolleisten enthalten Knöpfe für die verschiedenen Funktionen. Diese sind in separaten Kapiteln dokumentiert:
 
-+ <a href="map.md">Karte</a>
-+ <a href="view.md">Ansicht</a>
-+ <a href="analysis.md">Analyse</a>
-+ <a href="draw.md">Zeichnen</a>
-+ <a href="gps.md">Navigation</a>
-+ <a href="mss.md">MSS</a>
-+ <a href="settings.md">Einstellungen</a>
++ <a href="/map">Karte</a>
++ <a href="/view">Ansicht</a>
++ <a href="/analysis">Analyse</a>
++ <a href="/draw">Zeichnen</a>
++ <a href="/gps">Navigation</a>
++ <a href="/mss">MSS</a>
++ <a href="/settings">Einstellungen</a>
 
 
 ## <a name="sec1"></a>Favoriten und Suche
@@ -46,7 +46,7 @@ Nach der Eingabe von mindestens drei Buchstaben startet die Suche und es werden 
 
 Die Resultate werden in entsprechend bezeichnete Kategorien aufgelistet. Die Resultatliste kann mit Maus oder Tastatur-Pfeile durchsucht werden. Beim Auswählen eines Resultats mit den Pfeilen wird eine blaue Stecknadel an den entsprechenden Ort gesetzt. Beim aktivieren eines Resultats mit der Maus wird der Kartenausschnitt auf den entsprechenden Ort zentriert.
 
-<img src="../media/image2.png" />
+<img src="/media/image2.png" />
 
 Rechts vom Suchfeld gibt es die Möglichkeit, einen Filter für die lokale und remote Datensatz-Suche zu definieren. Dieser Filter greift *nicht* für Koordinaten, Ortschaft oder Stecknadelsuchen.
 
@@ -109,7 +109,7 @@ Oberhalb der Katalogliste stehen folgende Funktionen zur Verfügung:
 
 In der Statuszeile sind folgende Anzeigen und Bedienelemente angeordnet:
 
-+ **_GPS_**: Die Verwendung der GPS Schaltfläche ist im Kapitel <a href="gps.md">Kapitel *Navigation*<a> beschrieben.
++ **_GPS_**: Die Verwendung der GPS Schaltfläche ist im Kapitel <a href="/gps">Kapitel *Navigation*</a> beschrieben.
 + Mausposition_**: Die aktuelle Mausposition auf der Karte kann in Bezug auf mehrere Referenzsysteme angezeigt werden. Das gewünschte System kann im Menü links neben der Positionsanzeige ausgewählt werden. Die Einheit für die Höhe kann in der Einstellungen-Registerkarte geändert werden.
 + **_Massstab_**: Der aktuelle Massstab der Kartenansicht wird neben dem Koordinatenfeld angezeigt. Der Menü ermöglicht die Auswahl zwischen vordefinierten Skalen zwischen 1:500 und 1:100000000.
 + Koordinatenbezugssystem_**: In dieser Auswahlschaltfläche ausgewählt werden, welche Projektion für die Karte verwendet werden soll. Weicht die gewählte Projektion von der nativen Projektion eines Datensatzes ab, wird dieser neu projiziert, was je nach Datenmenge zu Leistungseinbussen führen kann.

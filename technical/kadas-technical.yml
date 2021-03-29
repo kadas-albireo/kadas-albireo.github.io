@@ -1,0 +1,9 @@
+site_name: KADAS Albireo Technical Manual
+docs_dir: en
+nav:
+    - General: README.md
+    - Installation: installation.md
+    - Configuration & Integration: configuration.md
+    - Compilation: compilation.md
+
+theme: readthedocs

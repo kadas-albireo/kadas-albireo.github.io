@@ -1,6 +1,6 @@
 # Feldrechner <a name="#field-calculator"></a>
 
-Mit <img src="../../images/mActionCalculateField.png" /> *Feldrechner* Knopf in der Attributtabelle können Sie Berechnungen auf Basis von bestehenden Attributwerten oder definierten Funktionen durchführen, z.B. um die Länge oder die Fläche von Geometrieobjekten zu berechnen. Die Ergebnisse können in eine neue Attributspalte geschrieben werden, in ein virtuelles Feld oder Sie können verwendet werden um Werte in einer vorhandenen Spalte zu updaten.
+Mit <img src="/images/mActionCalculateField.png" /> *Feldrechner* Knopf in der Attributtabelle können Sie Berechnungen auf Basis von bestehenden Attributwerten oder definierten Funktionen durchführen, z.B. um die Länge oder die Fläche von Geometrieobjekten zu berechnen. Die Ergebnisse können in eine neue Attributspalte geschrieben werden, in ein virtuelles Feld oder Sie können verwendet werden um Werte in einer vorhandenen Spalte zu updaten.
 
 **Virtuelle Felder**
 
@@ -8,7 +8,7 @@ Mit <img src="../../images/mActionCalculateField.png" /> *Feldrechner* Knopf in 
 
 -   Ein Feld kann nur beim Erstellen virtuell gemacht werden.
 
-Der Feldrechner ist jetzt über jeden Layer der Bearbeitung unterstützt erreichbar. Wenn Sie auf das Feldrechner Icon klicken öffnet sich ein Dialog (siehe <a href="#figure-attributes-3">figure_attributes_3</a>). Wenn der Layer nicht im Bearbeitungsmodus ist wird eine Warnung gezeigt und das Verwenden des Feldrechners bewirkt, dass der Layer in den Bearbeitungsmodus gesetzt wird bevor die Berechnung gemacht wird.
+Der Feldrechner ist jetzt über jeden Layer der Bearbeitung unterstützt erreichbar. Wenn Sie auf das Feldrechner Icon klicken öffnet sich ein Dialog. Wenn der Layer nicht im Bearbeitungsmodus ist wird eine Warnung gezeigt und das Verwenden des Feldrechners bewirkt, dass der Layer in den Bearbeitungsmodus gesetzt wird bevor die Berechnung gemacht wird.
 
 The quick field calculation bar on top of the attribute table is only visible if the layer is editable.
 
@@ -18,17 +18,17 @@ In der schnellen Feldberechnungsleiste wählen Sie erst einen bestehenden Feldna
 
 Im Feldberechnungsdialog müssen Sie erst auswählen ob sie nur ausgewählte Objekte updaten wollen, eine neues Feld anlegen, in das die Ergebnisse der Berechnung eingefügt werden oder ob Sie ein vorhandenes Feld erneuern wollen.
 
-![](../../images/fieldcalculator.png)
+![](/images/fieldcalculator.png)
 
-Wenn Sie sich entschließen ein neues Feld hinzuzufügen, müssen Sie einen Feldnamen, einen Feldtyp (Ganzzahl, Dezimalzahl, Text oder Datum), die Ausgabefeldbreite und die Genauigkeit eingeben (siehe <a href="#figure-attributes-3">figure_attributes_3</a>). Zum Beispiel wenn Sie ein Ausgabefeldbreite von 10 und eine Genauigkeit von 3 wählen, heißt das, dass 6 Einträge vor dem Komma stehen, dann das Komma und dann weitere 3 Einträge für die Genauigkeit.
+Wenn Sie sich entschließen ein neues Feld hinzuzufügen, müssen Sie einen Feldnamen, einen Feldtyp (Ganzzahl, Dezimalzahl, Text oder Datum), die Ausgabefeldbreite und die Genauigkeit eingeben. Zum Beispiel wenn Sie ein Ausgabefeldbreite von 10 und eine Genauigkeit von 3 wählen, heißt das, dass 6 Einträge vor dem Komma stehen, dann das Komma und dann weitere 3 Einträge für die Genauigkeit.
 
 A short example illustrates how field calculator works when using the *Expression* tab. We want to calculate the length in km of the `railroads` layer from the KADAS sample dataset:
 
-1.  Laden Sie das Shape `railroads.shp` in KADAS und öffnen Sie die den Dialog <img src="../../images/mActionOpenTable.png" /> *Attributtabelle öffnen*.
+1.  Laden Sie das Shape `railroads.shp` in KADAS und öffnen Sie die den Dialog <img src="/images/mActionOpenTable.png" /> *Attributtabelle öffnen*.
 
-2.  Klicken Sie auf <img src="../../images/mActionToggleEditing.png" /> *Bearbeitungsmodus umschalten* und öffnen Sie den <img src="../../images/mActionCalculateField.png" /> *Feldrechner* Dialog.
+2.  Klicken Sie auf <img src="/images/mActionToggleEditing.png" /> *Bearbeitungsmodus umschalten* und öffnen Sie den <img src="/images/mActionCalculateField.png" /> *Feldrechner* Dialog.
 
-3.  Wählen Sie das <img src="../../images/checkbox.png" /> *Neues Feld anlegen* Kontrollkästchen um die Berechnungen in ein neues Feld zu speichern.
+3.  Wählen Sie das <img src="/images/checkbox.png" /> *Neues Feld anlegen* Kontrollkästchen um die Berechnungen in ein neues Feld zu speichern.
 
 4.  Setzen Sie `laenge` als Ausgabefeldname, `real` als Ausgabefeldtyp und definieren Sie die Ausgabefeldbreite mit 10 und die Ausgabefeldgenauigkeit mit 3.
 

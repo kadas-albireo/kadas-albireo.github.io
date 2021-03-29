@@ -1,0 +1,29 @@
+site_name: KADAS Albireo
+docs_dir: fr
+nav:
+    - Généralités: README.md
+    - Interface: kadas_gui.md
+    - Carte: map.md
+    - Vue: view.md
+    - Analyse: analysis.md
+    - Dessiner: draw.md
+    - GPS: gps.md
+    - MSS: mss.md
+    - Réglages: settings.md
+    - Fonctionnalités avancées:
+        - Couche vecteur:
+            - Données vectorielles: working_with_vector/supported_data.md
+            - Fenêtre Propriétés: working_with_vector/vector_properties.md
+            - Expressions: working_with_vector/expression.md
+            - Calculatrice de champ: working_with_vector/field_calculator.md
+        - Raster layers:
+            - Données raster: working_with_raster/supported_data.md
+            - Fenêtre Propriétés: working_with_raster/raster_properties.md
+        - Utiliser les projections: working_with_projections/working_with_projections.md
+        - Composeur d’impression: print_composer/print_composer.md
+        - GPS Gate: gpsgate/gpsgate.md
+    - Annexe:
+        - Raccourcis: appendices/shortcuts.md
+        - License: appendices/license.md
+
+theme: readthedocs

@@ -25,7 +25,7 @@ The *CRS* tab contains the following important components:
 
 La riproiezione al volo dipende dalla capacità di trasformare i dati in un ‘SR predefinito’ che in KADAS è WGS84. Per alcuni SR sono disponibili molti tipi di trasformazione. KADAS ti permette di definire la trasformazione da usare, altrimenti verrà usata la trasformazione predefinita.
 
-In una finestra di dialogo, KADAS chiede quale trasformazione deve usare visualizzando il informazioni di PROJ.4 che descrivono la trasformazione di partenza e quella di destinazione. Puoi ottenere altre informazioni fermando il cursore del mouse sopra una trasformazione. Puoi salvare le impostazioni selezionando il pulsante ![radiobuttonon](../../images/radiobuttonon.png) *Ricorda la selezione*.
+In una finestra di dialogo, KADAS chiede quale trasformazione deve usare visualizzando il informazioni di PROJ.4 che descrivono la trasformazione di partenza e quella di destinazione. Puoi ottenere altre informazioni fermando il cursore del mouse sopra una trasformazione. Puoi salvare le impostazioni selezionando il pulsante ![radiobuttonon](/images/radiobuttonon.png) *Ricorda la selezione*.
 
 
 

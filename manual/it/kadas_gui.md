@@ -1,6 +1,6 @@
 # Interfaccia KADAS
 
-<img src="../media/image1.png" />
+<img src="/media/image1.png" />
 
 L’interfaccia grafica KADAS è divisa in cinque aree:
 
@@ -15,13 +15,13 @@ L’interfaccia grafica KADAS è divisa in cinque aree:
 
 Le funzionalità sono raggruppate in schede, le quali possono essere attivate dalla barra del menu. Le schede contengono pulsanti per le varie funzionalità. Queste sono documentate nei rispettivi capitoli:
 
-+ <a href="map.md">Mappa</a>
-+ <a href="view.md">Vista</a>
-+ <a href="analysis.md">Analisi</a>
-+ <a href="draw.md">Disegnare</a>
-+ <a href="gps.md">Navigazione</a>
-+ <a href="mss.md">MSS</a>
-+ <a href="settings.md">Impostazioni</a>
++ <a href="/map">Mappa</a>
++ <a href="/view">Vista</a>
++ <a href="/analysis">Analisi</a>
++ <a href="/draw">Disegnare</a>
++ <a href="/gps">Navigazione</a>
++ <a href="/mss">MSS</a>
++ <a href="/settings">Impostazioni</a>
 
 
 ## <a name="sec1"></a>Preferiti e ricerca
@@ -46,7 +46,7 @@ La ricerca viene avviata appena sono stati digitati tre o più caratteri nel cam
 
 I risultati vengono elencati nelle categorie corrispondenti. L'elenco dei risultati può essere esaminato con il mouse oppure con le frecce della tastiera. Se si seleziona un risultato con i tasti freccia, nel punto corrispondente viene inserita una spillo blu. Attivando un risultato con il mouse, il riquadro della mappa viene centrato nella località corrispondente.
 
-<img src="../media/image2.png" />
+<img src="/media/image2.png" />
 
 Alla destra del campo di ricerca è possibile definire un filtro per la ricerca locale e remota del set di dati. Questo filtro *non* viene applicato alla ricerca di coordinate, località o spilli.
 
@@ -107,7 +107,7 @@ Le seguenti funzioni sono disponibili sopra l'elenco del catalogo:
 
 Nella barra di stato sono disposti i seguenti indicatori e le seguenti funzioni:
 
-+ **_GPS_**: L'uso del pulsante GPS è descritto nel <a href="gps.md">capitolo *Navigazione*<a>.
++ **_GPS_**: L'uso del pulsante GPS è descritto nel <a href="/gps">capitolo *Navigazione*</a>.
 + _**Posizione del mouse_**: La posizione corrente del mouse sulla mappa può essere visualizzata rispetto a molteplici sistemi di riferimento . Il sistema desiderato può essere selezionato dal menu a sinistra campo di visualizzazione. L'unità di misura dell'altezza può essere modificata nella scheda Impostazioni.
 + **_Scala_**: La scala corrente della visualizzazione della mappa è mostrata accanto al campo delle coordinate. Il selettore di scala consente di scegliere tra scale predefinite tra 1:500 e 1:100000000.
 + **_Sistema di coordinate_**: Il pulsante di selezione del sistema di coordinate permette di scegliere quale proiezione utilizzare per la mappa. Se la proiezione selezionata differisce dalla proiezione nativa di un dataset, quest'ultimo viene riproiettato, il che può comportare una riduzione delle prestazioni a seconda della quantità di dati.

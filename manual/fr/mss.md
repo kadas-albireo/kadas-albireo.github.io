@@ -8,7 +8,7 @@ Le bouton **_Ajouter un symbole_** ouvre une galerie de symboles MSS où l’on 
 
 Les symboles sont placés au niveau MilX. Ils sont visibles dans le répertoire de la carte. On peut créer de nouveaux niveaux MilX et on peut également choisir à quel niveau les symboles que l’on vient de dessiner doivent être ajoutés.
 
-<img src="../media/image10.png" />
+<img src="/media/image10.png" />
 
 ## <a name="sec1"></a>Editer des symboles MSS
 
@@ -20,7 +20,7 @@ Pour les **_symboles à plusieurs points_**, il est possible d’éditer des nœ
 
 De la même manière que pour les objets redlining, les symboles MSS peuvent être déplacés, copiés, coupés et collés individuellement ou en groupe. En plus des entrées du menu contextuel et des raccourcis clavier habituels, il y a aussi les boutons **_Copier vers..._** et **_Déplacer vers..._** en bas de la carte. Ces derniers permettent explicitement de spécifier une couche cible, par défaut la couche MilX actuellement sélectionnée est prise comme cible. Si aucune couche MilX n'est sélectionnée, la couche de destination sera demandée.
 
-<img src="../media/image11.png" />
+<img src="/media/image11.png" />
 
 ## <a name="sec2"></a>Gestion des couches
 

@@ -2,7 +2,7 @@
 
 La finestra di dialogo *Proprietà layer* fornisce informazioni sul vettore, sulla simbologia e sulle opzioni di visualizzazione delle etichette. Inoltre, se hai caricato il vettore da un database PostgreSQL/PostGIS, puoi modificare l’espressione SQL che hai usato per caricarlo, grazie al *Costruttore di interrogazioni* nel menu *Generale*. Per accedere alla finestra di dialogo *Proprietà layer*, fai doppio click sul vettore nella legenda o clicca con il tasto destro sul vettore e seleziona *Proprietà* dal menu contestuale.
 
-![](../../images/vector_general_menu.png)
+![](/images/vector_general_menu.png)
 
 
 ## Menu Stile <a name="#style-menu"></a>
@@ -13,13 +13,13 @@ Con il menu Stile puoi modificare lo stile e la visualizzazione dei vettori. Puo
 
 Il visualizzatore è responsabile del disegno di una geometria con il simbolo corretto. Ci sono quattro tipi di visualizzazione: simbolo singolo, categorizzato, graduato e tramite regole. Non c’è visualizzatore di colore continuo, perché è solo un caso particolare dello stile graduato. I visualizzatori categorizzato e graduato possono essere creati specificando un simbolo e una scala di colori - i colori per i simboli saranno realizzati in modo appropriato. Per i vettori puntuali, c’è disponibile un visualizzatore spostamento punto. Per ogni tipo di vettori (punti, linee e poligoni), sono disponibili tipi di simboli. A seconda del visualizzatore selezionato, la *Style* offre diverse sezioni aggiuntive. In basso a destra della finestra di simbologia, c’è un pulsante \*\* \[Apri libreria\] \*\* , che dà accesso al Gestore di stili (vedi: ref: vector\_style\_manager). Il gestore di stili consente di modificare e rimuovere i simboli esistenti e aggiungerne di nuovi.
 
-Dopo aver fatto le necessarie modifiche, il simbolo nella finestra di dialogo Selettore simbolo può essere aggiunto alla lista dei simboli (utilizzando *Salva*), e quindi può essere facilmente utilizzato in futuro. Inoltre, puoi utilizzare il pulsante **\[Salva stile\]** <img src="../../images/selectstring.png" /> per salvare il simbolo come file KADAS di stile (.qml) o un file SLD (.sld). SLD può essere esportata da qualsiasi tipo di visualizzatore - simbolo singolo, categorizzato o graduato o tramite regole si è laureato o basata su regole - ma se imèporti un file SLD, viene creato uno stile di simbolo singolo o di tramite regole. Ciò significa che gli stili categorizzati o graduati vengono convertiti in tramite regole. Se si desidera mantenere gli stili, è necessario attenersi al formato QML. D’altra parte, può essere molto utile a volte avere questo modo semplice di convertire stili tramite regole.
+Dopo aver fatto le necessarie modifiche, il simbolo nella finestra di dialogo Selettore simbolo può essere aggiunto alla lista dei simboli (utilizzando *Salva*), e quindi può essere facilmente utilizzato in futuro. Inoltre, puoi utilizzare il pulsante **\[Salva stile\]** <img src="/images/selectstring.png" /> per salvare il simbolo come file KADAS di stile (.qml) o un file SLD (.sld). SLD può essere esportata da qualsiasi tipo di visualizzatore - simbolo singolo, categorizzato o graduato o tramite regole si è laureato o basata su regole - ma se imèporti un file SLD, viene creato uno stile di simbolo singolo o di tramite regole. Ciò significa che gli stili categorizzati o graduati vengono convertiti in tramite regole. Se si desidera mantenere gli stili, è necessario attenersi al formato QML. D’altra parte, può essere molto utile a volte avere questo modo semplice di convertire stili tramite regole.
 
 Se cambi il tipo di visualizzatore mentre imposti lo stile di un vettore, le impostazioni effettuate per il simbolo saranno mantenute. Questo funziona solo per un cambiamento. Se si ripete la modifica del tipo di visualizzatore le impostazioni per il simbolo saranno perse.
 
 Se l'origine dati del livello è un database (PostGIS o Spatialite per esempio), è possibile salvare lo stile del livello all'interno di una tabella del database. Basta cliccare sulla combobox *Salva stile* e scegliere **Salva nel database**, quindi compilare la finestra di dialogo per definire il nome di uno stile, aggiungere una descrizione, un file ui e se lo stile è uno stile predefinito. Quando si carica un livello dal database, se uno stile esiste già per questo livello, KADAS caricherà il livello e il suo stile. È possibile aggiungere diversi stili nel database. Solo uno sarà comunque lo stile predefinito.
 
-![](../../images/save_style_database.png)
+![](/images/save_style_database.png)
 
 **Selezionare e cambiare simboli multipli**
 
@@ -31,11 +31,11 @@ Usa il visualizzatore Simbolo singolo per visualizzare tutti gli elementi di un 
 
 Se clicchi sul primo livello nella parte sinistra puoi definire i parametri come *Unità*, *Traspsrenza*, *Colore* and *Rotazione*.
 
-![](../../images/singlesymbol_ng_line.png)
+![](/images/singlesymbol_ng_line.png)
 
 In qualsiasi spinbox di questa finestra di dialogo è possibile inserire espressioni. Ad esempio, è possibile calcolare la matematica semplice come moltiplicando la dimensione esistente di un punto per 3 senza ricorrere a una calcolatrice.
 
-![](../../images/expression_symbol_size_spinbox.png)
+![](/images/expression_symbol_size_spinbox.png)
 
 Se si fa clic sul secondo livello nella finestra di dialogo *Livelli simbolo* è possibile una 'sovrascrittura definita dai dati' per quasi tutte le impostazioni. Quando si usa un colore definito dai dati, si potrebbe voler collegare il colore ad un campo 'budget'. Qui viene inserita una funzionalità di commento.
 
@@ -50,13 +50,11 @@ Se si fa clic sul secondo livello nella finestra di dialogo *Livelli simbolo* è
       ELSE '#228B22'                -- Positive value: green
     END
 
-![](static/user_manual/working_with_vector/symbol_data_defined_edit.png)
-
 **Visualizzatore Categorizzato**
 
 Il visualizzatore Categorizzato viene usato per visualizzare tutti gli elementi di un vettore, dove il colore di un simbolo singolo riflette i valori di un determinato attributo. Il menu *Stile* ti permette di scegliere:
 
--   L’attributo (usa la lista Colonna o l’espressione <img src="../../images/mIconExpressionEditorOpen.png" /> *Imposta espressione*, vedi <a href="expression.html#vector-expressions">*Expressions*</a>)
+-   L’attributo (usa la lista Colonna o l’espressione <img src="/images/mIconExpressionEditorOpen.png" /> *Imposta espressione*, vedi <a href="expression.html#vector-expressions">*Expressions*</a>)
 
 -   Il simbolo (Simbolo)
 
@@ -72,20 +70,20 @@ Il pulsante **\[Avanzato\]** nell’angolo inferiore destro nella finestra di di
 
 L’esempio nella seguente figura mostra il dialogo con le categorie di simboli usate per il layer dei fiumi dei dati di esempio di KADAS.
 
-![](../../images/categorysymbol_ng_line.png)
+![](/images/categorysymbol_ng_line.png)
 
 
 **Visualizzatore Graduato**
 
 Il visualizzatore Graduato visualizza tutti gli elementi del vettore tramite un unico simbolo. I colori riflettono la classificazione in classi dell’attributo scelto.
 
-![](../../images/graduatesymbol_ng_line.png)
+![](/images/graduatesymbol_ng_line.png)
 
 Come il Visualizzatore Categorizzato, quello Graduato ti permette di impostare la rotazione e la dimensione della scala in base a valori presenti in colonne specifiche.
 
 Ugualmente al visualizzatore Categorizzato, la scheda *Stile* ti permette di selezionare:
 
--   L’attributo (usando il menu a tendina per scegliere la colonna oppure la funzione <img src="../../images/mIconExpressionEditorOpen.png" /> *Imposta espressione per la colonna*, vedi il capitolo ref:vector\_expressions)
+-   L’attributo (usando il menu a tendina per scegliere la colonna oppure la funzione <img src="/images/mIconExpressionEditorOpen.png" /> *Imposta espressione per la colonna*, vedi il capitolo ref:vector\_expressions)
 
 -   Il simbolo (Simbolo)
 
@@ -113,22 +111,22 @@ Il tasto destro mostra un menù contestuale con **Copia/Incolla**, **Cambia colo
 
 **Mappe tematiche usando un’espressione**
 
-Puoi creare mappe tematiche categorizzate o graduate usando il risultato di un’espressione. Nella finestra di dialogo delle proprietà del vettore puoi selezionare su <img src="../../images/mIconExpressionEditorOpen.png" /> *Imposta espressione della colonna*. Non hai quindi più bisogno di creare una nuova colonna nella tabella degli attributi di un vettore e sceglierla in un secondo momento per la categorizzazione.
+Puoi creare mappe tematiche categorizzate o graduate usando il risultato di un’espressione. Nella finestra di dialogo delle proprietà del vettore puoi selezionare su <img src="/images/mIconExpressionEditorOpen.png" /> *Imposta espressione della colonna*. Non hai quindi più bisogno di creare una nuova colonna nella tabella degli attributi di un vettore e sceglierla in un secondo momento per la categorizzazione.
 
 **Visualizzatore Tramite regole**
 
 Il visualizzatore Tramite regole visualizza tutti gli elementi di un vettore tramite simboli basati su regole, con i colori che riflettono la classificazione di un attributo di interesse. Le regole si basano su istruzioni SQL, che puoi creare con il Costruttore stringhe. Puoi creare dei raggruppamenti attraverso filtri o scale e puoi decidere se vuoi abilitare i livelli del simbolo oppure se far corrispondere la prima regola.
 
-Per creare una regola, attivare una riga esistente facendo doppio clic su di essa, oppure cliccare su '+' e cliccare sulla nuova regola. Nella finestra di dialogo *Proprietà del modulo*, è possibile definire un'etichetta per la regola. Premere il pulsante <img src="../../images/browsebutton.png" /> per aprire l'espressione string builder. Nell'elenco **Function List**, fare clic su *Fields and Values* per visualizzare tutti gli attributi della tabella degli attributi da ricercare. Per aggiungere un attributo al campo calcolatrice **Espressione**, fare doppio clic sul suo nome nell'elenco *Campi e valori*. Generalmente, è possibile utilizzare i vari campi, valori e funzioni per costruire l'espressione di calcolo, o semplicemente digitarla nella casella. È possibile creare una nuova regola copiando e incollando una regola esistente con il tasto destro del mouse. Puoi anche usare la regola 'ELSE' che verrà eseguita se nessuna delle altre regole di quel livello corrisponde. Le regole appaiono in una gerarchia ad albero nella legenda della mappa. È sufficiente fare doppio clic sulle regole nella legenda della mappa e appare il menu Stile delle proprietà del livello che mostra la regola che fa da sfondo al simbolo nell'albero.
+Per creare una regola, attivare una riga esistente facendo doppio clic su di essa, oppure cliccare su '+' e cliccare sulla nuova regola. Nella finestra di dialogo *Proprietà del modulo*, è possibile definire un'etichetta per la regola. Premere il pulsante <img src="/images/browsebutton.png" /> per aprire l'espressione string builder. Nell'elenco **Function List**, fare clic su *Fields and Values* per visualizzare tutti gli attributi della tabella degli attributi da ricercare. Per aggiungere un attributo al campo calcolatrice **Espressione**, fare doppio clic sul suo nome nell'elenco *Campi e valori*. Generalmente, è possibile utilizzare i vari campi, valori e funzioni per costruire l'espressione di calcolo, o semplicemente digitarla nella casella. È possibile creare una nuova regola copiando e incollando una regola esistente con il tasto destro del mouse. Puoi anche usare la regola 'ELSE' che verrà eseguita se nessuna delle altre regole di quel livello corrisponde. Le regole appaiono in una gerarchia ad albero nella legenda della mappa. È sufficiente fare doppio clic sulle regole nella legenda della mappa e appare il menu Stile delle proprietà del livello che mostra la regola che fa da sfondo al simbolo nell'albero.
 
-![](../../images/rulesymbol_ng_line.png)
+![](/images/rulesymbol_ng_line.png)
 
 
 **Visualizzatore Spostamento punto**
 
 Il visualizzatore Spostamento punto ti permette di visualizzare gli elementi di un vettore di punti anche se questi hanno la stessa posizione. I simboli vengono posizionati lungo un cerchio di spostamento intorno al centro del simbolo.
 
-![](../../images/poi_displacement.png)
+![](/images/poi_displacement.png)
 
 **Esporta simbologia vettore**
 
@@ -138,7 +136,7 @@ Hai la possibilità di esportare la simbologia vettoriale da KADAS in file Googl
 
 Il renderer invertito per poligoni permette all'utente di definire un simbolo da riempire all'esterno dei poligoni del livello. Come prima è possibile selezionare i subrenderers. Questi subrenderers sono gli stessi dei renderers principali.
 
-![](../../images/inverted_polygon_symbol.png)
+![](/images/inverted_polygon_symbol.png)
 
 **Cambiare velocemente stili**
 
@@ -151,27 +149,27 @@ Con il renderer Heatmap è possibile creare heatmap dinamiche in tempo reale per
 
 ### Selettore di colore <a name="#color-picker"></a>
 
-Indipendentemente dal tipo di stile da utilizzare, la finestra di dialogo per scegliere il colore si mostrerà quando fai clic per scegliere un colore - o bordo o colore di riempimento. Questa finestra ha quattro diverse schede che consentono di selezionare i colori: <img src="../../images/mIconColorBox.png" /> *scala di colori*, <img src="../../images/mIconColorWheel.png" /> *ruota colori*, <img src="../../images/mIconColorSwatches.png" /> *campioni di colori* or <img src="../../images/mIconColorPicker.png" /> *selettore di colori*.
+Indipendentemente dal tipo di stile da utilizzare, la finestra di dialogo per scegliere il colore si mostrerà quando fai clic per scegliere un colore - o bordo o colore di riempimento. Questa finestra ha quattro diverse schede che consentono di selezionare i colori: <img src="/images/mIconColorBox.png" /> *scala di colori*, <img src="/images/mIconColorWheel.png" /> *ruota colori*, <img src="/images/mIconColorSwatches.png" /> *campioni di colori* or <img src="/images/mIconColorPicker.png" /> *selettore di colori*.
 
 Qualunque sia il metodo utilizzato, il colore selezionato viene sempre descritto nei cursori dei colori per i valori HSV (Hue, Saturation, Value) e RGB (rosso, verde, blu). C’è anche un cursore *Opacità* per impostare il livello di trasparenza. Nella parte in basso a sinistra della finestra di dialogo si può vedere un confronto tra il colore vecchio e quello attuale e nella parte in basso a destra si ha la possibilità di aggiungere il colore che appena ottimizzato in un pulsante di archivio colore.
 
-![](../../images/color_picker_ramp.png)
+![](/images/color_picker_ramp.png)
 
-Con <img src="../../images/mIconColorBox.png" /> *scala di colori* o con <img src="../../images/mIconColorWheel.png" /> *ruota di colori*, è possibile individuare tutte le possibili combinazioni di colori. Ci sono altre possibilità però. Usando campioni di colore <img src="../../images/mIconColorSwatches.png" /> si può scegliere da un elenco preselezionato. Questo elenco preselezionato viene popolato con uno dei tre metodi: *colori recenti*, *colori standard* o *colori di progetto*.
+Con <img src="/images/mIconColorBox.png" /> *scala di colori* o con <img src="/images/mIconColorWheel.png" /> *ruota di colori*, è possibile individuare tutte le possibili combinazioni di colori. Ci sono altre possibilità però. Usando campioni di colore <img src="/images/mIconColorSwatches.png" /> si può scegliere da un elenco preselezionato. Questo elenco preselezionato viene popolato con uno dei tre metodi: *colori recenti*, *colori standard* o *colori di progetto*.
 
-![](../../images/color_picker_recent_colors.png)
+![](/images/color_picker_recent_colors.png)
 
-Un’altra opzione è quella di utilizzare il <img src="../../images/mIconColorPicker.png" />: sup: selettore di colore che permette di campionare un colore da sotto il puntatore del mouse in qualsiasi parte di QGIS o anche da un’altra applicazione premendo la barra spaziatrice. Da notare che il selettore colore dipende dal sistema operativo e non è attualmente supportato da OSX.
+Un’altra opzione è quella di utilizzare il <img src="/images/mIconColorPicker.png" />: sup: selettore di colore che permette di campionare un colore da sotto il puntatore del mouse in qualsiasi parte di QGIS o anche da un’altra applicazione premendo la barra spaziatrice. Da notare che il selettore colore dipende dal sistema operativo e non è attualmente supportato da OSX.
 
 **Selettore rapido di colore + copia/incolla colori**
 
 Puoi rapidamente scegliere da *colori recenti*, da *colori atttuali* or semplicemente *copia* o *incolla* un colore facendo click sulla freccia a discesa di un pulsante colore.
 
-![](../../images/quick_color_picker.png)
+![](/images/quick_color_picker.png)
 
 ### Visualizzazione del layer <a name="#layer-rendering"></a>
 
--   *Trasparenza del layer* ![slider](../../images/slider.png): con questo strumento puoi decidere il grado di visibilità del vettore. Usa questo cursore per adattare la trasparenza del vettore. Puoi anche impostare un valore preciso di trasparenza nella casella presente a destra del cursore.
+-   *Trasparenza del layer* ![slider](/images/slider.png): con questo strumento puoi decidere il grado di visibilità del vettore. Usa questo cursore per adattare la trasparenza del vettore. Puoi anche impostare un valore preciso di trasparenza nella casella presente a destra del cursore.
 
 -   *Modalità fusione layer* e *Modalità fusione elementi*: grazie a questi strumenti usati soprattutto in ambito grafico, potrai creare effettivi visivi speciali. I pixel del vettore più in alto vengono mischiati con i pixel di tutti i layer sottostanti. Hai molte scelte diverse.
 
@@ -204,7 +202,7 @@ Puoi rapidamente scegliere da *colori recenti*, da *colori atttuali* or semplice
 
 ## Menu Etichette <a name="#labels-menu"></a>
 
-Lo strumento <img src="../../images/mActionLabeling.png" /> *Etichette* ti dà la possibilità di etichettare in modo facile e intelligente punti, linee e poligoni specificando solamente pochi parametri. È supportata anche la riproiezione al volo. Abbiamo ridisegnato l’intera applicazione per le etichette, aggiungendo nuove caratteristiche e altre funzionalità. Hai a disposizione questi menu:
+Lo strumento <img src="/images/mActionLabeling.png" /> *Etichette* ti dà la possibilità di etichettare in modo facile e intelligente punti, linee e poligoni specificando solamente pochi parametri. È supportata anche la riproiezione al volo. Abbiamo ridisegnato l’intera applicazione per le etichette, aggiungendo nuove caratteristiche e altre funzionalità. Hai a disposizione questi menu:
 
 -   Testo
 
@@ -222,47 +220,47 @@ Lo strumento <img src="../../images/mActionLabeling.png" /> *Etichette* ti dà l
 
 Ecco come puoi usare il nuovo menu delle etichette con varie tipologie di vettori.
 
-**Etichettare vettore di punti**
+**Etichettare vettore di punti**<a name="labeling-point-layers"></a>
 
-Avvia KADAS e carica un vettore di punti. Attiva il vettore nella legenda e clicca sull’icona <img src="../../images/mActionLabeling.png" /> *Opzioni per le etichette dei layer* nella barra degli strumenti.
+Avvia KADAS e carica un vettore di punti. Attiva il vettore nella legenda e clicca sull’icona <img src="/images/mActionLabeling.png" /> *Opzioni per le etichette dei layer* nella barra degli strumenti.
 
-Il primo passo è quello di spuntare la casella di controllo <img src="../../images/checkbox.png" /> *Etichetta questo vettore con* e selezionare un attributo fra quelli disponibili. Clicca su <img src="../../images/mIconExpressionEditorOpen.png" /> se vuoi definire un’espressione per le etichette.
+Il primo passo è quello di spuntare la casella di controllo <img src="/images/checkbox.png" /> *Etichetta questo vettore con* e selezionare un attributo fra quelli disponibili. Clicca su <img src="/images/mIconExpressionEditorOpen.png" /> se vuoi definire un’espressione per le etichette.
 
 I seguenti passi descrivono un’etichettatura semplice, senza usare la funzione di *Sovrascrittura definita dai dati*, situata vicino ai menu a tendina.
 
-Puoi specificare lo stile del testo dal menu *Testo*. Usa l’opzione *Tipo maiuscolo* per cambiare lo stile del testo. Puoi scegliere fra: ‘Tutto maiuscolo’, ‘Tutto minuscolo’ e ‘Prima lettera maiuscola’. Puoi anche usare le modalità di fusione per ricreare alcuni effetti di programmi di grafica (vedi <a href="#blend-modes">Modalità blending</a>).
+Puoi specificare lo stile del testo dal menu *Testo*. Usa l’opzione *Tipo maiuscolo* per cambiare lo stile del testo. Puoi scegliere fra: ‘Tutto maiuscolo’, ‘Tutto minuscolo’ e ‘Prima lettera maiuscola’. Puoi anche usare le modalità di fusione per ricreare alcuni effetti di programmi di grafica.
 
-Nel menu *Formattazione* puoi scegliere un carattere per andare a capo grazie alla funzione ‘A capo con il carattere’. Usa l’opzione <img src="../../images/checkbox.png" /> *Numeri formattati* per formattare i numeri della tabella degli attributi. Qui puoi inserire la parte decimale. In modo predefinito, se attivi questa opzione, vengono impostati tre decimali.
+Nel menu *Formattazione* puoi scegliere un carattere per andare a capo grazie alla funzione ‘A capo con il carattere’. Usa l’opzione <img src="/images/checkbox.png" /> *Numeri formattati* per formattare i numeri della tabella degli attributi. Qui puoi inserire la parte decimale. In modo predefinito, se attivi questa opzione, vengono impostati tre decimali.
 
-Per creare un contorno, attiva la casella di controllo <img src="../../images/checkbox.png" /> *Disegna contorno del testo* nel menu *Contorno*. Puoi scegliere sia il colore del contorno che la modalità di fusione (vedi <a href="#blend-modes">Modalità blending</a>).
+Per creare un contorno, attiva la casella di controllo <img src="/images/checkbox.png" /> *Disegna contorno del testo* nel menu *Contorno*. Puoi scegliere sia il colore del contorno che la modalità di fusione.
 
-Se hai attivato la casella <img src="../../images/checkbox.png" /> *colore riempimento del contorno*, allora interagirà con il testo, se parzialmente trasparente, e darà risultati di trasparenza del colore misti. Se spegni il riempimento del contorno, ridurrai i colori misti (salvo dove il contorno si interseca con il riempimento del testo), e permetti anche di rendere il testo delineato.
+Se hai attivato la casella <img src="/images/checkbox.png" /> *colore riempimento del contorno*, allora interagirà con il testo, se parzialmente trasparente, e darà risultati di trasparenza del colore misti. Se spegni il riempimento del contorno, ridurrai i colori misti (salvo dove il contorno si interseca con il riempimento del testo), e permetti anche di rendere il testo delineato.
 
-Nel menu *Sfondo*, tramite *Dimensione X* e *Dimensione Y* puoi ridimensionare lo sfondo. Usa *Tipo dimensione* per inserire un ‘Contorno’ aggiuntivo. In questo caso la dimensione dello sfondo è predefinita. Lo sfondo sarà costituito dal contorno più le dimensioni impostate in *Dimensione X* e *Dimensione Y*. Puoi impostare diversi tipi di *Rotazione*: ‘Sincronizza con l’etichetta’, ‘Offset dell’etichetta’ e ‘Fisso’. Queste due ultime opzioni ti permettono di ruotare lo sfondo. Se imposti un *Offset X,Y* allora lo sfondo verrò spostato. Ancora, se attivi *Raggio X,Y* allora lo sfondò avrà gli angoli arrotondati. Infine, puoi scegliere diverse *Modalità fusione* (vedi <a href="#blend-modes">Modalità blending</a>).
+Nel menu *Sfondo*, tramite *Dimensione X* e *Dimensione Y* puoi ridimensionare lo sfondo. Usa *Tipo dimensione* per inserire un ‘Contorno’ aggiuntivo. In questo caso la dimensione dello sfondo è predefinita. Lo sfondo sarà costituito dal contorno più le dimensioni impostate in *Dimensione X* e *Dimensione Y*. Puoi impostare diversi tipi di *Rotazione*: ‘Sincronizza con l’etichetta’, ‘Offset dell’etichetta’ e ‘Fisso’. Queste due ultime opzioni ti permettono di ruotare lo sfondo. Se imposti un *Offset X,Y* allora lo sfondo verrò spostato. Ancora, se attivi *Raggio X,Y* allora lo sfondò avrà gli angoli arrotondati. Infine, puoi scegliere diverse *Modalità fusione*.
 
-Usa il menu *Ombreggiatura* per aggiungere un’ombra alle etichette. Il risultato finale varierà molto in base alla scelta che farai. Hai a disposizione diverse possibilità: ‘Componente etichetta inferiore’, ‘Testo’, ‘Contorno’ e ‘Sfondo’. L’angolazione dell’ *Offset* dipende dall’orientamento dell’etichetta. Se spunti la casella di controllo <img src="../../images/checkbox.png" /> *Usa ombreggiatura globale* allora il punto zero dell’angolazione è sempre orientato verso nord e non dipende dall’orientamento dell’etichetta. Puoi influenzare l’apparenza dell’ombra tramite *Raggio di sfumatura*: più è alto il valore e più leggera sarà l’ombra. Puoi usare anche diverse modalità di fusione (vedi <a href="#blend-modes">Modalità blending</a>).
+Usa il menu *Ombreggiatura* per aggiungere un’ombra alle etichette. Il risultato finale varierà molto in base alla scelta che farai. Hai a disposizione diverse possibilità: ‘Componente etichetta inferiore’, ‘Testo’, ‘Contorno’ e ‘Sfondo’. L’angolazione dell’ *Offset* dipende dall’orientamento dell’etichetta. Se spunti la casella di controllo <img src="/images/checkbox.png" /> *Usa ombreggiatura globale* allora il punto zero dell’angolazione è sempre orientato verso nord e non dipende dall’orientamento dell’etichetta. Puoi influenzare l’apparenza dell’ombra tramite *Raggio di sfumatura*: più è alto il valore e più leggera sarà l’ombra. Puoi usare anche diverse modalità di fusione.
 
-Scegliere il menu *Placement* per il posizionamento dell'etichetta e la priorità di etichettatura. Usando ![radiobuttonon](../../images/radiobuttonon.png) l'impostazione *Offset da punto*, ora avete la possibilità di usare *Quadrante* per posizionare l'etichetta. Inoltre, è possibile modificare l'angolo di posizionamento dell'etichetta con l'impostazione *Rotazione*. In questo modo, è possibile posizionare l'etichetta in un certo quadrante con una certa rotazione. Nella sezione *priorità* è possibile definire con quale priorità vengono visualizzate le etichette. Interagisce con le etichette degli altri livelli vettoriali nell'area di disegno della mappa. Se ci sono etichette di diversi livelli nella stessa posizione, verrà visualizzata l'etichetta con la priorità più alta e l'altra verrà tralasciata.
+Scegliere il menu *Placement* per il posizionamento dell'etichetta e la priorità di etichettatura. Usando ![radiobuttonon](/images/radiobuttonon.png) l'impostazione *Offset da punto*, ora avete la possibilità di usare *Quadrante* per posizionare l'etichetta. Inoltre, è possibile modificare l'angolo di posizionamento dell'etichetta con l'impostazione *Rotazione*. In questo modo, è possibile posizionare l'etichetta in un certo quadrante con una certa rotazione. Nella sezione *priorità* è possibile definire con quale priorità vengono visualizzate le etichette. Interagisce con le etichette degli altri livelli vettoriali nell'area di disegno della mappa. Se ci sono etichette di diversi livelli nella stessa posizione, verrà visualizzata l'etichetta con la priorità più alta e l'altra verrà tralasciata.
 
-Nel menu *Visualizzazione* puoi impostare opzioni relative alle etichette e agli elementi delle etichette. Dal sottomenu *Opzioni etichetta* puoi impostare la visibilità delle etichette in funzione della scala. Puoi dire a KADAS di visualizzare solamente le etichette selezionate spuntando la casella di controllo <img src="../../images/checkbox.png" /> *Mostra tutte le etichette di questo vettore (incluse le etichette che collidono)*. Il sottomenu *Opzioni elementi* ti permette di scegliere quali elementi di una geometria di parti multiple devono essere etichettati. Puoi decidere dii limitare il numero di elementi da etichettare e puoi spuntare la casella di controllo <img src="../../images/checkbox.png" /> *Evita che le etichette si sovrappongano alle geometrie*.
+Nel menu *Visualizzazione* puoi impostare opzioni relative alle etichette e agli elementi delle etichette. Dal sottomenu *Opzioni etichetta* puoi impostare la visibilità delle etichette in funzione della scala. Puoi dire a KADAS di visualizzare solamente le etichette selezionate spuntando la casella di controllo <img src="/images/checkbox.png" /> *Mostra tutte le etichette di questo vettore (incluse le etichette che collidono)*. Il sottomenu *Opzioni elementi* ti permette di scegliere quali elementi di una geometria di parti multiple devono essere etichettati. Puoi decidere dii limitare il numero di elementi da etichettare e puoi spuntare la casella di controllo <img src="/images/checkbox.png" /> *Evita che le etichette si sovrappongano alle geometrie*.
 
-![](../../images/label_points.png)
+![](/images/label_points.png)
 
 **Etichettare vettore di linee**
 
-Per prima cosa, dalla scheda *Impostazioni delle etichette* spunta la casella di controllo <img src="../../images/checkbox.png" /> *Etichetta questo vettore con* e seleziona un attributo fra quelli disponibili. Clicca su <img src="../../images/mIconExpressionEditorOpen.png" /> se vuoi usare un’espressione per le etichette.
+Per prima cosa, dalla scheda *Impostazioni delle etichette* spunta la casella di controllo <img src="/images/checkbox.png" /> *Etichetta questo vettore con* e seleziona un attributo fra quelli disponibili. Clicca su <img src="/images/mIconExpressionEditorOpen.png" /> se vuoi usare un’espressione per le etichette.
 
 Imposta uno stile del testo dal menu *Testo*. Ci saranno le stesse impostazioni del vettore di punti.
 
 Anche le impostazioni del menu *Formattazione* sono le stesse sia per i vettori di punti che per quelli di linee.
 
-Il menu *Contorno* ha le stesse funzionalità di quelle descritte nella sezione <a href="#labeling-point-layers">ettichettare livelli di punti</a>.
+Il menu *Contorno* ha le stesse funzionalità di quelle descritte nella sezione <a href="#labeling-point-layers">Etichettare vettore di punti</a>.
 
-Il menu *Sfondo* ha le stesse voci di quelle descritte nella sezione <a href="#labeling-point-layers">ettichettare livelli di punti</a>.
+Il menu *Sfondo* ha le stesse voci di quelle descritte nella sezione <a href="#labeling-point-layers">Etichettare vettore di punti</a>.
 
-Anche il menu *Ombra* ha le stesse funzionalità di quelle descritte nella sezione <a href="#labeling-point-layers">ettichettare livelli di punti</a>.
+Anche il menu *Ombra* ha le stesse funzionalità di quelle descritte nella sezione <a href="#labeling-point-layers">Etichettare vettore di punti</a>.
 
-Nel menu *Posizionamento* troverai impostazioni particolari per i vettori di linee. Puoi scegliere fra ![radiobuttonon](../../images/radiobuttonon.png) *Parallelo*, ![radiobuttonoff](../../images/radiobuttonoff.png) *Curvato* oppure ![radiobuttonoff](../../images/radiobuttonoff.png) *Orizzontale*. Con le opzioni ![radiobuttonon](../../images/radiobuttonon.png) *Parallelo* e ![radiobuttonoff](../../images/radiobuttonoff.png) *Curvato* puoi impostare la posizione <img src="../../images/checkbox.png" /> *Sopra la linea*, <img src="../../images/checkbox.png" /> *Sulla linea* e <img src="../../images/checkbox.png" /> *Sotto la linea*. Puoi scegliere più impostazioni alla volta. In questo caso, KADAS cercherà automaticamente il posizionamento migliore per le etichette. Se hai scelto l’opzione *Curvato* puoi impostare anche un *Angolo massimo tra caratteri curvi*.
+Nel menu *Posizionamento* troverai impostazioni particolari per i vettori di linee. Puoi scegliere fra ![radiobuttonon](/images/radiobuttonon.png) *Parallelo*, ![radiobuttonoff](/images/radiobuttonoff.png) *Curvato* oppure ![radiobuttonoff](/images/radiobuttonoff.png) *Orizzontale*. Con le opzioni ![radiobuttonon](/images/radiobuttonon.png) *Parallelo* e ![radiobuttonoff](/images/radiobuttonoff.png) *Curvato* puoi impostare la posizione <img src="/images/checkbox.png" /> *Sopra la linea*, <img src="/images/checkbox.png" /> *Sulla linea* e <img src="/images/checkbox.png" /> *Sotto la linea*. Puoi scegliere più impostazioni alla volta. In questo caso, KADAS cercherà automaticamente il posizionamento migliore per le etichette. Se hai scelto l’opzione *Curvato* puoi impostare anche un *Angolo massimo tra caratteri curvi*.
 
 Puoi impostare una distanza minima per cui non si ripetano le etichette. La distanza può essere in mm oin unità di mappa.
 
@@ -270,11 +268,11 @@ Alcune impostazioni di posizionamento visualizzeranno più opzioni, ad esempio, 
 
 Il menu *Visualizzazione* ha praticamente le stesse voci dei vettori di punti. Dal sottomenu *Opzioni elementi* puoi scegliere anche l’opzione *Elimina l’etichettatura degli elementi più piccoli di*.
 
-![](../../images/label_line.png)
+![](/images/label_line.png)
 
 **Etichettare vettore di poligoni**
 
-Per prima cosa spunta la casella di controllo <img src="../../images/checkbox.png" /> *Etichetta questo vettore con* e seleziona un attributo fra quelli disponibili. Clicca su <img src="../../images/mIconExpressionEditorOpen.png" /> se vuoi usare un’espressione per definire le etichette - vedi
+Per prima cosa spunta la casella di controllo <img src="/images/checkbox.png" /> *Etichetta questo vettore con* e seleziona un attributo fra quelli disponibili. Clicca su <img src="/images/mIconExpressionEditorOpen.png" /> se vuoi usare un’espressione per definire le etichette - vedi
 
 Il menu *Testo* ti permette di definire lo stile per il testo. Le voci sono le stesse sia per i vettori di punti che per quelli di linee.
 
@@ -286,9 +284,9 @@ Usa il menu *Sfondo* per creare uno sfondo complesso per i vettori di poligoni. 
 
 Le voci nel menu *Ombre* sono le stesse sia per i punti che per le linee.
 
-Nel menu *Posizionamento* troverai impostazioni particolari per i vettori di poligoni. Scegli fra: ![radiobuttonon](../../images/radiobuttonon.png) *Offset dal centroide*, ![radiobuttonoff](../../images/radiobuttonoff.png) *Orizzontale (lento)*, ![radiobuttonoff](../../images/radiobuttonoff.png) *Attorno al centroide*, ![radiobuttonoff](../../images/radiobuttonoff.png) *Libero (lento)* e ![radiobuttonoff](../../images/radiobuttonoff.png) *Utilizzando il perimetro*.
+Nel menu *Posizionamento* troverai impostazioni particolari per i vettori di poligoni. Scegli fra: ![radiobuttonon](/images/radiobuttonon.png) *Offset dal centroide*, ![radiobuttonoff](/images/radiobuttonoff.png) *Orizzontale (lento)*, ![radiobuttonoff](/images/radiobuttonoff.png) *Attorno al centroide*, ![radiobuttonoff](/images/radiobuttonoff.png) *Libero (lento)* e ![radiobuttonoff](/images/radiobuttonoff.png) *Utilizzando il perimetro*.
 
-L’opzione ![radiobuttonon](../../images/radiobuttonon.png) *Offset dal centroide* ti permette di scegliere fra ![radiobuttonon](../../images/radiobuttonon.png) *poligono visibile* o ![radiobuttonoff](../../images/radiobuttonoff.png) *intero poligono*. Nel primo caso il centroide viene calcolato per il poligono visibile sulla mappa, nel secondo caso invece viene calcolato sull’intero poligono, anche se non tutte le geometrie sono visibili sulla mappa. Puoi usare il quadrante per determinare la posizione delle etichette, oltre che il loro offset e rotazione. L’opzione ![radiobuttonoff](../../images/radiobuttonoff.png) *Attorno al centroide* ti permette di posizionare le etichette ad una certa distanza attorno al centroide. Anche in questo caso puoi scegliere fra ![radiobuttonon](../../images/radiobuttonon.png) *poligono visibile* o ![radiobuttonoff](../../images/radiobuttonoff.png) *intero poligono*. L’opzione *Usando il perimetro* ti permette di scegliere distanza e posizione precise per le etichette. Per la posizione puoi scegliere di spuntare diverse caselle di controllo: <img src="../../images/checkbox.png" /> *Sopra la linea*, <img src="../../images/checkbox.png" /> *Sulla linea*, <img src="../../images/checkbox.png" /> *Sotto la linea* e <img src="../../images/checkbox.png" /> *Posizione dipendente dall’orientazione della linea*.
+L’opzione ![radiobuttonon](/images/radiobuttonon.png) *Offset dal centroide* ti permette di scegliere fra ![radiobuttonon](/images/radiobuttonon.png) *poligono visibile* o ![radiobuttonoff](/images/radiobuttonoff.png) *intero poligono*. Nel primo caso il centroide viene calcolato per il poligono visibile sulla mappa, nel secondo caso invece viene calcolato sull’intero poligono, anche se non tutte le geometrie sono visibili sulla mappa. Puoi usare il quadrante per determinare la posizione delle etichette, oltre che il loro offset e rotazione. L’opzione ![radiobuttonoff](/images/radiobuttonoff.png) *Attorno al centroide* ti permette di posizionare le etichette ad una certa distanza attorno al centroide. Anche in questo caso puoi scegliere fra ![radiobuttonon](/images/radiobuttonon.png) *poligono visibile* o ![radiobuttonoff](/images/radiobuttonoff.png) *intero poligono*. L’opzione *Usando il perimetro* ti permette di scegliere distanza e posizione precise per le etichette. Per la posizione puoi scegliere di spuntare diverse caselle di controllo: <img src="/images/checkbox.png" /> *Sopra la linea*, <img src="/images/checkbox.png" /> *Sulla linea*, <img src="/images/checkbox.png" /> *Sotto la linea* e <img src="/images/checkbox.png" /> *Posizione dipendente dall’orientazione della linea*.
 
 In relazione alla scelta del posizionamento dell'etichetta, appariranno diverse opzioni. Per quanto riguarda il posizionamento del punto è possibile scegliere la distanza per il contorno del poligono, ripetere l'etichetta intorno al perimetro del poligono.
 
@@ -296,13 +294,13 @@ Come per i livelli vettoriali di punti e linee si ha la possibilità di definire
 
 Le voci nel menu *Visualizzazione* sono le stesse dei vettori di linee. Puoi anche usare l’opzione *Elimina l’etichettatura degli elementi più piccoli di* dal menu *Opzioni elementi*.
 
-![](../../images/label_area.png)
+![](/images/label_area.png)
 
 **Definisci le etichette usando un’espressione**
 
-KADAS ti permette di usare delle espressioni per etichettare i vettori. Clicca sull’icona <img src="../../images/mIconExpressionEditorOpen.png" /> nel menu <img src="../../images/mActionLabeling.png" /> *Etichette*. La seguente figura mostra un esempio di espressione per etichettare la regione dell’Alaska con il nome e la dimensione dell’area. Sono stati scelti il campo ‘NAME\_2’, un breve testo descrittivo e la funzione ‘$area()’ combinata con ‘format\_number()’ per una visualizzazione ottimale.
+KADAS ti permette di usare delle espressioni per etichettare i vettori. Clicca sull’icona <img src="/images/mIconExpressionEditorOpen.png" /> nel menu <img src="/images/mActionLabeling.png" /> *Etichette*. La seguente figura mostra un esempio di espressione per etichettare la regione dell’Alaska con il nome e la dimensione dell’area. Sono stati scelti il campo ‘NAME\_2’, un breve testo descrittivo e la funzione ‘$area()’ combinata con ‘format\_number()’ per una visualizzazione ottimale.
 
-<img src="../../images/label_expression.png" />
+<img src="/images/label_expression.png" />
 
 È facile utilizzare le espressioni per etichettare i tuoi dati. Ricordati solo che devi combinare tutti gli elementi (stringhe, campi e funzioni) con il simbolo di concatenazione ‘||’ , che i campi devono essere inclusi fra le “doppie virgolette” e le stringhe fra ‘virgolette singole’. Ecco qualche esempio:
 
@@ -339,30 +337,30 @@ Come potete vedere nel costruttore di espressioni, avete a disposizione centinai
 
 **Usare le opzioni definite dai dati sovrascrive le impostazioni dell’etichettatura**
 
-La funzione **definito dai dati** sovrascrive tutte le impostazioni delle etichette e usa le voci presenti nella tabella degli attributii. Usa il tasto destro del mouse per attivare/disattivare questa funzione. Trascinado il mouse sopra il simbolo vedrai quali sono le informazioni usate per etichettare i dati. Ti mostriamo ora un esempio per la funzione <img src="../../images/mActionMoveLabel.png" />*Muovi etichetta*.
+La funzione **definito dai dati** sovrascrive tutte le impostazioni delle etichette e usa le voci presenti nella tabella degli attributii. Usa il tasto destro del mouse per attivare/disattivare questa funzione. Trascinado il mouse sopra il simbolo vedrai quali sono le informazioni usate per etichettare i dati. Ti mostriamo ora un esempio per la funzione <img src="/images/mActionMoveLabel.png" />*Muovi etichetta*.
 
 1.  Importa il file `lakes.shp` dai dati campione.
 
-2.  Fai doppio click per aprire la finestra di dialogo Proprietà del layer. Clicca su *Etichette* e poi scegli *Posizionamento*. Seleziona ![radiobuttonon](../../images/radiobuttonon.png) *Offset fdal centroide*.
+2.  Fai doppio click per aprire la finestra di dialogo Proprietà del layer. Clicca su *Etichette* e poi scegli *Posizionamento*. Seleziona ![radiobuttonon](/images/radiobuttonon.png) *Offset fdal centroide*.
 
-3.  Cerca la voce *Dati definiti*. Clicca sull’icona <img src="../../images/mIconDataDefine.png" /> per scegliere il campo per la *Coordinata*. Scegli ‘xlabel’ per X e ‘ylabel’ per Y. Vedrai le icone evidenziate in giallo.
+3.  Cerca la voce *Dati definiti*. Clicca sull’icona <img src="/images/mIconDataDefine.png" /> per scegliere il campo per la *Coordinata*. Scegli ‘xlabel’ per X e ‘ylabel’ per Y. Vedrai le icone evidenziate in giallo.
 
 4.  Fai zoom su un lago
 
-5.  Vai sulla barra delle Etichette e clicca sull’icona <img src="../../images/mActionMoveLabel.png" />. Ora potrai spostare manualmente le etichette in un’altra posizione. Le coordinate della nuova posizione verranno salvate nelle rispettive colonne della tabella degli attributi.
+5.  Vai sulla barra delle Etichette e clicca sull’icona <img src="/images/mActionMoveLabel.png" />. Ora potrai spostare manualmente le etichette in un’altra posizione. Le coordinate della nuova posizione verranno salvate nelle rispettive colonne della tabella degli attributi.
 
-![](../../images/label_data_defined.png)
+![](/images/label_data_defined.png)
 
-![](../../images/move_label.png)
+![](/images/move_label.png)
 
 
 ## Menu Campi <a name="#fields-menu"></a>
 
-<img src="../../images/attributes.png" /> tramite il menu *Campi*, puoi manipolare i campi e gli attributi dell’insieme di dati. Per attivare i pulsanti <img src="../../images/mActionNewAttribute.png" /> *Nuova colonna* e <img src="../../images/mActionDeleteAttribute.png" /> *Elimina colonna* devi entrare in modalità <img src="../../images/mActionToggleEditing.png" /> *Modifica*.
+<img src="/images/attributes.png" /> tramite il menu *Campi*, puoi manipolare i campi e gli attributi dell’insieme di dati. Per attivare i pulsanti <img src="/images/mActionNewAttribute.png" /> *Nuova colonna* e <img src="/images/mActionDeleteAttribute.png" /> *Elimina colonna* devi entrare in modalità <img src="/images/mActionToggleEditing.png" /> *Modifica*.
 
 **Widget modifica**
 
-![](../../images/editwidgetsdialog.png)
+![](/images/editwidgetsdialog.png)
 
 Nel menu *Campi* hai la possibilità di usare un **widget per la modifica**. In questo modo puoi specificare un tipo paricolare di colonna in funzione dei dati che contiene. Se clicchi sul pulsante **\[modifica contenuto\]** si aprirà una finestra di dialogo in cui puoi scegliere fra diversi widget:
 
@@ -401,7 +399,7 @@ KADAS ha un'opzione avanzata "nascosta" per definire il proprio widget di campo 
 
 Con l'editor **Layout editor attributi**, è ora possibile definire formulari integrati. Questo è utile per i lavori di inserimento dati o per identificare gli oggetti usando l'opzione "apri formulario automaticamente" quando si hanno oggetti con molti attributi. È possibile creare un editor con diverse schede e gruppi di nomi per presentare i campi degli attributi.
 
-Scegliere il "designer Drag and drop" e una colonna attributo. Usare l'icona <img src="../../../images/mActionSignPlus.png" /> per creare una categoria da inserire una scheda o un gruppo con nome. Quando si crea una nuova categoria, KADAS inserirà una nuova scheda o gruppo di nome per la categoria nel modulo integrato. Il passo successivo sarà quello di assegnare i campi rilevanti ad una categoria selezionata con l'icona <img src="../../../images/mActionArrowRight.png" />. È possibile creare più categorie e utilizzare nuovamente gli stessi campi.
+Scegliere il "designer Drag and drop" e una colonna attributo. Usare l'icona <img src="..//images/mActionSignPlus.png" /> per creare una categoria da inserire una scheda o un gruppo con nome. Quando si crea una nuova categoria, KADAS inserirà una nuova scheda o gruppo di nome per la categoria nel modulo integrato. Il passo successivo sarà quello di assegnare i campi rilevanti ad una categoria selezionata con l'icona <img src="..//images/mActionArrowRight.png" />. È possibile creare più categorie e utilizzare nuovamente gli stessi campi.
 
 Altre opzioni nel dialogo sono *Autogenerare* e *Specificare file UI*.
 
@@ -418,14 +416,14 @@ Fa riferimento alla funzione Init di python come:
 
 MyForms.py deve essere presente nel PYTHONPATH, in .qgis2/python, oppure nella cartella del progetto.
 
-![](../../images/attribute_editor_layout.png)
+![](/images/attribute_editor_layout.png)
 
-![](../../images/resulting_feature_form.png)
+![](/images/resulting_feature_form.png)
 
 
 ## Menu Generale <a name="#general-menu"></a>
 
-<img src="../../images/general.png" /> Usa questo menu per gestire le impostazioni principali dei vettori. Hai a disposizione diverse opzioni:
+<img src="/images/general.png" /> Usa questo menu per gestire le impostazioni principali dei vettori. Hai a disposizione diverse opzioni:
 
 Informazioni del layer
 
@@ -445,7 +443,7 @@ Sistema di Riferimento
 
 -   Vedi o cambia la proiezione di un vettore cliccando su *Specifica ...*
 
-<img src="../../images/checkbox.png" /> *Visibilità dipendente dalla scala*
+<img src="/images/checkbox.png" /> *Visibilità dipendente dalla scala*
 
 -   Puoi impostare il *Massimo (incluso)* e *Minimo (escluso)* della scala. Puoi anche impostare la scale con il pulsante **\[attuale\]**.
 
@@ -453,25 +451,25 @@ Sottoinsieme di geometrie
 
 -   Con il pulsante **\[Query Builder\]** puoi creare un sottoinsiem di elementi nel vettore che saranno visualizzati (consulta anche la sezione *vector\_query\_builder*).
 
-![](../../images/vector_general_menu.png)
+![](/images/vector_general_menu.png)
 
 ## Menu Rendering <a name="#rendering-menu"></a>
 
-KADAS supporta la semplificazione al-volo di geometrie. Questo può migliorare i tempi di rendering quando si disegnano molti oggetti complessi a piccole scale. Questa funzione può essere abilitata o disabilitata nelle impostazioni dei livelli usando l'opzione <img src="../../../images/checkbox.png" /> *Semplifica geometria*. C'è anche una nuova impostazione globale che abilita la generalizzazione di default per i nuovi livelli aggiunti. **Nota**: La semplificazione degli oggetti può introdurre artefatti nell'output di rendering in alcuni casi. Questi possono includere nastri tra i poligoni e rendering impreciso quando si utilizzano livelli di simboli basati sull'offset.
+KADAS supporta la semplificazione al-volo di geometrie. Questo può migliorare i tempi di rendering quando si disegnano molti oggetti complessi a piccole scale. Questa funzione può essere abilitata o disabilitata nelle impostazioni dei livelli usando l'opzione <img src="..//images/checkbox.png" /> *Semplifica geometria*. C'è anche una nuova impostazione globale che abilita la generalizzazione di default per i nuovi livelli aggiunti. **Nota**: La semplificazione degli oggetti può introdurre artefatti nell'output di rendering in alcuni casi. Questi possono includere nastri tra i poligoni e rendering impreciso quando si utilizzano livelli di simboli basati sull'offset.
 
 ## Menu Visualizzazione <a name="#display-menu"></a>
 
-<img src="../../images/mActionMapTips.png" /> Questo menu serve per visualizzare i Suggerimenti mappa. I suggerimenti vengono visualizzati in HTML. Quando trascini il mouse sopra un elemento, il suggerimento può corrispondere a un *Campo*, ma ora puoi anche inserire del codice HTML. Per attivare i Suggerimenti mappa, attiva l’opzione dal menu *Visualizza ‣ Suggerimenti mappa*. La figura Figure Display 1 mostra un esempio di codice HTML.
+<img src="/images/mActionMapTips.png" /> Questo menu serve per visualizzare i Suggerimenti mappa. I suggerimenti vengono visualizzati in HTML. Quando trascini il mouse sopra un elemento, il suggerimento può corrispondere a un *Campo*, ma ora puoi anche inserire del codice HTML. Per attivare i Suggerimenti mappa, attiva l’opzione dal menu *Visualizza ‣ Suggerimenti mappa*. La figura Figure Display 1 mostra un esempio di codice HTML.
 
-![](../../images/display_html.png)
+![](/images/display_html.png)
 
-![](../../images/map_tip.png)
+![](/images/map_tip.png)
 
 ## Menu Azioni <a name="#actions-menu"></a>
 
-<img src="../../images/action.png" /> KADAS ti offre la possibilità di creare azioni sulla base degli attributi associati ai singoli elementi del vettore. Potrai cosi creare un grande numero di azioni, per esempio, avviare un programma con argomenti costituiti dagli attributi di un vettore.
+<img src="/images/action.png" /> KADAS ti offre la possibilità di creare azioni sulla base degli attributi associati ai singoli elementi del vettore. Potrai cosi creare un grande numero di azioni, per esempio, avviare un programma con argomenti costituiti dagli attributi di un vettore.
 
-![](../../images/action_dialog.png)
+![](/images/action_dialog.png)
 
 Le azioni sono utili quando vuoi avviare un’applicazione esterna oppure aprire una pagina web sulla base di uno o più valori associati al vettore. Ci sono sei tipologie di azioni che puoi usare nel seguente modo:
 
@@ -504,11 +502,11 @@ Il secondo esempio utilizza la notazione %%%, che non si basa su un particolare 
 
 **Uso delle azioni**
 
-Le azioni possono essere richiamate sia dalla finestra *Informazioni sui risultati* che dalla *Tabella degli attributi* (ricordati che puoi aprire queste finestre rispettivamente cliccando sullo strumento <img src="../../images/mActionIdentify.png" /> *Informazioni elementi* <img src="../../images/mActionOpenTable.png" /> *Apri tabella degli attributi* o <img src="../../images/mAction.png" /> *Avvia azione sull’elemento*). Per eseguire l’azione, clicca con il tasto destro del mouse sul risultato e scegli l’azione dal menu contestuale. Le azioni sono indicate nel menu a tendina con il nome inserito. Clicca sull’azione che vuoi eseguire.
+Le azioni possono essere richiamate sia dalla finestra *Informazioni sui risultati* che dalla *Tabella degli attributi* (ricordati che puoi aprire queste finestre rispettivamente cliccando sullo strumento <img src="/images/mActionIdentify.png" /> *Informazioni elementi* <img src="/images/mActionOpenTable.png" /> *Apri tabella degli attributi* o <img src="/images/mAction.png" /> *Avvia azione sull’elemento*). Per eseguire l’azione, clicca con il tasto destro del mouse sul risultato e scegli l’azione dal menu contestuale. Le azioni sono indicate nel menu a tendina con il nome inserito. Clicca sull’azione che vuoi eseguire.
 
 Se stai richiamando un’azione che usa l’annotazione `%%`, fai click con il tasto destro sul valore del campo nella finestra *Informazioni risultati* oppure dalla finestra *Tabella attributi* e scegli l’applicazione o lo script da assegnare.
 
-In questo altro esempio viene mostrato come estrarre dati da un vettore per inserirli in un file usando il terminale e il comando `echo` (quindi funzionerà su  e forse su <img src="../../images/osx.png" />). Il vettore in questione ha i seguenti campi nella tabella attributi: nome della specie `taxon_name`, latitudine `lat` e longitudine `long`. Vuoi eseguire una selezione spaziale delle specie (taxon) presenti in determinate posizioni, esportando i risultati in un file di testo (evidenziate in giallo sulla mappa di KADAS). Ecco l’azione giusta per questo scopo:
+In questo altro esempio viene mostrato come estrarre dati da un vettore per inserirli in un file usando il terminale e il comando `echo` (quindi funzionerà su  e forse su <img src="/images/osx.png" />). Il vettore in questione ha i seguenti campi nella tabella attributi: nome della specie `taxon_name`, latitudine `lat` e longitudine `long`. Vuoi eseguire una selezione spaziale delle specie (taxon) presenti in determinate posizioni, esportando i risultati in un file di testo (evidenziate in giallo sulla mappa di KADAS). Ecco l’azione giusta per questo scopo:
 
     bash -c "echo \"%taxon_name %lat %long\" >> /tmp/species_localities.txt"
 
@@ -551,7 +549,7 @@ Questo ultimo passo completa l’azione che è ora pronta per essere usata. Il t
 
 A questo punto puoi usare l’azione. Chiudi la finestra *Proprietà layer* e usa lo zoom su un’area a scelta. Assicurati che il vettore `lakes` sia attivo ed identifica con l’apposito strumento un lago qualsiasi. Nella finestra risultante dovrebbe essere visibile l’azione:
 
-![](../../images/action_identifyaction.png)
+![](/images/action_identifyaction.png)
 
 Cliccando sull’azione, verrà lanciato Firefox all’URL <a href="http://www.google.com/search?q=Tustumena">http://www.google.com/search?q=Tustumena</a>. Puoi anche aggiungere altri campi all’azione, aggiungendo un `+` alla fine della stringa che definisce l’azione, selezionando quindi un altro campo e cliccando sul pulsante **\[Inserisci campo\]**. Nel nostro esempio non c’è alcun altro campo sul quale avrebbe senso fare una ricerca.
 
@@ -600,25 +598,25 @@ Per aggiungere un raster (in questo caso un’immagine TIF), diventa:
 
 ## Menu Join <a name="#joins-menu"></a>
 
-<img src="../../images/join.png" /> Il *Join* consente di join una tabella degli attributi caricata a un layer vettoriale caricato. Dopo aver cliccato <img src="../../images/mActionSignPlus.png" /> viene visualizzata la finestra *Aggiungi vettore da unire (join)*. Come colonne chiave, è necessario definire un: index:Vettore da unire (join) che connetterai con il vettore. Quindi, è necessario specificare il campo join che è comune sia al livello di unirsi e il livello di destinazione. Ora è anche possibile specificare un sottoinsieme di campi dallo strato aderito in base alla casella *Seleziona i campi per l’unione*. Come risultato del join, tutte le informazioni dallo strato aderire e il livello di destinazione vengono visualizzati nella tabella attributo del vettore di destinazione come informazione unita. Se è stato specificato un sottoinsieme di campi solo questi campi vengono visualizzati nella tabella degli attributi del livello di destinazione.
+<img src="/images/join.png" /> Il *Join* consente di join una tabella degli attributi caricata a un layer vettoriale caricato. Dopo aver cliccato <img src="/images/mActionSignPlus.png" /> viene visualizzata la finestra *Aggiungi vettore da unire (join)*. Come colonne chiave, è necessario definire un: index:Vettore da unire (join) che connetterai con il vettore. Quindi, è necessario specificare il campo join che è comune sia al livello di unirsi e il livello di destinazione. Ora è anche possibile specificare un sottoinsieme di campi dallo strato aderito in base alla casella *Seleziona i campi per l’unione*. Come risultato del join, tutte le informazioni dallo strato aderire e il livello di destinazione vengono visualizzati nella tabella attributo del vettore di destinazione come informazione unita. Se è stato specificato un sottoinsieme di campi solo questi campi vengono visualizzati nella tabella degli attributi del livello di destinazione.
 
 KADAS attualmente supporta anche join di tabella non spaziali supportate da OGR (come CSV, DBF e EXcel), file di testo delimitato e PostgreSQL.
 
-![](../../images/join_attributes.png)
+![](/images/join_attributes.png)
 
 Inoltre, la finestra di dialogo aggiungi vettore da unire ti permette di:
 
--   <img src="../../images/checkbox.png" /> *Layer unito in memoria virtuale*
+-   <img src="/images/checkbox.png" /> *Layer unito in memoria virtuale*
 
--   <img src="../../images/checkbox.png" /> *Crea un indice nel campo unito*
+-   <img src="/images/checkbox.png" /> *Crea un indice nel campo unito*
 
--   <img src="../../images/checkbox.png" /> *Choose which fields are joined*
--   Create a <img src="../../images/checkbox.png" /> *Custom field name prefix*
+-   <img src="/images/checkbox.png" /> *Choose which fields are joined*
+-   Create a <img src="/images/checkbox.png" /> *Custom field name prefix*
 
 
 ## Menu Diagrammi <a name="#diagrams-menu"></a>
 
-<img src="../../images/diagram.png" /> Il menu *Diagrammi* permette di sovrapporre diagrammi a un vettore.
+<img src="/images/diagram.png" /> Il menu *Diagrammi* permette di sovrapporre diagrammi a un vettore.
 
 L’implementazione nativa per i diagrammi ti permette di creare grafici a torta, diagrammi di testo e istogrammi.
 
@@ -628,47 +626,47 @@ Nel caso dei grafici a torta e dei diagrammi di testo, gli attributi dei campi s
 
 **Figure Diagrams 1:**
 
-![](../../images/diagram_tab.png)
+![](/images/diagram_tab.png)
 Finestra di dialogo dei diagrammi 
 
 Ecco un esempio di creazione di un diagramma di testo delle temperature sovrapposto al vettore alaska; entrambi i vettori sono disponibili fra i dati campione di KADAS (sezione <a href="../introduction/getting_started.html#label-sampledata">*Dati campione*</a>).
 
-1.  Per prima cosa, clicca su <img src="../../images/mActionAddOgrLayer.png" /> *Aggiungi vettore* e carica i due file `alaska.shp` e `climate.shp` dall’insieme di dati di KADAS.
+1.  Per prima cosa, clicca su <img src="/images/mActionAddOgrLayer.png" /> *Aggiungi vettore* e carica i due file `alaska.shp` e `climate.shp` dall’insieme di dati di KADAS.
 
 2.  Fai doppio click sul vettore `climate` nella legenda per aprire la finestra di dialogo *Proprietà layer*.
 
-3.  Clicca sulla scheda *Diagrammi*, spunta la casella di controllo <img src="../../images/checkbox.png" /> *Visualizza diagrammi* e scegli ‘Diagramma testo’ dal menu a tendina *Tipo di diagramma* <img src="../../images/selectstring.png" />.
+3.  Clicca sulla scheda *Diagrammi*, spunta la casella di controllo <img src="/images/checkbox.png" /> *Visualizza diagrammi* e scegli ‘Diagramma testo’ dal menu a tendina *Tipo di diagramma* <img src="/images/selectstring.png" />.
 
 4.  Nella scheda *Aspetto* scegli un blu chiaro come colore di sfondo e nella scheda *Dimensione* imposta 18 mm come dimensione fissa.
 
 5.  Nella scheda *Posizione* scegli ‘Intorno al punto’ come posizionamento.
 
-6.  Nel diagramma verranno visualizzati i valori di tre colonne: `T_F_JAN`, `T_F_JUL` e `T_F_MEAN`. Seleziona prima `T_F_JAN` come *Attributo* e clicca sul pulsante <img src="../../images/mActionSignPlus.png" /> poi esegui la stessa procedura per `T_F_JUL` e `T_F_MEAN`.
+6.  Nel diagramma verranno visualizzati i valori di tre colonne: `T_F_JAN`, `T_F_JUL` e `T_F_MEAN`. Seleziona prima `T_F_JAN` come *Attributo* e clicca sul pulsante <img src="/images/mActionSignPlus.png" /> poi esegui la stessa procedura per `T_F_JUL` e `T_F_MEAN`.
 
 7.  Clicca su **\[Applica\]** per visualizzare il diagramma nella finestra principale di KADAS.
 
-8.  Puoi aggiustare la dimensione del grafico nella scheda *Dimensione*. Disattiva la casella di controllo <img src="../../images/checkbox.png" /> *Dimensione fissa* e imposta la dimensione del diagramma in base all’attributo con il pulsante **\[Trova valore massimo\]**. Se il diagramma è troppo piccolo, spunta la casella di controllo <img src="../../images/checkbox.png" /> *Aumenta la dimensione dei diagrammi piccoli* e specifica la dimensione minima dei diagrammi.
+8.  Puoi aggiustare la dimensione del grafico nella scheda *Dimensione*. Disattiva la casella di controllo <img src="/images/checkbox.png" /> *Dimensione fissa* e imposta la dimensione del diagramma in base all’attributo con il pulsante **\[Trova valore massimo\]**. Se il diagramma è troppo piccolo, spunta la casella di controllo <img src="/images/checkbox.png" /> *Aumenta la dimensione dei diagrammi piccoli* e specifica la dimensione minima dei diagrammi.
 
 9.  Cambia il colore degli attributi facendo doppio click su colore nel campo *Attributi assegnati*.
 
 10. Clicca su **\[OK\]**.
 
-<img src="../../images/climate_diagram.png" />
+<img src="/images/climate_diagram.png" />
 
 Ricordati che puoi usare anche l’opzione *Posizione definita da attributo* per posizionare i diagrammi. Inoltre puoi anche impostare la visibilità dei diagrammi in funzione di determinate scale dalla scheda *Aspetto*.
 
-Le dimensioni e gli attributi possono anche essere un’espressione. Usa il pulsante <img src="../../images/mIconExpressionEditorOpen.png" /> per aggiungere un’espressione. Vedi il capitolo <a href="expression.html#vector-expressions">*Expressions*</a> per ulteriori informazioni ed esempi.
+Le dimensioni e gli attributi possono anche essere un’espressione. Usa il pulsante <img src="/images/mIconExpressionEditorOpen.png" /> per aggiungere un’espressione. Vedi il capitolo <a href="expression.html#vector-expressions">*Expressions*</a> per ulteriori informazioni ed esempi.
 
 
 ## Menu Metadati <a name="#metadata-menu"></a>
 
-<img src="../../images/metadata.png" /> Il menu *Metadati* ha quattro sezioni: *Descrizione*, *Attribuzione*, *URL Metadati* e *Proprietà*.
+<img src="/images/metadata.png" /> Il menu *Metadati* ha quattro sezioni: *Descrizione*, *Attribuzione*, *URL Metadati* e *Proprietà*.
 
 Nella sezione *Proprietà* vengono elencate informazioni generali sul vettore, incluse le specifiche sul file, la sorgente del file, il numero di geometrie, il tipo di geometrie e le capabilities. La voce **Estensioni** fornisce l’estensione del vettore e le informazioni sul *Sistema di riferimento spaziale del layer*. Questo è un semplice e rapido metodo per ottenere informazioni sul vettore.
 
 Inoltre puoi aggiungere un titolo e un breve riassunto del vettore nelle sezione *Descrizione*. Puoi anche impostare una *Lista delle parole chiave*. Questa lista può essere usata in un catalogo di metadati. Se vuoi usare un titolo di un file XML, devi aggiungere un collegamento in *URL dati*. Usa la sezione *Attribuzione* per ottenere dati sugli attributi da un catalogo metadati in XML. Nella sezione *URL Metadati* puoi specificare il path generico al catalogo dati XML. Le informazioni verranno salvate nel file di progetto di KADAS per sessioni future, ma lo puoi usare anche su KADAS server.
 
-![](../../images/vector_metadata_tab.png)
+![](/images/vector_metadata_tab.png)
 
 
 

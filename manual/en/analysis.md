@@ -19,7 +19,7 @@ Upon activating a measurement function, the desired measurement geometry can be 
 
 Multiple geometries can be drawn for distance and area measurements, in which case the total is displayed in measurement bar in the lower area of the application window. Here the user can also select the measurement unit, and a picker button allows to measure existing geometries.
 
-<img src="../media/image3.png" />
+<img src="/media/image3.png" />
 
 ## <a name="sec1"></a>Height profile and line of sight
 
@@ -32,7 +32,7 @@ If the line geometry consists of one segment only, then a line of sight analysis
 
 From the height profile dialog, the user can also choose to copy the height profile graphic to the clipboard, or to add it to the map as an annotation.
 
-<img src="../media/image4.png" />
+<img src="/media/image4.png" />
 
 
 ## <a name="sec2"></a>Slope and hillshade
@@ -47,7 +47,7 @@ In both cases the analysis is performed within a rectangular region of the map a
 
 The results of the slope and hillshade analyzes are added to the map as raster layers, and appear accordingly in the map layer tree. When saving the project, these datasets are stored as project attachments in the *<project name>.qgz* project file.
 
-<img src="../media/image5.png" />
+<img src="/media/image5.png" />
 
 
 ## <a name="sec3"></a>Viewshed
