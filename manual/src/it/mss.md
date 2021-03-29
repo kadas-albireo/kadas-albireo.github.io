@@ -40,15 +40,6 @@ MILXLY (e la variante compres­sa MILXLYZ) è un formato per lo scambio delle ra
 
 **_Nell'importazione_** di un file MILXLY(Z) vengono importati tutti i layer in esso contenuti. Qualora il file MSS contenga definizioni di simboli basate su un vecchio standard, queste verranno convertite automaticamente. Eventuali errori o perdite in fase di conversione vengono comunicati all'utente. Se uno dei layer importati contiene un cartiglio, l'utente viene chiesto se utilizzare questo cartiglio per la stampa.
 
-## <a name="sec4"></a>Importazione OVL
-
-OVL è il formato dei progetti del software PCMAP Swissline. Viene supportata solamente la versione 5.0 di OVL. I file più vecchi devono essere aggiornati con il software PCMAP Swissline prima di poter essere importati in KADAS.
-
-L'importatore OVL è un plugin, che deve essere attivato dal gestore plugin nel tab delle impostazioni.
-
-L'importatore OVL converte i grafici tattici ivi contenuti nei simboli MSS corrispondenti, mentre le figu­re geometriche e le scritte vengono trasformate in oggetti Redlining. Gli eventuali errori in fase di conversione verranno comunicati all'utente. Anche nel caso di oggetti convertiti con successo, la loro rappresentazione può differire rispetto al software PCMAP Swissline. Pertanto è consigliabile control­lare i dati importati.
-
-
 ## <a name="sec5"></a>Dimensione simbolo, spessore linea e modalita di lavoro
 
 Queste impostazioni influenzano la visualizzazione di tutti i simboli MSS nella mappa.

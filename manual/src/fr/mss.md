@@ -39,15 +39,6 @@ Lors de **_l'exportation_** vers MILXLY (Z), vous pouvez choisir les couches Mil
 
 **_L'importation_** d'un fichier MILXLY (Z) parcourt toutes les couches qu'il contient. Si le fichier MSS contient des définitions de symboles conformes à un ancien standard, ceux-ci sont automatiquement convertis. Les pertes de conversion possibles ou les erreurs sont communiquées à l'utilisateur. Si l'une des couches importées contient un cartouche, l'utilisateur sera invité à l'importer dans KADAS.
 
-## <a name="sec4"></a>Importation OVL
-
-OVL est le format de projet du logiciel PCMAP Swissline. Seul OVL Version 5.0 est supporté. Les fichiers plus anciens doivent être actualisés via le logiciel PCMAP Swissline avant d’être importés dans KADAS.
-
-L'importateur OVL est un plugin, qui doit être activé à partir du Plugin-Manager dans le l’onglet Préférences.
-
-L’importateur OVL convertit les graphiques tactiques qui y sont inclus en symboles MSS correspondants, tandis que les géométries et les annotations sont transformées en objets redlining. S’il y a des erreurs de conversion, l’utilisateur en est informé. La représentation peut varier par rapport au logiciel PCMAP Swissline même pour les conversions réussies, il est donc recommandé de vérifier les fichiers importés.
-
-
 ## <a name="sec5"></a>Dimension des symboles, largeur des lignes et standard
 
 Ces réglages influencent l'affichage de tous les symboles MSS dans carte.
