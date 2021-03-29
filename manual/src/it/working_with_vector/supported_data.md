@@ -22,13 +22,13 @@ Uno shapefile può anche includere un file con suffisso `.prj` che contiene le i
 
 Quando si carica un livello vettoriale, si apre la seguente finestra di dialogo:
 
-![](/images/addvectorlayerdialog.png)
+![](../../../images/addvectorlayerdialog.png)
 
-Nella finestra di dialogo seleziona ![radiobuttonon](/images/radiobuttonon.png) *File* e clicca su **\[Sfoglia\]**. Si aprirà cosi una finestra di dialogo standard che ti consentirà di cercare nel computer lo shapefile o qualunque altro dato vettoriale che vuoi caricare. La casella di controllo *Tipo file* <img src="/images/selectstring.png" /> consente di selezionare in anticipo specifici formati supportati da OGR.
+Nella finestra di dialogo seleziona ![radiobuttonon](../../../images/radiobuttonon.png) *File* e clicca su **\[Sfoglia\]**. Si aprirà cosi una finestra di dialogo standard che ti consentirà di cercare nel computer lo shapefile o qualunque altro dato vettoriale che vuoi caricare. La casella di controllo *Tipo file* <img src="../../../images/selectstring.png" /> consente di selezionare in anticipo specifici formati supportati da OGR.
 
 Se vuoi, puoi selezionare il tipo di codifica per lo shapefile.
 
-![](/images/shapefileopendialog.png)
+![](../../../images/shapefileopendialog.png)
 
 Selezionando un shapefile dalla lista e cliccando **\[Apri\]** lo carica in KADAS.
 
@@ -44,7 +44,7 @@ Per migliorare le prestazioni di visualizzazione di uno shapefile, puoi creare u
 
 Segui questi passi per creare un indice spaziale:
 
--   Carica uno shapefile cliccando sul pulsante <img src="/images/mActionAddOgrLayer.png" /> *Aggiungi vettore* oppure premi `Ctrl+Shift+V`.
+-   Carica uno shapefile cliccando sul pulsante <img src="../../../images/mActionAddOgrLayer.png" /> *Aggiungi vettore* oppure premi `Ctrl+Shift+V`.
 
 -   Apri la finestra di dialogo *Proprietà layer* facendo doppio click sul nome dello shapefile nella legenda o cliccandoci con il tasto destro e scegliendo *Proprietà* dal menu contestuale.
 

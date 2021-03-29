@@ -22,13 +22,13 @@ Un shapefile inclus également un fichier ayant l'extension `.prj` qui contient 
 
 When loading a vector layer, the following dialog opens:
 
-![](/images/addvectorlayerdialog.png)
+![](../../../images/addvectorlayerdialog.png)
 
-Cliquez sur ![radiobuttonon](/images/radiobuttonon.png) *Fichier* puis sur le bouton **\[Parcourir\]**. L'outil ouvre alors une fenêtre de dialogue standard qui vous permet de naviguer dans les répertoires et les fichiers, et charger le shapefile ou tout autre format géré. La boîte de sélection *Fichiers de type* <img src="/images/selectstring.png" /> vous permet de présélectionner un format de fichier géré par OGR.
+Cliquez sur ![radiobuttonon](../../../images/radiobuttonon.png) *Fichier* puis sur le bouton **\[Parcourir\]**. L'outil ouvre alors une fenêtre de dialogue standard qui vous permet de naviguer dans les répertoires et les fichiers, et charger le shapefile ou tout autre format géré. La boîte de sélection *Fichiers de type* <img src="../../../images/selectstring.png" /> vous permet de présélectionner un format de fichier géré par OGR.
 
 Si vous le souhaitez, vous pouvez également sélectionner le type de codage du shapefile.
 
-![](/images/shapefileopendialog.png)
+![](../../../images/shapefileopendialog.png)
 
 Selecting a shapefile from the list and clicking **\[Open\]** loads it into KADAS.
 
@@ -44,7 +44,7 @@ Pour améliorer les performances de dessin d'un shapefile, vous pouvez créer un
 
 Voici les étapes de création d'un index spatial:
 
--   Chargez un shapefile en cliquant sur le bouton <img src="/images/mActionAddOgrLayer.png" /> *Ajouter une couche vecteur* de la barre d'outils ou en pressant les touches `Ctrl+Shift+V`.
+-   Chargez un shapefile en cliquant sur le bouton <img src="../../../images/mActionAddOgrLayer.png" /> *Ajouter une couche vecteur* de la barre d'outils ou en pressant les touches `Ctrl+Shift+V`.
 
 -   Ouvrez la fenêtre *Propriétés de la Couche* en double-cliquant sur le nom de la couche dans la légende ou en faisant un clic droit et en choisissant *Propriétés* dans le menu qui apparait.
 

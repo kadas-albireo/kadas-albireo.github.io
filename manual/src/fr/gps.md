@@ -34,7 +34,7 @@ Les **_itinéraires_** sont des lignes que l’on peut nommer et numéroter.
 
 Les waypoints et les itinéraires ont leur propre niveau dans l’arborescence, Routes GPS, tout comme le niveau Redlining.
 
-<img src="/media/image9.png" />
+<img src="../../media/image9.png" />
 
 ## <a name="sec3"></a>Exportation et importation GPX
 

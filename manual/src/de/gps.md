@@ -34,7 +34,7 @@ Mit diesen Funktionen k√∂nnen Wegpunkte und Routen gezeichnet werden, welche sp√
 
 Wegpunkte und Routen werden in einer eigenen Ebene GPS Routen im Layerbaum abgelegt, analog zur Redlining Ebene.
 
-<img src="/media/image9.png" />
+<img src="../../media/image9.png" />
 
 ## <a name="sec3"></a>GPX Export und Import
 

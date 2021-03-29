@@ -28,7 +28,7 @@ Una volta scelto il modello, nella finestra della mappa principale viene visuali
 
 Durante la stampa, è possibile inserire o rimuovere secondo preferenza degli elementi aggiuntivi come la griglia delle coordinate, il cartiglio della mappa, legenda e il righello della scala. La posi­zione di questi elementi è definita nel modello.
 
-<img src="/media/image12.png" />
+<img src="../../media/image12.png" />
 
 
 ### Finestra di dialogo della stampante
@@ -52,7 +52,7 @@ Durante la stampa, è possibile inserire o rimuovere secondo preferenza degli el
 
 I modelli contenuti nel progetto possono venir gestiti tramite il *Gestore modelli*, attivabile con il pulsante situato a destra del campo di selezione del modello. Nel gestore i modelli possono venir importati, esportati e rimossi dal progetto.
 
-<img src="/media/image12.1.png" />
+<img src="../../media/image12.1.png" />
 
 ### Cartuccia mappa
 

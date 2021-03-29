@@ -9,7 +9,7 @@ Il pulsante **_Aggiungi simbolo_** apre una galleria sfogliabile di simboli MSS.
 
 I simboli vengono raggruppati nei layer MilX, visualizzabili nella legenda della mappa. Nella galleria dei simboli, è possibile creare nuovi layer e scegliere a quale layer aggiungere i simboli disegnati.
 
-<img src="/media/image10.png" />
+<img src="../../media/image10.png" />
 
 ## <a name="sec1"></a>Modificare i simboli MSS
 
@@ -21,7 +21,7 @@ Nei **_simboli multi-punto_**, se permesso dalla specifica del simbolo, è possi
 
 Analogamente alle figure redlining, è possibile spostare, copiare, tagliare ed incollare simboli MSS singolarmente o in gruppi. Oltre ai tasti di scelta rapida e le apposite voci nel menu contestuale, vi è la possibilità di usare le funzioni **_Copia a..._** e **_Sposta a..._** situate nella parte inferiore della mappa. Queste ultime permettono di specificare esplicitamente il layer di destinazione, altrimenti il layer MilX attuale viene usato come destinazione. Se nessun layer MilX è selezionato, viene richiesto di specificare il layer di destinazione.
 
-<img src="/media/image11.png" />
+<img src="../../media/image11.png" />
 
 ## <a name="sec2"></a>Gestione dei layer
 

@@ -8,7 +8,7 @@ The **_Add Symbol_** button opens a searchable gallery of MSS icons. After an ic
 
 Symbols are stored in MilX layers. These are visible in the map layer tree. In the symbol gallery new MilX layers can be created as well specified to which layer newly drawn symbols are added.
 
-<img src="/media/image10.png" />
+<img src="../../media/image10.png" />
 
 ## <a name="sec1"></a>Edit MSS symbols
 
@@ -20,7 +20,7 @@ For **_multi-point symbols_**, node points and control points, if any, can be ed
 
 Similar to redlining objects, MSS symbols can be moved, copied, cut and pasted individually or as a group. In addition to the entries in the context menu and the usual keyboard shortcuts, there are also the **_Copy to..._** and **_Move to..._** buttons at the bottom of the map frame. The latter allow to explicitly specify a target layer, otherwise the currently selected MilX layer is taken as the target layer. If no MilX layer is selected, the user will be asked to specify the destination layer.
 
-<img src="/media/image11.png" />
+<img src="../../media/image11.png" />
 
 ## <a name="sec2"></a>Layer management
 

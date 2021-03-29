@@ -22,7 +22,7 @@ Le figure geometriche o i testi già disegnati possono essere modificati selezio
 
 È possibile continuare il disegno di linee e poligoni esistenti dal menu contestuale dei vertici della geometria.
 
-<img src="/media/image6.png" />
+<img src="../../media/image6.png" />
 
 Durante il disegno è possibile annullare o ripristinare cambiamenti effettuati tramite CTRL+Z e CTRL+Y, oppure tramite i pulsanti appositi situati nella parte inferiore della mappa.
 
@@ -56,7 +56,7 @@ Pure con la funzionalità **_Aggiungi immagine_** è possibile aggiungere grafic
 
 Grafiche vettoriali sono raggruppate nel layer **_Immagini SVG_**.
 
-<img src="/media/image7.png" />
+<img src="../../media/image7.png" />
 
 
 ## <a name="sec3"></a>Incolla
@@ -86,6 +86,6 @@ Un Bullseye è disegnato come un numero di cerchi concentrici intorno ad un punt
 
 I singoli oggetti possono essere cancellati tramite menu contestuale o con il tasto DEL. Lo stru­mento **_Cancellazione di oggetti_** consente di eliminare più oggetti di un estratto selezionato. Questa funzione può essere richiamata anche con CTRL+Rettangolo nella modalità di navigazione.
 
-<img src="/media/image8.png" />
+<img src="../../media/image8.png" />
 
 

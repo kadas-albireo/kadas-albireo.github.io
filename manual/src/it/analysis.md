@@ -19,7 +19,7 @@ Dopo l’attivazione di una funzione di rilevamento, l’utente può disegnare u
 
 Per il rilevamento di distanza e superficie è possibile disegnare più figure geometriche le une accanto alle altre. Il rilevamento complessivo viene visualizzato nell’area inferiore della finestra delle mappe, dove è possibile modificare anche l’unità di misura. Inoltre, con il pulsante del dispositivo di individuazione è possibile rilevare una figura geometrica esistente.
 
-<img src="/media/image3.png" />
+<img src="../../media/image3.png" />
 
 
 ## <a name="sec1"></a>Profilo altimetrico e visibilità
@@ -32,7 +32,7 @@ Se la figura geometrica lineare è costituita da un solo segmento, lungo questa 
 
 Il grafico del profilo altimetrico può inoltre essere copiato negli appunti o inserito nella mappa quale immagine.
 
-<img src="/media/image4.png" />
+<img src="../../media/image4.png" />
 
 
 ## <a name="sec2"></a>Pendenza e tonalità del rilievo
@@ -47,7 +47,7 @@ Entrambe queste analisi vengono calcolate in un riquadro rettangolare della mapp
 
 I risultati delle analisi di pendenza e rilievo vengono inseriti come layer raster alla mappa e compaiono, di conseguenza, nella legenda. Salvando il progetto, questi layer vengono allegati al progetto nel file *<nome progetto>.qgz*.
 
-<img src="/media/image5.png" />
+<img src="../../media/image5.png" />
 
 
 ## <a name="sec3"></a>Bacino visuale

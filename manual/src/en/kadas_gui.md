@@ -1,6 +1,6 @@
 # KADAS Interface
 
-<img src="/media/image1.png" />
+<img src="../../media/image1.png" />
 
 The KADAS GUI is divided into five areas:
 
@@ -46,7 +46,7 @@ As soon as at least three characters are typed, the search starts and results ar
 
 The results are listed in correspondingly designated categories. The result list can be searched with mouse or keyboard arrows. When selecting a result with the arrows, a blue pin is placed in the appropriate location. When activating a result with the mouse, the map extent is centered on the corresponding location.
 
-<img src="/media/image2.png" />
+<img src="../../media/image2.png" />
 
 To the right of the search field, it is possible to define a filter geometry for local and remote data set search. This filter is *NOT* applied to coordinate, location or pin searches.
 

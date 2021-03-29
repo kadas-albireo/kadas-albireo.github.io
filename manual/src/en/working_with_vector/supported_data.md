@@ -20,13 +20,13 @@ Shapefiles also can include a file with a `.prj` suffix, which contains the proj
 
 When loading a vector layer, the following dialog opens:
 
-![](/images/addvectorlayerdialog.png)
+![](../../../images/addvectorlayerdialog.png)
 
-From the available options check ![radiobuttonon](/images/radiobuttonon.png) *File*. Click on **\[Browse\]**. That will bring up a standard open file dialog, which allows you to navigate the file system and load a shapefile or other supported data source. The selection box *Filter* <img src="/images/selectstring.png" /> allows you to preselect some OGR-supported file formats.
+From the available options check ![radiobuttonon](../../../images/radiobuttonon.png) *File*. Click on **\[Browse\]**. That will bring up a standard open file dialog, which allows you to navigate the file system and load a shapefile or other supported data source. The selection box *Filter* <img src="../../../images/selectstring.png" /> allows you to preselect some OGR-supported file formats.
 
 You can also select the encoding for the shapefile if desired.
 
-![](/images/shapefileopendialog.png)
+![](../../../images/shapefileopendialog.png)
 
 Selecting a shapefile from the list and clicking **\[Open\]** loads it into KADAS.
 

@@ -4,58 +4,58 @@ Avec le Composeur d'Impression vous pouvez créer de jolies cartes et des atlas 
 
 Le Composeur d'Impression fournit des fonctionnalités de plus en plus riches de mise en page et d'impression. Il vous permet d'ajouter des éléments tels que le canevas de carte KADAS, des zones de textes, des images, des légendes, des échelles graphiques, des formes de base, des flèches, des tables attributaires et des cadres HTML. Vous pouvez modifier la taille, grouper, aligner positionner et faire tourner chaque élément et ajuster leurs propriétés pour créer votre mise en page. Le résultat peut être imprimé ou exporté dans plusieurs formats d'image, en PostScript, PDF et SVG. Vous pouvez aussi l'enregistrer dans un modèle de mise en page de carte pour l'utiliser dans d'autres projets. Enfin vous pouvez générer un ensemble de cartes automatiquement grâce au Générateur d'Atlas. Une vue d'ensemble des fonctions disponibles est donnée dans la liste suivante:
 
-* <img src="/images/mActionFileSave.png" /> *Enregistrer le projet*
-* <img src="/images/mActionNewComposer.png" /> *Nouveau composeur*
-* <img src="/images/mActionDuplicateComposer.png" /> *Dupliquer une composition*
-* <img src="/images/mActionComposerManager.png" /> *Gestionnaire de Compositions*
-* <img src="/images/mActionFileOpen.png" /> *Charger depuis un modèle*
-* <img src="/images/mActionFileSaveAs.png" /> *Enregistrer le modèle*
-* <img src="/images/mActionFilePrint.png" /> *Imprimer ou exporter en PostScript*
-* <img src="/images/mActionSaveMapAsImage.png" /> *Exporter dans un format d'image*
-* <img src="/images/mActionSaveAsSVG.png" /> *Exporter au format SVG*
-* <img src="/images/mActionSaveAsPDF.png" /> *Exporter au format PDF*
-* <img src="/images/mActionUndo.png" /> *Annuler la dernière modification*
-* <img src="/images/mActionRedo.png" /> *Restaurer la dernière modification*
-* <img src="/images/mActionZoomFullExtent.png" /> *Zoom sur l'emprise totale*
-* <img src="/images/mActionZoomActual.png" /> *Zoomer à 100%*
-* <img src="/images/mActionZoomIn.png" /> *Zoom +*
-* <img src="/images/mActionZoomIn.png" /> *Zoom -*
-* <img src="/images/mActionDraw.png" /> *Rafraîchir la vue*
-* <img src="/images/mActionPan.png" /> *Déplacer le composeur*
-* <img src="/images/mActionZoomToSelected.png" /> *Zoomer sur une zone spécifique*
-* <img src="/images/mActionSelect.png" /> *Sélectionner/déplacer les objets dans le composeur de cartes*
-* <img src="/images/mActionMoveItemContent.png" /> *Déplacer le contenu*
-* <img src="/images/mActionAddMap.png" /> *Ajouter une nouvelle carte à partir de la fenêtre principale de KADAS*
-* <img src="/images/mActionAddImage.png" /> *Ajouter une image au composeur de cartes*
-* <img src="/images/mActionLabel.png" /> *Ajouter une étiquette au composeur de cartes*
-* <img src="/images/mActionAddLegend.png" /> *Ajouter une nouvelle légende au composeur de cartes*
-* <img src="/images/mActionScaleBar.png" /> *Ajouter une nouvelle échelle graphique au composeur d'impression*
-* <img src="/images/mActionAddBasicShape.png" /> *Ajouter une forme basique au composeur de cartes*
-* <img src="/images/mActionAddArrow.png" /> *Ajouter une flèche au composeur de cartes*
-* <img src="/images/mActionOpenTable.png" /> *Ajouter une table d'attributs dans le composeur de cartes*
-* <img src="/images/mActionAddHtml.png" /> *Ajouter du HTML*
-* <img src="/images/mActionGroupItems.png" /> *Grouper des objets du composeur d'impression*
-* <img src="/images/mActionUngroupItems.png" /> *Dégrouper des objets du composeur d'impression*
-* <img src="/images/locked.png" /> *Verrouiller les objets sélectionnés*
-* <img src="/images/unlocked.png" /> *Déverrouiller tous les objets*
-* <img src="/images/mActionRaiseItems.png" /> *Remonter l'objet sélectionné*
-* <img src="/images/mActionLowerItems.png" /> *Descendre l'objet sélectionné*
-* <img src="/images/mActionMoveItemsToTop.png" /> *Amener les objets sélectionnés au premier plan*
-* <img src="/images/mActionMoveItemsToBottom.png" /> *Descendre les objets sélectionnés en arrière plan*
-* <img src="/images/mActionAlignLeft.png" /> *Aligner les objets sélectionnés à gauche*
-* <img src="/images/mActionAlignRight.png" /> *Aligner les objets sélectionnés à droite*
-* <img src="/images/mActionAlignHCenter.png" /> *Aligner les objets sélectionnés au centre*
-* <img src="/images/mActionAlignVCenter.png" /> *Aligner les objets sélectionnés au centre verticalement*
-* <img src="/images/mActionAlignTop.png" /> *Aligner les objets sélectionnés en haut*
-* <img src="/images/mActionAlignBottom.png" /> *Aligner les objets sélectionnés en bas*
-* <img src="/images/mIconAtlas.png" /> *Aperçu de l'atlas*
-* <img src="/images/mActionAtlasFirst.png" /> *Première entité*
-* <img src="/images/mActionAtlasPrev.png" /> *Entité précédente*
-* <img src="/images/mActionAtlasNext.png" /> *Entité suivante*
-* <img src="/images/mActionAtlasLast.png" /> *Dernière entité*
-* <img src="/images/mActionFilePrint.png" /> *Impression de l'Atlas*
-* <img src="/images/mActionSaveMapAsImage.png" /> *Exporter l'Atlas en tant qu'images*
-* <img src="/images/mActionAtlasSettings.png" /> *Paramètres de l'Atlas*
+* <img src="../../../images/mActionFileSave.png" /> *Enregistrer le projet*
+* <img src="../../../images/mActionNewComposer.png" /> *Nouveau composeur*
+* <img src="../../../images/mActionDuplicateComposer.png" /> *Dupliquer une composition*
+* <img src="../../../images/mActionComposerManager.png" /> *Gestionnaire de Compositions*
+* <img src="../../../images/mActionFileOpen.png" /> *Charger depuis un modèle*
+* <img src="../../../images/mActionFileSaveAs.png" /> *Enregistrer le modèle*
+* <img src="../../../images/mActionFilePrint.png" /> *Imprimer ou exporter en PostScript*
+* <img src="../../../images/mActionSaveMapAsImage.png" /> *Exporter dans un format d'image*
+* <img src="../../../images/mActionSaveAsSVG.png" /> *Exporter au format SVG*
+* <img src="../../../images/mActionSaveAsPDF.png" /> *Exporter au format PDF*
+* <img src="../../../images/mActionUndo.png" /> *Annuler la dernière modification*
+* <img src="../../../images/mActionRedo.png" /> *Restaurer la dernière modification*
+* <img src="../../../images/mActionZoomFullExtent.png" /> *Zoom sur l'emprise totale*
+* <img src="../../../images/mActionZoomActual.png" /> *Zoomer à 100%*
+* <img src="../../../images/mActionZoomIn.png" /> *Zoom +*
+* <img src="../../../images/mActionZoomIn.png" /> *Zoom -*
+* <img src="../../../images/mActionDraw.png" /> *Rafraîchir la vue*
+* <img src="../../../images/mActionPan.png" /> *Déplacer le composeur*
+* <img src="../../../images/mActionZoomToSelected.png" /> *Zoomer sur une zone spécifique*
+* <img src="../../../images/mActionSelect.png" /> *Sélectionner/déplacer les objets dans le composeur de cartes*
+* <img src="../../../images/mActionMoveItemContent.png" /> *Déplacer le contenu*
+* <img src="../../../images/mActionAddMap.png" /> *Ajouter une nouvelle carte à partir de la fenêtre principale de KADAS*
+* <img src="../../../images/mActionAddImage.png" /> *Ajouter une image au composeur de cartes*
+* <img src="../../../images/mActionLabel.png" /> *Ajouter une étiquette au composeur de cartes*
+* <img src="../../../images/mActionAddLegend.png" /> *Ajouter une nouvelle légende au composeur de cartes*
+* <img src="../../../images/mActionScaleBar.png" /> *Ajouter une nouvelle échelle graphique au composeur d'impression*
+* <img src="../../../images/mActionAddBasicShape.png" /> *Ajouter une forme basique au composeur de cartes*
+* <img src="../../../images/mActionAddArrow.png" /> *Ajouter une flèche au composeur de cartes*
+* <img src="../../../images/mActionOpenTable.png" /> *Ajouter une table d'attributs dans le composeur de cartes*
+* <img src="../../../images/mActionAddHtml.png" /> *Ajouter du HTML*
+* <img src="../../../images/mActionGroupItems.png" /> *Grouper des objets du composeur d'impression*
+* <img src="../../../images/mActionUngroupItems.png" /> *Dégrouper des objets du composeur d'impression*
+* <img src="../../../images/locked.png" /> *Verrouiller les objets sélectionnés*
+* <img src="../../../images/unlocked.png" /> *Déverrouiller tous les objets*
+* <img src="../../../images/mActionRaiseItems.png" /> *Remonter l'objet sélectionné*
+* <img src="../../../images/mActionLowerItems.png" /> *Descendre l'objet sélectionné*
+* <img src="../../../images/mActionMoveItemsToTop.png" /> *Amener les objets sélectionnés au premier plan*
+* <img src="../../../images/mActionMoveItemsToBottom.png" /> *Descendre les objets sélectionnés en arrière plan*
+* <img src="../../../images/mActionAlignLeft.png" /> *Aligner les objets sélectionnés à gauche*
+* <img src="../../../images/mActionAlignRight.png" /> *Aligner les objets sélectionnés à droite*
+* <img src="../../../images/mActionAlignHCenter.png" /> *Aligner les objets sélectionnés au centre*
+* <img src="../../../images/mActionAlignVCenter.png" /> *Aligner les objets sélectionnés au centre verticalement*
+* <img src="../../../images/mActionAlignTop.png" /> *Aligner les objets sélectionnés en haut*
+* <img src="../../../images/mActionAlignBottom.png" /> *Aligner les objets sélectionnés en bas*
+* <img src="../../../images/mIconAtlas.png" /> *Aperçu de l'atlas*
+* <img src="../../../images/mActionAtlasFirst.png" /> *Première entité*
+* <img src="../../../images/mActionAtlasPrev.png" /> *Entité précédente*
+* <img src="../../../images/mActionAtlasNext.png" /> *Entité suivante*
+* <img src="../../../images/mActionAtlasLast.png" /> *Dernière entité*
+* <img src="../../../images/mActionFilePrint.png" /> *Impression de l'Atlas*
+* <img src="../../../images/mActionSaveMapAsImage.png" /> *Exporter l'Atlas en tant qu'images*
+* <img src="../../../images/mActionAtlasSettings.png" /> *Paramètres de l'Atlas*
 
 Tous les outils du composeur d'impression sont disponibles dans les menus et la barre d'outils. Cette barre peut être affichée ou masquée en effectuant un clic droit dessus.
 
@@ -67,7 +67,7 @@ L'ouverture du Composeur d'Impression vous donne un canevas blanc qui représent
 
 La figure suivante montre la vue initiale du Composeur d'Impression avant qu'aucun élément n'y soit ajouté.
 
-![](/images/print_composer_blank.png)
+![](../../../images/print_composer_blank.png)
 
 Sur la droite, à côté du canevas, vous trouverez deux panneaux. Le panneau supérieur contient les onglets *Éléments* et *Historique des commandes* et le panneau inférieur contient les onglets *Composition*, *Propriétés de l'objet* et *Génération d'atlas*.
 
@@ -75,13 +75,13 @@ Sur la droite, à côté du canevas, vous trouverez deux panneaux. Le panneau su
 
 -   L'onglet *Historique des commandes* affiche un historique des changements effectués dans le Composeur d'Impression. Avec un clic droit, il est possible de défaire et refaire des actions jusqu'à l'état choisi.
 
--   L'onglet *Composition* vous permet de définir la taille du papier, l'orientation, l'arrière-plan, le nombre de pages et la qualité d'impression pour le fichier de sortie en dpi/ppp. De plus vous pouvez activer l’<img src="/images/checkbox.png" /> *Impression raster* qui permet de convertir tous les éléments en raster avant impression ou export en Postscript ou PDF. Vous pouvez également personnaliser les paramètres pour la grille et les guides.
+-   L'onglet *Composition* vous permet de définir la taille du papier, l'orientation, l'arrière-plan, le nombre de pages et la qualité d'impression pour le fichier de sortie en dpi/ppp. De plus vous pouvez activer l’<img src="../../../images/checkbox.png" /> *Impression raster* qui permet de convertir tous les éléments en raster avant impression ou export en Postscript ou PDF. Vous pouvez également personnaliser les paramètres pour la grille et les guides.
 
--   L'onglet *Propriétés de l'objet* affiche les propriétés pour l'élément sélectionné sur la mise en page. Cliquez sur l'icône <img src="/images/mActionSelect.png" /> *Sélectionner/déplacer un objet* pour sélectionner un élément (par exemple l'échelle graphique ou une étiquette) dans la feuille. Puis cliquez sur l'onglet *Propriétés de l'objet* et personnalisez les paramètres de l'élément sélectionné.
+-   L'onglet *Propriétés de l'objet* affiche les propriétés pour l'élément sélectionné sur la mise en page. Cliquez sur l'icône <img src="../../../images/mActionSelect.png" /> *Sélectionner/déplacer un objet* pour sélectionner un élément (par exemple l'échelle graphique ou une étiquette) dans la feuille. Puis cliquez sur l'onglet *Propriétés de l'objet* et personnalisez les paramètres de l'élément sélectionné.
 
 -   L'onglet *Génération d'atlas* permet d'activer la création d'un atlas en sortie de composeur et d'en gérer les paramètres.
 
--   Enfin, vous pouvez enregistrer votre mise en page avec le bouton <img src="/images/mActionFileSave.png" /> *Enregistrer le projet*.
+-   Enfin, vous pouvez enregistrer votre mise en page avec le bouton <img src="../../../images/mActionFileSave.png" /> *Enregistrer le projet*.
 
 En bas de la fenêtre de Composeur d'Impression, vous trouverez la barre d'état avec la position du curseur de la souris, le numéro de page et une liste déroulante permettant de choisir un niveau de zoom.
 
@@ -91,19 +91,19 @@ Vous pouvez ajouter de nombreux éléments au composeur. Il est également possi
 
 Pour se déplacer sur la mise en page, quelques outils sont proposés:
 
--   <img src="/images/mActionZoomIn.png" /> *Zoom +*
+-   <img src="../../../images/mActionZoomIn.png" /> *Zoom +*
 
--   <img src="/images/mActionZoomOut.png" /> *Zoom -*
+-   <img src="../../../images/mActionZoomOut.png" /> *Zoom -*
 
--   <img src="/images/mActionZoomFullExtent.png" /> *Zoom sur l'emprise totale*
+-   <img src="../../../images/mActionZoomFullExtent.png" /> *Zoom sur l'emprise totale*
 
--   <img src="/images/mActionZoomActual.png" /> *Zoomer à 100%*
+-   <img src="../../../images/mActionZoomActual.png" /> *Zoomer à 100%*
 
--   <img src="/images/mActionDraw.png" /> *Rafraîchir la vue* pour actualiser l'affichage si nécessaire
+-   <img src="../../../images/mActionDraw.png" /> *Rafraîchir la vue* pour actualiser l'affichage si nécessaire
 
--   <img src="/images/mActionPan.png" /> *Déplacer le composeur*
+-   <img src="../../../images/mActionPan.png" /> *Déplacer le composeur*
 
--   <img src="/images/mActionZoomToSelected.png" /> *Zoom* (zoom sur une zone spécifique du Composeur)
+-   <img src="../../../images/mActionZoomToSelected.png" /> *Zoom* (zoom sur une zone spécifique du Composeur)
 
 Vous pouvez changer le niveau de zoom avec la molette de la souris ou la liste déroulante de la barre d'état. Si vous avez besoin de vous déplacer au sein du Composeur, vous pouvez maintenir la `barre espace` ou la molette de la souris enfoncée. Avec `Ctrl + barre espace`, vous passez temporairement en mode zoom + et avec `Ctrl + Shift + barre espace`, en mode zoom -.
 
@@ -111,19 +111,19 @@ Vous pouvez changer le niveau de zoom avec la molette de la souris ou la liste d
 
 Pour savoir comme créer une carte, veuillez suivre les instructions suivantes.
 
-1.  Sur le côté gauche, sélectionnez le bouton de barre d'outils <img src="/images/mActionAddMap.png" /> *Ajouter une nouvelle carte* et dessinez un rectangle. A l'intérieur du rectangle dessiné, la carte de la vue KADAS est affichée .
+1.  Sur le côté gauche, sélectionnez le bouton de barre d'outils <img src="../../../images/mActionAddMap.png" /> *Ajouter une nouvelle carte* et dessinez un rectangle. A l'intérieur du rectangle dessiné, la carte de la vue KADAS est affichée .
 
-2.  Sélectionnez le bouton de la barre d'outils <img src="/images/mActionScaleBar.png" /> *Ajouter une nouvelle échelle graphique* et placez l'élément de la carte avec le bouton gauche de la souris dans le canevas du Composeur d'Impression. Une barre d'échelle sera ajoutée au canevas.
+2.  Sélectionnez le bouton de la barre d'outils <img src="../../../images/mActionScaleBar.png" /> *Ajouter une nouvelle échelle graphique* et placez l'élément de la carte avec le bouton gauche de la souris dans le canevas du Composeur d'Impression. Une barre d'échelle sera ajoutée au canevas.
 
-3.  Sélectionnez le bouton de la barre d'outils <img src="/images/mActionAddLegend.png" /> *Ajouter une nouvelle légende* et dessinez un rectangle dans le canevas en maintenant enfoncé le bouton gauche de la souris. À l'intérieur du rectangle dessiné, la légende sera affichée.
+3.  Sélectionnez le bouton de la barre d'outils <img src="../../../images/mActionAddLegend.png" /> *Ajouter une nouvelle légende* et dessinez un rectangle dans le canevas en maintenant enfoncé le bouton gauche de la souris. À l'intérieur du rectangle dessiné, la légende sera affichée.
 
-4.  Sélectionnez l'icône <img src="/images/mActionSelect.png" /> *Sélectionner/Déplacer un objet* pour sélectionner la carte sur le canevas et déplacez-le un peu.
+4.  Sélectionnez l'icône <img src="../../../images/mActionSelect.png" /> *Sélectionner/Déplacer un objet* pour sélectionner la carte sur le canevas et déplacez-le un peu.
 
 5.  Tant que l'élément de carte est toujours sélectionné, vous pouvez aussi changer sa taille. Cliquez tout en maintenant enfoncé le bouton gauche de la souris sur un des coins de l'élément marqué par un petit rectangle blanc et déplacez-le pour changer la taille de la carte.
 
 6.  Cliquez sur l'onglet *Propriétés de l'élément* dans le panneau inférieur gauche et trouvez le réglage pour l'orientation. Modifiez la valeur du paramètre *Orientation de la carte* sur'15.00° '. Vous devriez voir l'orientation de l'élément de carte changer.
 
-7.  Enfin, vous pouvez enregistrer votre mise en page avec le bouton <img src="/images/mActionFileSave.png" /> *Enregistrer le projet*.
+7.  Enfin, vous pouvez enregistrer votre mise en page avec le bouton <img src="../../../images/mActionFileSave.png" /> *Enregistrer le projet*.
 
 ## Options du Composeur d'Impression <a name="#print-composer-options"></a>
 
@@ -141,7 +141,7 @@ Dans l'onglet *Composition*, vous pouvez définir les paramètres généraux de 
 
 -   Vous pouvez choisir un des formats *Préconfigurés* de papier ou entrer vos valeurs personnelles de *Largeur* et de *Hauteur*.
 
--   Une composition peut maintenant se répartir sur plusieurs pages. Par exemple, une première page montrant la carte, une deuxième la table d'attributs d'une des couches et une troisième un cadre HTML en lien avec le site internet de votre organisme. Choisissez le *Nombre de pages* à votre convenance. Vous pouvez choisir l’*Orientation* et la *Résolution de l'export*. Lorsque la case <img src="/images/checkbox.png" /> *Impression raster* est cochée, tous les éléments seront rasterisés avant l'impression ou la sauvegarde en PostScript ou PDF.
+-   Une composition peut maintenant se répartir sur plusieurs pages. Par exemple, une première page montrant la carte, une deuxième la table d'attributs d'une des couches et une troisième un cadre HTML en lien avec le site internet de votre organisme. Choisissez le *Nombre de pages* à votre convenance. Vous pouvez choisir l’*Orientation* et la *Résolution de l'export*. Lorsque la case <img src="../../../images/checkbox.png" /> *Impression raster* est cochée, tous les éléments seront rasterisés avant l'impression ou la sauvegarde en PostScript ou PDF.
 
 -   *Grille et guides* vous permet de personnaliser les paramètres de la grille, comme *Espacement de la grille*, *Décalage de la grille* et *Tolérance d'accrochage*, à vos besoins. La tolérance est la distance maximale en-dessous de laquelle un objet est aimanté sur les guides intelligents.
 
@@ -151,29 +151,29 @@ L'accrochage à la grille et/ou aux guides peut s'activer depuis le menu *Vue*. 
 
 Les éléments du composeur disposent d'un ensemble de propriétés générales définies en bas de l'onglet *Propriétés de l'objet*: Position et taille, Rotation, Cadre, Fond, Identifiant de l'objet, Rendu.
 
-![](/images/print_composer_common_properties.png)
+![](../../../images/print_composer_common_properties.png)
 
 -   *Position et taille* permet de définir la taille et la position du cadre contenant l'élément. Vous pouvez également choisir le *Point de référence* dont les coordonnées **X** et **Y** sont définies.
 
 -   *Rotation* permet de définir un angle de rotation (en degrés) pour l'élément.
 
--   Le <img src="/images/checkbox.png" /> *Cadre* permet d'afficher ou de cacher le cadre autour du label. Cliquez sur *Couleur du cadre* et *Épaisseur* pour modifier ces propriétés.
+-   Le <img src="../../../images/checkbox.png" /> *Cadre* permet d'afficher ou de cacher le cadre autour du label. Cliquez sur *Couleur du cadre* et *Épaisseur* pour modifier ces propriétés.
 
 -   Utilisez le menu *Couleur d'arrière-plan* pour définir une couleur d'arrière-plan. Avec la boîte de dialogue, vous pouvez choisir une couleur.
 -   Utilisez l’*Identifiant de l'objet* pour créer une lien avec d'autres éléments du Composeur. Ceci est utilisé par KADAS Serveur et tout client web potentiel. Vous pouvez donner un ID à un élément (par ex. une carte, une zone de texte), puis le client web peut envoyer des informations pour spécifier les propriétés de cet objet. La commande GetProjectSettings listera les éléments disponibles dans la mise en page avec leurs ID.
 
 -   *Rendu* permet de choisir différents modes.
 
--   L'icône <img src="/images/mIconDataDefine.png" /> *Défini par des données* à côté d'un champ signifie que vous pouvez associer le champ avec des données dans l'élément de carte ou utiliser des expressions. Elles sont particulièrement utiles avec la génération d'atlas.
+-   L'icône <img src="../../../images/mIconDataDefine.png" /> *Défini par des données* à côté d'un champ signifie que vous pouvez associer le champ avec des données dans l'élément de carte ou utiliser des expressions. Elles sont particulièrement utiles avec la génération d'atlas.
 
 
 KADAS propose maintenant des modes de rendu avancés pour les éléments du composeur, comme pour les couches vecteur et raster.
 
-![](/images/rendering_mode.png)
+![](../../../images/rendering_mode.png)
 
--   *Transparence* ![slider](/images/slider.png): Vous permet de rendre visible les couches situées en dessous. Utiliser le curseur pour adapter la visibilité de la couche vectorielle à vos besoins. Vous pouvez également définir directement le pourcentage de transparence dans la zone de texte située à côté.
+-   *Transparence* ![slider](../../../images/slider.png): Vous permet de rendre visible les couches situées en dessous. Utiliser le curseur pour adapter la visibilité de la couche vectorielle à vos besoins. Vous pouvez également définir directement le pourcentage de transparence dans la zone de texte située à côté.
 
--   <img src="/images/checkbox.png" /> *Exclure cet élément des exports*: Vous pouvez décider de faire un élément non visible dans tous les exports. Après avoir activé cette option, l'élément ne sera pas inclus dans les PDF, impressions etc...
+-   <img src="../../../images/checkbox.png" /> *Exclure cet élément des exports*: Vous pouvez décider de faire un élément non visible dans tous les exports. Après avoir activé cette option, l'élément ne sera pas inclus dans les PDF, impressions etc...
 
 -   *Mode de fusion*: Vous pouvez donner des effets de rendu spéciaux grâce à cet outil bien connu des logiciels de dessin. Les pixels de l'objet et des éléments sous-jacents sont fusionnés selon les manières décrites ci-dessous.
 
@@ -205,7 +205,7 @@ KADAS propose maintenant des modes de rendu avancés pour les éléments du comp
     >
 ## L'élément Carte <a name="#the-map-item"></a>
 
-Cliquez sur le bouton <img src="/images/mActionAddMap.png" /> *Ajouter une nouvelle carte* de la barre d'outils du composeur pour ajouter la carte telle qu'affichée dans la fenêtre principale de KADAS. Tracez ensuite un rectangle sur la mise en page avec le bouton gauche de la souris. Concernant l'affichage de la carte, vous pouvez choisir entre trois modes différents depuis l'onglet *Propriétés de l'objet*:
+Cliquez sur le bouton <img src="../../../images/mActionAddMap.png" /> *Ajouter une nouvelle carte* de la barre d'outils du composeur pour ajouter la carte telle qu'affichée dans la fenêtre principale de KADAS. Tracez ensuite un rectangle sur la mise en page avec le bouton gauche de la souris. Concernant l'affichage de la carte, vous pouvez choisir entre trois modes différents depuis l'onglet *Propriétés de l'objet*:
 
 -   **Rectangle** est l'option par défaut. Elle n'affiche qu'un cadre vide avec un message *La carte sera imprimée ici*.
 
@@ -215,34 +215,34 @@ Cliquez sur le bouton <img src="/images/mActionAddMap.png" /> *Ajouter une nouve
 
 **Cache** est le mode d'aperçu par défaut pour un Composeur nouvellement créé.
 
-Vous pouvez redimensionner l'élément de la carte en cliquant sur le bouton <img src="/images/mActionSelect.png" /> *Sélectionner/déplacer un objet*, en sélectionnant l'élément, et en déplaçant un des curseurs bleus dans le coin de la carte. Avec la carte sélectionnée, vous pouvez maintenant adapter plus de propriétés dans l'onglet *Propriétés de l'objet*.
+Vous pouvez redimensionner l'élément de la carte en cliquant sur le bouton <img src="../../../images/mActionSelect.png" /> *Sélectionner/déplacer un objet*, en sélectionnant l'élément, et en déplaçant un des curseurs bleus dans le coin de la carte. Avec la carte sélectionnée, vous pouvez maintenant adapter plus de propriétés dans l'onglet *Propriétés de l'objet*.
 
-Pour déplacer les couches au sein de l'élément carte, sélectionnez-le puis cliquez sur l'icône <img src="/images/mActionMoveItemContent.png" /> *Déplacer le contenu de l'objet* et déplacez les couches dans le cadre de l'élément de carte avec le bouton gauche de la souris. Après avoir trouvé le bon emplacement, vous pouvez figer la position de cet élément au sein du Composeur. Sélectionnez l'élément de carte et utilisez l'outil <img src="/images/locked.png" /> *Verrouiller les objets sélectionnés* ou encore dans la colonne verrouillage de l'onglet *Éléments*. Un objet verrouillé ne peut être sélectionné qu'en utilisant l'onglet *Éléments*. Une fois sélectionné, il est possible d'utiliser ce même onglet pour le déverrouiller. L'icône <img src="/images/unlocked.png" />*Déverrouiller tous les objets* permet de déverrouiller tous les objets du composeur.
+Pour déplacer les couches au sein de l'élément carte, sélectionnez-le puis cliquez sur l'icône <img src="../../../images/mActionMoveItemContent.png" /> *Déplacer le contenu de l'objet* et déplacez les couches dans le cadre de l'élément de carte avec le bouton gauche de la souris. Après avoir trouvé le bon emplacement, vous pouvez figer la position de cet élément au sein du Composeur. Sélectionnez l'élément de carte et utilisez l'outil <img src="../../../images/locked.png" /> *Verrouiller les objets sélectionnés* ou encore dans la colonne verrouillage de l'onglet *Éléments*. Un objet verrouillé ne peut être sélectionné qu'en utilisant l'onglet *Éléments*. Une fois sélectionné, il est possible d'utiliser ce même onglet pour le déverrouiller. L'icône <img src="../../../images/unlocked.png" />*Déverrouiller tous les objets* permet de déverrouiller tous les objets du composeur.
 
 
 ### Propriétés principales <a name="#main-properties"></a>
 
 La zone *Propriétés principales* de l'onglet *Propriétés de l'objet* de la carte propose les fonctionnalités suivantes:
 
-![](/images/print_composer_map1.png)
+![](../../../images/print_composer_map1.png)
 
 -   Les options d’**Aperçu** vous permettent de choisir parmi les modes *Cache*, *Rendu* ou *Rectangle* comme décrits ci-dessus. Si vous changez la vue dans la fenêtre principale de KADAS en modifiant des couches vecteurs ou raster, vous pouvez mettre à jour le Composeur en sélectionnant l'élément carte puis en cliquant sur le bouton **\[Mise à jour de l'aperçu\]**.
 
--   Le champ *Échelle* <img src="/images/selectnumber.png" /> permet de préciser manuellement une valeur d'échelle.
+-   Le champ *Échelle* <img src="../../../images/selectnumber.png" /> permet de préciser manuellement une valeur d'échelle.
 
--   Le champ *Rotation de carte* <img src="/images/selectnumber.png" /> vous permet de définir l'angle de rotation de l'élément de la carte, dans le sens horaire, en degrés. C'est ici que la rotation de la vue de carte peut être imitée. Notez qu'un cadre de coordonnées correct ne peut être obtenu que lorsque l'angle de rotation a la valeur par défaut de 0 et que lorsqu'une *Rotation de carte* est définie, il ne peut plus être modifié.
+-   Le champ *Rotation de carte* <img src="../../../images/selectnumber.png" /> vous permet de définir l'angle de rotation de l'élément de la carte, dans le sens horaire, en degrés. C'est ici que la rotation de la vue de carte peut être imitée. Notez qu'un cadre de coordonnées correct ne peut être obtenu que lorsque l'angle de rotation a la valeur par défaut de 0 et que lorsqu'une *Rotation de carte* est définie, il ne peut plus être modifié.
 
--   <img src="/images/checkbox.png" /> *Dessiner les objets du canevas de la carte* permet de montrer les annotations placées sur la carte dans la fenêtre principale de KADAS.
+-   <img src="../../../images/checkbox.png" /> *Dessiner les objets du canevas de la carte* permet de montrer les annotations placées sur la carte dans la fenêtre principale de KADAS.
 
--   Vous pouvez choisir de verrouiller les couches affichées sur la carte. Cochez <img src="/images/checkbox.png" /> *Verrouiller les couches pour cette carte*. Après cela, toute couche qui serait rendue visible ou invisible sur la carte de la fenêtre principale de KADAS n'apparaîtra ou ne disparaîtra pas de la carte dans le composeur. Mais, le style et l'étiquetage des couches verrouillées sont toujours mis à jour par la fenêtre principale de KADAS. Vous pouvez éviter ce comportement en utilisant *Verrouiller les styles de couche pour cette carte*.
+-   Vous pouvez choisir de verrouiller les couches affichées sur la carte. Cochez <img src="../../../images/checkbox.png" /> *Verrouiller les couches pour cette carte*. Après cela, toute couche qui serait rendue visible ou invisible sur la carte de la fenêtre principale de KADAS n'apparaîtra ou ne disparaîtra pas de la carte dans le composeur. Mais, le style et l'étiquetage des couches verrouillées sont toujours mis à jour par la fenêtre principale de KADAS. Vous pouvez éviter ce comportement en utilisant *Verrouiller les styles de couche pour cette carte*.
 
--   Le bouton <img src="/images/mActionShowPresets.png" /> vous permet d'ajouter rapidement toutes les vues prédéfinies que vous avez préparées dans QGIS. En cliquant sur le bouton <img src="/images/mActionShowPresets.png" />, vous pourrez consulter la liste des vues prédéfinies et sélectionner celle que vous voulez afficher. Le canevas de carte verrouillera automatiquement les couches prédéfinies en activant la <img src="/images/checkbox.png" /> *Verrouiller les couches pour cette carte*. Si vous voulez désélectionner ce qui est prédéfini, décochez la <img src="/images/checkbox.png" /> et appuyez sur le bouton <img src="/images/mActionDraw.png" />. Consultez <a href="../introduction/qgis_gui.html#label-legend">*Légende de la carte*</a> pour voir comment créer des vues prédéfinies.
+-   Le bouton <img src="../../../images/mActionShowPresets.png" /> vous permet d'ajouter rapidement toutes les vues prédéfinies que vous avez préparées dans QGIS. En cliquant sur le bouton <img src="../../../images/mActionShowPresets.png" />, vous pourrez consulter la liste des vues prédéfinies et sélectionner celle que vous voulez afficher. Le canevas de carte verrouillera automatiquement les couches prédéfinies en activant la <img src="../../../images/checkbox.png" /> *Verrouiller les couches pour cette carte*. Si vous voulez désélectionner ce qui est prédéfini, décochez la <img src="../../../images/checkbox.png" /> et appuyez sur le bouton <img src="../../../images/mActionDraw.png" />. Consultez <a href="../introduction/qgis_gui.html#label-legend">*Légende de la carte*</a> pour voir comment créer des vues prédéfinies.
 
 ### Emprise <a name="#extents"></a>
 
 La zone *Aperçus* de l'onglet *Propriétés de l'objet* de la carte propose les fonctionnalités suivantes:
 
-![](/images/print_composer_map2.png)
+![](../../../images/print_composer_map2.png)
 
 -   L’**Emprise** vous permet de définir l'emprise de la carte en utilisant les valeurs X et Y minimales et maximales puis de cliquer sur le bouton **\[Fixer sur l'emprise courante du canevas de la carte\]**. Ce bouton paramètre l'emprise de la carte du composeur avec l'emprise de la vue courante dans l'application KADAS. Le bouton **\[Voir l'étendue sur la carte\]** fait exactement l'inverse: il met à jour l'emprise de la carte dans l'application QGIS avec l'étendue de la carte dans le composeur.
 
@@ -259,15 +259,15 @@ La boîte de dialogue *Graticules* de l'onglet *Propriétés de l'objet* de la c
 
 Lorsque vous double-cliquez sur la grille ajoutée, vous pouvez lui donner un autre nom.
 
-![](/images/map_grids.png)
+![](../../../images/map_grids.png)
 
-Après avoir ajouté un graticule, vous pouvez activer l'option <img src="/images/checkbox.png" /> *Afficher le graticule* pour superposer une grille sur l'élément carte. Développez cette option pour accéder à de nombreuses options de configuration.
+Après avoir ajouté un graticule, vous pouvez activer l'option <img src="../../../images/checkbox.png" /> *Afficher le graticule* pour superposer une grille sur l'élément carte. Développez cette option pour accéder à de nombreuses options de configuration.
 
-![](/images/draw_grid.png)
+![](../../../images/draw_grid.png)
 
 Comme type de graticule, vous pouvez utiliser *Continue*, *Croix*, *Marqueurs* ou *Cadre et annotation seulement*. *Cadre et annotation seulement* est tout particulièrement utile lorsque vous travaillez avec des cartes qui ont subi une rotation ou des graticules reprojectés. Dans la section divisions de la boîte de dialogue Cadre du graticule mentionnée ci-dessous vous avez un tel paramètre. La symbologie du graticule peut être définie. De plus, vous pouvez définir l'intervalle dans les directions X et Y, un décalage en X et Y et l'épaisseur utilisée pour les croix ou les lignes du type de graticule.
 
-![](/images/grid_frame.png)
+![](../../../images/grid_frame.png)
 
 -   Il y a différentes options pour créer le cadre qui contient la carte. Les options suivantes sont disponibles: Pas de cadre, Zébré, Marqueurs à l'intérieur, Marqueurs à l'extérieur, Marqueurs à l'intérieur et à l'extérieur et Cadre simple.
 
@@ -275,15 +275,15 @@ Comme type de graticule, vous pouvez utiliser *Continue*, *Croix*, *Marqueurs* o
 
 -   Un mode de rendu avancé est également disponible pour les graticules.
 
--   La <img src="/images/checkbox.png" /> *Afficher les coordonnées* permet d'ajouter les coordonnées au cadre de la carte. Vous pouvez choisir le format numérique des annotations, les options vont de décimal à degré, minute, seconde, avec ou sans suffixe, alignés ou non Vous pouvez choisir quelles annotations afficher. Les options sont: Tout afficher, Afficher uniquement la latitude, Afficher uniquement la longitude, Désactivé (aucune). Ceci est utile quand une rotation est appliquée à la carte. Les annotations peuvent être placées à l'intérieur ou à l'extérieur du cadre. L'orientation des annotations peut être définie par Horizontal, Ascendant vertical ou Descendant vertical. Finalement, vous pouvez définir la police, la couleur de police, la distance par rapport au cadre et la précision des coordonnées.
+-   La <img src="../../../images/checkbox.png" /> *Afficher les coordonnées* permet d'ajouter les coordonnées au cadre de la carte. Vous pouvez choisir le format numérique des annotations, les options vont de décimal à degré, minute, seconde, avec ou sans suffixe, alignés ou non Vous pouvez choisir quelles annotations afficher. Les options sont: Tout afficher, Afficher uniquement la latitude, Afficher uniquement la longitude, Désactivé (aucune). Ceci est utile quand une rotation est appliquée à la carte. Les annotations peuvent être placées à l'intérieur ou à l'extérieur du cadre. L'orientation des annotations peut être définie par Horizontal, Ascendant vertical ou Descendant vertical. Finalement, vous pouvez définir la police, la couleur de police, la distance par rapport au cadre et la précision des coordonnées.
 
-![](/images/grid_draw_coordinates.png)
+![](../../../images/grid_draw_coordinates.png)
 
 ### Aperçus <a name="#overviews"></a>
 
 La zone *Aperçus* de l'onglet *Propriétés de l'objet* de la carte propose les fonctionnalités suivantes:
 
-![](/images/print_composer_map4.png)
+![](../../../images/print_composer_map4.png)
 
 Vous pouvez choisir de créer un aperçu de carte, qui montre l'étendue des autres carte(s) qui sont disponibles dans le composeur. Premièrement, vous devez créer la carte(s) que vous voulez inclure dans l'aperçu de carte. Ensuite, vous créez une carte que vous voulez utiliser comme aperçu de carte, simplement comme une carte normale.
 
@@ -295,7 +295,7 @@ Ouvrez *Aperçus* et cliquez sur le bouton-icône plus vert pour ajouter un aper
 
 Lorsque vous sélectionnez l'élément aperçu dans la liste, vous pouvez le personnaliser.
 
--   L'option <img src="/images/checkbox.png" /> *Afficher l'aperçu *&lt;nom\_aperçu&gt;* doit être activée pour afficher l'étendue du cadre de la carte sélectionnée.
+-   L'option <img src="../../../images/checkbox.png" /> *Afficher l'aperçu *&lt;nom\_aperçu&gt;* doit être activée pour afficher l'étendue du cadre de la carte sélectionnée.
 
 -   La liste combo *Cadre de carte* peut être utilisée pour sélectionner l'élément carte dont les extensions seront affichées sur l'élément carte présent.
 
@@ -303,23 +303,23 @@ Lorsque vous sélectionnez l'élément aperçu dans la liste, vous pouvez le per
 
 -   Le *Mode de fusion* vous permet de mettre une transparence et un mode de fusion différent.
 
--   Si la case <img src="/images/checkbox.png" /> *Inverser l'aperçu* est cochée, un masque est créé: l'emprise de l'autre zone de carte apparaît clairement alors que le reste est mis en transparence en utilisant le mode de fusion choisi.
+-   Si la case <img src="../../../images/checkbox.png" /> *Inverser l'aperçu* est cochée, un masque est créé: l'emprise de l'autre zone de carte apparaît clairement alors que le reste est mis en transparence en utilisant le mode de fusion choisi.
 
--   La <img src="/images/checkbox.png" /> *Centrer sur l'aperçu* paramètre l'emprise du cadre d'aperçu au centre de la carte d'aperçu. Vous pouvez activer uniquement un seul élément d'aperçu au centre lorsque vous avez plusieurs aperçus.
+-   La <img src="../../../images/checkbox.png" /> *Centrer sur l'aperçu* paramètre l'emprise du cadre d'aperçu au centre de la carte d'aperçu. Vous pouvez activer uniquement un seul élément d'aperçu au centre lorsque vous avez plusieurs aperçus.
 
 ## L'élément Étiquette <a name="#the-label-item"></a>
 
-Pour ajouter une zone de texte, cliquez sur le bouton <img src="/images/mActionLabel.png" /> *Ajouter une nouvelle étiquette*, placez l'élément sur la page par un clic-gauche et personnalisez son apparence grâce aux *Propriétés de l'objet*.
+Pour ajouter une zone de texte, cliquez sur le bouton <img src="../../../images/mActionLabel.png" /> *Ajouter une nouvelle étiquette*, placez l'élément sur la page par un clic-gauche et personnalisez son apparence grâce aux *Propriétés de l'objet*.
 
 L'onglet *Propriétés de l'objet* d'un élément étiquette propose la fonctionnalité suivante pour l'élément étiquette:
 
-![](/images/print_composer_label1.png)
+![](../../../images/print_composer_label1.png)
 
 ### Propriétés principales <a name="#id1"></a>
 
 -   C'est l'endroit où le texte (HTMLou pas) ou l'expression sont à insérer pour être affichés dans le Composeur.
 
--   Le texte saisi peut être interprété comme du code HTML si vous cochez la case <img src="/images/checkbox.png" /> *Afficher en HTML*. Vous pouvez ainsi insérer une URL, une image cliquable qui renvoie à une page web ou tout autre code plus complexe.
+-   Le texte saisi peut être interprété comme du code HTML si vous cochez la case <img src="../../../images/checkbox.png" /> *Afficher en HTML*. Vous pouvez ainsi insérer une URL, une image cliquable qui renvoie à une page web ou tout autre code plus complexe.
 
 -   Vous pouvez également insérer une expression. Cliquez sur **\[Insérer une expression...\]** pour ouvrir une nouvelle fenêtre. Construisez une expression en choisissant parmi les fonctions disponibles dans la partie gauche de cette fenêtre. Deux catégories de fonctions sont très utiles, notamment lorsque l'on utilise la génération d'atlas: les fonctions de géométrie et d'enregistrement. En bas de la fenêtre, un aperçu du résultat s'affiche.
 
@@ -329,27 +329,27 @@ L'onglet *Propriétés de l'objet* d'un élément étiquette propose la fonction
 
 -   Vous pouvez spécifier des marges horizontale et verticale différentes, en millimètres. Il s'agit de la marge à partir du coin de l'objet. L'étiquette peut être positionnée en dehors de ses limites par exemple lors d'un alignement avec d'autres objets. Dans ce cas, utilisez des valeurs négatives pour les marges.
 
--   Utiliser *Alignement* est un autre moyen pour positionner votre étiquette. Notez que par exemple, en utilisant *Alignement horizontal* avec ![radiobuttonon](/images/radiobuttonon.png)*Au centre*, la *Marge horizontale* n'est pas prise en compte.
+-   Utiliser *Alignement* est un autre moyen pour positionner votre étiquette. Notez que par exemple, en utilisant *Alignement horizontal* avec ![radiobuttonon](../../../images/radiobuttonon.png)*Au centre*, la *Marge horizontale* n'est pas prise en compte.
 
 
 ## L'élément Image <a name="#the-image-item"></a>
 
-Pour ajouter une image, cliquez sur l'icône <img src="/images/mActionAddImage.png" /> *Ajouter une image* et placez l'élément sur le Composeur avec le bouton gauche de votre souris. Vous pouvez modifier la position et l'apparence avec l'onglet *Propriétés de l'objet* après avoir sélectionné l'élément.
+Pour ajouter une image, cliquez sur l'icône <img src="../../../images/mActionAddImage.png" /> *Ajouter une image* et placez l'élément sur le Composeur avec le bouton gauche de votre souris. Vous pouvez modifier la position et l'apparence avec l'onglet *Propriétés de l'objet* après avoir sélectionné l'élément.
 
 
 L'onglet des *Propriétés principales* d'une image proposent les fonctionnalités suivantes:
 
-![](/images/print_composer_image1.png)
+![](../../../images/print_composer_image1.png)
 
 Vous devez d'abord sélectionner l'image que vous voulez afficher. Il y a plusieurs moyens de configurez la *Source de l'image* dans la zone **Propriétés principales**.
 
-1.  Utilisez le bouton parcourir <img src="/images/browsebutton.png" /> de la *Source de l'image* pour sélectionner un fichier sur votre ordinateur en utilisant la boîte de dialogue de l'explorateur. L'explorateur commencera dans la librairie SVG fournie avec KADAS. Outre *SVG*, vous pouvez aussi sélectionner d'autres formats d'image comme *PNG* ou *JPG*.
+1.  Utilisez le bouton parcourir <img src="../../../images/browsebutton.png" /> de la *Source de l'image* pour sélectionner un fichier sur votre ordinateur en utilisant la boîte de dialogue de l'explorateur. L'explorateur commencera dans la librairie SVG fournie avec KADAS. Outre *SVG*, vous pouvez aussi sélectionner d'autres formats d'image comme *PNG* ou *JPG*.
 
 2.  Vous pouvez entrer la source directement dans la zone de texte *Source de l'image*. Vous pouvez même fournir une adresse URL distante à une image.
 
 3.  Depuis la zone **Rechercher dans les répertoires**, vous pouvez également sélectionner une image depuis *Chargement des aperçus...* pour définir l'image source.
 
-4.  Utilisez le bouton Source de définition <img src="/images/mIconDataDefine.png" /> pour définir l'image source depuis un enregistrement ou en utilisant une expression régulière.
+4.  Utilisez le bouton Source de définition <img src="../../../images/mIconDataDefine.png" /> pour définir l'image source depuis un enregistrement ou en utilisant une expression régulière.
 
 Avec l'option *Mode de redimensionnement*, vous pouvez définir comment l'image est affichée lorsque le cadre change, ou choisir de redimensionner le cadre de l'élément image afin qu'il s'ajuste avec la taille originale de l'image.
 
@@ -369,28 +369,28 @@ Sélectionner un mode de redimensionnement peut désactiver les options de l'él
 
 Avec le *Position*, vous pouvez sélectionner la position de l'image à l'intérieur de son cadre. La zone **Rechercher dans les répertoires** vous permet d'ajouter ou de supprimer des répertoires avec des images au format SVG de la base de données d'images. Un aperçu des images trouvées dans les répertoires sélectionnés est affiché dans un panneau et peut être utilisé pour sélectionner et configurer la source de l'image.
 
-Les images peuvent être tournées avec le champ *Rotation de l'image*. L'activation de l'option <img src="/images/checkbox.png" /> *Synchroniser avec la carte* synchronise la rotation d'une image dans le canevas de carte KADAS (par exemple, une flèche orientée nord) avec l'image appropriée du Composeur d'Impression.
+Les images peuvent être tournées avec le champ *Rotation de l'image*. L'activation de l'option <img src="../../../images/checkbox.png" /> *Synchroniser avec la carte* synchronise la rotation d'une image dans le canevas de carte KADAS (par exemple, une flèche orientée nord) avec l'image appropriée du Composeur d'Impression.
 
-Il est aussi possible de sélectionner directement une flèche nord. Si vous sélectionnez d'abord une image de flèche nord depuis **Rechercher dans les répertoires** et utilisez ensuite le bouton parcourir <img src="/images/browsebutton.png" /> du champ *Source de l'image*, vous pouvez dès lors sélectionner une des flèches nord de la liste.
+Il est aussi possible de sélectionner directement une flèche nord. Si vous sélectionnez d'abord une image de flèche nord depuis **Rechercher dans les répertoires** et utilisez ensuite le bouton parcourir <img src="../../../images/browsebutton.png" /> du champ *Source de l'image*, vous pouvez dès lors sélectionner une des flèches nord de la liste.
 
 Beaucoup de flèches Nord n'ont pas un *N* ajouté à la flèche Nord, cela est fait exprès pour les langues qui n'utilisent pas un *N* pour le Nord, de sorte qu'elles puissent utiliser une autre lettre.
 
-![](/images/north_arrows.png)
+![](../../../images/north_arrows.png)
 
 
 ## L'élément Légende <a name="#the-legend-item"></a>
 
-Pour ajouter une légende, cliquez sur l'icône <img src="/images/mActionAddLegend.png" /> *Ajouter une nouvelle légende* et placez l'élément sur le Composeur avec le bouton gauche de votre souris. Vous pouvez modifier la position et l'apparence avec l'onglet *Propriétés de l'objet* après avoir sélectionné l'élément.
+Pour ajouter une légende, cliquez sur l'icône <img src="../../../images/mActionAddLegend.png" /> *Ajouter une nouvelle légende* et placez l'élément sur le Composeur avec le bouton gauche de votre souris. Vous pouvez modifier la position et l'apparence avec l'onglet *Propriétés de l'objet* après avoir sélectionné l'élément.
 
 Les *Propriétés principales* d'une légende proposent les fonctionnalités suivantes:
 
-![](/images/print_composer_legend1.png)
+![](../../../images/print_composer_legend1.png)
 
 ### Propriétés principales <a name="#id3"></a>
 
 La zone *Propriétés principales* de l'onglet *Propriétés de l'objet* de la légende propose les fonctionnalités suivantes:
 
-![](/images/print_composer_legend2.png)
+![](../../../images/print_composer_legend2.png)
 
 Dans les Propriétés Principales vous pouvez:
 
@@ -406,9 +406,9 @@ Dans les Propriétés Principales vous pouvez:
 
 La zone *Objets de légende* de l'onglet *Propriétés de l'objet* de la légende propose les fonctionnalités suivantes:
 
-![](/images/print_composer_legend3.png)
+![](../../../images/print_composer_legend3.png)
 
--   La légende sera automatiquement mise à jour si <img src="/images/checkbox.png" /> *Mise à jour auto* est cochée. Lorsque *Mise à jour auto* n'est pas cochée, cela vous donnera plus de contrôle sur les éléments de la légende. Les icônes en-dessous de la liste des éléments de légende seront activés.
+-   La légende sera automatiquement mise à jour si <img src="../../../images/checkbox.png" /> *Mise à jour auto* est cochée. Lorsque *Mise à jour auto* n'est pas cochée, cela vous donnera plus de contrôle sur les éléments de la légende. Les icônes en-dessous de la liste des éléments de légende seront activés.
 
 -   La fenêtre des éléments de légende répertorie tous les éléments de la légende et vous permet de changer l'ordre des éléments, de grouper les couches, de supprimer ou de restaurer des éléments de la liste, de modifier les noms des couche et d'ajouter un filtre.
 
@@ -430,17 +430,17 @@ La zone *Objets de légende* de l'onglet *Propriétés de l'objet* de la légend
 
 Les zones *Polices*, *Colonnes* et *Symbole* de la légende dans l'onglet *Propriétés de l'objet* fournissent les fonctionnalités suivantes:
 
-![](/images/print_composer_legend4.png)
+![](../../../images/print_composer_legend4.png)
 
 -   Vous pouvez changer la police du titre de la légende, du groupe, du sous-groupe et de l'élément (de couche) dans la légende. Cliquez sur la catégorie concernée pour ouvrir la fenêtre **Choisir une police**.
 
 -   Vous pouvez choisir une **Couleur** pour les étiquettes avec le sélecteur de couleur avancé, cependant la couleur sélectionnée sera donnée à tous les éléments de police dans la légende.
 
--   Les éléments de légende peuvent être organisés sur plusieurs colonnes. Configurez le nombre de colonnes dans le champ *Compter* <img src="/images/selectnumber.png" />.
+-   Les éléments de légende peuvent être organisés sur plusieurs colonnes. Configurez le nombre de colonnes dans le champ *Compter* <img src="../../../images/selectnumber.png" />.
 
-    -   La case <img src="/images/checkbox.png" /> *Égaliser la largeur des colonnes* permet d'ajuster la taille des colonnes de la légende.
+    -   La case <img src="../../../images/checkbox.png" /> *Égaliser la largeur des colonnes* permet d'ajuster la taille des colonnes de la légende.
 
-    -   L'option <img src="/images/checkbox.png" /> *Séparer les couches* permet de présenter sur plusieurs colonnes les éléments de légende d'une couche ayant un style catégorisé ou gradué.
+    -   L'option <img src="../../../images/checkbox.png" /> *Séparer les couches* permet de présenter sur plusieurs colonnes les éléments de légende d'une couche ayant un style catégorisé ou gradué.
 
 -   Vous pouvez changer la largeur et la hauteur du symbole de légende ici.
 
@@ -448,7 +448,7 @@ Les zones *Polices*, *Colonnes* et *Symbole* de la légende dans l'onglet *Propr
 
 Les zones *Légende WMS* et *Espacement* de l'onglet *Propriétés de l'objet* fournissent les fonctionnalités suivantes:
 
-![](/images/print_composer_legend5.png)
+![](../../../images/print_composer_legend5.png)
 
 Lorsque vous avez ajouté une couche WMS et que vous insérez un élément de légende du composeur, une requête sera envoyée au serveur WMS pour fournir une légende WMS. Cette Légende sera uniquement affichée si le serveur WMS fournit la capacité GetLegendGraphic. Le contenu de la légende WMS sera fourni comme une image raster.
 
@@ -459,17 +459,17 @@ L'espacement autour du titre, des groupes, sous-groupes, symboles, libellés de 
 
 ## L'élément Échelle graphique <a name="#the-scale-bar-item"></a>
 
-Pour ajouter une barre d'échelle, cliquez sur l'icône <img src="/images/mActionScaleBar.png" /> *Ajouter une nouvelle échelle graphique*, placez l'élément sur le Composeur avec le bouton gauche de votre souris. Vous pouvez modifier la position et son apparence avec le panneau de *Propriétés de l'objet* après avoir sélectionné l'élément.
+Pour ajouter une barre d'échelle, cliquez sur l'icône <img src="../../../images/mActionScaleBar.png" /> *Ajouter une nouvelle échelle graphique*, placez l'élément sur le Composeur avec le bouton gauche de votre souris. Vous pouvez modifier la position et son apparence avec le panneau de *Propriétés de l'objet* après avoir sélectionné l'élément.
 
 Les *Propriétés principales* d'une barre d'échelle proposent les fonctionnalités suivantes:
 
-![](/images/print_composer_scalebar1.png)
+![](../../../images/print_composer_scalebar1.png)
 
 ### Propriétés principales <a name="#id4"></a>
 
 La zone *Propriétés principales* de l'onglet *Propriétés de l'objet* de la barre d'échelle propose les fonctionnalités suivantes:
 
-![](/images/print_composer_scalebar2.png)
+![](../../../images/print_composer_scalebar2.png)
 
 -   Choisissez tout d'abord à quelle carte la barre d'échelle sera associée.
 
@@ -485,7 +485,7 @@ La zone *Propriétés principales* de l'onglet *Propriétés de l'objet* de la b
 
 Les zones *Unités* et *Segments* de l'onglet *Propriétés de l'objet* de la barre d'échelle proposent les fonctionnalités suivantes:
 
-![](/images/print_composer_scalebar3.png)
+![](../../../images/print_composer_scalebar3.png)
 
 Avec ces deux séries de paramètres, vous pouvez choisir la manière dont la barre d'échelle sera représentée.
 
@@ -501,7 +501,7 @@ Avec ces deux séries de paramètres, vous pouvez choisir la manière dont la ba
 
 La boîte de dialogue *Affichage* de l'onglet *Propriétés de l'objet* de l'échelle graphique propose les fonctionnalités suivantes:
 
-![](/images/print_composer_scalebar4.png)
+![](../../../images/print_composer_scalebar4.png)
 
 Vous pouvez définir comment l'échelle graphique sera affichée dans son cadre.
 
@@ -521,7 +521,7 @@ Vous pouvez définir comment l'échelle graphique sera affichée dans son cadre.
 
 La boîte de dialogue *Polices et couleurs* de l'onglet *Propriétés de l'objet* de l'échelle graphique propose les fonctionnalités suivantes:
 
-![](/images/print_composer_scalebar5.png)
+![](../../../images/print_composer_scalebar5.png)
 
 Vous pouvez définir les polices et couleurs utilisées pour l'échelle graphique.
 
@@ -539,11 +539,11 @@ Les couleurs de remplissage sont uniquement utilisées pour les boîtes de style
 
 ## Les éléments Formes simples <a name="#the-basic-shape-items"></a>
 
-Pour ajouter une forme simple (ellipse, rectangle, triangle), cliquez sur l'icône <img src="/images/mActionAddBasicShape.png" /> *Ajouter une forme simple* ou sur l'icône <img src="/images/mActionAddArrow.png" /> *Ajouter une flèche*, placez l'élément en maintenant enfoncé le clic gauche de la souris. Personnalisez l'apparence dans l'onglet *Propriétés de l'objet*.
+Pour ajouter une forme simple (ellipse, rectangle, triangle), cliquez sur l'icône <img src="../../../images/mActionAddBasicShape.png" /> *Ajouter une forme simple* ou sur l'icône <img src="../../../images/mActionAddArrow.png" /> *Ajouter une flèche*, placez l'élément en maintenant enfoncé le clic gauche de la souris. Personnalisez l'apparence dans l'onglet *Propriétés de l'objet*.
 
 Lorsque vous maintenez également enfoncé la touche `Shift` lors du placement de la forme simple, vous pouvez créer un carré, un cercle ou un triangle parfait.
 
-![](/images/print_composer_shape.png)
+![](../../../images/print_composer_shape.png)
 
 L'onglet *Forme* des propriétés de l'objet vous permet de sélectionner si vous voulez dessiner une ellipse, un rectangle ou un triangle à l'intérieur du cadre donné.
 
@@ -555,13 +555,13 @@ Pour la forme rectangulaire, vous pouvez configurer la valeur du rayon de coin p
 
 ## L'élément Flèche <a name="#the-arrow-item"></a>
 
-Pour ajouter une flèche, cliquez sur l'icône <img src="/images/mActionAddArrow.png" /> *Ajouter une flèche*, placez l'élément en maintenant enfoncé le bouton gauche de la souris et tirez une ligne pour dessiner la flèche dans le canevas du Composeur d'Impression et la positionner, puis personnalisez l'apparence de la flèche dans l'onglet *Propriétés de l'objet*.
+Pour ajouter une flèche, cliquez sur l'icône <img src="../../../images/mActionAddArrow.png" /> *Ajouter une flèche*, placez l'élément en maintenant enfoncé le bouton gauche de la souris et tirez une ligne pour dessiner la flèche dans le canevas du Composeur d'Impression et la positionner, puis personnalisez l'apparence de la flèche dans l'onglet *Propriétés de l'objet*.
 
 Lorsque vous maintenez également enfoncée la touche *Shift* tout en plaçant la flèche, celle-ci est placée dans un angle d'exactement 45°.
 
 L'élément flèche peut être utilisé pour ajouter une ligne ou une simple flèche qui peut être ajoutée, par exemple, pour montrer la relation entre les autres éléments du Composeur d'Impression. Pour créer une flèche nord, l'élément image devrait être considéré d'abord. KADAS a un jeu de flèches Nord en format SVG. De plus, vous pouvez connecter un élément d'image avec une carte donc elle peut pivoter automatiquement avec la carte.
 
-![](/images/print_composer_arrow.png)
+![](../../../images/print_composer_arrow.png)
 
 ### Propriétés de l'objet <a name="#item-properties"></a>
 
@@ -600,17 +600,17 @@ Les images SVG pivotent automatiquement avec la ligne. La couleur de l'image SVG
 
 ## L'élément Table Attributaire <a name="#the-attribute-table-item"></a>
 
-Il est possible d'ajouter des tables attributaires de couches vecteur au Composeur: cliquez sur le bouton <img src="/images/mActionOpenTable.png" /> *Ajouter une table d'attributs*, placez l'élément sur le Composeur avec un clic-gauche puis personnalisez son apparence via l'onglet des *Propriétés de l'objet*.
+Il est possible d'ajouter des tables attributaires de couches vecteur au Composeur: cliquez sur le bouton <img src="../../../images/mActionOpenTable.png" /> *Ajouter une table d'attributs*, placez l'élément sur le Composeur avec un clic-gauche puis personnalisez son apparence via l'onglet des *Propriétés de l'objet*.
 
 Les *Propriétés principales* d'une table attributaire proposent les fonctionnalités suivantes:
 
-![](/images/print_composer_attribute1.png)
+![](../../../images/print_composer_attribute1.png)
 
 ### Propriétés principales <a name="#id5"></a>
 
 La zone *Propriétés principales* de l'onglet *Propriétés de l'objet* de la table attributaire propose les fonctionnalités suivantes:
 
-![](/images/print_composer_attribute2.png)
+![](../../../images/print_composer_attribute2.png)
 
 -   Pour *Source*, vous pouvez normalement sélectionner seulement *Entités de la couche*.
 
@@ -618,11 +618,11 @@ La zone *Propriétés principales* de l'onglet *Propriétés de l'objet* de la t
 
 -   Le bouton **\[Actualiser la table de données\]** peut être utilisé pour actualiser la table lorsque le contenu actuel de la table a changé.
 
--   Dans le cas où l'option <img src="/images/checkbox.png" />*Générer un atlas* de l'onglet *Génération d'atlas* est activée, il y a deux nouvelles *Source* possibles: *Entité courante de l'atlas* ou *Relation enfant*. Choisir *Entité courante de l'atlas* implique que vous ne verrez aucune option pour choisir la couche, et l'objet table affichera seulement une ligne avec les attributs de l'entité courante de la couche de couverture. Choisir *Relation enfant* affichera une nouvelle option pour spécifier le nom de la relation. L'option *Relation enfant* ne peut être utilisée que si vous avez défini une relation utilisant la couche de couverture comme parent, et affichera les enregistrements enfants de l'objet courant de la couche de couverture.
+-   Dans le cas où l'option <img src="../../../images/checkbox.png" />*Générer un atlas* de l'onglet *Génération d'atlas* est activée, il y a deux nouvelles *Source* possibles: *Entité courante de l'atlas* ou *Relation enfant*. Choisir *Entité courante de l'atlas* implique que vous ne verrez aucune option pour choisir la couche, et l'objet table affichera seulement une ligne avec les attributs de l'entité courante de la couche de couverture. Choisir *Relation enfant* affichera une nouvelle option pour spécifier le nom de la relation. L'option *Relation enfant* ne peut être utilisée que si vous avez défini une relation utilisant la couche de couverture comme parent, et affichera les enregistrements enfants de l'objet courant de la couche de couverture.
 
-![](/images/print_composer_attribute2b.png)
+![](../../../images/print_composer_attribute2b.png)
 
-![](/images/print_composer_attribute2c.png)
+![](../../../images/print_composer_attribute2c.png)
 
 -   Le bouton **\[Attributs...\]** ouvre le menu *Sélection d'attributs*, qui peut être utilisé pour changer le contenu visible de la table. Après avoir fait les changements, utilisez le bouton **\[OK\]** pour appliquer les changements à la table.
 
@@ -630,7 +630,7 @@ La zone *Propriétés principales* de l'onglet *Propriétés de l'objet* de la t
 
     -   Supprimer un attribut: sélectionnez simplement une ligne d'attribut en cliquant n'importe où sur une ligne et cliquez sur le bouton moins pour supprimer l'attribut sélectionné.
 
-    -   Pour ajouter de nouveaux attributs, utilisez le bouton plus. A la fin de la liste des colonnes, une nouvelle ligne vide apparaît et vous pouvez sélectionner une cellule vide de la colonne *Attribut*. Vous pouvez sélectionner un champ attributaire à partir de la liste ou vous pouvez construire un nouvel attribut en utilisant une expression (<img src="/images/mIconExpression.png" /> button). Bien sûr vous pouvez modifier tous les attributs existants par le biais d'une expression régulière.
+    -   Pour ajouter de nouveaux attributs, utilisez le bouton plus. A la fin de la liste des colonnes, une nouvelle ligne vide apparaît et vous pouvez sélectionner une cellule vide de la colonne *Attribut*. Vous pouvez sélectionner un champ attributaire à partir de la liste ou vous pouvez construire un nouvel attribut en utilisant une expression (<img src="../../../images/mIconExpression.png" /> button). Bien sûr vous pouvez modifier tous les attributs existants par le biais d'une expression régulière.
 
     -   Utiliser les flèches monter et descendre pour changer l'ordre des attributs dans la table.
 
@@ -650,25 +650,25 @@ La zone *Propriétés principales* de l'onglet *Propriétés de l'objet* de la t
 
     -   Utiliser le bouton moins pour supprimer un attribut de la liste de l'ordre de tri.
 
-![](/images/print_composer_attribute3.png)
+![](../../../images/print_composer_attribute3.png)
 
 ### Filtrage des entités <a name="#feature-filtering"></a>
 
 La zone *Filtrage des entités* de l'onglet *Propriétés de l'objet* de la table attributaire propose les fonctionnalités suivantes:
 
-![](/images/print_composer_attribute4.png)
+![](../../../images/print_composer_attribute4.png)
 
 Vous pouvez:
 
 -   Définir un nombre de *Lignes maximales* à afficher.
 
--   Activer <img src="/images/checkbox.png" /> *Supprimer les lignes en double de la table* pour montrer seulement les enregistrements uniques.
+-   Activer <img src="../../../images/checkbox.png" /> *Supprimer les lignes en double de la table* pour montrer seulement les enregistrements uniques.
 
--   Activer <img src="/images/checkbox.png" /> *Ne montrer que les entités visibles sur la carte* et sélectionner le *Composeur de carte* correspondant pour afficher seulement les attributs des entités visibles sur la carte sélectionnée.
+-   Activer <img src="../../../images/checkbox.png" /> *Ne montrer que les entités visibles sur la carte* et sélectionner le *Composeur de carte* correspondant pour afficher seulement les attributs des entités visibles sur la carte sélectionnée.
 
--   Activer <img src="/images/checkbox.png" /> *Ne montrer que les entités intersectant l'entité de l'atlas* est seulement disponible lorsque <img src="/images/checkbox.png" /> *Générer un atlas* est activé. Lorsqu'il est activé, il affichera une table avec seulement les entités indiquées sur la carte de cette page en particulier de l'atlas.
+-   Activer <img src="../../../images/checkbox.png" /> *Ne montrer que les entités intersectant l'entité de l'atlas* est seulement disponible lorsque <img src="../../../images/checkbox.png" /> *Générer un atlas* est activé. Lorsqu'il est activé, il affichera une table avec seulement les entités indiquées sur la carte de cette page en particulier de l'atlas.
 
--   Activer <img src="/images/checkbox.png" /> *Filtrer avec* et fournir un filtre en tapant dans la ligne d'entrée ou insérer une expression régulière en utilisant le bouton d'expression <img src="/images/mIconExpression.png" />. Voici quelques exemples de déclarations de filtrage que vous pouvez utiliser lorsque vous avez chargé la couche des aéroports à partir du jeu de données exemples:
+-   Activer <img src="../../../images/checkbox.png" /> *Filtrer avec* et fournir un filtre en tapant dans la ligne d'entrée ou insérer une expression régulière en utilisant le bouton d'expression <img src="../../../images/mIconExpression.png" />. Voici quelques exemples de déclarations de filtrage que vous pouvez utiliser lorsque vous avez chargé la couche des aéroports à partir du jeu de données exemples:
 
     -   `ELEV > 500`
     -   `NAME = 'ANIAK'`
@@ -681,9 +681,9 @@ Vous pouvez:
 
 La zone *Apparence* de l'onglet *Propriétés de l'objet* de la table attributaire propose les fonctionnalités suivantes:
 
-![](/images/print_composer_attribute5.png)
+![](../../../images/print_composer_attribute5.png)
 
--   Cliquer sur <img src="/images/checkbox.png" /> *Afficher des lignes vides* pour rendre visible les entrées vides de la table attributaire.
+-   Cliquer sur <img src="../../../images/checkbox.png" /> *Afficher des lignes vides* pour rendre visible les entrées vides de la table attributaire.
 
 -   Avec les *Marges de cellule*, vous pouvez définir les marges autour du texte dans chaque cellule de la table.
 
@@ -693,7 +693,7 @@ La zone *Apparence* de l'onglet *Propriétés de l'objet* de la table attributai
 
     -   **N'afficher que les en-têtes** affichera seulement l'en-tête, excepté si vous avez choisi *Pas d'en-tête* pour *Afficher l'en-tête*.
 
-    -   **Masquer la table entière** affichera seulement le fond de la table. Vous pouvez activer <img src="/images/checkbox.png" /> *Ne pas afficher le fond si le cadre est vide* dans *Cadres* pour cacher complètement la table.
+    -   **Masquer la table entière** affichera seulement le fond de la table. Vous pouvez activer <img src="../../../images/checkbox.png" /> *Ne pas afficher le fond si le cadre est vide* dans *Cadres* pour cacher complètement la table.
 
     -   **Afficher des lignes vides** remplira la table attributaire avec des cellules vides, cette option peut aussi être utilisée pour proposer des cellules vides supplémentaires lorsque vous avez un résultat à montrer !
 
@@ -707,9 +707,9 @@ La zone *Apparence* de l'onglet *Propriétés de l'objet* de la table attributai
 
 La boîte de dialogue *Afficher les bordures* de l'onglet *Propriétés de l'objet* de la table attributaire propose les fonctionnalités suivantes:
 
-![](/images/print_composer_attribute6.png)
+![](../../../images/print_composer_attribute6.png)
 
--   Activer <img src="/images/checkbox.png" /> *Afficher les bordures* lorsque vous voulez afficher les bordures des cellules de la table.
+-   Activer <img src="../../../images/checkbox.png" /> *Afficher les bordures* lorsque vous voulez afficher les bordures des cellules de la table.
 
 -   Avec *Épaisseur du trait* vous pouvez définir l'épaisseur des lignes utilisées pour les bordures.
 
@@ -719,7 +719,7 @@ La boîte de dialogue *Afficher les bordures* de l'onglet *Propriétés de l'obj
 
 La boîte de dialogue *Styles de polices et de textes* de l'onglet *Propriétés de l'objet* de la table attributaire propose les fonctionnalités suivantes:
 
-![](/images/print_composer_attribute7.png)
+![](../../../images/print_composer_attribute7.png)
 
 -   Vous pouvez définir la *Police* et la *Couleur* pour l’*En-tête de table* et le *Contenu de la table*.
 
@@ -729,7 +729,7 @@ La boîte de dialogue *Styles de polices et de textes* de l'onglet *Propriétés
 
 La boîte de dialogue *Cadres* de l'onglet *Propriétés de l'objet* de la table attributaire propose les fonctionnalités suivantes:
 
-![](/images/print_composer_attribute8.png)
+![](../../../images/print_composer_attribute8.png)
 
 -   Avec le *Mode de redimensionnement* vous pouvez sélectionner la façon de rendre le contenu de la table attributaire:
 
@@ -741,18 +741,18 @@ La boîte de dialogue *Cadres* de l'onglet *Propriétés de l'objet* de la table
 
 -   Utiliser le bouton **\[Ajouter un cadre\]** pour ajouter un autre cadre avec la même taille que le cadre sélectionné. Le résultat de la table qui ne rentre pas dans le premier cadre continuera dans le cadre suivant lorsque vous utilisez le mode Redimensionner Utiliser les cadres existants.
 
--   Activer <img src="/images/checkbox.png" /> *Ne pas exporter la page si le cadre est vide* empêche la page d'être exportée lorsque le cadre de la table n'a pas de contenu. Cela signifie que tous les autres éléments du composeur, cartes, échelles graphiques, légendes, etc. ne seront pas visibles dans le résultat.
+-   Activer <img src="../../../images/checkbox.png" /> *Ne pas exporter la page si le cadre est vide* empêche la page d'être exportée lorsque le cadre de la table n'a pas de contenu. Cela signifie que tous les autres éléments du composeur, cartes, échelles graphiques, légendes, etc. ne seront pas visibles dans le résultat.
 
--   Activer <img src="/images/checkbox.png" /> *Ne pas afficher le fond si le cadre est vide* empêche le fond d'être affiché lorsque le cadre de la table n'a pas de contenu.
+-   Activer <img src="../../../images/checkbox.png" /> *Ne pas afficher le fond si le cadre est vide* empêche le fond d'être affiché lorsque le cadre de la table n'a pas de contenu.
 
 
 ## L'élément cadre HTML <a name="#the-html-frame-item"></a>
 
 Il est possible d'ajouter un cadre qui affiche le contenu d'un site web ou même de créer et personnaliser votre propre page HTML et de l'afficher !
 
-Cliquez sur l'icône <img src="/images/mActionAddHtml.png" /> *Ajouter du HTML*, placez l'élément en glissant un rectangle dans le canevas du Composeur d'Impression en maintenant enfoncé le bouton gauche de la souris et positionnez puis personnalisez l'apparence dans l'onglet *Propriétés de l'élément*.
+Cliquez sur l'icône <img src="../../../images/mActionAddHtml.png" /> *Ajouter du HTML*, placez l'élément en glissant un rectangle dans le canevas du Composeur d'Impression en maintenant enfoncé le bouton gauche de la souris et positionnez puis personnalisez l'apparence dans l'onglet *Propriétés de l'élément*.
 
-![](/images/print_composer_html1.png)
+![](../../../images/print_composer_html1.png)
 
 ### Source du HTML <a name="#html-source"></a>
 
@@ -760,15 +760,15 @@ Comme une source du HTML, vous pouvez soit configurer une URL et activer le bout
 
 La boîte de dialogue *Source du HTML* de l'onglet *Propriétés de l'objet* du cadre HTML propose les fonctionnalités suivantes:
 
-![](/images/print_composer_html2.png)
+![](../../../images/print_composer_html2.png)
 
--   Dans *URL*, vous pouvez entrer l'URL d'une page internet que vous avez copiée depuis votre navigateur internet ou sélectionner un fichier HTML en utilisant le bouton Parcourir <img src="/images/browsebutton.png" />. Il y a aussi la possibilité d'utiliser le bouton de valeurs définies par les données, pour proposer une URL à partir du contenu d'un champ d'attribut d'une table ou en utilisant une expression régulière.
+-   Dans *URL*, vous pouvez entrer l'URL d'une page internet que vous avez copiée depuis votre navigateur internet ou sélectionner un fichier HTML en utilisant le bouton Parcourir <img src="../../../images/browsebutton.png" />. Il y a aussi la possibilité d'utiliser le bouton de valeurs définies par les données, pour proposer une URL à partir du contenu d'un champ d'attribut d'une table ou en utilisant une expression régulière.
 
 -   Dans *Source*, vous pouvez entrer un texte dans la zone de texte avec quelques balises HTML ou proposer une page HTML entière.
 
 -   Le bouton **\[Insérer une expression\]** peut être utilisé pour insérer une expression comme `[%Year($now)%]` dans la zone de texte Source pour afficher l'année courante. Ce bouton est seulement activé lorsque le bouton radio *Source* est sélectionné. Après avoir inséré l'expression, cliquez quelque part dans la zone de texte avant de rafraîchir le cadre HTML, autrement vous perdrez l'expression.
 
--   Activez <img src="/images/checkbox.png" /> *Évaluer l'expression QGIS dans la source du HTML* pour voir le résultat de l'expression que vous avez incluse, autrement vous verrez l'expression à la place.
+-   Activez <img src="../../../images/checkbox.png" /> *Évaluer l'expression QGIS dans la source du HTML* pour voir le résultat de l'expression que vous avez incluse, autrement vous verrez l'expression à la place.
 
 -   Utilisez le bouton **\[Rafraîchir la page\]** pour rafraîchir le cadre(s) HTML pour voir le résultat des changements.
 
@@ -776,7 +776,7 @@ La boîte de dialogue *Source du HTML* de l'onglet *Propriétés de l'objet* du 
 
 La boîte de dialogue *Cadres* de l'onglet *Propriétés de l'objet* du cadre HTML propose les fonctionnalités suivantes:
 
-![](/images/print_composer_html3.png)
+![](../../../images/print_composer_html3.png)
 
 -   Avec *Mode de redimensionnement*, vous pouvez sélectionner la façon de rendre le contenu HTML:
 
@@ -790,21 +790,21 @@ La boîte de dialogue *Cadres* de l'onglet *Propriétés de l'objet* du cadre HT
 
 -   Utilisez le bouton **\[Ajouter un cadre\]** pour ajouter un autre cadre avec la même taille que le cadre sélectionné. Si la page HTML ne va pas dans le premier cadre, elle ira dans le cadre suivant lorsque vous utilisez *Mode de redimensionnement* ou *Utiliser les cadres existants*.
 
--   Activez <img src="/images/checkbox.png" /> *Ne pas exporter la page si le cadre est vide* empêche que la carte mise en page soit exportée lorsque le cadre n'a pas de contenu HTML. Cela signifie que tous les autres éléments du composeur, cartes, barres d'échelle, légendes etc. ne seront pas visibles dans le résultat.
+-   Activez <img src="../../../images/checkbox.png" /> *Ne pas exporter la page si le cadre est vide* empêche que la carte mise en page soit exportée lorsque le cadre n'a pas de contenu HTML. Cela signifie que tous les autres éléments du composeur, cartes, barres d'échelle, légendes etc. ne seront pas visibles dans le résultat.
 
--   Activez <img src="/images/checkbox.png" /> *Ne pas afficher le fond si le cadre est vide* empêche que le cadre HTML soit affiché si le cadre est vide.
+-   Activez <img src="../../../images/checkbox.png" /> *Ne pas afficher le fond si le cadre est vide* empêche que le cadre HTML soit affiché si le cadre est vide.
 
 ### Utiliser des sauts de page intelligents <a name="#use-smart-page-breaks-and-user-style-sheet"></a>
 
 La boîte de dialogue *Utiliser des sauts de page intelligents* de l'onglet *Propriétés de l'objet* du cadre HTML propose les fonctionnalités suivantes:
 
-![](/images/print_composer_html4.png)
+![](../../../images/print_composer_html4.png)
 
--   Activez <img src="/images/checkbox.png" /> *Utiliser des sauts de pages intelligents* pour empêcher le contenu du cadre html de se casser à mi-chemin d'une ligne de texte afin qu'il continue bien dans le cadre suivant.
+-   Activez <img src="../../../images/checkbox.png" /> *Utiliser des sauts de pages intelligents* pour empêcher le contenu du cadre html de se casser à mi-chemin d'une ligne de texte afin qu'il continue bien dans le cadre suivant.
 
 -   Paramètre la *Distance maximale* autorisée lors du calcul de l'emplacement du saut de page dans le html. Cette distance est la quantité maximale d'espace vide autorisé dans le bas du cadre après calcul de l'emplacement optimal du saut de page. Indiquer une grande valeur permettra de mieux définir l'emplacement du saut de page mais une plus grande quantité d'espace vide sera présent dans le bas des cadres. Cette valeur est utilisée uniquement lorsque *Utiliser des sauts de page intelligents* est activé.
 
--   Activez <img src="/images/checkbox.png" /> *Feuille de style utilisateur* pour appliquer des styles HTML qui sont souvent fournis dans des feuilles de style en cascade. Un exemple de code de style est fourni ci-dessous pour définir la couleur de la balise d'en-tête `<h1>` au vert et définir la police et la taille de police du texte inclu dans les balises de paragraphe `<p>`.
+-   Activez <img src="../../../images/checkbox.png" /> *Feuille de style utilisateur* pour appliquer des styles HTML qui sont souvent fournis dans des feuilles de style en cascade. Un exemple de code de style est fourni ci-dessous pour définir la couleur de la balise d'en-tête `<h1>` au vert et définir la police et la taille de police du texte inclu dans les balises de paragraphe `<p>`.
 
         h1 {color: #00ff00;
         }
@@ -819,13 +819,13 @@ La boîte de dialogue *Utiliser des sauts de page intelligents* de l'onglet *Pro
 
 ## Taille et position <a name="#size-and-position"></a>
 
-Chaque élément du Composeur peut être déplacé / redimensionné pour créer une mise en page parfaite. Pour chacune de ces opérations, la première étape est d'activer l'outil <img src="/images/mActionSelect.png" /> *Sélectionner/Déplacer un objet* et de cliquer sur l'élément. Vous pouvez ensuite le déplacer avec la souris en maintenant le bouton gauche. Si vous souhaitez limiter les mouvements sur les axes horizontaux ou verticaux, pressez la touche `Shift` du clavier pendant le déplacement de la souris. Si vous avez besoin de plus de précision, vous pouvez déplacer l'élément sélectionné en utilisant les `flèches` du clavier et si les mouvements sont trop lents, utilisez en même temps la touche `Shift`.
+Chaque élément du Composeur peut être déplacé / redimensionné pour créer une mise en page parfaite. Pour chacune de ces opérations, la première étape est d'activer l'outil <img src="../../../images/mActionSelect.png" /> *Sélectionner/Déplacer un objet* et de cliquer sur l'élément. Vous pouvez ensuite le déplacer avec la souris en maintenant le bouton gauche. Si vous souhaitez limiter les mouvements sur les axes horizontaux ou verticaux, pressez la touche `Shift` du clavier pendant le déplacement de la souris. Si vous avez besoin de plus de précision, vous pouvez déplacer l'élément sélectionné en utilisant les `flèches` du clavier et si les mouvements sont trop lents, utilisez en même temps la touche `Shift`.
 
 Un élément sélectionné apparait avec des carrés à chaque coin du rectangle englobant. Déplacer un de ces carrés avec la souris redimensionnera l'élément dans la direction correspondante. Pendant le redimensionnement, presser la touche `Shift` permettra de maintenir les proportions. Presser la touche `Alt` redimensionnera depuis le centre de l'élément.
 
 La position correcte d'un élément peut être obtenue en utilisant les guides ou l'accrochage à la grille. Les guides sont créés en cliquant et en dessinant dans les règles. Le guide est déplacé en cliquant dans la règle, en alignant le guide et en glissant vers un nouvel endroit. Pour supprimer un guide, déplacez-le en dehors du canevas. Si vous devez désactiver la comportement d'accrochage à la volée, maintenez appuyé la touche `Ctrl` lorsque vous déplacez la souris.
 
-Vous pouvez sélectionner plusieurs éléments en même temps avec le bouton <img src="/images/mActionSelect.png" /> *Sélectionner/Déplacer un objet*. Pressez simplement la touche `Shift` et cliquez sur tous les éléments souhaités. Vous pouvez ensuite les redimensionner ou les déplacer tous en même temps.
+Vous pouvez sélectionner plusieurs éléments en même temps avec le bouton <img src="../../../images/mActionSelect.png" /> *Sélectionner/Déplacer un objet*. Pressez simplement la touche `Shift` et cliquez sur tous les éléments souhaités. Vous pouvez ensuite les redimensionner ou les déplacer tous en même temps.
 
 Une fois que vous avez trouvé la position correcte pour un élément, vous pouvez le verrouiller en utilisant les boutons sur la barre d'outils ou en cochant la boîte près de l'élément dans l'onglet *Éléments*. Les éléments verrouillés ne sont **pas** sélectionnables sur le canevas.
 
@@ -837,11 +837,11 @@ Dans le menu *Éditer*, vous trouverez les actions permettant de sélectionner o
 
 ## Alignement <a name="#alignment"></a>
 
-Les fonctionnalités pour monter ou descendre des éléments sont présentes dans le menu déroulant <img src="/images/mActionRaiseItems.png" /> *Relever les objets sélectionnés*. Prenez un élément dans le Composeur de carte et sélectionnez la fonction correspondante pour le monter ou le descendre par rapport aux autres éléments. L'ordre est affiché dans l'onglet *Éléments*. Vous pouvez également monter ou descendre des éléments dans l'onglet *Éléments* par glissé-déposé dans cette liste.
+Les fonctionnalités pour monter ou descendre des éléments sont présentes dans le menu déroulant <img src="../../../images/mActionRaiseItems.png" /> *Relever les objets sélectionnés*. Prenez un élément dans le Composeur de carte et sélectionnez la fonction correspondante pour le monter ou le descendre par rapport aux autres éléments. L'ordre est affiché dans l'onglet *Éléments*. Vous pouvez également monter ou descendre des éléments dans l'onglet *Éléments* par glissé-déposé dans cette liste.
 
-![](/images/alignment_lines.png)
+![](../../../images/alignment_lines.png)
 
-Plusieurs options d'alignement sont disponibles via le menu déroulant <img src="/images/mActionAlignLeft.png" /> *Aligner les objets sélectionnés*. Pour en utiliser une, sélectionner d'abord les éléments puis cliquez sur l'outil d'alignement désiré. Tous les éléments sélectionnés seront alors alignés au sein de leur rectangle englobant commun. Lors du déplacement d'éléments dans le Composeur, des guides apparaissent lorsque les bords, les centres ou les coins sont alignés.
+Plusieurs options d'alignement sont disponibles via le menu déroulant <img src="../../../images/mActionAlignLeft.png" /> *Aligner les objets sélectionnés*. Pour en utiliser une, sélectionner d'abord les éléments puis cliquez sur l'outil d'alignement désiré. Tous les éléments sélectionnés seront alors alignés au sein de leur rectangle englobant commun. Lors du déplacement d'éléments dans le Composeur, des guides apparaissent lorsque les bords, les centres ou les coins sont alignés.
 
 
 ## Copier / Coller des éléments <a name="#copy-cut-and-paste-items"></a>
@@ -852,42 +852,42 @@ Les objets HTML ne peuvent pas être copiés de cette manière. En guise de cont
 
 Pendant la mise en page de la carte, il est possible d'annuler et refaire des modifications. Cela peut être réaliser à l'aide des outils Annuler la dernière modification et Restaurer la dernière modification:
 
--   <img src="/images/mActionUndo.png" /> *Annuler la dernière modification*
+-   <img src="../../../images/mActionUndo.png" /> *Annuler la dernière modification*
 
--   <img src="/images/mActionRedo.png" /> *Restaurer la dernière modification*
+-   <img src="../../../images/mActionRedo.png" /> *Restaurer la dernière modification*
 
 Il est également possible de le faire via l’*Historique des commandes*.
 
-![](/images/command_hist.png)
+![](../../../images/command_hist.png)
 
 
 Le Composeur d'Impression fournit des outils vous permettant de générer automatiquement un ensemble de cartes. L'idée est d'utiliser la géométrie et les attributs d'une couche vectorielle. Pour chaque entité de la couche, une nouvelle carte est générée et son emprise correspond à la géométrie de l'entité. Les attributs de la couche peuvent être utilisés dans des zones de texte.
 
 Un page est générée par entité de la couche. Pour générer un atlas et le paramétrer, allez sur l'onglet Génération d'atlas. Cet onglet propose les éléments suivants:
 
-![](/images/print_composer_atlas.png)
+![](../../../images/print_composer_atlas.png)
 
--   <img src="/images/checkbox.png" /> *Générer un atlas*, qui permet d'activer ou de désactiver la génération d'atlas.
+-   <img src="../../../images/checkbox.png" /> *Générer un atlas*, qui permet d'activer ou de désactiver la génération d'atlas.
 
--   La liste déroulante *Couche de couverture* <img src="/images/selectstring.png" /> permet de choisir la couche (vecteur) contenant les géométries à partir desquelles générer chaque planche.
+-   La liste déroulante *Couche de couverture* <img src="../../../images/selectstring.png" /> permet de choisir la couche (vecteur) contenant les géométries à partir desquelles générer chaque planche.
 
--   La case optionnelle <img src="/images/checkbox.png" /> *Cacher la couche de couverture* permet de cacher la couche de couverture sur les planches en sortie.
+-   La case optionnelle <img src="../../../images/checkbox.png" /> *Cacher la couche de couverture* permet de cacher la couche de couverture sur les planches en sortie.
 
 -   La possibilité de *Filtrer avec* une expression les entités de la couche de couverture. Si une expression est rentrée, seules les entités satisfaisant la condition seront utilisées. Le bouton à droite permet d'ouvrir un constructeur de requête.
 
 -   Le *Nom du fichier en sortie* est utilisé pour générer un nom de fichier pour chaque planche. Il est basé sur une expression. Il n'est utile que lorsque plusieurs fichiers sont produits.
 
--   L’<img src="/images/checkbox.png" /> *Export d'un seul fichier (si possible)* vous permet de forcer la création d'un unique fichier quand le format de sortie choisi le permet (par exemple le PDF). Si cette case est cochée, le *Nom du fichier en sortie* n'est pas pris en compte.
+-   L’<img src="../../../images/checkbox.png" /> *Export d'un seul fichier (si possible)* vous permet de forcer la création d'un unique fichier quand le format de sortie choisi le permet (par exemple le PDF). Si cette case est cochée, le *Nom du fichier en sortie* n'est pas pris en compte.
 
--   La case optionnelle <img src="/images/checkbox.png" /> *Trier par* vous permet de trier les entités de la couche de couverture. La liste déroulante associée permet de choisir un champ à utiliser pour le tri. L'ordre de tri (ascendant ou descendant) est spécifié par le bouton à droite représenté par une flèche ascendante ou descendante.
+-   La case optionnelle <img src="../../../images/checkbox.png" /> *Trier par* vous permet de trier les entités de la couche de couverture. La liste déroulante associée permet de choisir un champ à utiliser pour le tri. L'ordre de tri (ascendant ou descendant) est spécifié par le bouton à droite représenté par une flèche ascendante ou descendante.
 
-Vous pouvez utiliser plusieurs objets carte dans la génération d'atlas, chacun sera rendu en fonction de la couche de couverture. Pour activer la génération d'atlas pour un objet carte, vous devez cocher la case <img src="/images/checkbox.png" /> *Paramètres contrôlés par l'Atlas* dans les propriétés de l'objet carte. Une fois cochée, vous pouvez définir:
+Vous pouvez utiliser plusieurs objets carte dans la génération d'atlas, chacun sera rendu en fonction de la couche de couverture. Pour activer la génération d'atlas pour un objet carte, vous devez cocher la case <img src="../../../images/checkbox.png" /> *Paramètres contrôlés par l'Atlas* dans les propriétés de l'objet carte. Une fois cochée, vous pouvez définir:
 
--   Un bouton radio ![radiobuttonon](/images/radiobuttonon.png) *Marge autour des entités* vous permet de sélectionner la quantité d'espace ajouté autour de chaque géométrie dans la carte. Sa valeur n'a de sens que si vous utilisez le mode mise à l'échelle automatique.
+-   Un bouton radio ![radiobuttonon](../../../images/radiobuttonon.png) *Marge autour des entités* vous permet de sélectionner la quantité d'espace ajouté autour de chaque géométrie dans la carte. Sa valeur n'a de sens que si vous utilisez le mode mise à l'échelle automatique.
 
--   ![radiobuttonoff](/images/radiobuttonoff.png) *Echelle prédéfinie* (meilleur ajustement). Utilise la meilleure option d'ajustement de la liste des échelles prédéfinies dans votre projet (voir *Projet &rarr; Propriétés du projet &rarr; Général &rarr; Echelles du projet* pour configurer ces échelles prédéfinies).
+-   ![radiobuttonoff](../../../images/radiobuttonoff.png) *Echelle prédéfinie* (meilleur ajustement). Utilise la meilleure option d'ajustement de la liste des échelles prédéfinies dans votre projet (voir *Projet &rarr; Propriétés du projet &rarr; Général &rarr; Echelles du projet* pour configurer ces échelles prédéfinies).
 
--   Une ![radiobuttonoff](/images/radiobuttonoff.png) *Échelle fixe* qui permet de basculer du mode *Marge* au mode *Échelle fixe*. En échelle fixe, la carte est simplement translatée et centrée sur chaque entité. En mode *Marge*, l'emprise de la carte est calculée de telle sorte que l'entité de la couche de couverture apparaisse entièrement.
+-   Une ![radiobuttonoff](../../../images/radiobuttonoff.png) *Échelle fixe* qui permet de basculer du mode *Marge* au mode *Échelle fixe*. En échelle fixe, la carte est simplement translatée et centrée sur chaque entité. En mode *Marge*, l'emprise de la carte est calculée de telle sorte que l'entité de la couche de couverture apparaisse entièrement.
 
 ## Zones de texte <a name="#labels"></a>
 
@@ -902,25 +902,25 @@ La superficie de PARIS,75001 est de 1.94 km2
 
 ## Boutons de Valeurs définies par des données <a name="#data-defined-override-buttons"></a>
 
-Il y a plusieurs endroits où vous pouvez utiliser un bouton <img src="/images/mIconDataDefine.png" /> *Valeurs définies par des données* pour définir le paramètre sélectionné. Ces options sont particulièrement utiles avec la Génération d'Atlas.
+Il y a plusieurs endroits où vous pouvez utiliser un bouton <img src="../../../images/mIconDataDefine.png" /> *Valeurs définies par des données* pour définir le paramètre sélectionné. Ces options sont particulièrement utiles avec la Génération d'Atlas.
 
 Pour les exemples suivants, la couche Regions du jeu de données d'exemple de KADAS est utilisée et sélectionnée pour la Génération d'Atlas. Nous supposons également que le format de la page A4 (210X297) est sélectionné dans l'onglet *Composition* pour le champ *Réglages*.
 
 Avec un bouton Valeurs définies par des données, vous pouvez définir dynamiquement l'orientation de la page. Lorsque la hauteur (nord-sud) de l'emprise d'une région est plus grande que sa largeur (est-ouest), vous devriez plutôt utiliser l'orientation portrait plutôt que paysage pour optimiser l'utilisation de la page.
 
-Dans la *Composition*, vous pouvez définir le champ *Orientation* et sélectionner Paysage ou Portrait. Nous voulons définir l'orientation dynamiquement en utilisant une expression dépendant de la géométrie de la région. Cliquez sur le bouton <img src="/images/mIconDataDefine.png" /> du champ *Orientation*, sélectionnez *Éditer* afin d'ouvrir la boîte de dialogue *Constructeur de chaîne d'expression*. Entrez l'expression suivante:
+Dans la *Composition*, vous pouvez définir le champ *Orientation* et sélectionner Paysage ou Portrait. Nous voulons définir l'orientation dynamiquement en utilisant une expression dépendant de la géométrie de la région. Cliquez sur le bouton <img src="../../../images/mIconDataDefine.png" /> du champ *Orientation*, sélectionnez *Éditer* afin d'ouvrir la boîte de dialogue *Constructeur de chaîne d'expression*. Entrez l'expression suivante:
 
     CASE WHEN bounds_width($atlasgeometry) > bounds_height($atlasgeometry) THEN 'Landscape' ELSE 'Portrait' END
 
-Maintenant, le papier s'oriente automatiquement pour chaque région où vous devez également repositionner l'élément du composeur. Pour l'élément carte, vous pouvez utiliser le bouton <img src="/images/mIconDataDefine.png" /> du champ *Largeur* pour définir dynamiquement cette dernière en utilisant l'expression suivante:
+Maintenant, le papier s'oriente automatiquement pour chaque région où vous devez également repositionner l'élément du composeur. Pour l'élément carte, vous pouvez utiliser le bouton <img src="../../../images/mIconDataDefine.png" /> du champ *Largeur* pour définir dynamiquement cette dernière en utilisant l'expression suivante:
 
     (CASE WHEN bounds_width($atlasgeometry) > bounds_height($atlasgeometry) THEN 297 ELSE 210 END) - 20
 
-Utilisez le bouton <img src="/images/mIconDataDefine.png" /> du champ *Hauteur* pour proposer l'expression suivante:
+Utilisez le bouton <img src="../../../images/mIconDataDefine.png" /> du champ *Hauteur* pour proposer l'expression suivante:
 
     (CASE WHEN bounds_width($atlasgeometry) > bounds_height($atlasgeometry) THEN 210 ELSE 297 END) - 20
 
-Lorsque vous voulez donner un titre au-dessus de la carte au centre de la page, insérez un élément de zone de texte au-dessus de la carte. Utilisez d'abord les propriétés de l'objet de l'élément zone de texte pour définir un alignement horizontal à ![radiobuttonon](/images/radiobuttonon.png) *Au centre*. Ensuite activez l'option du milieu supérieur à partir du *Point de référence*. Vous pouvez proposer l'expression suivante pour le champ *X*:
+Lorsque vous voulez donner un titre au-dessus de la carte au centre de la page, insérez un élément de zone de texte au-dessus de la carte. Utilisez d'abord les propriétés de l'objet de l'élément zone de texte pour définir un alignement horizontal à ![radiobuttonon](../../../images/radiobuttonon.png) *Au centre*. Ensuite activez l'option du milieu supérieur à partir du *Point de référence*. Vous pouvez proposer l'expression suivante pour le champ *X*:
 
     (CASE WHEN bounds_width($atlasgeometry) > bounds_height($atlasgeometry) THEN 297 ELSE 210 END) / 2
 
@@ -936,7 +936,7 @@ Une fois les paramètres de l'atlas configurés et les objets carte sélectionn�
 
 ## Génération <a name="#generation"></a>
 
-La génération de l'atlas peut se faire de différentes façons. Par exemple via *Atlas ‣ Impression de l'Atlas*, vous pouvez directement l'imprimer. Vous pouvez également créer un PDF via *Atlas ‣ Exporter l'Atlas au format PDF* et l'utilisateur devra donner un répertoire pour sauvegarder tous les fichiers (sauf si la case <img src="/images/checkbox.png" /> *Export d'un seul fichier (si possible)* est cochée). Si vous souhaitez n'imprimer qu'une seule page de l'atlas, lancez l'aperçu, sélectionnez la page puis cliquez sur *Composeur &rarr; Imprimer* (ou créez un PDF).
+La génération de l'atlas peut se faire de différentes façons. Par exemple via *Atlas ‣ Impression de l'Atlas*, vous pouvez directement l'imprimer. Vous pouvez également créer un PDF via *Atlas ‣ Exporter l'Atlas au format PDF* et l'utilisateur devra donner un répertoire pour sauvegarder tous les fichiers (sauf si la case <img src="../../../images/checkbox.png" /> *Export d'un seul fichier (si possible)* est cochée). Si vous souhaitez n'imprimer qu'une seule page de l'atlas, lancez l'aperçu, sélectionnez la page puis cliquez sur *Composeur &rarr; Imprimer* (ou créez un PDF).
 
 Pour maximiser l'espace disponible pour interagir avec une composition, vous pouvez utiliser *Vue &rarr; Masquer les panneaux* ou appuyez sur `F10`.
 
@@ -945,21 +945,21 @@ Il est également possible de passer en mode plein écran pour avoir plus d'espa
 
 La figure suivante montre une mise en page incluant un exemple de chaque type d'élément décrit dans les paragraphes précédents.
 
-![](/images/print_composer_complete.png)
+![](../../../images/print_composer_complete.png)
 
 Avant d'imprimer une mise en page vous avez la possibilité de voir votre composition sans les boîtes de délimitation. Cela peut être activé en décochant *Vue &rarr; Afficher les zones d'emprise* ou en appuyant sur `Ctrl+Shift+B`.
 
 Le Composeur d'Impression vous permet de choisir plusieurs formats de sortie et il est possible de définir la résolution (qualité d'impression) et le format du papier:
 
--   Le bouton <img src="/images/mActionFilePrint.png" /> *Imprimer* vous permet d'imprimer la mise en page sur une imprimante ou dans un fichier PostScript en fonction des pilotes d'imprimante installés.
+-   Le bouton <img src="../../../images/mActionFilePrint.png" /> *Imprimer* vous permet d'imprimer la mise en page sur une imprimante ou dans un fichier PostScript en fonction des pilotes d'imprimante installés.
 
--   Le bouton <img src="/images/mActionSaveMapAsImage.png" /> *Exporter comme image* exporte le Composeur dans plusieurs formats d'image tels que PNG, BPM, TIF, JPG...
+-   Le bouton <img src="../../../images/mActionSaveMapAsImage.png" /> *Exporter comme image* exporte le Composeur dans plusieurs formats d'image tels que PNG, BPM, TIF, JPG...
 
--   <img src="/images/mActionSaveAsPDF.png" /> *Exporter au format PDF* enregistre le contenu du Composeur directement dans un fichier PDF.
+-   <img src="../../../images/mActionSaveAsPDF.png" /> *Exporter au format PDF* enregistre le contenu du Composeur directement dans un fichier PDF.
 
--   Le bouton <img src="/images/mActionSaveAsSVG.png" /> *Exporter au format SVG* sauve le contenu du Composeur en SVG (Scalable Vector Graphic).
+-   Le bouton <img src="../../../images/mActionSaveAsSVG.png" /> *Exporter au format SVG* sauve le contenu du Composeur en SVG (Scalable Vector Graphic).
 
-Si vous devez exporter votre mise en page en tant qu’**image géoréférencée** (pour la charger ensuite dans KADAS), vous devez activer cette fonctionnalité dans l'onglet Composition. Cochez <img src="/images/checkbox.png" /> *Générer fichier World file* et choisissez l'objet carte concerné. Avec cette option, *Exporter comme image* créera également un world file.
+Si vous devez exporter votre mise en page en tant qu’**image géoréférencée** (pour la charger ensuite dans KADAS), vous devez activer cette fonctionnalité dans l'onglet Composition. Cochez <img src="../../../images/checkbox.png" /> *Générer fichier World file* et choisissez l'objet carte concerné. Avec cette option, *Exporter comme image* créera également un world file.
 
 -   Actuellement le rendu SVG est très basique. Il ne s'agit pas d'un problème lié à KADAS mais à la bibliothèque Qt utilisée. Nous pouvons espérer que cela soit corrigé dans les versions futures.
 

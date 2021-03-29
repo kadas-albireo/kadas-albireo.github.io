@@ -1,6 +1,6 @@
 # Calcolatore di campi <a name="#field-calculator"></a>
 
-Il pulsante *Calcolatore di campi* <img src="/images/mActionCalculateField.png" /> nella tabella degli attributi consente di eseguire calcoli sulla base dei valori degli attributi esistenti o di funzioni definite, ad esempio, per calcolare la lunghezza o l'area degli elementi geometrici. I risultati possono essere scritti in un nuovo campo attributo, un campo virtuale, oppure possono essere usati per aggiornare i valori in un campo esistente.
+Il pulsante *Calcolatore di campi* <img src="../../../images/mActionCalculateField.png" /> nella tabella degli attributi consente di eseguire calcoli sulla base dei valori degli attributi esistenti o di funzioni definite, ad esempio, per calcolare la lunghezza o l'area degli elementi geometrici. I risultati possono essere scritti in un nuovo campo attributo, un campo virtuale, oppure possono essere usati per aggiornare i valori in un campo esistente.
 
 **Campi virtuali**
 
@@ -17,17 +17,17 @@ Nella barra di calcolo rapido del campo, selezionate prima il nome del campo esi
 
 Nella finestra di dialogo del campo calcolatrice, è necessario prima di tutto selezionare se si desidera aggiornare solo le caratteristiche selezionate, creare un nuovo campo attributo in cui verranno aggiunti i risultati del calcolo o aggiornare un campo esistente.
 
-![](/images/fieldcalculator.png)
+![](../../../images/fieldcalculator.png)
 
 Per aggiungere un nuovo campo devi creare il nome, il tipo di campo (intero, decimale, testo) e la lunghezza del campo. Per il tipo Numero decimale puoi anche definire la precisione, ovvero il numero di cifre dopo la virgola: ad esempio un campo con larghezza 10 e precisione 3 avrà 6 cifre prima della virgola, la virgola stessa è un campo ed infine 3 cifre decimali.
 
 Un breve esempio illustra come funziona il calcolatore di campo quando si utilizza la scheda *Espressione*. Vogliamo calcolare la lunghezza in km del livello `ferrovie` dal dataset del campione KADAS:
 
-1.  Carica lo shapefile `railroads.shp` e clicca su <img src="/images/mActionOpenTable.png" /> *Apri tabella attributi*.
+1.  Carica lo shapefile `railroads.shp` e clicca su <img src="../../../images/mActionOpenTable.png" /> *Apri tabella attributi*.
 
-2.  Attiva la modalità <img src="/images/mActionToggleEditing.png" /> *Modifica* e apri il <img src="/images/mActionCalculateField.png" /> *Calcolatore di campi*.
+2.  Attiva la modalità <img src="../../../images/mActionToggleEditing.png" /> *Modifica* e apri il <img src="../../../images/mActionCalculateField.png" /> *Calcolatore di campi*.
 
-3.  Spunta la casella di controllo <img src="/images/checkbox.png" /> *Crea un nuovo campo* per attivare la creazione di un nuovo campo.
+3.  Spunta la casella di controllo <img src="../../../images/checkbox.png" /> *Crea un nuovo campo* per attivare la creazione di un nuovo campo.
 
 4.  Chiama il campo `length`, imposta `Numero decimale (real)` come tipo, 10 come larghezza e 3 come precisione.
 

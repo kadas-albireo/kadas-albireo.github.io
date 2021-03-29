@@ -16,7 +16,7 @@ Ci sono diversi menu nella finestra di dialogo:
 
 -   *Metadati*
 
-![](/images/rasterPropertiesDialog.png)
+![](../../../images/rasterPropertiesDialog.png)
 
 
 ## Menu Generale <a name="#general-menu"></a>
@@ -54,13 +54,13 @@ KADAS offre quattro tipologie di *Visualizzazione del layer*. La scelta dipende 
 
 Con il visualizzatore colore banda multipla verranno visualizzate le tre bande selezionate dell’immagine, ognuna delle quali corrisponde alle componenti rosso, verde e blu che verranno usate per creare i colori dell’immagine stessa. Puoi scegliere fra diversi metodi di *Miglioramento contrasto*: ‘Nessun miglioramento’, ‘Stira a MinMax’, ‘Stira e taglia a MinMax’ e ‘Taglia a MinMax’.
 
-![](/images/rasterMultibandColor.png)
+![](../../../images/rasterMultibandColor.png)
 
 Questa sezione offre un’ampia gamma di opzioni per modificare l’aspetto del tuo raster. Prima di tutto scegli l’estensione dell’immagine da *Estensione* e poi premi il pulsante **\[Carica\]**. KADAS può scegliere l’*Accuratezza* stimando i valori *Min* e *Max* tramite i pulsanti *Stimato (veloce)* e *Attuale (lento)*.
 
-Ora puoi impostare i colori con l’aiuto della sezione *Carica i valori min/max*. Molte immagini hanno pochi valori estremi. Puoi eliminare questi outlier con l’impostazione ![radiobuttonon](/images/radiobuttonon.png) *Cumulative count cut*. L’intervallo standard è impostato dal 2% al 98% dei valori del file e può essere adattato manualmente. Con questa impostazione potrebbero sparire i caratteri grigi. Con l’opzione ![radiobuttonoff](/images/radiobuttonoff.png) *Min/max*, KADAS crea una tabella di colori con tutti i valori dell’immagine originale (per esempio KADAS crea una tabella di colori con 256 valori, se la tua immagine ha bande a 8 bit). Puoi anche creare la tua tabella dei colori usando l’opzione ![radiobuttonoff](/images/radiobuttonoff.png) *Media +/- deviazione standard x* <img src="/images/selectnumber.png" />. In questo modo solamente i valori inclusi nella deviazione standard o in multipli della deviazione standard verranno considerati nella tabella dei colori. Questo è molto utile quando hai una o due celle con valori molto grandi che avrebbero un impatto negativo nella visualizzazione del raster.
+Ora puoi impostare i colori con l’aiuto della sezione *Carica i valori min/max*. Molte immagini hanno pochi valori estremi. Puoi eliminare questi outlier con l’impostazione ![radiobuttonon](../../../images/radiobuttonon.png) *Cumulative count cut*. L’intervallo standard è impostato dal 2% al 98% dei valori del file e può essere adattato manualmente. Con questa impostazione potrebbero sparire i caratteri grigi. Con l’opzione ![radiobuttonoff](../../../images/radiobuttonoff.png) *Min/max*, KADAS crea una tabella di colori con tutti i valori dell’immagine originale (per esempio KADAS crea una tabella di colori con 256 valori, se la tua immagine ha bande a 8 bit). Puoi anche creare la tua tabella dei colori usando l’opzione ![radiobuttonoff](../../../images/radiobuttonoff.png) *Media +/- deviazione standard x* <img src="../../../images/selectnumber.png" />. In questo modo solamente i valori inclusi nella deviazione standard o in multipli della deviazione standard verranno considerati nella tabella dei colori. Questo è molto utile quando hai una o due celle con valori molto grandi che avrebbero un impatto negativo nella visualizzazione del raster.
 
-Le stesse impostazioni sono valide anche per l’estensione ![radiobuttonoff](/images/radiobuttonoff.png) *Attuale*.
+Le stesse impostazioni sono valide anche per l’estensione ![radiobuttonoff](../../../images/radiobuttonoff.png) *Attuale*.
 
 **Visualizzare una singola banda di un raster multibanda**
 
@@ -70,7 +70,7 @@ Se vuoi vedere solamente una banda singola di un’immagine multibanda (per esem
 
 Questo è il visualizzatore standard per i file a banda singola che hanno già una tavola di colori, dove a ogni valore dei pixel è associato un determinato colore. In questo caso, la tavolozza viene visualizzata automaticamente. Se vuoi cambiare i colori assegnati a certi valori fai semplicemente doppio click sul colore e si aprirà cosi la finestra *Seleziona colore*. In KADAS 2.2 puoi anche assegnare un’etichetta ai valori dei colori. L’etichetta comparirà cosi nella legenda.
 
-![](/images/rasterPaletted.png)
+![](../../../images/rasterPaletted.png)
 
 **Miglioramento contrasto**
 
@@ -80,15 +80,15 @@ Quando aggiungi un raster di GRASS, l’opzione *Miglioramento contrasto* è sem
 
 Questo visualizzatore ti permette di visualizzare un raster a banda singola con un *Gradiente di colore*: ‘Da nero a bianco’ o ‘Da bianco a nero’. Puoi selezionare il valore *Min* e quello *Max* scegliendo prima l’opzione *Estensione* e poi premendo il pulsante **\[Carica\]**. KADAS può scegliere l’*Accuratezza* stimando i valori *Min* e *Max* tramite i pulsanti *Stimato (veloce)* e *Attuale (lento)*.
 
-![](/images/rasterSingleBandGray.png)
+![](../../../images/rasterSingleBandGray.png)
 
-Nella sezione *Carica i valori min/max* puoi scegliere la tabella dei colori. Puoi eliminare questi outlier con l’impostazione ![radiobuttonon](/images/radiobuttonon.png) *Cumulative count cut*. L’intervallo standard è impostato dal 2% al 98% dei valori del file e può essere adattato manualmente. Con questa impostazione potrebbero sparire i caratteri grigi. Puoi effettuare altri cambiamenti con le impostazioni *Min/max* e ![radiobuttonoff](/images/radiobuttonoff.png) *Media +/- deviazione standard x* <img src="/images/selectnumber.png" />. Mentre la prima crea una tabella di colori con tutti i valori dell’immagine originale, la seconda opzione che una tabella di colori in cui vengono considerati solamente i valori che ricascano all’interno della deviazione standard o a un multiplo di questa. Questo è molto utile quando hai una o due celle con valori molto grandi che avrebbero un impatto negativo nella visualizzazione del raster.
+Nella sezione *Carica i valori min/max* puoi scegliere la tabella dei colori. Puoi eliminare questi outlier con l’impostazione ![radiobuttonon](../../../images/radiobuttonon.png) *Cumulative count cut*. L’intervallo standard è impostato dal 2% al 98% dei valori del file e può essere adattato manualmente. Con questa impostazione potrebbero sparire i caratteri grigi. Puoi effettuare altri cambiamenti con le impostazioni *Min/max* e ![radiobuttonoff](../../../images/radiobuttonoff.png) *Media +/- deviazione standard x* <img src="../../../images/selectnumber.png" />. Mentre la prima crea una tabella di colori con tutti i valori dell’immagine originale, la seconda opzione che una tabella di colori in cui vengono considerati solamente i valori che ricascano all’interno della deviazione standard o a un multiplo di questa. Questo è molto utile quando hai una o due celle con valori molto grandi che avrebbero un impatto negativo nella visualizzazione del raster.
 
 **Banda singola falso colore**
 
 Questa è l’opzione di visualizzazione per i file a banda singola, inclusa una tavolozza continua. Puoi anche creare mappe di colori singoli per le bande singole.
 
-![](/images/rasterSingleBandPseudocolor.png)
+![](../../../images/rasterSingleBandPseudocolor.png)
 
 
 Sono disponibili tre tipologie di interpolazione di colore:
@@ -99,9 +99,9 @@ Sono disponibili tre tipologie di interpolazione di colore:
 
 3.  Esatto
 
-Nella parte sinistra, il pulsante <img src="/images/mActionSignPlus.png" /> *Aggiungi un valore manualmente* aggiunge un valore alla tabella dei colori. Il pulsante <img src="/images/mActionSignMinus.png" /> *Rimuovi la riga selezionata* cancella un valore dalla tabella dei colori e il pulsante <img src="/images/mActionArrowDown.png" /> *Ordina gli elementi della mappa dei colori* ordina i colori della tabella in funzione dei valori dei pixel e dei valori della colonna. Facendo doppio click sul valore presente nella colonna potrai inserire un valore specifico. Facendo invece doppio click su un colore, potrai scegliere un colore specifico da assegnare a quel valore. Inoltre puoi anche aggiungere un’etichetta per ogni colore, ma questa etichetta non verrà visualizzata quando userai lo strumento Informazioni elementi. Puoi anche cliccare sul pulsante <img src="/images/mActionDraw.png" /> *Carica mappa colore dalla banda*, che prova a caricare la tabella dalla banda (se questa esiste). Puoi usare i pulsanti <img src="/images/mActionFileOpen.png" /> *Carica mappa colore da file* oppure <img src="/images/mActionFileSaveAs.png" /> *Esporta mappa colore su file* per caricare una tabella di colori esistente o per salvarne una per le sessioni successive.
+Nella parte sinistra, il pulsante <img src="../../../images/mActionSignPlus.png" /> *Aggiungi un valore manualmente* aggiunge un valore alla tabella dei colori. Il pulsante <img src="../../../images/mActionSignMinus.png" /> *Rimuovi la riga selezionata* cancella un valore dalla tabella dei colori e il pulsante <img src="../../../images/mActionArrowDown.png" /> *Ordina gli elementi della mappa dei colori* ordina i colori della tabella in funzione dei valori dei pixel e dei valori della colonna. Facendo doppio click sul valore presente nella colonna potrai inserire un valore specifico. Facendo invece doppio click su un colore, potrai scegliere un colore specifico da assegnare a quel valore. Inoltre puoi anche aggiungere un’etichetta per ogni colore, ma questa etichetta non verrà visualizzata quando userai lo strumento Informazioni elementi. Puoi anche cliccare sul pulsante <img src="../../../images/mActionDraw.png" /> *Carica mappa colore dalla banda*, che prova a caricare la tabella dalla banda (se questa esiste). Puoi usare i pulsanti <img src="../../../images/mActionFileOpen.png" /> *Carica mappa colore da file* oppure <img src="../../../images/mActionFileSaveAs.png" /> *Esporta mappa colore su file* per caricare una tabella di colori esistente o per salvarne una per le sessioni successive.
 
-Nella parte destra, la sezione *Genera nuova mappa colore* ti permette di creare mappe di colore categorizzate. Per la *Modalità* <img src="/images/selectstring.png" /> ‘Intervallo uguale’ devi solamente scegliere il *numero di classi* <img src="/images/selectnumber.png" /> e premere il pulsante *Classifica*. Puoi invertire i colori spuntando la casella di controllo <img src="/images/checkbox.png" /> *Inverti*. Se hai scelto la *Modalità* <img src="/images/selectstring.png" /> ‘Continuo’, KADAS crea automaticamente le classi in funzione dei valori *Min* e *Max*. Puoi definire i valori *Min/Max* con l’aiuto della sezione *Carica i valori min/max*. Molte immagini hanno pochi valori estremi. Puoi eliminare questi outlier con l’impostazione ![radiobuttonon](/images/radiobuttonon.png) *Cumulative count cut*. L’intervallo standard è impostato dal 2% al 98% dei valori del file e può essere adattato manualmente. Con questa impostazione potrebbero sparire i caratteri grigi. Con l’opzione ![radiobuttonoff](/images/radiobuttonoff.png) *Min/max*, KADAS crea una tabella di colori con tutti i valori dell’immagine originale (per esempio KADAS crea una tabella di colori con 256 valori, se la tua immagine ha bande a 8 bit). Puoi anche creare la tua tabella dei colori usando l’opzione ![radiobuttonoff](/images/radiobuttonoff.png) *Media +/- deviazione standard x* <img src="/images/selectnumber.png" />. In questo modo solamente i valori inclusi nella deviazione standard o in multipli della deviazione standard verranno considerati nella tabella dei colori.
+Nella parte destra, la sezione *Genera nuova mappa colore* ti permette di creare mappe di colore categorizzate. Per la *Modalità* <img src="../../../images/selectstring.png" /> ‘Intervallo uguale’ devi solamente scegliere il *numero di classi* <img src="../../../images/selectnumber.png" /> e premere il pulsante *Classifica*. Puoi invertire i colori spuntando la casella di controllo <img src="../../../images/checkbox.png" /> *Inverti*. Se hai scelto la *Modalità* <img src="../../../images/selectstring.png" /> ‘Continuo’, KADAS crea automaticamente le classi in funzione dei valori *Min* e *Max*. Puoi definire i valori *Min/Max* con l’aiuto della sezione *Carica i valori min/max*. Molte immagini hanno pochi valori estremi. Puoi eliminare questi outlier con l’impostazione ![radiobuttonon](../../../images/radiobuttonon.png) *Cumulative count cut*. L’intervallo standard è impostato dal 2% al 98% dei valori del file e può essere adattato manualmente. Con questa impostazione potrebbero sparire i caratteri grigi. Con l’opzione ![radiobuttonoff](../../../images/radiobuttonoff.png) *Min/max*, KADAS crea una tabella di colori con tutti i valori dell’immagine originale (per esempio KADAS crea una tabella di colori con 256 valori, se la tua immagine ha bande a 8 bit). Puoi anche creare la tua tabella dei colori usando l’opzione ![radiobuttonoff](../../../images/radiobuttonoff.png) *Media +/- deviazione standard x* <img src="../../../images/selectnumber.png" />. In questo modo solamente i valori inclusi nella deviazione standard o in multipli della deviazione standard verranno considerati nella tabella dei colori.
 
 ### Visualizzazione colore <a name="#color-rendering"></a>
 
@@ -115,14 +115,14 @@ Ulteriori impostazioni possono essere fatte modificando la *Luminosità*, la *Sa
 
 La sezione *Ricampionamento* ha effetto quando ingrandisci o rimpicciolisci l’immagine. I metodi di ricampionamento ottimizzano l’aspetto della mappa perché calcolano una nuova matrice di grigi attraverso una trasformazione geometrica.
 
-![](/images/rasterRenderAndRessampling.png)
+![](../../../images/rasterRenderAndRessampling.png)
 
 Applicando il metodo ‘vicino più prossimo’ la mappa potrebbe avere una struttura con molti pixel quando viene ingrandita. Questo aspetto può essere migliorato usando i metodi ‘Bilineare’ o ‘Cubico’ perché creano delle geometrie più appuntite e offuscate. Il risultato è un’immagine più morbida. Puoi applicare questo metodo, per esempio, a mappe raster topografiche.
 
 
 ## Menu Trasparenza <a name="#transparency-menu"></a>
 
-KADAS riesce a visualizzare ogni raster con differenti livelli di trasparenza. Usa il cursore trasparenza ![slider](/images/slider.png) per impostare il livello di trasparenza che desideri. Questa opzione è molto utile se vuoi sovrapporre diversi raster (per esempio una mappa dei rilievi sovrapposta a un raster classificato). In questo modo puoi simulare un effetto tridimensionale.
+KADAS riesce a visualizzare ogni raster con differenti livelli di trasparenza. Usa il cursore trasparenza ![slider](../../../images/slider.png) per impostare il livello di trasparenza che desideri. Questa opzione è molto utile se vuoi sovrapporre diversi raster (per esempio una mappa dei rilievi sovrapposta a un raster classificato). In questo modo puoi simulare un effetto tridimensionale.
 
 Inoltre puoi inserire nel menu *Valori nulli aggiuntivi* un valore che deve essere trattato come *Valore nullo*.
 
@@ -138,7 +138,7 @@ Per esempio, vogliamo impostare l’acqua del file `landcover.tif` con una trasp
 
 4.  Scegli ‘Nessuno’ dal menu *Banda trasparenza*.
 
-5.  Clicca sul pulsante <img src="/images/mActionSignPlus.png" /> *Aggiungi valori manualmente*. Apparirà cosi una nuova riga nell’elenco.
+5.  Clicca sul pulsante <img src="../../../images/mActionSignPlus.png" /> *Aggiungi valori manualmente*. Apparirà cosi una nuova riga nell’elenco.
 
 6.  Inserisci il valore nelle colonne ‘Da’ e ‘A’ (nell’esempio viene usato 0) e aggiusta la trasparenza al 20%.
 
@@ -146,11 +146,11 @@ Per esempio, vogliamo impostare l’acqua del file `landcover.tif` con una trasp
 
 Ripeti i passaggi 5 e 6 per aggiustare più valori con trasparenze personalizzate.
 
-Come puoi vedere è molto semplice impostare una trasparenza personalizzata, però richiede comunque un po’ di lavoro. Proprio per questo puoi usare il pulsante <img src="/images/mActionFileSave.png" /> *Esporta su file* per salvare la lista dei valori su un file esterno. Il pulsante <img src="/images/mActionFileOpen.png" /> *Importa da file* ti permette di caricare le impostazioni di trasparenza e applicarle al raster selezionato.
+Come puoi vedere è molto semplice impostare una trasparenza personalizzata, però richiede comunque un po’ di lavoro. Proprio per questo puoi usare il pulsante <img src="../../../images/mActionFileSave.png" /> *Esporta su file* per salvare la lista dei valori su un file esterno. Il pulsante <img src="../../../images/mActionFileOpen.png" /> *Importa da file* ti permette di caricare le impostazioni di trasparenza e applicarle al raster selezionato.
 
 
 ## Menu Metadati <a name="#metadata-menu"></a>
 
 La scheda *Metadati* mostra una serie di informazioni sul raster, incluse le statistiche di ogni banda. Da questo menu hai accesso a diverse sezioni: *Descrizione*, *Assegnazione*, *URL Metadati* e *Proprietà*. Nella sezione *Proprietà* le statistiche sono ottenute da una base ‘che si deve ancora conoscere’, quindi è meglio che le statistiche di questo raster non siano ancora state calcolate.
 
-![](/images/rasterMetadata.png)
+![](../../../images/rasterMetadata.png)

@@ -1,6 +1,6 @@
 # Interfaccia KADAS
 
-<img src="/media/image1.png" />
+<img src="../../media/image1.png" />
 
 L’interfaccia grafica KADAS è divisa in cinque aree:
 
@@ -46,7 +46,7 @@ La ricerca viene avviata appena sono stati digitati tre o più caratteri nel cam
 
 I risultati vengono elencati nelle categorie corrispondenti. L'elenco dei risultati può essere esaminato con il mouse oppure con le frecce della tastiera. Se si seleziona un risultato con i tasti freccia, nel punto corrispondente viene inserita una spillo blu. Attivando un risultato con il mouse, il riquadro della mappa viene centrato nella località corrispondente.
 
-<img src="/media/image2.png" />
+<img src="../../media/image2.png" />
 
 Alla destra del campo di ricerca è possibile definire un filtro per la ricerca locale e remota del set di dati. Questo filtro *non* viene applicato alla ricerca di coordinate, località o spilli.
 

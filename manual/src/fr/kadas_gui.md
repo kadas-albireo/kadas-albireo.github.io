@@ -1,6 +1,6 @@
 # Interface de KADAS
 
-<img src="/media/image1.png" />
+<img src="../../media/image1.png" />
 
 L’interface de KADAS est divisée en cinq zones distinctes :
 
@@ -46,7 +46,7 @@ Après avoir entré au moins trois lettres, la recherche commence et les premier
 
 Les résultats sont listés dans des catégories indiquées en conséquence. La liste des résultats peut être parcourue via la souris ou le clavier. Quand on sélectionne un résultat avec les flèches, une punaise bleue est placée au lieu correspondant. Si on active un résultat avec la souris, l’extrait de carte est centré sur le lieu correspondant.
 
-<img src="/media/image2.png" />
+<img src="../../media/image2.png" />
 
 À droite du champ de recherche, il est possible de définir un filtre pour la recherche de données locales ou à distance. Ce filtre ne s’applique *pas* aux recherches de coordonnées, de localités ou de punaises.
 

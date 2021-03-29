@@ -22,7 +22,7 @@ Already drawn geometries or texts can be subsequently edited by selecting them o
 
 Existing line and polygon geometries can be continued via context menu on the node.
 
-<img src="/media/image6.png" />
+<img src="../../media/image6.png" />
 
 Editing operations on a redlining drawing can be reversed or repeated via CTRL+Z and CTRL+Y or with the corresponding buttons at the bottom of the map frame.
 
@@ -56,7 +56,7 @@ The **_Add Image_** function can also be used to add SVG graphics to the map. Th
 
 Vector graphics are stored in the **_SVG graphics_** layer.
 
-<img src="/media/image7.png" />
+<img src="../../media/image7.png" />
 
 
 ## <a name="sec3"></a>Paste
@@ -85,6 +85,6 @@ A bullseye is drawn as a number of concentric circles around a selected point an
 
 Individual objects can be deleted via context menu or DEL key. The **_Delete Items_** tool allows you to delete several objects at once from a selected rectangular region. This function can also be called invoken via CTRL + dragging a rectangle in navigation mode.
 
-<img src="/media/image8.png" />
+<img src="../../media/image8.png" />
 
 

@@ -20,7 +20,7 @@ Nach dem Aktivieren einer Messfunktion kann der Benutzer eine entsprechende Mess
 
 Für Distanz- und Flächenmessungen können mehrere Geometrien nacheinander gezeichnet werden. Das Messtotal wird im unteren Bereich des Kartenfensters angezeigt, wo auch die Messeinheit geändert werden kann. Ferner kann mittels dem Picker-Button eine existierende Geometrie gemessen werden.
 
-<img src="/media/image3.png" />
+<img src="../../media/image3.png" />
 
 ## <a name="sec1"></a>Höhenprofil und Sichtbarkeit
 
@@ -32,7 +32,7 @@ Besteht die Liniengeometrie aus nur einem Segment, kann entlang dieser Linie ein
 
 Die Höhenprofilgraphik lässt sich zusätzlich in die Zwischenablage kopieren, oder als Bild in die Karte einbetten.
 
-<img src="/media/image4.png" />
+<img src="../../media/image4.png" />
 
 
 ## <a name="sec2"></a>Neigung und Schummerung
@@ -47,7 +47,7 @@ Beide dieser Analysen werden innerhalb eines rechteckigen Auschnittes der Karte 
 
 Die Ergebnisse der Neigungs- und Schummerungsanalysen werden als Raster-Ebenen der Karte hinzugefügt, und erscheinen dementsprechend im Karteninhaltsverzeichnis. Beim Speichern des Projektes werden diese Datensätze als Anhänge in der *<Projektname>.qgz* Projektdatei gespeichert.
 
-<img src="/media/image5.png" />
+<img src="../../media/image5.png" />
 
 
 ## <a name="sec3"></a>Einsehbarkeit

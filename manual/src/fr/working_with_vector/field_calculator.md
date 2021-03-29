@@ -1,6 +1,6 @@
 # Calculatrice de champ <a name="#field-calculator"></a>
 
-Le bouton <img src="/images/mActionCalculateField.png" /> *Ouvrir la calculatrice de champs* de la table d'attributs permet d'opérer des calculs sur la base des valeurs attributaires ou d'utiliser des fonctions, par exemple pour calculer la longueur ou la surface des entités. Les résultats peuvent être écrits dans une nouvelle colonne attributaire, un champ virtuel ou mettre à jour une colonne existante.
+Le bouton <img src="../../../images/mActionCalculateField.png" /> *Ouvrir la calculatrice de champs* de la table d'attributs permet d'opérer des calculs sur la base des valeurs attributaires ou d'utiliser des fonctions, par exemple pour calculer la longueur ou la surface des entités. Les résultats peuvent être écrits dans une nouvelle colonne attributaire, un champ virtuel ou mettre à jour une colonne existante.
 
 **Champ Virtuels**
 
@@ -18,17 +18,17 @@ Dans la barre de calcul de champ, vous sélectionnez d'abord le champ à éditer
 
 Dans la Calculatrice de champ, vous devez d'abord spécifier si vous souhaitez mettre à jour uniquement les entités sélectionnées, créer un nouveau champ où les résultats du calcul seront stockés ou mettre à jour un champ existant.
 
-![](/images/fieldcalculator.png)
+![](../../../images/fieldcalculator.png)
 
 Si vous choisissez d'ajouter un nouveau champ, vous devez lui donner un nom, un type (nombre entier, nombre décimal ou chaîne de caractère), une longueur et sa précision. Par exemple, si vous créez un champ d'une longueur de 10 et doté d'une précision de 3, vous aurez 6 chiffres avant la virgule, la virgule et 3 chiffres après.
 
 L'exemple suivant montre comment la calculatrice de champs fonctionne. Il s'agit de calculer la longueur en km de la couche `railroads` issue de l'échantillon de données KADAS.
 
-1.  Chargez le fichier shapefile `railroads.shp` dans QGIS et ouvrez sa <img src="/images/mActionOpenTable.png" /> *Table d'Attributs*.
+1.  Chargez le fichier shapefile `railroads.shp` dans QGIS et ouvrez sa <img src="../../../images/mActionOpenTable.png" /> *Table d'Attributs*.
 
-2.  Cliquez sur <img src="/images/mActionToggleEditing.png" /> *Basculer en mode édition* et ouvrez la <img src="/images/mActionCalculateField.png" /> *Calculatrice de champs*.
+2.  Cliquez sur <img src="../../../images/mActionToggleEditing.png" /> *Basculer en mode édition* et ouvrez la <img src="../../../images/mActionCalculateField.png" /> *Calculatrice de champs*.
 
-3.  Cochez la case <img src="/images/checkbox.png" /> *Créer un nouveau champ* pour enregistrer le résultat des calculs dans un nouveau champ.
+3.  Cochez la case <img src="../../../images/checkbox.png" /> *Créer un nouveau champ* pour enregistrer le résultat des calculs dans un nouveau champ.
 
 4.  Ajoutez `longueur` dans le nom de ce champ, `réel` en tant que type et définissez une longueur de 10 et une précision de 3.
 

@@ -16,13 +16,13 @@ Nelle viste secondarie della mappa è disponibile soltanto lo strumento di navig
 
 In caso di necessità, è possibile modificare il titolo della sottofinestra.
 
-<img src="/media/image13.png" />
+<img src="../../media/image13.png" />
 
 ## <a name="sec2"></a>3D
 
 Con la funzione **_3D_** è possibile aprire una finestra in cui viene visualizzato il globo terrestre. La finestra viene disposta automaticamente ma può essere spostata con il mouse all’interno o all’esterno della finestra del programma.
 
-<img src="/media/image14.png" />
+<img src="../../media/image14.png" />
 
 ### Impostazioni
 
@@ -39,7 +39,7 @@ Per impostazione predefinita, i layer della vista 2D sono disegnati come immagin
 
 *Nota*: L'ombreggiatura dei modelli 3D dipende dalla posizione del sole. Questa può venir controllata inserendo la data e ora desiderata nelle impostazioni del globo.
 
-<img src="/media/image15.png" />
+<img src="../../media/image15.png" />
 
 Spilli, immagini e simboli MSS mono-punto vengono visualizzati come billboard.
 

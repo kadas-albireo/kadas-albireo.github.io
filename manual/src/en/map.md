@@ -28,7 +28,7 @@ When the layout is selected, the main map window displays a blue semi-transparen
 
 When printing additional elements, coordinate grid, card cartridge, legend, and scale bar can be shown or hidden as desired. The position of these elements is defined in the layout.
 
-<img src="/media/image12.png" />
+<img src="../../media/image12.png" />
 
 ### Printing dialog
 
@@ -51,7 +51,7 @@ When printing additional elements, coordinate grid, card cartridge, legend, and 
 
 The print layouts contained in the project can be managed in the *Print Layout Manager* dialog, which can be opened by pressing the button to the right of the print layout selection. There, individual layouts can be imported, exported and removed from the project.
 
-<img src="/media/image12.1.png" />
+<img src="../../media/image12.1.png" />
 
 ### Map Cartouche
 

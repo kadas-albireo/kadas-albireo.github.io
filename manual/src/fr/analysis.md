@@ -19,7 +19,7 @@ En activant l’une des fonctions de mesures, l’utilisateur peut dessiner la g
 
 Pour les mesures de géométrie et de distance, il est possible de dessiner plusieurs géométries l’une après l’autre. Le total des mesures s’affiche dans la partie inférieure de la fenêtre de la carte, là où l’unité de mesure peut aussi être modifiée. Plus loin, il est possible de mesurer une géométrie existante en cliquant sur le bouton Picker.
 
-<img src="/media/image3.png" />
+<img src="../../media/image3.png" />
 
 
 ## <a name="sec1"></a>Profil d’altitude et visibilité
@@ -32,7 +32,7 @@ Si la géométrie linéaire ne comprend qu’un seul segment, il est possible de
 
 Le graphique de profil d’altitude peut également être copié dans l’archive provisoire ou être inséré dans la carte comme image.
 
-<img src="/media/image4.png" />
+<img src="../../media/image4.png" />
 
 
 ## <a name="sec2"></a>Pente et ombrage
@@ -47,7 +47,7 @@ Ces deux analyses sont effectuées dans une portion rectangulaire de la carte. L
 
 Les résultats des analyses de pente et d’ombrage sont ajoutés à la carte comme niveaux de raster et apparaissent ainsi dans le répertoire de la carte. Lors de l’enregistrement du projet, ces données sont attachées au projet dans le fichier *<nom du projet>.qgz*.
 
-<img src="/media/image5.png" />
+<img src="../../media/image5.png" />
 
 
 ## <a name="sec3"></a>Bassin visuel

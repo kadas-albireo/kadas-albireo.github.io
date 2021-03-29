@@ -20,7 +20,7 @@ Bereits gezeichnete Geometrien oder Texte können nachträglich editiert werden,
 
 Bestehende Linien- und Polygongeometrien lassen sich per Kontextmenü auf den Knoten fortführen.
 
-<img src="/media/image6.png" />
+<img src="../../media/image6.png" />
 
 Editieroperationen an einer Redlining-Zeichnung können via CTRL+Z und CTRL+Y oder mit den entsprechenden Schaltflächen am unteren Kartenrand rückgängig gemacht bzw. wiederholt werden
 
@@ -54,7 +54,7 @@ Ebenfalls durch die **_Bild hinzufügen_** Funktion lassen sich SVG Graphiken de
 
 Vektorgraphiken werden in der **_SVG Graphiken_** Ebene abgelegt.
 
-<img src="/media/image7.png" />
+<img src="../../media/image7.png" />
 
 
 ## <a name="sec3"></a>Einfügen
@@ -83,6 +83,6 @@ Ein Bullseye wird als eine Anzahl von konzentrischen Kreisen um einen ausgewähl
 
 Einzelne Objekte lassen sich per Kontextmenü oder DEL-Taste löschen. Das **_Objekte löschen_** Werkzeug erlaubt es, mehrere Objekte auf einmal in einem ausgewählten Ausschnitt zu löschen. Diese Funktion ist im Navigationsmodus auch per CTRL+Rechteck aufziehen aufrufbar.
 
-<img src="/media/image8.png" />
+<img src="../../media/image8.png" />
 
 
