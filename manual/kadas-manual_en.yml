@@ -1,31 +1,32 @@
 site_name: KADAS Albireo
 docs_dir: src
 nav:
-    - KADAS Albireo: index.md
-    - General: en/index.md
-    - The Interface: en/kadas_gui.md
-    - Map: en/map.md
-    - View: en/view.md
-    - Analysis: en/analysis.md
-    - Draw: en/draw.md
-    - Navigation: en/gps.md
-    - MSS: en/mss.md
-    - Settings: en/settings.md
-    - Advanced functionalities:
-        - Vector layers:
-            - Supported formats: en/working_with_vector/supported_data.md
-            - Properties dialog: en/working_with_vector/vector_properties.md
-            - Expressions: en/working_with_vector/expression.md
-            - Field calculator: en/working_with_vector/field_calculator.md
-        - Raster layers:
-            - Supported formats: en/working_with_raster/supported_data.md
-            - Properties dialog: en/working_with_raster/raster_properties.md
-        - Working with projections: en/working_with_projections/working_with_projections.md
-        - Print composer: en/print_composer/print_composer.md
-        - GPS Gate: en/gpsgate/gpsgate.md
-    - Appendix:
-        - Keyboard shortcuts: en/appendices/shortcuts.md
-        - License: en/appendices/license.md
+    - Index: index.md
+    - KADAS Albireo:
+        - General: en/index.md
+        - The Interface: en/kadas_gui.md
+        - Map: en/map.md
+        - View: en/view.md
+        - Analysis: en/analysis.md
+        - Draw: en/draw.md
+        - Navigation: en/gps.md
+        - MSS: en/mss.md
+        - Settings: en/settings.md
+        - Advanced functionalities:
+            - Vector layers:
+                - Supported formats: en/working_with_vector/supported_data.md
+                - Properties dialog: en/working_with_vector/vector_properties.md
+                - Expressions: en/working_with_vector/expression.md
+                - Field calculator: en/working_with_vector/field_calculator.md
+            - Raster layers:
+                - Supported formats: en/working_with_raster/supported_data.md
+                - Properties dialog: en/working_with_raster/raster_properties.md
+            - Working with projections: en/working_with_projections/working_with_projections.md
+            - Print composer: en/print_composer/print_composer.md
+            - GPS Gate: en/gpsgate/gpsgate.md
+        - Appendix:
+            - Keyboard shortcuts: en/appendices/shortcuts.md
+            - License: en/appendices/license.md
 
 theme:
     name: readthedocs
