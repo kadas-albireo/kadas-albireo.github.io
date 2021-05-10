@@ -55,6 +55,8 @@
 | Grille de guidage| `CTRL+D + CTRL+R` |
 | Bullseye         | `CTRL+D + CTRL+B` |
 | Effacer objets   | `CTRL + Select`   |
+| Annuler          | `CTRL+Z` ou `Backspace` |
+| Refaire          | `CTRL+Y`          |
 
 ## GPS
 | Fonction              | Raccourci         |

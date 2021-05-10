@@ -55,6 +55,8 @@
 | Führungsraster        | `CTRL+D + CTRL+R` |
 | Bullseye              | `CTRL+D + CTRL+B` |
 | Objekte löschen       | `CTRL + Auswahl`  |
+| Rückgängig            | `CTRL+Z` oder `Backspace` |
+| Wiederholen           | `CTRL+Y`          |
 
 ## GPS
 | Funktion              | Kürzel            |

@@ -56,6 +56,8 @@
 | Griglia di guida  | `CTRL+D + CTRL+R`  |
 | Bullseye          | `CTRL+D + CTRL+B`  |
 | Elimina elementi  | `CTRL + Seleziona` |
+| Annulla           | `CTRL+Z` o `Backspace` |
+| Ripeti            | `CTRL+Y`          |
 
 ## GPS
 | Funzione          | Combinazione      |

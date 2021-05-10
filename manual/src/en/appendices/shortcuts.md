@@ -55,6 +55,8 @@
 | Guide Grid       | `CTRL+D + CTRL+G` |
 | Bullseye         | `CTRL+D + CTRL+B` |
 | Delete Items     | `CTRL + Select`   |
+| Undo             | `CTRL+Z` or `Backspace` |
+| Redo             | `CTRL+Y`          |
 
 ## GPS
 | Function         | Shortcut          |
