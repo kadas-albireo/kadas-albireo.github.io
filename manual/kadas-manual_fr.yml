@@ -1,7 +1,8 @@
 site_name: KADAS Albireo
 docs_dir: src
 nav:
-    - Généralités: fr/README.md
+    - KADAS Albireo: index.md
+    - Généralités: fr/index.md
     - Interface: fr/kadas_gui.md
     - Carte: fr/map.md
     - Vue: fr/view.md
@@ -26,7 +27,9 @@ nav:
         - Raccourcis: fr/appendices/shortcuts.md
         - License: fr/appendices/license.md
 
-theme: readthedocs
+theme:
+    name: readthedocs
+    include_homepage_in_sidebar: false
 
 plugins:
   - exclude:
