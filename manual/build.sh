@@ -10,3 +10,6 @@ for lang in $LANGS; do
     cp -a site/* html/
     rm -rf site
 done
+
+# HACK Comment out code leading to incorrect current chapter highlighting in nav tree
+sed -i 's|e.reset(),|/*e.reset(),*/|' html/js/theme.js
