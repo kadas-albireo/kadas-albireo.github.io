@@ -14,6 +14,31 @@ Die Nutzungsbedingungen für die Daten sind in der Anwendung unter Hilfe → Üb
 
 ## <a name="sec3"></a>Versionsprotokoll
 
+
+### Version 2.1.0 (Dezember 2021)
+* *Allgemeines*:
+    - Drucken: Korrekte Skalierung von Symbolen (MSS, Pins, Bilder, ...) entsprechend der Druck-DPI
+    - GPKG: Möglichkeit, Projektebenen zu importieren
+    - Ebenenbaum: Möglichkeit zum Zoomen und Entfernen aller ausgewählten Ebenen
+    - Skalenbasierte Sichtbarkeit auch für Redlining/MSS-Ebenen
+    - Attributtabelle: Verschiedene neue Auswahl- und Zoom-Werkzeuge
+* *Ansicht*:
+    - Neue Lesezeichen-Funktion
+* *Analyse*:
+    - Viewshed: Möglichkeit, den vertikalen Winkelbereich des Beobachters zu begrenzen
+    - Höhenprofil / Sichtlinie: Anzeige der Markierung in der Grafik, wenn man mit der Maus über die Linie auf der Karte fährt
+    - Neues Ephemeriden-Werkzeug
+* *Zeichnen*:
+    - Pins: neuer Rich-Text-Editor
+    - Stecknadeln: Möglichkeit, mit der Mouse mit dem Tooltipinhalt zu interagieren
+    - Führungsraster: Beschriftung nur eines Quadranten zulassen
+    - Bullseye: Beschriftung von Quandranten
+    - Neues Element zum Zeichnen von Passkreuzen
+* *MSS*:
+    - Symbol-Einstellungen pro Ebene
+    - Aktualisierung auf MSS-2022
+
+
 ### Version 2.0.0 (Juli 2020)
 - Vollständige Neugestaltung der Programmarchitektur: KADAS ist jetzt eine separate Anwendung, die auf den QGIS 3.x-Bibliotheken aufbaut
 - Überarbeitete Architektur für Kartenelemente, für ein konsistentes Verhalten beim Zeichnen und Bearbeiten sämtlicher Objekte (Redlining, MSS, usw.)

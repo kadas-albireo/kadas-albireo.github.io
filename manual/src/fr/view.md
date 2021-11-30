@@ -6,7 +6,12 @@
 En se déplaçant dans la carte, on peut retourner à l’étendue de carte affiché auparavant par la fonction **_Étendue précédent_**. On peut ensuite aller sur l’extrait de carte choisi postérieurement par la fonction **_Étendue suivant_**.
 
 
-## <a name="sec1"></a>Nouvelle vue
+## <a name="sec1"></a> Signets
+
+Les signets permettent de stocker et de restaurer l'état actuel de la carte, plus précisément l'étendue de la carte et la configuration des couches. Notez que la restauration d'un signet ne restaurera pas les couches qui ont depuis été supprimées du projet.
+
+
+## <a name="sec2"></a>Nouvelle vue
 
 Des vues secondaires de la carte peuvent être ouvertes par la fonction **_Nouvelle vue_**. On peut les placer à volonté à l’intérieur de la fenêtre principale en les tirant depuis la barre de titre, ou les découpler.
 
@@ -18,7 +23,7 @@ Le titre de la sous-fenêtre peut être modifié si nécessaire.
 
 <img src="../../media/image13.png" />
 
-## <a name="sec2"></a>3D
+## <a name="sec3"></a>3D
 
 La fonction **_3D_** ouvre une autre fenêtre avec une vue du globe. Cette fenêtre est disposée automatiquement, mais peut aussi être déplacée à un autre endroit à l’intérieur ou à l’extérieur de la fenêtre de programme au moyen de la souris.
 
@@ -51,7 +56,7 @@ Les punaises, photos et symboles MSS ponctuels sont indiqués comme billboards.
 + **-**: Augmente la hauteur de la caméra.
 
 
-## <a name="sec3"></a>Grille
+## <a name="sec4"></a>Grille
 
 On peut activer la **_grille_** de la carte dans l’onglet Vue.
 

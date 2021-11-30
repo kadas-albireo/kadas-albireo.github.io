@@ -7,7 +7,12 @@
 Beim Bewegen in der Karte kann über die Funktion **_Vorheriger Ausschnitt_** auf den vorher angezeigten Kartenausschnitt zurückgekehrt werden. Über **_Nächster Ausschnitt_** wird wieder auf den danach gewählten Kartenausschnitt gewechselt.
 
 
-## <a name="sec1"></a>Neues Kartenfenster
+## <a name="sec1"></a>Lesezeichen
+
+Lesezeichen ermöglichen das Speichern und Wiederherstellen des aktuellen Kartenzustandes, insbesondere der Kartenausdehnung und der Ebenenkonfiguration. Zu beachten ist, dass das Wiederherstellen eines Lesezeichens keine Ebenen wiederherstellt, die inzwischen aus dem Projekt entfernt worden sind.
+
+
+## <a name="sec2"></a>Neues Kartenfenster
 
 Über die Funktion **_Neues Kartenfenster_** können sekundäre Kartenansichten geöffnet werden. Diese können durch Ziehen an der Titelleiste beliebig innerhalb des Hauptfenster oder entkoppelt davon angeordnet werden.
 
@@ -20,7 +25,7 @@ Der Titel der Unterfenster lässt sich bei Bedarf ändern.
 <img src="../../media/image13.png" />
 
 
-## <a name="sec2"></a>3D
+## <a name="sec3"></a>3D
 
 Über die Funktion **_3D_** wird ein zusätzliches Fenster mit einer Globus-Ansicht geöffnet. Dieses Fenster wird automatisch angeordnet, kann aber auch mit der Maus an eine andere Stelle innerhalb oder ausserhalb des Programmfensters bewegt werden.
 
@@ -53,7 +58,7 @@ Stecknadeln, Kamerabilder und einpunkt MSS Symbole werden als Billboards angezei
 + **-**: Erhöht den Kamerahöhe.
 
 
-## <a name="sec3"></a>Gitter
+## <a name="sec4"></a>Gitter
 
 In der Registerkarte Ansicht kann das Kartengitter aktiviert werden.
 

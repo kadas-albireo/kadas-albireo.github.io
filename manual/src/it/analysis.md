@@ -61,3 +61,6 @@ L’analisi della visibilità viene calcolata all’interno di un settore circol
 Il risultato viene aggiunto come layer raster alla mappa. Al salvataggio del progetto, esso viene allegato al progetto nel file *<nome progetto>.qgz*.
 
 
+## <a name="sec4"></a>Efemeridi
+
+Lo strumento **_Efemeridi_** calcola le effemeridi del sole e della luna (posizione, tempi di alba e tramonto, fasi lunari) in una posizione del terreno e in un momento nel tempo selezionati.

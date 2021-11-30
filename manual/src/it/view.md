@@ -6,7 +6,12 @@
 Spostandosi sulla mappa con la funzione **_Estensione precedente_** è possibile tornare all’estensione di mappa mostrato in precedenza. Tramite **_Estensione successivo_** si passa all’estensione di mappa selezionato successivamente.
 
 
-## <a name="sec1"></a>Nuova finestra della mappa
+## <a name="sec1"></a>Segnalibri
+
+I segnalibri permettono di memorizzare e ripristinare lo stato corrente della mappa, in particolare l'estensione della mappa e la configurazione dei livelli. Nota che il ripristino di un segnalibro non ripristinerà i livelli che nel frattempo sono stati rimossi dal progetto.
+
+
+## <a name="sec2"></a>Nuova finestra della mappa
 
 La funzione **_Nuova vista_** permette di aprire viste secondarie della mappa. Trascinamento della barra del titolo, queste possono essere posizionate a piacimento, all'interno della finestra principale o disassociata da essa.
 
@@ -18,7 +23,7 @@ In caso di necessità, è possibile modificare il titolo della sottofinestra.
 
 <img src="../../media/image13.png" />
 
-## <a name="sec2"></a>3D
+## <a name="sec3"></a>3D
 
 Con la funzione **_3D_** è possibile aprire una finestra in cui viene visualizzato il globo terrestre. La finestra viene disposta automaticamente ma può essere spostata con il mouse all’interno o all’esterno della finestra del programma.
 
@@ -52,7 +57,7 @@ Spilli, immagini e simboli MSS mono-punto vengono visualizzati come billboard.
 + **-**: Allontana la telecamera dal globo.
 
 
-## <a name="sec3"></a>Griglia
+## <a name="sec4"></a>Griglia
 
 Nella scheda Vista, è possibile attivare la **_griglia_** della mappa.
 

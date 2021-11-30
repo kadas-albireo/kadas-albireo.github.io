@@ -33,7 +33,7 @@ Redlining-Zeichnungen können per Kontextmenü oder den üblichen Tastaturkürze
 
 Stecknadeln sind georeferenzierte **_Positions-Marker_**, welche zusätzlich mit einem Name sowie mit weiteren Anmerkungen versehen werden können.
 
-Im Tooltip einer platzierten Stecknadel können Position und Höhe abgelesen werden. Ein Doppelklick auf die Stecknadel öffnet dessen Attributdialog. Web-Links können von einem Webbrowser in das Textfeld kopiert werden. Per Rechtsklick auf die Stecknadel kann dessen Position in die Zwischenablage kopiert werden.
+Im Tooltip einer platzierten Stecknadel können Position und Höhe abgelesen werden. Ein Doppelklick auf die Stecknadel öffnet dessen Attributdialog. Per Rechtsklick auf die Stecknadel kann dessen Position in die Zwischenablage kopiert werden.
 
 Stecknadeln können in der globalen Suche nach Name und Anmerkungen durchsucht werden.
 

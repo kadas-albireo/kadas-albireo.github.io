@@ -35,7 +35,7 @@ Figure geometriche e testi possono venir copiati, tagliati e incollati tramite g
 
 Le spilli sono **_marcatori della posizione_** georeferenziati che possono essere inoltre dotati di un nome e di altre annotazioni.
 
-Nel tooltip di una punti­na collocata sulla mappa è possibile leggere la posizione e l'altezza del punto dove essa è situata. Facendo clic con il pulsante destro sulla spillo, è possibile copiare la sua posizione negli appunti. Facendo doppio clic sulla spillo si apre il dialogo degli attributi. Link interattivi possono essere copiati negli attributi dal browser.
+Nel tooltip di una punti­na collocata sulla mappa è possibile leggere la posizione e l'altezza del punto dove essa è situata. Facendo clic con il pulsante destro sulla spillo, è possibile copiare la sua posizione negli appunti. Facendo doppio clic sulla spillo si apre il dialogo degli attributi.
 
 Le spilli possono essere ricercate per nome e per annotazioni nella ricerca globale.
 

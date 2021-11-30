@@ -35,7 +35,7 @@ Redlining drawings can be copied, cut and pasted using the context menu or the u
 
 Pings are georeferenced **_position markers_**, which can also carry a name and other remarks.
 
-Position and height can be read in the tooltip of a placed pin. A double-click on the pin opens its attribute dialog. Web links can be copied to the text box from a web browser. By right-clicking on the pin, its position can be copied to the clipboard.
+Position and height can be read in the tooltip of a placed pin. A double-click on the pin opens its attribute dialog. By right-clicking on the pin, its position can be copied to the clipboard.
 
 Pins are searchable by name and remarks via the global search function.
 

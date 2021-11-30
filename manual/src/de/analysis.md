@@ -59,3 +59,7 @@ Um diese Geländeanalysefunktionen verwenden zu können muss im Projekt ein Höh
 Die Einsehbarkeitsanalyse wird innerhalb eines Kreissektors oder einem Vollkreis berechnet. Beim ersten Mausklick auf die Karte wird der Beobachterstandort definiert, der zweite definiert den Radius, und der dritte den Sektoröffungswinkel. Falls die numerische Eingabe aktiv ist, können diese Parameter auch numerisch eingegeben werden. Nach dem erfassen der Analysefläche können die Berechnungsparameter angepasst werden, nämlich die Beobachterhöhe, die Zielhöhe, ob diese Höhen relativ zum Terrain oder dem Meeresspiegel interpretiert werden sollen, und ob der sichtbare oder der unsichtbare Berich angezeigt werden soll.
 
 Das Ergebnis wird als Rasterebene der Karte hinzugefügt. Beim Speichern des Projektes wird diese als Anhang in der *<Projektname>.qgz* Projektdatei gespeichert.
+
+## <a name="sec4"></a>Ephemeriden
+
+Das Werkzeug **_Ephemeriden_** berechnet die Sonnen- und Mondephemeriden (Position, Auf- und Untergangszeiten, Mondphase) an einer ausgewählten Geländeposition und zu einem bestimmten Zeitpunkt.

@@ -14,6 +14,30 @@ The terms of use for the data are listed in the application under Help → About
 
 ## <a name="sec3"></a>Changelog
 
+### Version 2.1.0 (December 2021)
+* *General*:
+    - Print: Properly scale symbols (MSS, pins, pictures, ...) according to print DPI
+    - GPKG: Allow importing project layers
+    - Layer tree: Possibility to zoom to and remove all selected layers
+    - Scale based visibility also for redlining/MSS layers
+    - Attribute table: various new selection and zoom tools to
+* *View*:
+    - New bookmarks function
+* *Analysis*:
+    - Viewshed: Possibility to limit observer vertical angle range
+    - Height profile / Line of sight: show marker in plot when hovering over line on the map
+    - New ephemeris tool
+* *Draw*:
+    - Pins: Add rich text editor
+    - Pins: Allow interacting with tooltip content with mouse
+    - Guide grid: Allow labeling only one quadrant
+    - Bullseye: Quandrant labeling
+    - New coordinate cross drawing item
+* *MSS*:
+    - Per layer symbol settings
+    - Update to MSS-2022
+
+
 ### Version 2.0.0 (July 2020)
 - Complete architectural redesign: KADAS is now a separate application, built on top of the QGIS 3.x libraries
 - New map item architecture, for consistent workflow when drawing and editing redlining objects, MSS symbols, etc

@@ -17,6 +17,30 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
 
 ## <a name="sec3"></a>Protocole de version
 
+### Version 2.1.0 (décembre 2021)
+* *Général*:
+    - Imprimer: Mise à l'échelle correcte des symboles (MSS, épingles, images, ...) en fonction du DPI d'impression.
+    - GPKG: Permet l'importation de couches de projet
+    - Arbre des couches: Possibilité de zoomer et de supprimer toutes les couches sélectionnées
+    - Visibilité basée sur l'échelle également pour les couches redlining/MSS
+    - Table d'attributs: divers nouveaux outils de sélection et de zoom pour les tables d'attributs
+* *Vue*:
+    - Nouvelle fonction de signets
+* *Analyse*:
+    - Bassin visuel: Possibilité de limiter la plage d'angle vertical de l'observateur
+    - Profil d’altitude et visibilité: affichage du marqueur dans le graphe lors du survol de la ligne sur la carte
+    - Nouvel outil éphéméride
+* *Dessin*:
+    - Épingles: Ajout d'un éditeur de texte riche
+    - Epingles: Permettre d'interagir avec le contenu de l'infobulle avec la souris
+    - Grille de guidage: Permettre l'étiquetage d'un seul quadrant
+    - Bullseye: Étiquetage des quadrants
+    - Nouvel élément de dessin en croix de coordonnées
+* *MSS*:
+    - Paramètres des symboles par couche
+    - Mise à jour de MSS-2022
+
+
 ### Version 2.0.0 (juliet 2020)
 - Nouvelle architecture d'application: KADAS est maintenant une application distincte, construite sur les bibliothèques QGIS 3.x
 - Nouvelle architecture des éléments de la carte, pour un flux de travail cohérent lors du dessin et de l'édition des objets Redlining, des symboles MSS, etc.

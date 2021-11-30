@@ -61,3 +61,6 @@ L’analyse de visibilité est calculée au sein d’une portion de cercle ou d�
 Après calcul, le résultat est ajouté à la carte sous forme de couche raster. Si vous sauvegardez le projet, cette couche sera attachée au projet dans le fichier *<nom du projet>.qgz*.
 
 
+## <a name="sec4"></a>Ephémérides
+
+L'outil **_Ephémérides_** calcule les éphémérides du soleil et de la lune (position, heures de lever et de coucher, phase de la lune) à une position du terrain et à un moment donné dans le temps sélectionnés.

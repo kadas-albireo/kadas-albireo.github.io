@@ -61,3 +61,7 @@ The viewhsed analysis is computed within a circular sector or a full circle as s
 The analysis output is added as a raster layer to the map. When the project is saved, the raster is saved as a project attachment in the *<project name>.qgz* project file.
 
 
+## <a name="sec4"></a>Ephemeris
+
+The **_Ephemeris_** tool calculates sun and moon ephemeris (position, rise and set times, moon phase) at a selected terrain position and moment in time.
+

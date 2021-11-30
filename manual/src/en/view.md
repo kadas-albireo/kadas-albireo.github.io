@@ -6,7 +6,11 @@
 After panning or zooming the map, the function **_Previous extent_** allows the user to return to the previously visible map extent. Similarly the function **_Next extent_** allows to move forward in the extent history.
 
 
-## <a name="sec1"></a>New map window
+## <a name="sec1"></a>Bookmarks
+
+Bookmarks allow to store and restore the current map state, specifically the map extent and the layer configuration. Note that restoring a bookmark won't restore layers which have since been removed from the project.
+
+## <a name="sec2"></a>New map window
 
 The **_New map window_** function opens up secondary map views. These can be placed anywhere within the main window or decoupled from it by dragging the title bar.
 
@@ -18,7 +22,7 @@ The title of the subwindow can be changed if necessary.
 
 <img src="../../media/image13.png" />
 
-## <a name="sec2"></a>3D
+## <a name="sec3"></a>3D
 
 The **_3D_** function opens an additional child window with a 3D globe view. It can be moved around within or outside the application window by dragging on their title bar.
 
@@ -53,7 +57,7 @@ Pins, camera images and one-point MSS symbols are displayed as billboards.
 + **-**: Increases the camera height.
 
 
-## <a name="sec3"></a>Grid
+## <a name="sec4"></a>Grid
 
 The map **_grid_** can be activated in the View tab.
 

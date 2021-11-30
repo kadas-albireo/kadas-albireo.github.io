@@ -35,7 +35,7 @@ Les dessins de Redlining peuvent être copiés / coupé et collé via le menu co
 
 Les punaises sont des **_marqueurs de positions_** géoréférencés qui peuvent également être nommés ou dotés de commentaires.
 
-L’infobulle d’une punaise placée indique la position et l’altitude. Un double clic sur la punaise ouvre sa boîte de dialogue. Les liens web peuvent être copiés dans la zone de texte depuis un navigateur Internet. Un clic droit sur la punaise permet de copier sa position dans le presse-papier.
+L’infobulle d’une punaise placée indique la position et l’altitude. Un double clic sur la punaise ouvre sa boîte de dialogue. Un clic droit sur la punaise permet de copier sa position dans le presse-papier.
 
 On peut rechercher des punaises par nom ou par commentaire dans la recherche standard.
 
