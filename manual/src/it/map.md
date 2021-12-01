@@ -91,8 +91,6 @@ Il GeoPackage (GPKG) KADAS è un formato di file basato su SQLite, che raggruppa
 
 Durante l'esportazione del progetto a GPKG, è possibile scegliere quali geodati devono essere scritti nel GeoPackage, il progetto salvato nel GPKG caricherà i dati direttamente dal GPKG. Si può anche decidere se un GPKG esistente debba essere aggiornato o completamente sostituito. Nel primo caso, i dati esistenti rimangono nel GPKG, anche se non sono referenzati dal progetto.
 
-Alternativamente, è mediante l'esporazione dei geodati a GPKG, è possibile esportare layer locali selezionati, opzionalmente confinati ad un estensione specificata.
-
 Durante l'importazione, un progetto KADAS viene cercato e aperto nel GPKG, e dati georeferenziati dal GPKG vengono caricati direttamente dallo stesso.
 
 

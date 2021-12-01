@@ -90,8 +90,6 @@ The KADAS GeoPackage (GPKG) is a SQLite based file format, which packs both loca
 
 When performing a GPKG Project Export, you can choose which geodata should be written to the GeoPackage, the project saved in the GPKG will then reference the data directly from the GPKG. In addition, it can be decided whether an existing GPKG should be updated or completely replaced. In the first case, existing data will be preserved in the GPKG, even if not referenced by the project.
 
-Alternatively, the GPGK Data Export allows you to export a selected set of local layers, optionally restricted to a specified map extent. No project file or project-embedded layers (such as redlining, pins, etc.) will be exported.
-
 During import, a KADAS project is searched and opened from the GPKG, and geodata referenced from the GPKG are loaded directly from it.
 
 
