@@ -1,2 +1,3 @@
 mkdocs == 1.2.3
 mkdocs-exclude == 1.0.2
+markdown == 3.3.6
