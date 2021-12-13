@@ -41,5 +41,5 @@ Lors de **_l'exportation_** vers MILXLY (Z), vous pouvez choisir les couches Mil
 
 ## <a name="sec5"></a>Dimension des symboles, largeur des lignes et standard
 
-Ces réglages influencent l'affichage de tous les symboles MSS dans carte.
+Ces réglages influencent l'affichage de tous les symboles MSS dans carte. Elles peuvent être remplacées individuellement pour chaque couche dans l'onglet MSS de dialogue des propriétés de la couche.
 

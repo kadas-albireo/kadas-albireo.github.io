@@ -63,4 +63,4 @@ Après calcul, le résultat est ajouté à la carte sous forme de couche raster.
 
 ## <a name="sec4"></a>Ephémérides
 
-L'outil **_Ephémérides_** calcule les éphémérides du soleil et de la lune (position, heures de lever et de coucher, phase de la lune) à une position du terrain et à un moment donné dans le temps sélectionnés.
+L'outil **_Ephémérides_** calcule les éphémérides du soleil et de la lune (position, heures de lever et de coucher, phase de la lune) à une position du terrain et à un moment donné dans le temps sélectionnés. La case à cocher permet de configurer si le relief est pris en compte pour le calcul.

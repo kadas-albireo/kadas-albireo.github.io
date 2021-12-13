@@ -10,7 +10,8 @@ Geometries of the following types can be drawn:
 + Lines
 + Polygons
 + Rectangles
-+ Circles. 
++ Circles
++ Coordinate crosses
 
 Depending on the geometry type, the border and fill color and patterns can be adjusted, as well as the line width and the points size.
 

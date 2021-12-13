@@ -11,6 +11,7 @@ On peut dessiner les géométries des types suivants:
 + Polygones
 + Rectangles
 + Cercles
++ Croix de coordonnées
 
 Selon le type de géométrie, les couleurs et le motif du contour et du remplissage peuvent être adaptés, ainsi que l’épaisseur des lignes ou la taille des points.
 

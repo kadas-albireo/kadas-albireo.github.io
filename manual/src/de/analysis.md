@@ -62,4 +62,4 @@ Das Ergebnis wird als Rasterebene der Karte hinzugefügt. Beim Speichern des Pro
 
 ## <a name="sec4"></a>Ephemeriden
 
-Das Werkzeug **_Ephemeriden_** berechnet die Sonnen- und Mondephemeriden (Position, Auf- und Untergangszeiten, Mondphase) an einer ausgewählten Geländeposition und zu einem bestimmten Zeitpunkt.
+Das Werkzeug **_Ephemeriden_** berechnet die Sonnen- und Mondephemeriden (Position, Auf- und Untergangszeiten, Mondphase) an einer ausgewählten Geländeposition und zu einem bestimmten Zeitpunkt. Über die Checkbox kann eingestellt werden, ob das Relief betrachten werden soll.

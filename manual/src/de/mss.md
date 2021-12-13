@@ -43,6 +43,4 @@ Beim **_Import_** einer MILXLY(Z) Datei werden sämtliche darin enthaltenen Eben
 
 ## <a name="sec5"></a>Symbolgrösse, Liniendicke und Arbeitsmodus
 
-Diese Einstellungen beeinflussen die Darstellung aller MSS Symbole in der Karte.
-
-
+Diese Einstellungen beeinflussen die Darstellung aller MSS Symbole in der Karte. Sie können für jede Ebene in der MSS Registerkarte der Ebeneneigenschaften individuell überschrieben werden.

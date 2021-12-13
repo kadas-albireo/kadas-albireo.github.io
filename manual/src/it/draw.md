@@ -11,6 +11,7 @@ Possono essere disegnate geometrie dei seguenti tipi:
 + Poligoni
 + Rettangoli
 + Cerchi
++ Croci di coordinate
 
 A seconda del tipo di figura geometrica, è possibile definire colore e stile per bordo e riempi­mento, nonché la larghezza delle linee e la dimensione dei punti.
 

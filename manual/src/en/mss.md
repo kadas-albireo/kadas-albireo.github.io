@@ -41,5 +41,5 @@ When **_exporting_** to MILXLY(Z) you can select which MilX layers to export and
 
 ## <a name="sec5"></a>Symbol size, line width and work mode
 
-These settings influence the display of all MSS symbols on the map.
+These settings influence the display of all MSS symbols on the map. They can be overriden individually for each layer in the MSS tab of the layer properties dialog.
 

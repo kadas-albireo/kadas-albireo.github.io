@@ -42,5 +42,5 @@ MILXLY (e la variante compres­sa MILXLYZ) è un formato per lo scambio delle ra
 
 ## <a name="sec5"></a>Dimensione simbolo, spessore linea e modalita di lavoro
 
-Queste impostazioni influenzano la visualizzazione di tutti i simboli MSS nella mappa.
+Queste impostazioni influenzano la visualizzazione di tutti i simboli MSS nella mappa. Possono essere sovrascritte individualmente per ogni livello nella scheda MSS del dialogo delle proprietà del livello.
 

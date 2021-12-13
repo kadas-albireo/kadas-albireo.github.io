@@ -63,5 +63,5 @@ The analysis output is added as a raster layer to the map. When the project is s
 
 ## <a name="sec4"></a>Ephemeris
 
-The **_Ephemeris_** tool calculates sun and moon ephemeris (position, rise and set times, moon phase) at a selected terrain position and moment in time.
+The **_Ephemeris_** tool calculates sun and moon ephemeris (position, rise and set times, moon phase) at a selected terrain position and moment in time. The checkbox allows configuring whether the relief is considered for the computation.
 

@@ -9,6 +9,7 @@ Es können Geometrien der folgenden Typen gezeichnet werden:
 + Polygone
 + Rechtecke
 + Kreise
++ Koordinatenkreuze
 
 Abhängig vom Geometrietyp können für Rand und Füllung die Farbe und das Muster angepasst werden, sowie auch die Linienbreite oder die Punktsymbolgrösse.
 
