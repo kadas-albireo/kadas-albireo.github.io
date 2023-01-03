@@ -38,3 +38,5 @@ plugins:
         - de/*
         - fr/*
         - it/*
+  - search:
+      lang: en
