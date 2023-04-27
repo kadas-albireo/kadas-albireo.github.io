@@ -22,9 +22,17 @@ for lang in $LANGS; do
     cp -a site/* html/$lang/
     rm -rf site
 
+    # Drop images/media folders below lang folder, use common folders in site root
+    rm -rf html/$lang/{images,media}
+
     # HACK Comment out code leading to incorrect current chapter highlighting in nav tree
     sed -i 's|e.reset(),|/*e.reset(),*/|' html/$lang/js/theme.js
 done
+
+# Copy common images/media folders and rewrite media/images srcs
+cp -a images media html
+find html -type f -name '*.html' -exec sed -Ei 's|src="([./]+)/media/|src="\1/../media/|g' {} \;
+find html -type f -name '*.html' -exec sed -Ei 's|src="([./]+)/images/|src="\1/../images/|g' {} \;
 
 # cleanup venv
 echo "* Clean venv..."
