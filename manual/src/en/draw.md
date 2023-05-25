@@ -19,7 +19,7 @@ For labels, the font and size as well as fill color can be adjusted.
 
 Drawn geometries and texts are stored in the **_Redlining_** layer in the map legend.
 
-Already drawn geometries or texts can be subsequently edited by selecting them on the map. Selected objects can be moved and, depending on the geometry type, nodes can be moved individually or created or removed via the context menu.
+Already drawn geometries or texts can be subsequently edited by selecting them on the map. Selected objects can be moved and, depending on the geometry type, nodes can be moved individually or created or removed via the context menu. The z-order of a geometry can be changed via context-menu.
 
 Existing line and polygon geometries can be continued via context menu on the node.
 

@@ -14,6 +14,33 @@ Le condizioni d'uso dei dati sono riportate nell'applicazione alla voce Aiuto �
 
 ## <a name="sec3"></a>Protocollo delle versioni
 
+### Versione 2.2.0 (giugno 2023)
+* *Generale*:
+    - Permette il caricamento di livelli Esri VectorTile
+    - Permette il caricamento di livelli Esri MapService
+    - Albero dei livelli: permette la configurazione dell'intervallo di aggiornamento dell'origine dati per l'aggiornamento automatico dei livelli
+    - Supporto dell'esportazione di stampa GeoPDF
+    - Possibilità di bloccare la scala della mappa
+    - Finestra di dialogo "novità" configurabile
+    - Miglioramento dell'importazione di geometrie 3D da file KML
+* *Vista*:
+    - Possibilità di scattare foto istantanee della vista 3D
+    - Miglioramento dell'etichettatura della griglia MGRS
+* *Analisi*:
+    - Nuovo strumento min/max per determinare il punto più basso/più alto nell'area selezionata
+    - Selezione del fuso orario nello strumento effemeridi
+    - Gestione corretta dei valori NODATA nel profilo altimetrico
+* *Disegno*:
+    - Consentire l'annullamento/ripristino durante l'intera sessione di disegno.
+    - Possibilità di modificare l'ordine z dei disegni
+    - Possibilità di aggiungere immagini da URL
+* *MSS*:
+    - Consente l'annullamento/ripristino durante l'intera sessione di disegno.
+    - Possibilità di stilizzare le linee guida (larghezza, colore)
+    - Aggiornamento a MSS-2024
+* *Aiuto*:
+    - Consente la ricerca nella guida
+
 ### Versione 2.1.0 (dicembre 2021)
 * *Generale*:
     - Stampa: Scalare correttamente i simboli (MSS, pin, immagini, ...) in base ai DPI di stampa

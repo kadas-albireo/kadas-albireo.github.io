@@ -60,6 +60,9 @@ L’analisi della visibilità viene calcolata all’interno di un settore circol
 
 Il risultato viene aggiunto come layer raster alla mappa. Al salvataggio del progetto, esso viene allegato al progetto nel file *<nome progetto>.qgz*.
 
+## <a name="sec4"></a>Min/Max
+
+Lo strumento **_Min/Max_** consente di calcolare il punto più basso e più alto del terreno all'interno di un'area selezionata (rettangolo/poligono/circolo). I rispettivi punti saranno contrassegnati da icone triangolari rivolte verso l'alto e verso il basso sulla mappa. Facendo clic sulle icone a triangolo è possibile copiare le coordinate, aggiungere un pin e avviare un'ulteriore funzione di analisi (ad es. bacino visuale) da quel punto.
 
 ## <a name="sec4"></a>Efemeridi
 

@@ -39,7 +39,7 @@ Lors de **_l'exportation_** vers MILXLY (Z), vous pouvez choisir les couches Mil
 
 **_L'importation_** d'un fichier MILXLY (Z) parcourt toutes les couches qu'il contient. Si le fichier MSS contient des définitions de symboles conformes à un ancien standard, ceux-ci sont automatiquement convertis. Les pertes de conversion possibles ou les erreurs sont communiquées à l'utilisateur. Si l'une des couches importées contient un cartouche, l'utilisateur sera invité à l'importer dans KADAS.
 
-## <a name="sec5"></a>Dimension des symboles, largeur des lignes et standard
+## <a name="sec5"></a>Dimension des symboles, largeur des lignes, standard, largeur et couleur de la ligne de repère
 
 Ces réglages influencent l'affichage de tous les symboles MSS dans carte. Elles peuvent être remplacées individuellement pour chaque couche dans l'onglet MSS de dialogue des propriétés de la couche.
 

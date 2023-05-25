@@ -14,6 +14,32 @@ Die Nutzungsbedingungen für die Daten sind in der Anwendung unter Hilfe → Üb
 
 ## <a name="sec3"></a>Versionsprotokoll
 
+### Version 2.2.0 (Juni 2023)
+* *Allgemein*:
+ - Unterstützung für das Laden von Esri VectorTile-Ebenen hinzugefügt
+ - Unterstützung für das Laden von Esri MapService-Ebenen hinzugefügt
+ - Layerbaum: Unterstützung der Konfiguration des Aktualisierungsintervalls der Datenquelle für die automatische Aktualisierung der Ebenen
+ - Unterstützung des GeoPDF-Druckexports
+ - Sperren des Kartenmassstabs
+ - Konfigurierbarer News-Popup-Dialog
+ - Verbesserter Import von 3D-Geometrien aus KML-Dateien
+* *Ansicht*:
+ - Aufnahme von Schnappschüssen der 3D-Ansicht
+ - Verbesserte MGRS-Gitterbeschriftung
+* *Analyse*:
+ - Neues Min/Max-Tool zur Abfrage des niedrigsten/höchsten Punktes im ausgewählten Bereich
+ - Auswahl der Zeitzone im Ephemeriden-Werkzeug
+ - Korrekte Behandlung von NODATA-Werten im Höhenprofil
+* *Zeichnen*:
+ - Rückgängig/Wiederherstellen für die gesamte Zeichensitzung zulassen
+ - Ändern der Z-Reihenfolge von Zeichnungen
+ - Hinzufügen von Bildern aus einer URL
+* *MSS*:
+ - Rückgängig machen/Wiederholen während der gesamten Zeichnungssitzung erlauben
+ - Gestaltung von Führungslinien (Breite, Farbe)
+ - Aktualisierung auf MSS-2024
+* *Hilfe*:
+ - Suche in der Hilfe
 
 ### Version 2.1.0 (Dezember 2021)
 * *Allgemeines*:

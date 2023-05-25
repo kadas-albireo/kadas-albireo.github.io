@@ -60,6 +60,10 @@ Die Einsehbarkeitsanalyse wird innerhalb eines Kreissektors oder einem Vollkreis
 
 Das Ergebnis wird als Rasterebene der Karte hinzugefügt. Beim Speichern des Projektes wird diese als Anhang in der *<Projektname>.qgz* Projektdatei gespeichert.
 
+## <a name="sec4"></a>Min/Max
+
+Das Werkzeug **_Min/Max_** ermöglicht die Berechnung des tiefsten und höchsten Geländepunktes innerhalb eines ausgewählten Bereichs (Rechteck/Polygon/Kreis). Die entsprechenden Punkte werden mit nach oben und unten gerichteten Dreieckssymbolen auf der Karte markiert. Durch Anklicken der Dreieckssymbole können die Koordinaten kopiert, eine Stecknadel hinzugefügt und eine weitere Analysefunktion (z.B. Einsehbarkeit) von diesem Punkt aus gestartet werden.
+
 ## <a name="sec4"></a>Ephemeriden
 
 Das Werkzeug **_Ephemeriden_** berechnet die Sonnen- und Mondephemeriden (Position, Auf- und Untergangszeiten, Mondphase) an einer ausgewählten Geländeposition und zu einem bestimmten Zeitpunkt. Über die Checkbox kann eingestellt werden, ob das Relief betrachten werden soll.

@@ -17,13 +17,13 @@ Für **_Texte_** können Schriftart und Grösse sowie Füllfarbe angepasst werde
 
 Gezeichnete Geometrien und Texte werden in der **_Redlining_** Ebene im Karteninhaltsverzeichnis abgelegt.
 
-Bereits gezeichnete Geometrien oder Texte können nachträglich editiert werden, indem sie auf der Karte selektiert werden. Selektierte Objekte lassen sich verschieben, und, abhängig vom Geometrietyp, können Knotenpunkte individuell verschoben werden sowie per Kontextmenü erstellt oder entfernt werden.
+Bereits gezeichnete Geometrien oder Texte können nachträglich editiert werden, indem sie auf der Karte selektiert werden. Selektierte Objekte lassen sich verschieben, und, abhängig vom Geometrietyp, können Knotenpunkte individuell verschoben werden sowie per Kontextmenü erstellt oder entfernt werden. Die z-Reihenfolge einer Geometrie kann über das Kontextmenü geändert werden.
 
 Bestehende Linien- und Polygongeometrien lassen sich per Kontextmenü auf den Knoten fortführen.
 
 <img src="../../media/image6.png" />
 
-Editieroperationen an einer Redlining-Zeichnung können via CTRL+Z und CTRL+Y oder mit den entsprechenden Schaltflächen am unteren Kartenrand rückgängig gemacht bzw. wiederholt werden
+Editieroperationen an einer Redlining-Zeichnung können via CTRL+Z und CTRL+Y oder mit den entsprechenden Schaltflächen am unteren Kartenrand rückgängig gemacht bzw. wiederholt werden.
 
 Beim Erstellen und Editieren von Geometrien werden gleichzeitig relevante Messwerte angezeigt.
 

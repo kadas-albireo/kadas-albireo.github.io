@@ -60,6 +60,9 @@ L’analyse de visibilité est calculée au sein d’une portion de cercle ou d�
 
 Après calcul, le résultat est ajouté à la carte sous forme de couche raster. Si vous sauvegardez le projet, cette couche sera attachée au projet dans le fichier *<nom du projet>.qgz*.
 
+## <a name="sec4"></a>Min/Max
+
+L'outil **_Min/Max_** permet de calculer le point le plus bas et le point le plus haut du terrain dans une zone sélectionnée (rectangle/polygone/cercle). Les points respectifs seront marqués sur la carte par des icônes triangulaires orientées vers le haut et vers le bas. En cliquant sur les icônes triangulaires, il est possible de copier les coordonnées, d'ajouter une épingle et de lancer une autre fonction d'analyse (par example bassin visuel) à partir de ce point.
 
 ## <a name="sec4"></a>Ephémérides
 

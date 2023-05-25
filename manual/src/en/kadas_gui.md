@@ -99,7 +99,7 @@ The contents of the catalog can by filtered by entering an appropriate text in t
 The toolbar above the catalog contains the following functionalities:
 
 + **_Add local layer_**: Add local vector, raster or CSV layer to the map.
-+ **_Add service layer_**: Add remote WMS, WFS or WCS layer to the map. 
++ **_Add service layer_**: Add remote WMS, WFS, WCS, MapServer and vector tile layer to the map.
 + **_Reload catalog_**: Reloads the catalog from the catalog service.
 + **_SAML authentication_**: A window for performing a web-based login will be shown. Upon successful authentication, the geodata catalog will be refreshed and additional layers will be listed, according to the privileges of the authenticated user.
 
@@ -110,6 +110,6 @@ The status bar contains following labels and control widgets:
 
 + **_GPS_**: Usage of the GPS button is described in the <a href="/gps">*Navigation* chapter</a>.
 + **_Mouse position_**: The current mouse position on the map can be displayed with respect to multiple reference systems. The desired format can be selected from the menu left of the display label. The unit for the height can be changed in the Settings tab.
-+ **_Scale_**: The current scale of the map view is displayed next to the coordinate field. The scale selector allows to choose between predefined scales ranging from 1:500 to 1:1000000.
++ **_Scale_**: The current scale of the map view is displayed next to the coordinate field. The scale selector allows to choose between predefined scales ranging from 1:500 to 1:1000000. The lock icon allows locking the current map scale, zooming will then only affect the magnification factor.
 + **_Coordinate reference system_**: The coordinate reference system selection button allows to choose which projection to use for the map. If the selected projection differs from the native projection of a dataset, the latter will be reprojected, which may result in reduced performance depending on the amount of data.
 

@@ -41,6 +41,6 @@ Beim **_Export_** nach MILXLY(Z) kann ausgewählt werden, welche MilX Ebenen zu 
 Beim **_Import_** einer MILXLY(Z) Datei werden sämtliche darin enthaltenen Ebenen importiert. Falls die Datei MSS Symboldefinitionen gemäss eines älteren Standards enthält, werden diese automatisch konvertiert. Mögliche Konversionsverluste oder Fehler werden dem Benutzer mitgeteilt. Falls eine der importierten Ebenen eine Kartusche enthält, wird dem Benutzer gefragt, in ob diese in KADAS übernommen werden soll.
 
 
-## <a name="sec5"></a>Symbolgrösse, Liniendicke und Arbeitsmodus
+## <a name="sec5"></a>Symbolgrösse, Liniendicke, Arbeitsmodus, Farbe und Breite der Führungslinie
 
 Diese Einstellungen beeinflussen die Darstellung aller MSS Symbole in der Karte. Sie können für jede Ebene in der MSS Registerkarte der Ebeneneigenschaften individuell überschrieben werden.

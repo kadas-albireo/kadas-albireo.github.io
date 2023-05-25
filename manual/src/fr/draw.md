@@ -19,7 +19,7 @@ Pour les **_textes_**, les caractères et leur taille ainsi que la couleur de re
 
 Les géométries dessinées et les textes sont placés sous le niveau **_Redlining_** du répertoire de la carte.
 
-On peut éditer a posteriori les géométries déjà dessinées ou les textes en les sélectionnant sur la carte. Les objets sélectionnés peuvent être déplacés et, en fonction du type de géométrie, les nœuds peuvent être déplacés individuellement, créées ou éliminés via le menu contextuel.
+On peut éditer a posteriori les géométries déjà dessinées ou les textes en les sélectionnant sur la carte. Les objets sélectionnés peuvent être déplacés et, en fonction du type de géométrie, les nœuds peuvent être déplacés individuellement, créées ou éliminés via le menu contextuel. L'ordre z d'une géométrie peut être modifié via le menu contextuel.
 
 Les géométries de lignes et de polygones existantes peuvent être continuées via le menu contextuel sur un nœud.
 

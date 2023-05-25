@@ -102,7 +102,7 @@ La saisie de termes de recherche dans le champ de texte limite en conséquence l
 Les fonctions suivantes sont à disposition en haut de la liste de catalogue :
 
 + **_Ajouter base de données locale_** : On peut ajouter des données de vecteur, raster out CSV à la carte.
-+ **_Adjouter une couche à partire d'un service Web_**: On peut adjouter des données WMS, WFS et WCS.
++ **_Adjouter une couche à partire d'un service Web_**: On peut adjouter des données WMS, WFS et WCS, MapServer et Vectortile.
 + **_Recharger le catalogue_** : Recharge la liste des niveaux de carte disponibles.
 + **_Authentification SAML_** : Une fenêtre est ouverte où l’on peut effectuer un enregistrement par Internet sur le serveur. Après la réussite de l’enregistrement, le catalogue de géodonnées est rechargé et d’autres niveaux de cartes sont disponibles selon les autorisations.
 
@@ -113,6 +113,6 @@ Les indications et les éléments de commande suivants sont énumérés dans la 
 
 + **GPS**: La fonction de la touche GPS est décrite dans le <a href="/gps">chapitre *Navigation*<a>.
 + **Position de la souris**: La *position actuelle de la souris* peut être affichée dans différents systèmes de coordonnées. Le système d’affichage souhaité peut être choisi par la touche à droite de l’indication de la position.
-+ **Échelle**: À droite de ces coordonnées se trouve *l’échelle de la carte_*. Si vous zoomez ou dé-zoomez, l’échelle se met à jour automatiquement. Une liste déroulante vous permet de choisir une échelle prédéterminée allant du 1:500ème au 1:1000000ème.
++ **Échelle**: À droite de ces coordonnées se trouve *l’échelle de la carte_*. Si vous zoomez ou dé-zoomez, l’échelle se met à jour automatiquement. Une liste déroulante vous permet de choisir une échelle prédéterminée allant du 1:500ème au 1:1000000ème. L'icône de verrouillage permet de verrouiller l'échelle actuelle de la carte, le zoom n'affectant alors que le facteur d'agrandissement.
 + **Système de coordonnées**: Le système de référence où la carte actuelle doit être représentée peut être choisi dans le champ de sélection du *système de coordonnées*. Le système de référence affiché peut différer du système de référence dans lequel les données existent. Dans ce cas, les données sont converties pour la représentation.
 

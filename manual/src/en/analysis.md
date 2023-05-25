@@ -60,6 +60,9 @@ The viewhsed analysis is computed within a circular sector or a full circle as s
 
 The analysis output is added as a raster layer to the map. When the project is saved, the raster is saved as a project attachment in the *<project name>.qgz* project file.
 
+## <a name="sec4"></a>Min/Max
+
+The **_Min/Max_** tool allows computing the lowest and highest terrain point within a selected area (rectangle/polygon/circle). The respective points will be marked with up- and down-facing triangle icons on the map. Clicking on the triangle icons allows copying the coordinates, adding a pin and initiating a further analysis function (i.e. viewshed) from that point.
 
 ## <a name="sec4"></a>Ephemeris
 

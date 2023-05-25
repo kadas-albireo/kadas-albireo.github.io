@@ -100,7 +100,7 @@ Durch Eingabe von Suchbegriffen im Textfeld werden die verfügbaren Ebenen entsp
 Oberhalb der Katalogliste stehen folgende Funktionen zur Verfügung:
 
 + **_Lokaler Datensatz hinzufügen_**: Es können Vektor-, Raster- und CSV-Daten hinzugefügt werden.
-+ **_Ebene eines Webdienstes hinzufügen_**: Es können WMS, WFS und WCS Ebenen hinzugefügt werden.
++ **_Ebene eines Webdienstes hinzufügen_**: Es können WMS, WFS, WCS, MapServer und Vektorkachel Ebenen hinzugefügt werden.
 + **_Katalog neu laden_**: Lädt die Liste der verfügbaren Kartenebenen neu.
 + **_SAML Authentifizierung_**: Es wird ein Fenster geöffnet, in dem ein webbasiertes Login auf dem Server durchgeführt werden kann. Nach erfolgreichem Login wird der Geodatenkatalog neu geladen und es stehen entsprechend den Berechtigungen zusätzliche Kartenebenen zur Verfügung.
 
@@ -111,6 +111,6 @@ In der Statuszeile sind folgende Anzeigen und Bedienelemente angeordnet:
 
 + **_GPS_**: Die Verwendung der GPS Schaltfläche ist im Kapitel <a href="/gps">Kapitel *Navigation*</a> beschrieben.
 + Mausposition_**: Die aktuelle Mausposition auf der Karte kann in Bezug auf mehrere Referenzsysteme angezeigt werden. Das gewünschte System kann im Menü links neben der Positionsanzeige ausgewählt werden. Die Einheit für die Höhe kann in der Einstellungen-Registerkarte geändert werden.
-+ **_Massstab_**: Der aktuelle Massstab der Kartenansicht wird neben dem Koordinatenfeld angezeigt. Der Menü ermöglicht die Auswahl zwischen vordefinierten Skalen zwischen 1:500 und 1:100000000.
++ **_Massstab_**: Der aktuelle Massstab der Kartenansicht wird neben dem Koordinatenfeld angezeigt. Der Menü ermöglicht die Auswahl zwischen vordefinierten Skalen zwischen 1:500 und 1:100000000. Mit dem Schloss-Symbol kann der aktuelle Kartenmassstab fixiert werden, das Zoomen wirkt sich dann nur noch auf den Vergrößerungsfaktor aus.
 + Koordinatenbezugssystem_**: In dieser Auswahlschaltfläche ausgewählt werden, welche Projektion für die Karte verwendet werden soll. Weicht die gewählte Projektion von der nativen Projektion eines Datensatzes ab, wird dieser neu projiziert, was je nach Datenmenge zu Leistungseinbussen führen kann.
 

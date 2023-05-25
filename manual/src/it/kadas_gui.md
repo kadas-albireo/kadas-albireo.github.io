@@ -99,7 +99,7 @@ Inserendo i termini di ricerca nel campo di testo, i layer disponibili sono limi
 Le seguenti funzioni sono disponibili sopra l'elenco del catalogo:
 
 + **_Aggiungi layer locale_**: Aggiungere dati locali vettoriali, raster o CSV alla mappa.
-+ **_Aggiungi layer da un servizio Web_**: Aggiungere layer WMS, WFS o WCS.
++ **_Aggiungi layer da un servizio Web_**: Aggiungere layer WMS, WFS, WCS, MapServer e Vectortile.
 + **_Ricaricare il catalogo_**: Ricarica il catalogo dei geodati.
 + **_Autenticazione SAML_**: Si apre una finestra in cui è possibile effettuare un login basato sul web sul server. Dopo aver effettuato con successo il login, il catalogo dei geodati viene ricaricato e sono disponibili ulteriori layer di carta in base alle autorizzazioni.
 
@@ -109,7 +109,7 @@ Nella barra di stato sono disposti i seguenti indicatori e le seguenti funzioni:
 
 + **_GPS_**: L'uso del pulsante GPS è descritto nel <a href="/gps">capitolo *Navigazione*</a>.
 + _**Posizione del mouse_**: La posizione corrente del mouse sulla mappa può essere visualizzata rispetto a molteplici sistemi di riferimento . Il sistema desiderato può essere selezionato dal menu a sinistra campo di visualizzazione. L'unità di misura dell'altezza può essere modificata nella scheda Impostazioni.
-+ **_Scala_**: La scala corrente della visualizzazione della mappa è mostrata accanto al campo delle coordinate. Il selettore di scala consente di scegliere tra scale predefinite tra 1:500 e 1:100000000.
++ **_Scala_**: La scala corrente della visualizzazione della mappa è mostrata accanto al campo delle coordinate. Il selettore di scala consente di scegliere tra scale predefinite tra 1:500 e 1:100000000. L'icona del lucchetto consente di bloccare la scala corrente della mappa; lo zoom influirà quindi solo sul fattore di ingrandimento.
 + **_Sistema di coordinate_**: Il pulsante di selezione del sistema di coordinate permette di scegliere quale proiezione utilizzare per la mappa. Se la proiezione selezionata differisce dalla proiezione nativa di un dataset, quest'ultimo viene riproiettato, il che può comportare una riduzione delle prestazioni a seconda della quantità di dati.
 
 

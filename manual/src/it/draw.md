@@ -19,7 +19,7 @@ Per quanto riguarda i testi, è possibile impostare dimensione e tipo del caratt
 
 Le figure geometriche e i testi così delineati vengono raggruppati nel layer **_Redlining_** nell'elenco delle carte.
 
-Le figure geometriche o i testi già disegnati possono essere modificati selezionandoli sulla mappa. Gli oggetti selezionati possono essere spostati e, a seconda del tipo di figura geo­metrica, è possibile spostare i singoli punti di controllo, nonché crearne o rimuoverne tramite menu contestuale.
+Le figure geometriche o i testi già disegnati possono essere modificati selezionandoli sulla mappa. Gli oggetti selezionati possono essere spostati e, a seconda del tipo di figura geo­metrica, è possibile spostare i singoli punti di controllo, nonché crearne o rimuoverne tramite menu contestuale. L'ordine z di una geometria può essere modificato tramite il menu contestuale.
 
 È possibile continuare il disegno di linee e poligoni esistenti dal menu contestuale dei vertici della geometria.
 

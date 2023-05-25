@@ -14,6 +14,33 @@ The terms of use for the data are listed in the application under Help → About
 
 ## <a name="sec3"></a>Changelog
 
+### Version 2.2.0 (June 2023)
+* *General*:
+    - Add support for loading Esri VectorTile layers
+    - Add support for loading Esri MapService layers
+    - Layertree: support configuring data source refresh interval for auto-refreshing layers
+    - Support GeoPDF print export
+    - Allow locking map scale
+    - Configurable News Popup dialog
+    - Improved import of 3D geometries from KML files
+* *View*:
+    - Allow taking snapshot pictures of 3D view
+    - Improved MGRS grid labeling
+* *Analysis*:
+    - New min/max tool for querying lowest/highest point in selected area
+    - Timezone selection in ephemeris tool
+    - Correctly handle NODATA values in height profile
+* *Draw*:
+    - Allow undo/redo for entire drawing session
+    - Allow modifying z-order of drawings
+    - Allow adding pictures from URL
+* *MSS*:
+    - Allow undo/redo for entire drawing session
+    - Allow styling leader lines (width, color)
+    - Update to MSS-2024
+* *Help*:
+    - Allow searching through help
+
 ### Version 2.1.0 (December 2021)
 * *General*:
     - Print: Properly scale symbols (MSS, pins, pictures, ...) according to print DPI

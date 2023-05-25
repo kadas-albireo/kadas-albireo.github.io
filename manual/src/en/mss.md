@@ -39,7 +39,7 @@ When **_exporting_** to MILXLY(Z) you can select which MilX layers to export and
 
 **_Importing_** a MILXLY(Z) file imports all the layers it contains. If the MSS file contains symbol definitions according to an older standard, these are automatically converted. Possible conversion losses or errors are communicated to the user. If one of the imported layers contains a cartouche, the user will be asked if they should be imported into KADAS.
 
-## <a name="sec5"></a>Symbol size, line width and work mode
+## <a name="sec5"></a>Symbol size, line width, work mode, leader line width and color
 
 These settings influence the display of all MSS symbols on the map. They can be overriden individually for each layer in the MSS tab of the layer properties dialog.
 

@@ -40,7 +40,7 @@ MILXLY (e la variante compres­sa MILXLYZ) è un formato per lo scambio delle ra
 
 **_Nell'importazione_** di un file MILXLY(Z) vengono importati tutti i layer in esso contenuti. Qualora il file MSS contenga definizioni di simboli basate su un vecchio standard, queste verranno convertite automaticamente. Eventuali errori o perdite in fase di conversione vengono comunicati all'utente. Se uno dei layer importati contiene un cartiglio, l'utente viene chiesto se utilizzare questo cartiglio per la stampa.
 
-## <a name="sec5"></a>Dimensione simbolo, spessore linea e modalita di lavoro
+## <a name="sec5"></a>Dimensione simbolo, spessore linea, modalita di lavoro, colore e spessore della linea di guida
 
 Queste impostazioni influenzano la visualizzazione di tutti i simboli MSS nella mappa. Possono essere sovrascritte individualmente per ogni livello nella scheda MSS del dialogo delle proprietà del livello.
 
