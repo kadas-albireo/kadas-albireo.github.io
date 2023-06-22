@@ -1,5 +1,6 @@
 #!/bin/sh
 
+cd $(readlink -f $(dirname $0))
 echo "* Setting up venv..."
 rm -rf .venv
 python3 -mvenv .venv
