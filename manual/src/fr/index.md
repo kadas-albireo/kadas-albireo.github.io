@@ -15,7 +15,7 @@ Les conditions d’utilisation des données sont énumérées dans l’applicati
 ## <a name="sec3"></a>Protocole de version
 
 ### Version 2.2.0 (juin 2023)
-*Général* :
+* *Général*:
     - Possibilité de ajouter des couches Esri VectorTile
     - Possibilité de ajouter des couches Esri MapService
     - Layertree: possibilité de définir l'intervalle de rafraîchissement de la source de données pour les couches à rafraîchissement automatique.
