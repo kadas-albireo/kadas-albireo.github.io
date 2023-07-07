@@ -2,10 +2,7 @@
 
 ## <a name="sec0"></a>Création
 
-KADAS Albireo se base sur le logiciel professionnel Open Source GIS Software «QGIS». Une interface pour les utilisateurs sur mesure a été créée pour l’application en collaboration avec les ergonomes. D’une part, de nombreuses fonctions de traitement des géodonnées peu utiles ont été laissées de côté, d’autre part, une palette bien plus large de fonctions existe désormais dans des domaines comme l’analyse de terrains.
 KADAS Albireo est une application d'affichage des cartes basée sur le logiciel SIG professionnel open source "QGIS" et destinée aux utilisateurs non spécialisés. En coopération avec la compagnie Ergnomen, une nouvelle interface utilisateur a été développée, cachant une grande partie des fonctionnalités destinées aux utilisateurs avancés, tout en améliorant les fonctionnalités dans des domaines tels que le dessin, l'analyse de terrain, l'impression et l'interopérabilité.
-
-
 
 ## <a name="sec1"></a>Conditions d’utilisation
 
