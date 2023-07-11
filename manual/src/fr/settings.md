@@ -25,6 +25,10 @@ Configure le nombre de décimales affichées pour les valeurs mesurées.
 
 L' **_accrochage_** accède à tous les nœuds des géométries vectorielles présentes sur la carte.
 
+## Ignorer l'échelle des polices du système
+
+Les paramètres d'affichage du système d'exploitation peuvent permettre de définir un facteur de mise à l'échelle des polices. KADAS peut alors apparaître avec une interface utilisateur surdimensionnée. En cochant cette case, KADAS ignorera le facteur d'échelle de la police du système d'exploitation.
+
 ## <a name="sec5"></a>Plugin manager
 
 Le **_Plugin Manager_** répertorie les plugins KADAS disponibles dans les dépôts préconfigurés et permet à l'utilisateur de les installer et de les supprimer.

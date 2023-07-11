@@ -24,6 +24,9 @@ Konfiguriert die Anzahl angezeigten Dezimalstellen bei Messwerten.
 
 Das **_Snapping_** greift auf alle Knoten von Vektorgeometrien in der Karte.
 
+## System-Schriftskalierung ignorieren
+
+In den Anzeigeeinstellungen des Betriebssystems kann möglicherweise ein Skalierungsfaktor für die Schrift eingestellt werden. Dies kann dazu führen, dass KADAS mit einer übergrossen Benutzeroberfläche erscheint. Ist dieses Kontrollkästchen aktiviert, dann ignoriert KADAS den Skalierungsfaktor des Betriebssystems.
 
 ## <a name="sec5"></a>Plugin Manager
 

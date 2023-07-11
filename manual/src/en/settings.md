@@ -24,6 +24,10 @@ Configures the number of decimal positions shown in the measurement values.
 
 **_Snapping_** honours all nodes of vector geometries in the map.
 
+## Ignore system font scaling
+
+The display settings of the operating system may allow to set a font scaling factor. This may result in KADAS appearing with an oversized UI. Checking this checkbox will make KADAS ignore the operating system font scaling factor.
+
 ## <a name="sec5"></a>Plugin manager
 
 The **_Plugin Manager_** lists available KADAS plugins from pre-configured repos and allows the user to install and remove these.

@@ -26,6 +26,10 @@ Configura il numero di posizioni decimali mostrati nei valori di misura.
 
 Lo **_snapping_** viene effettuato a tutti i vertici delle geometrie nella mappa.
 
+## Ignora la scala dei caratteri del sistema
+
+Le impostazioni di visualizzazione del sistema operativo possono consentire di impostare un fattore di scala dei caratteri. Questo può far sì che KADAS appaia con un'interfaccia utente sovradimensionata. Selezionando questa casella di controllo, KADAS ignorerà il fattore di scala dei caratteri del sistema operativo.
+
 ## <a name="sec5"></a>Gestore dei plugin
 
 Il **_Gestore dei Plugin_** elenca i plugin disponibili per KADAS dalla fonte di pre-configurata, e permette all'utente di attivarli e disattivarli.
